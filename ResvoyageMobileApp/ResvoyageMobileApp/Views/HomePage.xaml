@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:ResvoyageMobileApp.Views"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             mc:Ignorable="d"
+             Visual="Material"
+             x:Class="ResvoyageMobileApp.Views.HomePage"
+             BackgroundColor="White"
+             TabBarBackgroundColor="White"
+             FlyoutBackgroundColor ="Azure"
+             UnselectedColor ="Gray"
+             TitleColor="#BEA7FF"
+             FlyoutBehavior="Flyout"
+             ForegroundColor ="Gray">
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid RowDefinitions="Auto, *" BackgroundColor="Azure" HeightRequest="{Binding ScreenSize}">
+                <StackLayout Orientation="Vertical" Padding="0,30" BackgroundColor="#132b47">
+                    <Image Source="farelovers.png" Aspect="AspectFit"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="0,20" Grid.Row="1">
+                    <StackLayout Orientation="Vertical" IsVisible="{Binding IsUserLoggedIn}">
+                        <StackLayout Orientation="Horizontal" Padding="30,0,0,10">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding EditProfileCommand}"/>
+                            </StackLayout.GestureRecognizers>
+                            <Image Source="user" HeightRequest="20"/>
+                            <Label Text="{Binding User.UserName}" Style="{StaticResource labelNormalGray}" LineBreakMode="TailTruncation" FontAttributes="Bold" Padding="10,0"/>
+                        </StackLayout>
+                        <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="15,0"/>
+                    </StackLayout>                    
+                    <StackLayout Orientation="Horizontal"  Padding="30,10,0,10">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding HomeCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="home" HeightRequest="16"/>
+                        <Label Text="{x:Static resources:AppResources.HP_HOME}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" Padding="10,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="30,10,0,10" IsVisible="{Binding IsUserLoggedIn}">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding MyBookingsCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="bookings" HeightRequest="16"/>
+                        <Label Text="{x:Static resources:AppResources.HP_MY_BOOKINGS}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" Padding="10,0"/>
+                    </StackLayout>                    
+                    <StackLayout Orientation="Horizontal" Padding="30,10,0,10">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ContactCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="question" HeightRequest="16"/>
+                        <Label Text="{x:Static resources:AppResources.HP_CONTACT}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" Padding="10,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="30,10,0,10">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding UserAgreementCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="agreement" HeightRequest="16"/>
+                        <Label Text="{x:Static resources:AppResources.HP_USER_AGREEMENT}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" Padding="10,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="30,10,0,10">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding PrivacyPolicyCommand}"/>
+                        </StackLayout.GestureRecognizers>
+                        <Image Source="policy" HeightRequest="16"/>
+                        <Label Text="{x:Static resources:AppResources.HP_PRIVACY_POLICY}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" Padding="10,0"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" VerticalOptions="EndAndExpand">
+                        <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="15,0"/>
+                        <StackLayout Orientation="Horizontal" Padding="30,10,0,10">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PickerFocusCommand}" CommandParameter="{x:Reference LanguagePicker}"/>
+                            </StackLayout.GestureRecognizers>
+                            <Image Source="translate" HeightRequest="16"/>
+                            <Label Text="{x:Static resources:AppResources.HP_LANGUAGE}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" Padding="10,0"/>
+                            <Picker ItemsSource="{Binding Languages}"
+                                x:Name="LanguagePicker"
+                                ItemDisplayBinding="{Binding DisplayName}"
+                                SelectedItem="{Binding Language, Mode=TwoWay}" 
+                                Title="{x:Static resources:AppResources.HP_LANGUAGE}" 
+                                Style="{StaticResource labelNormalGray}" 
+                                TitleColor="Gray" TextColor="Black"
+                                IsEnabled="True" IsVisible="False"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="30,10,0,10">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PickerFocusCommand}" CommandParameter="{x:Reference CurrencyPicker}"/>
+                            </StackLayout.GestureRecognizers>
+                            <Image Source="exchange" HeightRequest="16"/>
+                            <StackLayout Orientation="Horizontal"  Padding="10,0" Spacing="1">
+                                <Label Text="{x:Static resources:AppResources.HP_CURRENCY}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold"/>
+                                <Label Text="{Binding Currency.CurrencyCode, StringFormat='({0})'}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" />
+                            </StackLayout>
+                            <Picker ItemsSource="{Binding Currencies}"
+                                x:Name="CurrencyPicker"
+                                ItemDisplayBinding="{Binding Text}"
+                                SelectedItem="{Binding Currency, Mode=TwoWay}" 
+                                Title="{x:Static resources:AppResources.HP_CURRENCY}" 
+                                Style="{StaticResource labelNormalGray}" 
+                                TitleColor="Gray" TextColor="Black"
+                                IsEnabled="True" IsVisible="False"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="30,10,0,10" IsVisible="{Binding IsUserLoggedIn, Converter={Helpers:NegateBooleanConverter}}"  Margin="0,0,0,60">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LoginCommand}"/>
+                            </StackLayout.GestureRecognizers>
+                            <Image Source="login" HeightRequest="16"/>
+                            <Label Text="{x:Static resources:AppResources.HP_LOGIN}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" Padding="10,0"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="30,10,0,10" IsVisible="{Binding IsUserLoggedIn}" Margin="0,0,0,60">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LogoutCommand}"/>
+                            </StackLayout.GestureRecognizers>
+                            <Image Source="logout" HeightRequest="16"/>
+                            <Label Text="{x:Static resources:AppResources.HP_LOGOUT}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" Padding="10,0"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <TabBar>
+        <Tab Title="{x:Static resources:AppResources.APP_FLIGHT}" Icon="air.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Flight.CustomFlightSearchPage}"/>
+        </Tab>
+        <Tab Title="{x:Static resources:AppResources.APP_HOTEL}" Icon="hotel.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Hotel.HotelSearchPage}"/>
+        </Tab>
+        <Tab Title="{x:Static resources:AppResources.APP_CAR}" Icon="car.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Car.CarSearchPage}"/>
+        </Tab>
+    </TabBar>
+</Shell>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources" xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Flight.PopularPlaceDetailsPage"
+             x:Name="PopularPlaces"
+             Shell.TabBarIsVisible="False"
+             Shell.NavBarIsVisible="False">
+    <CarouselView IsSwipeEnabled="True" ItemsSource="{Binding Places}" CurrentItem="{Binding Place}" IsScrollAnimated="True">
+        <CarouselView.ItemTemplate>
+            <DataTemplate>
+                <ScrollView>
+                    <StackLayout Orientation="Vertical">
+
+                    <Grid>
+                        <ff:CachedImage Source="{Binding Image}" Aspect="AspectFill" HeightRequest="150"/>
+                        <Image Source="back.png" HeightRequest="60" WidthRequest="60" HorizontalOptions="Start" VerticalOptions="Start" Margin="10,20">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.GoBack, Source={x:Reference PopularPlaces}}"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Grid>
+                    <Frame CornerRadius="15" Margin="20,-30,20,0" x:Name="PopularPlaceDetails" BackgroundColor="White">
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Label HorizontalOptions="Center" Style="{StaticResource labelLargeBlack}">
+                                    <Label.Text>
+                                        <MultiBinding StringFormat="{}{0} {1}">
+                                            <Binding Path="City"/>
+                                            <Binding Path="Country"/>
+                                        </MultiBinding>
+                                    </Label.Text>
+                                </Label>
+                                <Label Text="22 available flights" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                <Frame Margin="40,10"
+                                    HorizontalOptions="FillAndExpand"
+                                    HeightRequest="40"
+                                    WidthRequest="100"
+                                    Padding="0"
+                                    BackgroundColor="#2EDBB5">
+                                    <Frame.CornerRadius>
+                                        <OnPlatform x:TypeArguments="x:Single">
+                                            <On Platform="iOS" Value="20"/>
+                                            <On Platform="Android" Value="30"/>
+                                        </OnPlatform>
+                                    </Frame.CornerRadius>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.SelectPlace, Source={x:Reference PopularPlaces}}" CommandParameter="{Binding .}"/>
+                                    </Frame.GestureRecognizers>
+                                    <Label Text="{x:Static resources:AppResources.APP_SELECT}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </Frame>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Style="{StaticResource labelMediumBlack}" Text="Description"/>
+                                    <Label Style="{StaticResource labelSmallGray}" Text="{Binding About}" />
+                                </StackLayout>
+                                <Label Style="{StaticResource labelMediumBlack}" Text="Good to know"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="currency.png" HeightRequest="40" WidthRequest="40"/>
+                                    <Label Text="{Binding City, StringFormat='Currency in {0}'}" VerticalOptions="Center" Style="{StaticResource labelNormalBlack}"/>
+                                    <Label Text="{Binding Currency}" Style="{StaticResource labelNormalGray}" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="timeZone.png" HeightRequest="40" WidthRequest="40"/>
+                                    <Label Text="Timezone" Style="{StaticResource labelNormalBlack}" VerticalOptions="Center"/>
+                                    <Label Text="{Binding TimeZone}" Style="{StaticResource labelNormalGray}" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>        
+</ContentPage>

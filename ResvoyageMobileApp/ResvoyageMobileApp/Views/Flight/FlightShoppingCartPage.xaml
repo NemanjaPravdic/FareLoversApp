@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:rf="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms" 
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             mc:Ignorable="d"
+             x:Name="ShoppingCart"
+             x:Class="ResvoyageMobileApp.Views.Flight.FlightShoppingCartPage">
+    <Grid>
+        <rf:Frame2 CornerRadius="20"
+                   Margin="20"
+                   HasShadow="True"
+                   ShadowColor="#F0F0FF"
+                   BackgroundColor="White"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"
+                   IsVisible="{Binding ShowWaitScreen, Converter={Helpers:NegateBooleanConverter}}">
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Passenger Info" Style="{StaticResource labelMediumBlack}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PassegnerInfoExpander}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Grid IsVisible="{Binding ShowPassengerInfo}" Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding PassengerGender}" >
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <RadioButton Text="{Binding Name}" 
+                                                     IsChecked="{Binding IsSelected}" 
+                                                     TextColor="Black" Font="16" 
+                                                     Padding="0,5" 
+                                                     Command="{Binding BindingContext.ChangedGender, Source={x:Reference ShoppingCart}}" 
+                                                     CommandParameter="{Binding Name}"/>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                            <Picker ItemsSource="{Binding PassengerTitle}" SelectedItem="{Binding PassengerInfo.Title, Mode=TwoWay}" Title="Title" Grid.Row="1" TitleColor="Gray"/>
+                            <Entry Text="{Binding PassengerInfo.FirstName, Mode=TwoWay}" Placeholder="First Name" Grid.Row="2" PlaceholderColor="Gray"/>
+                            <Entry Text="{Binding PassengerInfo.MiddleName, Mode=TwoWay}" Placeholder="Middle Name" Grid.Row="3" PlaceholderColor="Gray"/>
+                            <Entry Text="{Binding PassengerInfo.LastName, Mode=TwoWay}" Placeholder="Last Name" Grid.Row="4" PlaceholderColor="Gray"/>
+                            <Grid Grid.Row="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Picker ItemsSource="{Binding Days}" SelectedItem="{Binding PaymentDetails.CardInfo.Day, Mode=TwoWay}" Title="Day of birth" TitleColor="Gray"/>
+                                <Picker ItemsSource="{Binding Months}" SelectedItem="{Binding PaymentDetails.CardInfo.Month, Mode=TwoWay}" Title="Month of birth" TitleColor="Gray" Grid.Column="1"/>
+                                <Picker ItemsSource="{Binding Years}" SelectedItem="{Binding PaymentDetails.CardInfo.Year, Mode=TwoWay}" Title="Year of birth" TitleColor="Gray" Grid.Column="2"/>
+                            </Grid>
+                            <Entry Text="{Binding PassengerInfo.Email, Mode=TwoWay}" Placeholder="Email" PlaceholderColor="Gray" Keyboard="Email" Grid.Row="6"/>
+                            <Entry Text="{Binding PassengerInfo.Phone, Mode=TwoWay}" Placeholder="Phone number" Grid.Row="7" PlaceholderColor="Gray" Keyboard="Telephone"/>
+                        </Grid>
+                        
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Address Info" Style="{StaticResource labelMediumBlack}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AddressInfoExpander}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Grid Grid.Row="1" IsVisible="{Binding ShowAddressInfo}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Entry Text="{Binding PaymentDetails.AddressInfo.CountryName, Mode=TwoWay}" Placeholder="Country Name" PlaceholderColor="Gray"/>
+                                <Entry Text="{Binding PaymentDetails.AddressInfo.CityName, Mode=TwoWay}" Placeholder="City Name" PlaceholderColor="Gray" Grid.Column="1"/>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Entry Text="{Binding PaymentDetails.AddressInfo.RegionName, Mode=TwoWay}" Placeholder="Region / State" PlaceholderColor="Gray"/>
+                                <Entry Text="{Binding PaymentDetails.AddressInfo.ZIP, Mode=TwoWay}" Placeholder="Postal / Zip Code" PlaceholderColor="Gray" Grid.Column="1"/>
+                            </Grid>
+                            <Entry Text="{Binding PaymentDetails.AddressInfo.StreetAddress, Mode=TwoWay}" Placeholder="Street Address" PlaceholderColor="Gray" Grid.Row="2"/>
+
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Card Info" Style="{StaticResource labelMediumBlack}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PaymentInfoExpander}"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Grid Grid.Row="1" IsVisible="{Binding ShowPaymentInfo}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Entry Text="{Binding PaymentDetails.CardInfo.CardholderName, Mode=TwoWay}" Placeholder="Cardholder Name" PlaceholderColor="Gray"/>
+                            <Entry Text="{Binding PaymentDetails.CardInfo.CardNumber, Mode=TwoWay}" Placeholder="Card Number" MaxLength="16" Keyboard="Numeric" PlaceholderColor="Gray" Grid.Row="1"/>
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Picker ItemsSource="{Binding ExpirationMonths}" SelectedItem="{Binding PaymentDetails.CardInfo.ExpirationMonth, Mode=TwoWay}" Title="Exp. Month" TitleColor="Gray"/>
+                                <Picker ItemsSource="{Binding ExpirationYears}" SelectedItem="{Binding PaymentDetails.CardInfo.ExpirationYear, Mode=TwoWay}" Title="Exp. Year" TitleColor="Gray" Grid.Column="1"/>
+                                <Entry Text="{Binding PaymentDetails.CardInfo.CVV, Mode=TwoWay}" Placeholder="CVV" PlaceholderColor="Gray" MaxLength="3" Keyboard="Numeric"  Grid.Column="2" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Frame Margin="40,10"
+                            HorizontalOptions="FillAndExpand"
+                            HeightRequest="40"
+                            Padding="0"
+                            Grid.Row="3"
+                            BackgroundColor="#2EDBB5">
+                        <Frame.CornerRadius>
+                            <OnPlatform x:TypeArguments="x:Single">
+                                <On Platform="iOS" Value="20"/>
+                                <On Platform="Android" Value="30"/>
+                            </OnPlatform>
+                        </Frame.CornerRadius>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Pay}"/>
+                        </Frame.GestureRecognizers>
+                        <Label Text="{Binding PayText}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    </Frame>
+                </Grid>
+            </ScrollView>
+        </rf:Frame2>
+        <ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="{Binding ShowWaitScreen}"/>
+    </Grid>
+    
+</ContentPage>

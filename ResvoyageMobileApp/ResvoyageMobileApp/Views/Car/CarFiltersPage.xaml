@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers" 
+             xmlns:range="clr-namespace:Xamarin.RangeSlider.Forms;assembly=Xamarin.RangeSlider.Forms"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"             
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Car.CarFiltersPage"
+             Shell.TabBarIsVisible="False">
+    <ScrollView BackgroundColor="White">
+        <StackLayout Orientation="Vertical" Padding="15">
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Vertical">
+                    <Label HorizontalOptions="StartAndExpand" Text="{x:Static resources:AppResources.HF_PRICE}" Style="{StaticResource labelMediumBlack}"/>
+                    <range:RangeSlider x:Name="RangeSliderWithEffect" BarHeight="15" MinimumValue="{Binding Results.MinPrice}" MaterialUI="True" MaximumValue="{Binding Results.MaxPrice}" LowerValue="{Binding ChoosenFilters.MinPrice, Mode=TwoWay}" UpperValue="{Binding ChoosenFilters.MaxPrice, Mode=TwoWay}" StepValue="1" StepValueContinuously="True" ActiveColor="#BEA7FF">
+                        <range:RangeSlider.HorizontalOptions>
+                            <OnPlatform x:TypeArguments="LayoutOptions">
+                                <On Platform="iOS" Value="Fill"/>
+                                <On Platform="Android" Value="Center"/>
+                            </OnPlatform>
+                        </range:RangeSlider.HorizontalOptions>
+                    </range:RangeSlider>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="0">
+                            <Label Text="{Binding Results.CurrencySymbol}" Style="{StaticResource labelSmallGray}"/>
+                            <Label Text="{Binding ChoosenFilters.MinPrice}" Style="{StaticResource labelSmallGray}"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="0">
+                            <Label Text="{Binding Results.CurrencySymbol}" Style="{StaticResource labelSmallGray}"/>
+                            <Label Text="{Binding ChoosenFilters.MaxPrice}" Style="{StaticResource labelSmallGray}"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <BoxView BackgroundColor="Gray" Opacity="0.2" HeightRequest="1" Margin="-15,10"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowCategories}"/>
+                    </StackLayout.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{x:Static resources:AppResources.CF_CATEGORIES}" Style="{StaticResource labelMediumBlack}"/>
+                        <Label HorizontalOptions="StartAndExpand" Text="{Binding ChoosenFilters.NumCategories, StringFormat='({0})'}" Style="{StaticResource labelMediumBlack}" IsVisible="{Binding ChoosenFilters.NumCategories,Converter={Helpers:NotNullValueBoolConverter}}"/>
+                    </StackLayout>
+                    <BoxView BackgroundColor="Gray" Opacity="0.2" HeightRequest="1" Margin="-15,10"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowTypes}"/>
+                    </StackLayout.GestureRecognizers>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{x:Static resources:AppResources.CF_TYPES}" Style="{StaticResource labelMediumBlack}"/>
+                        <Label HorizontalOptions="StartAndExpand" Text="{Binding ChoosenFilters.NumTypes, StringFormat='({0})'}" Style="{StaticResource labelMediumBlack}" IsVisible="{Binding ChoosenFilters.NumTypes,Converter={Helpers:NotNullValueBoolConverter}}"/>
+                    </StackLayout>
+                    <BoxView BackgroundColor="Gray" Opacity="0.2" HeightRequest="1" Margin="-15,10"/>
+                </StackLayout>
+            </StackLayout>
+            <Grid ColumnSpacing="0" RowSpacing="0" Margin="-15" VerticalOptions="EndAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame BorderColor="White" BackgroundColor="#baded7" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  Padding="0" CornerRadius="0" HeightRequest="50">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ResetFilters}"/>
+                        </Frame.GestureRecognizers>
+                        <Label Text="{x:Static resources:AppResources.RESET}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource labelMediumWhite}" />
+                    </Frame>
+                    <Frame BorderColor="White" BackgroundColor="#2EDBB5" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Padding="0" HeightRequest="50" CornerRadius="0">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ApplyFilters}"/>
+                        </Frame.GestureRecognizers>
+                        <Label Text="{x:Static resources:AppResources.SF_APPLY}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource labelMediumWhite}"/>
+                    </Frame>
+                </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rf="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms" 
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources" 
+             x:Class="ResvoyageMobileApp.Views.Flight.Custom.MultiCitySearchView">
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="20">
+            <rf:Frame2 CornerRadius="10"
+                           HasShadow="True"
+                           HeightRequest="120"
+                           Padding="0,10"
+                           Margin="0,5"
+                           HorizontalOptions="FillAndExpand">
+                <Grid>
+                    <magic:GradientView VerticalOptions="CenterAndExpand" HeightRequest="60" Margin="0,20">
+                        <magic:GradientView.GradientSource>
+                            <magic:CssGradientSource>
+                                <x:String>
+                                    <![CDATA[
+                                linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(240,240,255,1) 50%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%) ]]>
+                                </x:String>
+                            </magic:CssGradientSource>
+                        </magic:GradientView.GradientSource>
+                    </magic:GradientView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="1" Padding="20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid HeightRequest="60"
+                                      VerticalOptions="Center">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowDepartureAutocompleteMultiCity}" CommandParameter="1"/>
+                                </Grid.GestureRecognizers>
+                                <Grid VerticalOptions="Center" IsVisible="{Binding Request.From1City,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{x:Static resources:AppResources.SF_FROM}" Style="{StaticResource labelSmallGray}"  />
+                                    <Label Text="{Binding Request.From1City}"  Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                                </Grid>
+                                <Label Text="{x:Static resources:AppResources.SF_FROM}" 
+                                           Style="{StaticResource labelMediumGray}"
+                                           VerticalOptions="Center"
+                                           IsVisible="{Binding Request.From1City,Converter={Helpers:NullValueBoolConverter}}"/>
+                            </Grid>
+                            <Grid HeightRequest="60" Grid.Row="1" VerticalOptions="Center">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowArrivalAutocompleteMultiCity}" CommandParameter="1"/>
+                                </Grid.GestureRecognizers>
+                                <Grid VerticalOptions="Center" IsVisible="{Binding Request.To1City,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{x:Static resources:AppResources.SF_DESTINATION}" Style="{StaticResource labelSmallGray}"   />
+                                    <Label Text="{Binding Request.To1City}" Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                                </Grid>
+                                <Label Text="{x:Static resources:AppResources.SF_DESTINATION}" 
+                                           Style="{StaticResource labelMediumGray}"
+                                           VerticalOptions="Center"
+                                           IsVisible="{Binding Request.To1City,Converter={Helpers:NullValueBoolConverter}}"/>
+                            </Grid>
+                        </Grid>
+
+                        <Image Source="fromTo.png" 
+                                   Grid.Column="0"
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Start"
+                               Margin="10,0"/>
+                        <StackLayout Grid.Column="2" Padding="0,45,0,0">
+                            <Image Source="refresh.png"
+                                       HeightRequest="60"
+                                       VerticalOptions="Center" 
+                                       HorizontalOptions="End">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SwitchDestinations}" CommandParameter="1"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+            </rf:Frame2>
+            <Frame CornerRadius="10"
+                       HasShadow="True"
+                       Margin="0,5"
+                       HeightRequest="60"
+                       Padding="0"
+                       BackgroundColor="White"
+                       HorizontalOptions="FillAndExpand">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowCalendarPageMultiCity}" CommandParameter="1"/>
+                </Frame.GestureRecognizers>
+                <Grid VerticalOptions="Center" HeightRequest="60">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="calendar.png" HeightRequest="20" Margin="15,0,0,0"/>
+                        <Grid IsVisible="{Binding Request.DepartureDate1, Converter={Helpers:NotNullValueBoolConverter}}" Padding="10,0" HorizontalOptions="Start" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Request.DepartureDate1String}"
+                                   Style="{StaticResource labelNormalBlack}"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
+                            <Label Text="{Binding Request.DepartureDate1DayString}"
+                                   Style="{StaticResource labelNormalGray}"
+                                   VerticalOptions="Center"
+                                   Grid.Column="1"
+                                   HorizontalOptions="Center"/>
+                        </Grid>
+                        <Label Text="{x:Static resources:AppResources.SF_DEPARTURE}"
+                                   IsVisible="{Binding Request.DepartureDate1, Converter={Helpers:NullValueBoolConverter}}" 
+                                   VerticalOptions="Center"                                   
+                                   Padding="10,0"
+                                   Style="{StaticResource labelMediumGray}"
+                                   Grid.Column="1"
+                                   HorizontalOptions="Start"/>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <rf:Frame2 CornerRadius="10"
+                       HasShadow="True"
+                       HeightRequest="120"
+                       Padding="0,10"
+                       Margin="0,5"
+                       IsVisible="{Binding ShowSecondSegment}"
+                       HorizontalOptions="FillAndExpand">
+                <Grid>
+                    <magic:GradientView VerticalOptions="CenterAndExpand" HeightRequest="60" Margin="0,20">
+                        <magic:GradientView.GradientSource>
+                            <magic:CssGradientSource>
+                                <x:String>
+                                    <![CDATA[
+                                linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(240,240,255,1) 50%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%) ]]>
+                                </x:String>
+                            </magic:CssGradientSource>
+                        </magic:GradientView.GradientSource>
+                    </magic:GradientView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="1" Padding="20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid HeightRequest="60"
+                                      VerticalOptions="Center">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowDepartureAutocompleteMultiCity}" CommandParameter="2"/>
+                                </Grid.GestureRecognizers>
+                                <Grid VerticalOptions="Center" IsVisible="{Binding Request.From2City,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{x:Static resources:AppResources.SF_FROM}" Style="{StaticResource labelSmallGray}"  />
+                                    <Label Text="{Binding Request.From2City}"  Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                                </Grid>
+                                <Label Text="{x:Static resources:AppResources.SF_FROM}" 
+                                           Style="{StaticResource labelMediumGray}"
+                                           VerticalOptions="Center"
+                                           IsVisible="{Binding Request.From2City,Converter={Helpers:NullValueBoolConverter}}"/>
+                            </Grid>
+                            <Grid HeightRequest="60" Grid.Row="1" VerticalOptions="Center">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowArrivalAutocompleteMultiCity}" CommandParameter="2"/>
+                                </Grid.GestureRecognizers>
+                                <Grid VerticalOptions="Center" IsVisible="{Binding Request.To2City,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{x:Static resources:AppResources.SF_DESTINATION}" Style="{StaticResource labelSmallGray}"   />
+                                    <Label Text="{Binding Request.To2City}" Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                                </Grid>
+                                <Label Text="{x:Static resources:AppResources.SF_DESTINATION}" 
+                                           Style="{StaticResource labelMediumGray}"
+                                           VerticalOptions="Center"
+                                           IsVisible="{Binding Request.To2City,Converter={Helpers:NullValueBoolConverter}}"/>
+                            </Grid>
+                        </Grid>
+
+                        <Image Source="fromTo.png" 
+                                   Grid.Column="0"
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Start"
+                               Margin="10,0"/>
+                        <StackLayout Grid.Column="2" Padding="0,45,0,0">
+                            <Image Source="refresh.png"
+                                       HeightRequest="60"
+                                       VerticalOptions="Center" 
+                                       HorizontalOptions="End">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SwitchDestinations}" CommandParameter="2"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+            </rf:Frame2>
+            <Frame CornerRadius="10"
+                   HasShadow="True"
+                   Margin="0,5"
+                   HeightRequest="60"
+                   BackgroundColor="White"
+                   Padding="0"
+                   IsVisible="{Binding ShowSecondSegment}"
+                   HorizontalOptions="FillAndExpand">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowCalendarPageMultiCity}" CommandParameter="2"/>
+                </Frame.GestureRecognizers>
+                <Grid VerticalOptions="Center" HeightRequest="60">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="calendar.png" HeightRequest="20" Margin="15,0,0,0"/>
+                        <Grid IsVisible="{Binding Request.DepartureDate2, Converter={Helpers:NotNullValueBoolConverter}}" Padding="10,0" HorizontalOptions="Start" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Request.DepartureDate2String}"
+                                   Style="{StaticResource labelNormalBlack}"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
+                            <Label Text="{Binding Request.DepartureDate2DayString}"
+                                   Style="{StaticResource labelNormalGray}"
+                                   VerticalOptions="Center"
+                                   Grid.Column="1"
+                                   HorizontalOptions="Center"/>
+                        </Grid>
+                        <Label Text="{x:Static resources:AppResources.SF_DEPARTURE}"
+                                   IsVisible="{Binding Request.DepartureDate2, Converter={Helpers:NullValueBoolConverter}}" 
+                                   VerticalOptions="Center"                                   
+                                   Padding="10,0"
+                                   Style="{StaticResource labelMediumGray}"
+                                   Grid.Column="1"
+                                   HorizontalOptions="Start"/>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <rf:Frame2 CornerRadius="10"
+                           HasShadow="True"
+                           HeightRequest="120"
+                           Padding="0,10"
+                           Margin="0,5"
+                       IsVisible="{Binding ShowThirdSegment}"
+                           HorizontalOptions="FillAndExpand">
+                <Grid>
+                    <magic:GradientView VerticalOptions="CenterAndExpand" HeightRequest="60" Margin="0,20">
+                        <magic:GradientView.GradientSource>
+                            <magic:CssGradientSource>
+                                <x:String>
+                                    <![CDATA[
+                                linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(240,240,255,1) 50%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%) ]]>
+                                </x:String>
+                            </magic:CssGradientSource>
+                        </magic:GradientView.GradientSource>
+                    </magic:GradientView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="1" Padding="20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid HeightRequest="60"
+                                      VerticalOptions="Center">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowDepartureAutocompleteMultiCity}" CommandParameter="3"/>
+                                </Grid.GestureRecognizers>
+                                <Grid VerticalOptions="Center" IsVisible="{Binding Request.From3City,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{x:Static resources:AppResources.SF_FROM}" Style="{StaticResource labelSmallGray}"  />
+                                    <Label Text="{Binding Request.From3City}"  Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                                </Grid>
+                                <Label Text="{x:Static resources:AppResources.SF_FROM}" 
+                                           Style="{StaticResource labelMediumGray}"
+                                           VerticalOptions="Center"
+                                           IsVisible="{Binding Request.From3City,Converter={Helpers:NullValueBoolConverter}}"/>
+                            </Grid>
+                            <Grid HeightRequest="60" Grid.Row="1" VerticalOptions="Center">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ShowArrivalAutocompleteMultiCity}" CommandParameter="3"/>
+                                </Grid.GestureRecognizers>
+                                <Grid VerticalOptions="Center" IsVisible="{Binding Request.To3City,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{x:Static resources:AppResources.SF_DESTINATION}" Style="{StaticResource labelSmallGray}"   />
+                                    <Label Text="{Binding Request.To3City}" Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                                </Grid>
+                                <Label Text="{x:Static resources:AppResources.SF_DESTINATION}" 
+                                           Style="{StaticResource labelMediumGray}"
+                                           VerticalOptions="Center"
+                                           IsVisible="{Binding Request.To3City,Converter={Helpers:NullValueBoolConverter}}"/>
+                            </Grid>
+                        </Grid>
+
+                        <Image Source="fromTo.png" 
+                                   Grid.Column="0"
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Start"
+                               Margin="10,0"/>
+                        <StackLayout Grid.Column="2" Padding="0,45,0,0">
+                            <Image Source="refresh.png"
+                                       HeightRequest="60"
+                                       VerticalOptions="Center" 
+                                       HorizontalOptions="End">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding SwitchDestinations}" CommandParameter="3"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+            </rf:Frame2>
+            <Frame CornerRadius="10"
+                       HasShadow="True"
+                       Margin="0,5"
+                       HeightRequest="60"
+                       Padding="0"
+                       BackgroundColor="White"
+                    IsVisible="{Binding ShowThirdSegment}"
+                       HorizontalOptions="FillAndExpand">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowCalendarPageMultiCity}" CommandParameter="3"/>
+                </Frame.GestureRecognizers>
+                <Grid VerticalOptions="Center" HeightRequest="60">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="calendar.png" HeightRequest="20" Margin="15,0,0,0"/>
+                        <Grid IsVisible="{Binding Request.DepartureDate3, Converter={Helpers:NotNullValueBoolConverter}}" Padding="10,0" HorizontalOptions="Start" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Request.DepartureDate3String}"
+                                   Style="{StaticResource labelNormalBlack}"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
+                            <Label Text="{Binding Request.DepartureDate3DayString}"
+                                   Style="{StaticResource labelNormalGray}"
+                                   VerticalOptions="Center"
+                                   Grid.Column="1"
+                                   HorizontalOptions="Center"/>
+                        </Grid>
+                        <Label Text="{x:Static resources:AppResources.SF_DEPARTURE}"
+                                   IsVisible="{Binding Request.DepartureDate3, Converter={Helpers:NullValueBoolConverter}}" 
+                                   VerticalOptions="Center"
+                                   Style="{StaticResource labelMediumGray}"
+                                   Grid.Column="1"                                   
+                                   Padding="10,0"
+                                   HorizontalOptions="Start"/>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Frame Margin="10"
+                           HasShadow="True"
+                           HeightRequest="40"
+                           WidthRequest="150"
+                           Padding="0"
+                           BackgroundColor="#2EDBB5"
+                           IsVisible="{Binding ShowThirdSegment, Converter={Helpers:NegateBooleanConverter}}">
+                    <Frame.CornerRadius>
+                        <OnPlatform x:TypeArguments="x:Single">
+                            <On Platform="iOS" Value="20"/>
+                            <On Platform="Android" Value="30"/>
+                        </OnPlatform>
+                    </Frame.CornerRadius>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AddSegment}"/>
+                    </Frame.GestureRecognizers>
+                    <Label Text="Add segment" Style="{StaticResource labelSmallWhite}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Frame>
+                <Frame Margin="10"
+                           HeightRequest="40"
+                           Padding="0"
+                           HasShadow="True"                       
+                           WidthRequest="150"
+                           BackgroundColor="#2EDBB5"
+                           IsVisible="{Binding ShowSecondSegment}">
+                    <Frame.CornerRadius>
+                        <OnPlatform x:TypeArguments="x:Single">
+                            <On Platform="iOS" Value="20"/>
+                            <On Platform="Android" Value="30"/>
+                        </OnPlatform>
+                    </Frame.CornerRadius>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding RemoveSegment}"/>
+                    </Frame.GestureRecognizers>
+                    <Label Text="Remove segment" Style="{StaticResource labelSmallWhite}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Frame>
+            </StackLayout>
+            <Frame CornerRadius="10"
+                       HasShadow="True"
+                       Margin="0,5"
+                       BackgroundColor="White"
+                       HeightRequest="60"
+                       Padding="0"
+                       HorizontalOptions="FillAndExpand">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowOtherInfoPage}"/>
+                </Frame.GestureRecognizers>
+                <Grid VerticalOptions="Center" HeightRequest="60">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="adult.png" HeightRequest="25" Margin="20,0,0,0" />
+                    <Label FontSize="16" Text="{Binding Request.Adults}" TextColor="Black" Grid.Column="1" VerticalOptions="Center"/>
+                    <Image Source="adult.png" HeightRequest="20" Grid.Column="2"/>
+                    <Label FontSize="16" Text="{Binding Request.Children}" TextColor="Black" Grid.Column="3" VerticalOptions="Center"/>
+                    <Image Source="infant.png" HeightRequest="15" Grid.Column="4"/>
+                    <Label FontSize="16" Text="{Binding Request.Infants}" TextColor="Black" Grid.Column="5" VerticalOptions="Center"/>
+                    <Grid Grid.Column="6"
+                              HorizontalOptions="End"
+                              Padding="20,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="{x:Static resources:AppResources.SF_CABIN_COLON}" TextColor="#BAC9D9" FontFamily="DisplayLight" FontSize="16"  VerticalOptions="Center"/>
+                        <Label Text="{Binding Request.Cabin}" Grid.Column="1" TextColor="Black" FontSize="16" FontFamily="DisplayLight" VerticalOptions="Center"/>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame Margin="40,10"
+                       HorizontalOptions="FillAndExpand"
+                       HeightRequest="40"
+                       Padding="0"
+                       BackgroundColor="#2EDBB5">
+                <Frame.CornerRadius>
+                    <OnPlatform x:TypeArguments="x:Single">
+                        <On Platform="iOS" Value="20"/>
+                        <On Platform="Android" Value="30"/>
+                    </OnPlatform>
+                </Frame.CornerRadius>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SearchFlights}" CommandParameter="{Binding SearchType}"/>
+                </Frame.GestureRecognizers>
+                <Label Text="{x:Static resources:AppResources.SF_SEARCH_FLIGHTS}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentView>

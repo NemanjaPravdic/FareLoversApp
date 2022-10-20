@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             Shell.TabBarIsVisible="False"
+             Visual="Material"
+             x:Class="ResvoyageMobileApp.Views.Other.UserAgreementPage"
+             BackgroundColor="White">
+    <Shell.TitleView>
+        <Label Text="{x:Static resources:AppResources.HP_USER_AGREEMENT}" Style="{StaticResource labelNormalBlack}" VerticalTextAlignment="Center"/>
+    </Shell.TitleView>
+    <ScrollView Margin="10,20">
+        <StackLayout Orientation="Vertical">
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_1}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_1_1}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_1_1_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_1_1_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_1_1_3}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_1_1_4}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_1_1_5}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_1_2}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_1_2_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_1_3}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_1_3_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_1_3_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_2}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_2_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_2_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_3}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_3_1}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_1_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_1_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_1_3}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_3_2}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_3}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <StackLayout Orientation="Vertical" Margin="10,0,0,0">
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_1}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_2}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_3}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_4}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_5}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_6}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_7}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_8}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_9}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Style="{StaticResource labelSmallGray}">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="-" />
+                            <Span Text="{x:Static resources:AppResources.UA_LABEL_3_2_4_10}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>                
+            </StackLayout>
+            <Label  Style="{StaticResource labelNormalBlack}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_3}"/>
+                        <Span Text=" https://ec.europa.eu/transport/modes/air/safety/air-ban_en" TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LinkClickCommand}" CommandParameter="https://ec.europa.eu/transport/modes/air/safety/air-ban_en"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>            
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_3_4}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_4_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_4_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_3_5}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_5_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_5_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_3_5_3}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_3_6}" Style="{StaticResource labelNormalBlack}"/>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_4}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_4_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_5}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_5_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_6}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_6_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_7}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_7_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_7_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_8}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_8_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_9}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_9_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_10}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_10_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_11}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_11_1}" Style="{StaticResource labelNormalBlack}"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_11_1_1}" Style="{StaticResource labelSmallGray}"/>
+                        <Span Text=" https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32004R0261" Style="{StaticResource labelSmallGray}" TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LinkClickCommand}" CommandParameter="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32004R0261"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_11_2}" Style="{StaticResource labelNormalBlack}"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_11_2_1}" Style="{StaticResource labelSmallGray}"/>
+                        <Span Text=" https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32002R0889" Style="{StaticResource labelSmallGray}" TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LinkClickCommand}" CommandParameter="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32002R0889"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_12}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_12_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_13}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_13_1}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_13_1_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.UA_LABEL_13_2}" Style="{StaticResource labelNormalBlack}"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{x:Static resources:AppResources.UA_LABEL_13_2_1}" Style="{StaticResource labelSmallGray}"/>
+                        <Span Text=" http://ec.europa.eu/consumers/odr/" Style="{StaticResource labelSmallGray}" TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LinkClickCommand}" CommandParameter="http://ec.europa.eu/consumers/odr/"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

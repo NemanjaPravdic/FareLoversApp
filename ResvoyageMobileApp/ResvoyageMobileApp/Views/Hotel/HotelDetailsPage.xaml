@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" 
+             xmlns:pancakeview="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView" 
+             xmlns:proc="clr-namespace:PanCardView.Processors;assembly=PanCardView" 
+             xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Hotel.HotelDetailsPage"
+             x:Name="HotelDetails"
+             Visual="Material"
+             Shell.TabBarIsVisible="False">
+    <Grid>
+        <MediaElement Source="ms-appx:///waitScreen.mp4" ShowsPlaybackControls="False"
+                      BackgroundColor="#101d23"
+                      IsLooping="True" Aspect="AspectFit" AutoPlay="True" 
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <StackLayout x:Name="VisibilityResults" VerticalOptions="CenterAndExpand"  BackgroundColor="#F6FBFF">            
+            <ScrollView HorizontalOptions="CenterAndExpand" IsVisible="{Binding ShowWaitScreen, Converter={Helpers:NegateBooleanConverter}}">
+                <ScrollView.InputTransparent>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="iOS" Value="False"/>
+                        <On Platform="Android" Value="True"/>
+                    </OnPlatform>
+                </ScrollView.InputTransparent>
+                <StackLayout Orientation="Vertical">
+                    <cards:CarouselView 
+                        ItemsSource="{Binding HotelInformation.HotelImages}"
+                        SlideShowDuration="3500">
+                        <x:Arguments>
+                            <proc:CarouselProcessor ScaleFactor="0.5" OpacityFactor="0" RotationFactor="0.1" />
+                        </x:Arguments>
+                        <cards:CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <ContentView>
+                                    <Image Source="{Binding .}" Aspect="AspectFill" HeightRequest="250"/>
+                                </ContentView>
+                            </DataTemplate>
+                        </cards:CarouselView.ItemTemplate>
+                    </cards:CarouselView>
+                    <ff:CachedImage  Source="noImageFound.png" HeightRequest="250" Aspect="AspectFill" IsVisible="{Binding HotelInformation.HotelImages, Converter={Helpers:CheckEmptyList}}"/>
+                    <pancakeview:PancakeView CornerRadius="20" Margin="10,-30,10,0" BackgroundColor="White" VerticalOptions="EndAndExpand" HasShadow="True">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding HotelInformation.HotelName}" Style="{StaticResource labelMediumBlack}" HorizontalOptions="Center" HorizontalTextAlignment="Center" Padding="0,20,0,0"/>
+                            <Label Text="{x:Static resources:AppResources.HR_NO_STAR_RATING}" HorizontalOptions="Center" Style="{StaticResource labelNormalGray}" IsVisible="{Binding HotelInformation.StarRating,Converter={Helpers:NullValueBoolConverter}}"/>
+                            <rating:SfRating Precision="Exact" HorizontalOptions="Center" ItemSize="16" ItemSpacing="2" ItemCount="5" ReadOnly="True" Value="{Binding HotelInformation.StarRating}" IsVisible="{Binding HotelInformation.StarRating,Converter={Helpers:NotNullValueBoolConverter}}">
+                                <rating:SfRating.RatingSettings>
+                                    <rating:SfRatingSettings RatedFill="Black" RatedStroke="Black" />
+                                </rating:SfRating.RatingSettings>
+                            </rating:SfRating>
+                            <BoxView BackgroundColor="Gray" Opacity="0.2" HeightRequest="1" Margin="15,10"/>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Margin="0,0,10,10" Spacing="0">
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Spacing="0">
+                                            <Label Text="{Binding HotelInformation.CurrencySymbol}" Style="{StaticResource labelMediumGray}" FontAttributes="Bold"  TextColor="#2EDBB5"/>
+                                            <Label Text="{Binding HotelInformation.DisplayDailyRatePerRoom}" Style="{StaticResource labelMediumGray}" FontAttributes="Bold" TextColor="#2EDBB5"/>
+                                        </StackLayout>
+                                        <Label Text="{x:Static resources:AppResources.HR_PER_NIGHT_PER_ROOM}" Style="{StaticResource labelSmallGray}" FontSize="10"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <Label Grid.Column="1" Text="{Binding RequestTextInfo}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="EndAndExpand" FontAttributes="Bold" TextColor="Gray" LineBreakMode="TailTruncation"/>
+                            </Grid>
+                            <ScrollView Orientation="Horizontal" Padding="10">
+                                <StackLayout Orientation="Horizontal" Padding="0,10">
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasWiFi}" WidthRequest="50">
+                                        <Image Source="wifi.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_WiFi}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasPool}" WidthRequest="50">
+                                        <Image Source="pool.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_POOL}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasParking}" WidthRequest="50">
+                                        <Image Source="parking.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_PARKING}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasAirConditioning}" WidthRequest="50">
+                                        <Image Source="airConditioning.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_AIRCONDITIONING}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center" />
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasBar}" WidthRequest="50">
+                                        <Image Source="bar.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_BAR}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasRestaurant}" WidthRequest="50">
+                                        <Image Source="restaurant.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_RESTAURANT}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasPetFriendly}" WidthRequest="50">
+                                        <Image Source="petFriendly.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_PET_FRIENDLY}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasRoomService}" WidthRequest="50">
+                                        <Image Source="roomService.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_ROOM_SERVICE}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasSpa}" WidthRequest="50">
+                                        <Image Source="spa.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_SPA}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasHousekeeping}" WidthRequest="50">
+                                        <Image Source="housekeeping.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_HOUSEKEEPING}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Padding="5,0" IsVisible="{Binding HotelInformation.HasGym}" WidthRequest="50">
+                                        <Image Source="gym.png" HeightRequest="30"/>
+                                        <Label Text="{x:Static resources:AppResources.HD_GYM}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ScrollView>
+                            <ContentView Content="{Binding Map}" />
+                        </StackLayout>
+                    </pancakeview:PancakeView>
+                    <StackLayout BindableLayout.ItemsSource="{Binding HotelInformation.Rooms}">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <pancakeview:PancakeView Margin="10" Padding="20" CornerRadius="20" BackgroundColor="White" HasShadow="True">
+                                    <StackLayout Orientation="Vertical">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding RoomInformation}" Style="{StaticResource labelMediumBlack}"/>
+                                        </Grid>
+                                        <Grid IsVisible="{Binding NumberOfBedsString,Converter={Helpers:NotNullValueBoolConverter}}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Source="bed.png" HeightRequest="15"/>
+                                            <Label Text="{Binding NumberOfBedsString}" Style="{StaticResource labelSmallGray}" Grid.Column="1"/>
+                                        </Grid>
+                                        <BoxView BackgroundColor="Gray" Opacity="0.2" HeightRequest="1" Margin="-15,10"/>
+
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <StackLayout Orientation="Vertical">
+                                                <StackLayout Orientation="Vertical" IsVisible="{Binding HasFreeCancellation}">
+                                                    <StackLayout Orientation="Horizontal">
+                                                        <Image Source="check.png" HeightRequest="15"/>
+                                                        <Label Text="{x:Static resources:AppResources.HD_FREE_CANCELLATION}" Style="{StaticResource labelNormalGray}" TextColor="#69E781"/>
+                                                    </StackLayout>
+                                                    <Label Text="{Binding LastDayToCancel}" Style="{StaticResource labelSmallGray}"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Padding="5,0" IsVisible="{Binding HasAirConditioning}">
+                                                    <Image Source="airConditioning.png" HeightRequest="15"/>
+                                                    <Label Text="{x:Static resources:AppResources.HD_AIRCONDITIONING}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Padding="5,0" IsVisible="{Binding HasWiFi}">
+                                                    <Image Source="wifi.png" HeightRequest="15"/>
+                                                    <Label Text="{x:Static resources:AppResources.HD_WiFi}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Padding="5,0" IsVisible="{Binding HasTV}">
+                                                    <Image Source="tv.png" HeightRequest="15"/>
+                                                    <Label Text="{x:Static resources:AppResources.HD_TV}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Padding="5,0" IsVisible="{Binding HasBreakfast}">
+                                                    <Image Source="breakfast.png" HeightRequest="15"/>
+                                                    <Label Text="{x:Static resources:AppResources.HD_BREAKBAST}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Padding="5,0" IsVisible="{Binding HasHairdryer}">
+                                                    <Image Source="hairdryer.png" HeightRequest="15"/>
+                                                    <Label Text="{x:Static resources:AppResources.HD_HAIRDRYER}" Style="{StaticResource labelSmallGray}" HorizontalTextAlignment="Center"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Column="1">
+                                                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="0">
+                                                    <Label Text="{Binding BindingContext.HotelInformation.CurrencySymbol, Source={x:Reference HotelDetails}}" Style="{StaticResource labelMediumGray}" FontAttributes="Bold"  TextColor="#2EDBB5"/>
+                                                    <Label Text="{Binding RoomRateDisplay}" Style="{StaticResource labelMediumGray}" FontAttributes="Bold" TextColor="#2EDBB5"/>
+                                                </StackLayout>
+                                                <Label Text="{Binding BindingContext.RoomRateText, Source={x:Reference HotelDetails}}" Style="{StaticResource labelSmallGray}" LineBreakMode="WordWrap" WidthRequest="130"/>
+                                            </StackLayout>
+                                        </Grid>
+                                        <Frame Margin="40,10"
+                                               HorizontalOptions="FillAndExpand"
+                                               HeightRequest="40"
+                                               Padding="0"
+                                               Grid.Row="3"
+                                               BackgroundColor="#2EDBB5">
+                                            <Frame.CornerRadius>
+                                                <OnPlatform x:TypeArguments="x:Single">
+                                                    <On Platform="iOS" Value="20"/>
+                                                    <On Platform="Android" Value="30"/>
+                                                </OnPlatform>
+                                            </Frame.CornerRadius>
+                                            <Frame.GestureRecognizers>
+                                                <TapGestureRecognizer Command="{Binding BindingContext.AddToShoppingCart, Source={x:Reference HotelDetails}}" CommandParameter="{Binding .}"/>
+                                            </Frame.GestureRecognizers>
+                                            <Label Text="{x:Static resources:AppResources.RD_RESERVE}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                        </Frame>
+                                    </StackLayout>
+                                </pancakeview:PancakeView>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                    <pancakeview:PancakeView Margin="10" CornerRadius="20" Padding="20" BackgroundColor="White">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{x:Static resources:AppResources.HD_OTHER_INFORMATION}" Style="{StaticResource labelMediumBlack}"/>
+                            <Label Text="{x:Static resources:AppResources.HD_DESCRIPTION}" Style="{StaticResource labelNormalBlack}"/>
+                            <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding HotelInformation.HotelDescription}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding .}" Style="{StaticResource labelSmallGray}"/>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                            <Label Text="{x:Static resources:AppResources.HD_HOTEL_AMENITIES}" Style="{StaticResource labelNormalBlack}"/>
+                            <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding HotelInformation.HotelAmenitiesCollection}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Name}" Style="{StaticResource labelSmallGray}" IsVisible="{Binding Name,Converter={Helpers:NotNullValueBoolConverter}}"/>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                            <Label Text="{x:Static resources:AppResources.HD_ROOM_AMENITIES}" Style="{StaticResource labelNormalBlack}"/>
+                            <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding HotelInformation.RoomAmenitiesCollection}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <Label Text="{Binding Name}" Style="{StaticResource labelSmallGray}" IsVisible="{Binding Name,Converter={Helpers:NotNullValueBoolConverter}}"/>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                            <Label Text="{x:Static resources:AppResources.HD_LOCATION_DESCRIPTION}" Style="{StaticResource labelNormalBlack}" IsVisible="{Binding HotelInformation.LocationDescription,Converter={Helpers:NotNullValueBoolConverter}}"/>
+                            <Label Text="{Binding HotelInformation.LocationDescription}" Style="{StaticResource labelSmallGray}" IsVisible="{Binding HotelInformation.LocationDescription,Converter={Helpers:NotNullValueBoolConverter}}"/>
+                        </StackLayout>
+                    </pancakeview:PancakeView>
+                </StackLayout>
+
+            </ScrollView>
+
+            <!--<ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" IsVisible="{Binding ShowWaitScreen}"/>-->
+        </StackLayout>        
+        <!--<ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" x:Name="waitScreen"/>-->
+    </Grid>
+</ContentPage>

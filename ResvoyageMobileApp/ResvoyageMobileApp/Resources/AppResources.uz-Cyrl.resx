@@ -1,0 +1,1164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APP_CAR" xml:space="preserve">
+    <value>Авто ижараси</value>
+  </data>
+  <data name="APP_ERROR" xml:space="preserve">
+    <value>Хато</value>
+  </data>
+  <data name="APP_FLIGHT" xml:space="preserve">
+    <value>Авиачипталар</value>
+  </data>
+  <data name="APP_FOR" xml:space="preserve">
+    <value>учун</value>
+  </data>
+  <data name="APP_HOTEL" xml:space="preserve">
+    <value>Отеллар</value>
+  </data>
+  <data name="APP_LATER" xml:space="preserve">
+    <value>Кейинроқ</value>
+  </data>
+  <data name="APP_OK" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="APP_RATE_APP" xml:space="preserve">
+    <value>Иловани баҳолаш</value>
+  </data>
+  <data name="APP_RATE_TEXT" xml:space="preserve">
+    <value>агар сиз бизнинг иловамизни ёқтирсангиз, илтимос, унга баҳо беринг</value>
+  </data>
+  <data name="APP_SELECT" xml:space="preserve">
+    <value>Танлаш</value>
+  </data>
+  <data name="APP_SUCCESS" xml:space="preserve">
+    <value>Муваффақиятли</value>
+  </data>
+  <data name="BD_AIR_PRICE" xml:space="preserve">
+    <value>Авиачипта нархи: </value>
+  </data>
+  <data name="BD_CAR_RPICE" xml:space="preserve">
+    <value>Авто ижараси нархи: </value>
+  </data>
+  <data name="BD_CHECK_IN" xml:space="preserve">
+    <value>Кириб келиш:</value>
+  </data>
+  <data name="BD_CHECK_OUT" xml:space="preserve">
+    <value>Чиқиб кетиш:</value>
+  </data>
+  <data name="BD_HOTEL_PRICE" xml:space="preserve">
+    <value>Отел Нархи:</value>
+  </data>
+  <data name="BD_REQUESTED" xml:space="preserve">
+    <value>Cўралган: </value>
+  </data>
+  <data name="BK_NO_BOOKINGS_FOUND" xml:space="preserve">
+    <value>Бронлар топилмади.</value>
+  </data>
+  <data name="CD_BOOK" xml:space="preserve">
+    <value>Брон</value>
+  </data>
+  <data name="CD_CAR_SUPPLIED_BY" xml:space="preserve">
+    <value>Автомобиль тақдим қилинади:</value>
+  </data>
+  <data name="CD_CLOSING_AT" xml:space="preserve">
+    <value>Ёпилиш вақти: </value>
+  </data>
+  <data name="CD_DROP_OFF" xml:space="preserve">
+    <value>қайтариш: </value>
+  </data>
+  <data name="CD_OPENING_AT" xml:space="preserve">
+    <value>Очилиш вақти: </value>
+  </data>
+  <data name="CD_PICK_UP" xml:space="preserve">
+    <value>Олиб кетиш: </value>
+  </data>
+  <data name="CF_CATEGORIES" xml:space="preserve">
+    <value>Тоифалар</value>
+  </data>
+  <data name="CF_TYPES" xml:space="preserve">
+    <value>Типлар</value>
+  </data>
+  <data name="CN_TEXT" xml:space="preserve">
+    <value>Farelovers - Канаданинг Калгари шаҳрида жойлашган ва 2019 йилда иш фаолиятини бошлаган сайёҳлик компанияси.  Farelovers - бу Халқаро Ҳаво Транспорти Ассоциацияси (IATA) томонидан тўлиқ аккредитациядан ўтган сайёҳлик агентлиги ва веб-сайт тўлов карталарининг маълумотларини хавфсизлиги бўйича  халқаро стандартларига жавоб беради. Farelovers - одамларга орзу қилиш ва кашф этишга ёрдам бериш учун яратилган веб-сайт! Бизнинг бронлаш тизимимиз, реал вақт ичида парвозлар, меҳмонхоналар ва автоўловларни ижарага олиш бўйича нархларни таққослайди ва ўзингиз учун энг арзон, энг тезкор, ёки сиз учун энг қулай вариантни осонгина танлашингиз мумкин. Бир неча дақиқада сиз сафарга тайёрсиз!</value>
+  </data>
+  <data name="CN_WHAT_WE_DO" xml:space="preserve">
+    <value>Бизнинг иш фаолиятимиз</value>
+  </data>
+  <data name="CR_CAR_NAME" xml:space="preserve">
+    <value>Автомобиль номи</value>
+  </data>
+  <data name="CR_CATEGORY" xml:space="preserve">
+    <value>Тоифа</value>
+  </data>
+  <data name="CR_NO_CARS_FOUND" xml:space="preserve">
+    <value>Автомобиль топилмади.</value>
+  </data>
+  <data name="CR_RATES_INCLUDE_ALL" xml:space="preserve">
+    <value>Нарх барча солиқлар ва йиғимларни ўз ичига олади</value>
+  </data>
+  <data name="CS_DROP_OFF_DATE" xml:space="preserve">
+    <value>Қайтариб бериш санаси</value>
+  </data>
+  <data name="CS_DROP_OFF_LOCATION" xml:space="preserve">
+    <value>Қайтариб бериш жойи</value>
+  </data>
+  <data name="CS_PICK_UP_DATE" xml:space="preserve">
+    <value>Олиш санаси</value>
+  </data>
+  <data name="CS_PICK_UP_LOCATION" xml:space="preserve">
+    <value>Олиш жойи</value>
+  </data>
+  <data name="CS_SEARCH_CARS" xml:space="preserve">
+    <value>Автомобилни излаш</value>
+  </data>
+  <data name="CS_TIME" xml:space="preserve">
+    <value>Вақт</value>
+  </data>
+  <data name="ER_SOME_ERROR_OCCURED" xml:space="preserve">
+    <value>Хато юз берди!</value>
+  </data>
+  <data name="EU_SUCCESSFULY_EDIT" xml:space="preserve">
+    <value>Муваффақтли тўғриланди.</value>
+  </data>
+  <data name="EU_WRONG_OLD_PASSWORD" xml:space="preserve">
+    <value>Нотўғри эски пароль!</value>
+  </data>
+  <data name="FD_CABIN" xml:space="preserve">
+    <value>Салон класси</value>
+  </data>
+  <data name="FD_FARE_REFERENCE" xml:space="preserve">
+    <value>Нарх кўрсаткичи:</value>
+  </data>
+  <data name="FD_FARE_RULES" xml:space="preserve">
+    <value>Тарифлаш қоидалари</value>
+  </data>
+  <data name="FD_FLIGHT_DURATION" xml:space="preserve">
+    <value>Йўлдаги вақт</value>
+  </data>
+  <data name="FD_FLIGHT_NUMBER" xml:space="preserve">
+    <value>Рейс рақами</value>
+  </data>
+  <data name="FD_FREE_BAGGAGES" xml:space="preserve">
+    <value>Бепул юк:</value>
+  </data>
+  <data name="FD_LAYOVER" xml:space="preserve">
+    <value>Пересадка</value>
+  </data>
+  <data name="FD_OPERATED_BY" xml:space="preserve">
+    <value>Томонидан бошқарилади:</value>
+  </data>
+  <data name="FF_AIRLINES" xml:space="preserve">
+    <value>Авиакомпаниялар</value>
+  </data>
+  <data name="FF_CHEAPEST" xml:space="preserve">
+    <value>Энг арзон</value>
+  </data>
+  <data name="FF_EARLIEST" xml:space="preserve">
+    <value>Энг эрта</value>
+  </data>
+  <data name="FF_FILTERS" xml:space="preserve">
+    <value>Фильтрлар</value>
+  </data>
+  <data name="FF_INBOUND_DEPARTURE" xml:space="preserve">
+    <value>Бориш йўналиши</value>
+  </data>
+  <data name="FF_INBOUND_ARRIVAL" xml:space="preserve">
+    <value>Қайтиш йўналиши</value>
+  </data>
+  <data name="FF_NONSTOP" xml:space="preserve">
+    <value>Пересадкаларсиз</value>
+  </data>
+  <data name="FF_ONESTOP" xml:space="preserve">
+    <value>1 та пересадка</value>
+  </data>
+  <data name="FF_OUTBOUND_ARRIVAL" xml:space="preserve">
+    <value>Қайтиш йўналиши</value>
+  </data>
+  <data name="FF_OUTBOUND_DEPARTURE" xml:space="preserve">
+    <value>Бориш йўналиши</value>
+  </data>
+  <data name="FF_QUICKEST" xml:space="preserve">
+    <value>Энг тез</value>
+  </data>
+  <data name="FF_SELECT_AIRLINES" xml:space="preserve">
+    <value>Авиакомпанияларни танлаш</value>
+  </data>
+  <data name="FF_STOPS" xml:space="preserve">
+    <value>Пересадкалар</value>
+  </data>
+  <data name="FF_TIME_RANGE" xml:space="preserve">
+    <value>Вақт оралиғи</value>
+  </data>
+  <data name="FF_TWOSTOPS" xml:space="preserve">
+    <value>2+ пересадка</value>
+  </data>
+  <data name="FR_CABIN" xml:space="preserve">
+    <value>Салон</value>
+  </data>
+  <data name="FR_CHEAPEST_FLIGHT" xml:space="preserve">
+    <value>Энг арзон, бошқа сана билан</value>
+  </data>
+  <data name="FR_DURATION" xml:space="preserve">
+    <value>Давомийлик</value>
+  </data>
+  <data name="FR_PASSENGER" xml:space="preserve">
+    <value>Йўловчи</value>
+  </data>
+  <data name="FR_PASSENGERS" xml:space="preserve">
+    <value>Йўловчилар</value>
+  </data>
+  <data name="FR_TRANSFER" xml:space="preserve">
+    <value>Трансфер</value>
+  </data>
+  <data name="HD_AIRCONDITIONING" xml:space="preserve">
+    <value>Кондиционер</value>
+  </data>
+  <data name="HD_BAR" xml:space="preserve">
+    <value>Бар</value>
+  </data>
+  <data name="HD_BREAKBAST" xml:space="preserve">
+    <value>Нонушта</value>
+  </data>
+  <data name="HD_DESCRIPTION" xml:space="preserve">
+    <value>Таъриф</value>
+  </data>
+  <data name="HD_FREE_CANCELLATION" xml:space="preserve">
+    <value>Бепул бекор қилиш</value>
+  </data>
+  <data name="HD_GYM" xml:space="preserve">
+    <value>Спортзал</value>
+  </data>
+  <data name="HD_HAIRDRYER" xml:space="preserve">
+    <value>Фен</value>
+  </data>
+  <data name="HD_HOTEL_AMENITIES" xml:space="preserve">
+    <value>Мехмонхонанинг маиший қулайликлари</value>
+  </data>
+  <data name="HD_HOUSEKEEPING" xml:space="preserve">
+    <value>Номерни тозалаш хизмати</value>
+  </data>
+  <data name="HD_LOCATION_DESCRIPTION" xml:space="preserve">
+    <value>Жойлашган манзилнинг таърифи</value>
+  </data>
+  <data name="HD_OTHER_INFORMATION" xml:space="preserve">
+    <value>Бошқа маълумотлар</value>
+  </data>
+  <data name="HD_PARKING" xml:space="preserve">
+    <value>Парковка</value>
+  </data>
+  <data name="HD_PET_FRIENDLY" xml:space="preserve">
+    <value>Уй жониворлари билан жойлаштириш</value>
+  </data>
+  <data name="HD_POOL" xml:space="preserve">
+    <value>Бассейн</value>
+  </data>
+  <data name="HD_RESTAURANT" xml:space="preserve">
+    <value>Ресторан</value>
+  </data>
+  <data name="HD_ROOM_AMENITIES" xml:space="preserve">
+    <value>Номернинг маиший қулайликлари</value>
+  </data>
+  <data name="HD_ROOM_SERVICE" xml:space="preserve">
+    <value>Номерларга хизмат кўрсатиш</value>
+  </data>
+  <data name="HD_SPA" xml:space="preserve">
+    <value>СПА-марказ</value>
+  </data>
+  <data name="HD_TV" xml:space="preserve">
+    <value>ТВ</value>
+  </data>
+  <data name="HD_WiFi" xml:space="preserve">
+    <value>Wi Fi</value>
+  </data>
+  <data name="HF_CHAINS" xml:space="preserve">
+    <value>Дўконлар тармоғи</value>
+  </data>
+  <data name="HF_HOTEL_NAME" xml:space="preserve">
+    <value>Отель-номи</value>
+  </data>
+  <data name="HF_PRICE" xml:space="preserve">
+    <value>Нарх</value>
+  </data>
+  <data name="HF_STARS" xml:space="preserve">
+    <value>Юлдузлар</value>
+  </data>
+  <data name="HF_STAR_RATING" xml:space="preserve">
+    <value>Юлдузлик рейтинг</value>
+  </data>
+  <data name="HP_CONTACT" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="HP_CURRENCY" xml:space="preserve">
+    <value>Пул бирлиги</value>
+  </data>
+  <data name="HP_EDIT_PROFILE" xml:space="preserve">
+    <value>Профилни ўзгартириш</value>
+  </data>
+  <data name="HP_HOME" xml:space="preserve">
+    <value>Бош саҳифа</value>
+  </data>
+  <data name="HP_LANGUAGE" xml:space="preserve">
+    <value>Тил</value>
+  </data>
+  <data name="HP_LOGIN" xml:space="preserve">
+    <value>Кириш</value>
+  </data>
+  <data name="HP_LOGOUT" xml:space="preserve">
+    <value>Чиқиш</value>
+  </data>
+  <data name="HP_MY_BOOKINGS" xml:space="preserve">
+    <value>Менинг брон қилишим</value>
+  </data>
+  <data name="HP_PRIVACY_POLICY" xml:space="preserve">
+    <value>Махфийлик Сиёсати</value>
+  </data>
+  <data name="HP_USER_AGREEMENT" xml:space="preserve">
+    <value>Фойдаланувчилик Келишуви</value>
+  </data>
+  <data name="HR_NO_HOTELS_FOUND" xml:space="preserve">
+    <value>Отеллар топилмади.</value>
+  </data>
+  <data name="HR_NO_STAR_RATING" xml:space="preserve">
+    <value>Юлдузлик рейтинг йўқ</value>
+  </data>
+  <data name="HR_PER_NIGHT_PER_ROOM" xml:space="preserve">
+    <value>Номерда бир кеча тунаш учун</value>
+  </data>
+  <data name="HS_ADD_ROOM" xml:space="preserve">
+    <value>Номер қўшиш</value>
+  </data>
+  <data name="HS_CHECK_IN_DATE" xml:space="preserve">
+    <value>Кириб келиш санаси</value>
+  </data>
+  <data name="HS_CHECK_IN_LOCATION" xml:space="preserve">
+    <value>Кириб келиш жойлашган манзили</value>
+  </data>
+  <data name="HS_CHECK_OUT_DATE" xml:space="preserve">
+    <value>Чиқиб кетиш санаси</value>
+  </data>
+  <data name="HS_CHLD" xml:space="preserve">
+    <value>Болалар</value>
+  </data>
+  <data name="HS_NO_LOCATIONS_FOUND" xml:space="preserve">
+    <value>Жойлашган манзил топилмади.</value>
+  </data>
+  <data name="HS_REMOVE_ROOM" xml:space="preserve">
+    <value>Номерни олиб ташлаш</value>
+  </data>
+  <data name="HS_ROOM" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="HS_ROOMS" xml:space="preserve">
+    <value>Номерлар</value>
+  </data>
+  <data name="HS_SEARCH_HOTELS" xml:space="preserve">
+    <value>Отелларни излаш</value>
+  </data>
+  <data name="HS_Y_O" xml:space="preserve">
+    <value>Ёш</value>
+  </data>
+  <data name="MB_ARCHIVE" xml:space="preserve">
+    <value>Архив</value>
+  </data>
+  <data name="MB_UPCOMING" xml:space="preserve">
+    <value>Келгуси</value>
+  </data>
+  <data name="PP_LABEL_1" xml:space="preserve">
+    <value>Кириш</value>
+  </data>
+  <data name="PP_LABEL_10" xml:space="preserve">
+    <value>Биз билан боғланинг</value>
+  </data>
+  <data name="PP_LABEL_10_1" xml:space="preserve">
+    <value>Агар шахсий маълумотларингизни қайта ишлаш ёки Cookie - файллардан фойдаланиш ҳақида саволларингиз бўлса ёки мавжуд бўлган маълумотларни муҳофаза қилиш тўғрисидаги қонун ҳужжатларига мувофиқ ҳуқуқларингиздан фойдаланишни истасангиз, электрон почта орқали қуйидаги манзилга юборинг privacy@farelovers.com ёки алоқа учун қуйидаги маълумотлардан фойдаланинг:</value>
+  </data>
+  <data name="PP_LABEL_11" xml:space="preserve">
+    <value>Махфийлик сиёсатидаги ўзгаришлар</value>
+  </data>
+  <data name="PP_LABEL_11_1" xml:space="preserve">
+    <value>Агар биз сизнинг шахсий маълумотларингизни қайта ишлаш қоидаларини ёки Cookie-файллардан фойдаланиш қоидаларини ўзгартирсак, дарҳол ушбу махфийлик сиёсатини янгилаб, уни сайтда жойлаштирамиз.</value>
+  </data>
+  <data name="PP_LABEL_1_1" xml:space="preserve">
+    <value>Ушбу сайт Farelovers Travel компанияси томонидан бошқарилади (бундан кейин "биз", "биз", "бизнинг" ва бошқалар). Саёҳат ихлосмандлари ҳар хил шахсий маълумотларни, шу жумладан исмлари, электрон почта манзиллари ва бошқа саёҳат билан боғлиқ маълумотларни бизнинг сайтимизда қайта ишланади. Шунинг учун биз маълумотлар хавфсизлиги ва маълумотларни ҳимоя қилиш тўғрисидаги қонунларга риоя қилишни жуда жиддий қабул қиламиз. Ушбу махфийлик сиёсати ушбу сайтдан фойдаланганда, сизнинг шахсий маълумотларингизни қандай йиғишимиз, сақлашимиз, улардан фойдаланишимиз ва ошкор қилишимиз, шахсий маълумотларингизнинг махфийлигини қандай ҳимоя қилишимиз тўғрисида маълумотларни ўз ичига олади. Биз сизнинг шахсий ҳаётингизни ҳурмат қиламиз. Сиз бошланғич ёки хизматларимизнинг узоқ вақтдан бери фойдаланувчиси бўлишингизнинг аҳамияти йўқ, илтимос, бизнинг ишлаш услубларимизни кўриб чиқинг ва саволларингиз бўлса биз билан боғланинг.</value>
+  </data>
+  <data name="PP_LABEL_1_2" xml:space="preserve">
+    <value>Farelovers Travel Corporation (бундан кейин - "биз", "биз", "бизнинг" ва бошқалар) сизнинг шахсий маълумотларингизни назорат қилади ва шунинг учун маълумотларингиз билан қилинган ҳаракатларимиз қонунийлиги учун жавобгардир.</value>
+  </data>
+  <data name="PP_LABEL_2" xml:space="preserve">
+    <value>Шахсий маълумотлар тўплами</value>
+  </data>
+  <data name="PP_LABEL_2_1" xml:space="preserve">
+    <value>Умуман олганда, биз тўплаган шахсий маълумотлар сизнинг саёҳатингиз ва бронларингизни ташкил қилиш учун зарурдир. Бу сизнинг исмингиз, фамилиянгиз, туғилган кунингиз, телефон рақамингиз, электрон почта ва почта манзилингиз ва ҳисоб-китоб маълумотлари (кредит карта рақами, карта эгасининг исми ва амал қилиш муддати) каби маълумотларни ўз ичига олади. Сиз тақдим этишингиз керак бўлган маълумотлар – биз томондан сизнинг саёҳатингизни веб-сайтимиз орқали сизнинг бронингизга мувофиқ ташкиллаштирилади. Сиз фойдаланадиган хизмат турига қараб, биз сиздан тез-тез учиш бонус карта рақамини, махсус озиқ-овқат ва соғлиққа оид шикоятларингизни (агар мавжуд бўлса) ва саёҳатингизга тегишли ёки саёҳат учун зарур бўлган бошқа маълумотларни шунингдек, бошқа хизмат кўрсатувчи провайдер (масалан, авиакомпаниялар ва меҳмонхоналар) сўрашимиз мумкин. Ушбу рўйхат тўлиқ эмас ва келажада кўшимча маълумотлар суралиши мумкин. Агар сиз бизга телефон орқали мурожаат қилсангиз, унда биз сизнинг телефон қўнғироғингиз пайтида тақдим этган маълумотларни хам тўплаймиз ва сизнинг саёҳатингизни ташкиллаштириш учун ишлатамиз. Қуйида кўриб турганингиздек, бизнинг Cookie-файлларимиз ҳам маълум маълумотларни тўплайди.</value>
+  </data>
+  <data name="PP_LABEL_2_2" xml:space="preserve">
+    <value>Агар сиз бошқа одам учун бизнинг веб-сайтимиз орқали брон қилсангиз, биз у кишининг шахсий маълумотларини сўраймиз. Бундай вазиятда биз ушбу шахсдан махфийлик сиёсати тўғрисида хабардор қилишингизни кутамиз.</value>
+  </data>
+  <data name="PP_LABEL_3" xml:space="preserve">
+    <value>Махфий шахсий маълумотларни йиғиш</value>
+  </data>
+  <data name="PP_LABEL_3_1" xml:space="preserve">
+    <value>Баъзи ҳолларда биз махфий деб ҳисобланиши мумкин бўлган "шахсий маълумотларнинг махсус тоифалари" деб номланиши мумкин. Масалан, агар сиз (i).</value>
+  </data>
+  <data name="PP_LABEL_3_2" xml:space="preserve">
+    <value>Шахсий маълумотларингизни қайта ишлашдан олдин, сиздан бундай ишлов беришга розилик беришингизни сўраймиз. Шунинг учун биз сизга электрон почта орқали махфий маълумотларни юбориш учун электрон почта манзилимиздан privacy@farelovers.com махсус мулоҳазалар формаларини юборамиз. Ушбу шакллар маълумотларни муҳофаза қилишнинг амалдаги қонунларида талаб қилинган розиликни беришга имкон беради. Сиз ушбу розиликни исталган вақтда бекор қилишингиз мумкин. Агар сизнинг рухсатингиз бўлмаса ёки сиз бизга ушбу маълумотни тақдим қилмасангиз, биз сизнинг шахсий шахсий маълумотларингизни қайта ишламаймиз. Чекланган сонли ходимларимиз сизнинг шахсий маълумотларингизга кириш ҳуқуқига эга бўладилар ва сизнинг сўровингизга биноан сизнинг махфий маълумотларингизни қайта ишлагандан сўнг, биз сизнинг маълумотларингизни энг қисқа вақт ичида ўчириб ташлаймиз.</value>
+  </data>
+  <data name="PP_LABEL_4" xml:space="preserve">
+    <value>Шахсий маълумотларингиздан фойдаланиш</value>
+  </data>
+  <data name="PP_LABEL_4_1" xml:space="preserve">
+    <value>Шахсий маълумотларни қайта ишлаш ҳуқуқига эга бўлиш учун, амалдаги маълумотларни муҳофаза қилиш тўғрисидаги қонунга мувофиқ, биз шахсий.</value>
+  </data>
+  <data name="PP_LABEL_4_2" xml:space="preserve">
+    <value>Биз нима қиламиз (шахсий маълумотларингизни қайта ишлаш мақсадлари)</value>
+  </data>
+  <data name="PP_LABEL_4_2_1" xml:space="preserve">
+    <value>Сизнинг сўровингиз бўйича саёҳатни ташкил қилиш ва брон қилиш (яъни бизнинг воситачилигимизда сайёҳлик хизматларини брон қилиш, шунингдек ўз хизматларини кўрсатиш).</value>
+  </data>
+  <data name="PP_LABEL_4_2_2" xml:space="preserve">
+    <value>Агар сиз бронлаш жараёнини бошлаган бўлсангиз, лекин тўловни амалга оширолмаган бўлсангиз, биз сизга веб-сайтдаги брон қилиш жараёни қачон тўхтатилганига қараб, қидирув натижаларига ёки  брон қилиш жараёни бошланганига ҳавола билан электрон почта хабарини юборишимиз мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_2_3" xml:space="preserve">
+    <value>Саёҳатингизни бошлашдан олдин биз сизга қўшимча маълумот ва сизнинг саёҳатингиз билан боғлиқ таклифларни ва сизнинг саёҳатингиз учун фойдали бўлган бошқа маълумотлар тақдим этамиз, масалан, қўшимча юклар каби мумкин бўлган қўшимча хизматлар. Ушбу маълумотларнинг баъзилари сиз брон қилиш жараёнида тақдим этган маълумотларингизни таҳлил қилишга асосланган (масалан, саёҳат санаси, борадиган жой ва ҳк).</value>
+  </data>
+  <data name="PP_LABEL_4_2_4" xml:space="preserve">
+    <value>Саёҳатингиздан кейин биз сизга ўзингизни қизиқтириши мумкин бўлган бошқа саёҳат, саёҳат маҳсулотлари ва хизматлари бўйича тавсиялар билан ўз хабарномамизни юборишимиз мумкин. Баъзи кўрсатмалар сизнинг саёҳат учун аввалги қарорларингизни ва бизнинг электрон почтамизга нисбатан хатти-ҳаракатларингизни таҳлил қилишга асосланган бўлиши мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_2_5" xml:space="preserve">
+    <value>Телефонингизни қўнғироқларни сифат назорати мақсадида хохласангиз ёзиб олинг ва келгуси сўровларингиз ёки саволларингизни кўриб чиқинг.</value>
+  </data>
+  <data name="PP_LABEL_4_2_6" xml:space="preserve">
+    <value>Cookie-лардан фойдаланишдан мақсад, масалан, ушбу веб-сайтнинг қулайлигини яхшилаш, шахсийлаштириш ва фойдаланиш бўйича статистик маълумотларни тўплаш учун ишлатилади. Шунингдек, биз ушбу сайт хавфсизлигини яхшилаш учун сессия Cookie-файлларидан фойдаланамиз.</value>
+  </data>
+  <data name="PP_LABEL_4_3" xml:space="preserve">
+    <value>Бизнинг ҳуқуқий асосларимиз</value>
+  </data>
+  <data name="PP_LABEL_4_3_1" xml:space="preserve">
+    <value>Сиз билан шартномамизнинг бажарилиши. Агар сиз бизга шахсий маълумотларни тақдим этган бўлсангиз, унда биз буни қонуний асос деб қабул қилиб қиламиз ва ўзизнинг рухсатингизни бунга берган деб хисоблаймиз.</value>
+  </data>
+  <data name="PP_LABEL_4_3_2" xml:space="preserve">
+    <value>Бизнинг қонуний манфаатимиз - бу бизнесни холис олиб бориш ва сизнинг барча маълумотларни қайта киритмасдан сайтимиздан фойдаланиб махсулот қийинчиликларсиз сотиб олиш. Агар сиз ушбу электрон почтага келаётган хабарларини олишни истамасангиз, унда исталган вақтда электрон почтадаги ҳаволадан фойдаланиб обунани бекор қилишингиз мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_3_3" xml:space="preserve">
+    <value>Бизнинг қонуний манфаатимиз -бу сизнинг саёҳатингизни янада қулайроқ қилиш ва қўшимча фойдали маълумотларни осонгина топишингизга имкон яратиб беришдир. Агар сиз ушбу маълумотни олишни истамасангиз, электрон почтадаги ҳаволадан фойдаланиб исталган вақтда обунани бекор қилишингиз мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_3_4" xml:space="preserve">
+    <value>Бизнинг қонуний манфаатимиз бизнес қилиш ва сизга ўз саёҳатларингизни ўзиз уюштиришга имконият яратиб беришдир. Агар сиз ушбу электрон почта хабарларини олишни истамасангиз, исталган вақтда электрон почтадаги ёки веб-сайтимиздаги ҳаволадан фойдаланиб обунани бекор қилишингиз мумкин. Шу билан бир қаторда, сиз сотиб олишни тугатмасдан олдин хабарномани олишни рад этишингиз мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_3_5" xml:space="preserve">
+    <value>Бизнинг қонуний манфаатимиз (i) хизматларимиз сифатини ошириш ва (ii) сиздан мумкин бўлган сўровлар ёки шикоятларни ҳал қилиш. Агар сиз телефон суҳбати ёзиб олинишини истамасангиз, у бошланишидан олдин бундай ёзувга эътироз билдиришингиз мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_3_6" xml:space="preserve">
+    <value>Бизнинг қонуний манфаатимиз (i) веб-сайтимизни такомиллаштириш, (ii) сизни қизиқтириши мумкин бўлган таклифларни намойиш қилиш ва (iii) хизматларимиз ва веб-сайтимиз хавфсизлигини таъминлашдан иборат. Агар Cookie-файлларни компютерингизда сақлашимизни истамасангиз, хоҳлаган вақтда браузер созламаларини ўзгартиришингиз мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_4" xml:space="preserve">
+    <value>Сақлаш вақти</value>
+  </data>
+  <data name="PP_LABEL_4_4_1" xml:space="preserve">
+    <value>Махфий шахсий маълумотларни қайта ишлашга розилик исталган вақтда бекор қилиниши мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_4_2" xml:space="preserve">
+    <value>Бронлаш жараёни тугаганидан 24 соат ўтгач.</value>
+  </data>
+  <data name="PP_LABEL_4_4_3" xml:space="preserve">
+    <value>Сафар бошланишидан олдин максимал. Шунга ўхшаш бошқа ишлов бериш қуйида келтирилган мақсадлар учун давом этиши мумкин.</value>
+  </data>
+  <data name="PP_LABEL_4_4_4" xml:space="preserve">
+    <value>Сотиб олинган кундан бошлаб 3 йил.</value>
+  </data>
+  <data name="PP_LABEL_4_4_5" xml:space="preserve">
+    <value>Телефон орқали суҳбатлашган кундан бошлаб 6 ой. Ёзиб олиш фақат чекланган миқдордаги одамлар учун мавжуд.</value>
+  </data>
+  <data name="PP_LABEL_4_4_6" xml:space="preserve">
+    <value>Cookie файл турига қараб.</value>
+  </data>
+  <data name="PP_LABEL_4_4_6_LINK" xml:space="preserve">
+    <value>Сақлаш вақти қуйида батафсилроқ тавсифланади.</value>
+      </data>
+  <data name="PP_LABEL_4_5" xml:space="preserve">
+    <value>Юқорида айтиб ўтилганлардан ташқари, биз истеъмолчиларга бухгалтерия ҳисоби, ҳисоб-китоблар, жиноий фаолиятдан олинган даромадларни легаллаштиришга қарши мажбуриятларни бажариш ва сайтимиз хавфсизлигини таъминлаш каби хизматларни кўрсатиш учун зарур бўлган бир қатор кундалик тадбирларни амалга оширмоқдамиз. Амалдаги қонунчиликда зарур бўлмаган даражада, биз қонуний манфаатларимиз асосида ушбу чораларни кўрамиз. Шунингдек, биз мижозларимизнинг веб-сайтлари ва хизматларини такомиллаштириш бўйича хатти-ҳаракатларини таҳлил қилишимиз мумкин. Бироқ, бундай таҳлил умумлаштирилган ёки анонимлаштирилган маълумотлар ёрдамида амалга оширилади.</value>
+  </data>
+  <data name="PP_LABEL_5" xml:space="preserve">
+    <value>Шахсий маълумотларингизни учинчи шахсларга тақдим этиш</value>
+  </data>
+  <data name="PP_LABEL_5_1" xml:space="preserve">
+    <value>Шахсий маълумотларингизни фақат ушбу махфийлик сиёсатида келтирилган мақсадлар учун зарур бўлган ҳолларда учинчи шахсларга етказамиз. Учинчи томонларга бошқа компаниялар, давлат идоралари ва ишончли бизнес шерикларимиз кириши мумкин. Масалан, биз сизнинг шахсий маълумотларингизни (керак бўлганда махфий маълумотларни ҳам ўз ичига олган ҳолда) авиакомпаниялар, меҳмонхоналар, суғурта компаниялари ва глобал тарқатиш тизимлари (GDS деб номланган) каби бизнес шериклар билан баҳам кўришимиз мумкин.</value>
+  </data>
+  <data name="PP_LABEL_5_2" xml:space="preserve">
+    <value>Ҳар бир ҳамкор сизнинг шахсий маълумотларингизни компаниямиздан олингандан кейин қандай ишлаши учун шахсан жавоб беради. Бу шуни англатадики, сизнинг ҳуқуқларингиз билан боғлиқ барча масалалар бўйича амалдаги маълумотларни муҳофаза қилиш тўғрисидаги қонунга мувофиқ тегишли ҳамкорга мурожаат қилишингиз керак. Сизнинг шахсий маълумотларингизни қандай ишлаши ҳақида маълумот олиш учун ҳамкорларнинг тегишли махфийлик сиёсатини кўриб чиқишни тавсия этамиз.</value>
+  </data>
+  <data name="PP_LABEL_5_3" xml:space="preserve">
+    <value>Сиз сўраган хизматларни тақдим этиш учун биз сизнинг шахсий маълумотларингизни бошқа компаниялар билан (маълумот процессорлари деб аталади), масалан, бизнинг алоқа марказларимизнинг ишлаши учун масъул бўлган хизмат кўрсатувчи провайдерлар ва бизга хизматларимизни тақдим қилишда сизнинг шахсий маълумотларингизни қайта ишлайдиган бошқа провайдерлар билан ҳам баҳам кўрамиз ( масалан, ташқи хотира).</value>
+  </data>
+  <data name="PP_LABEL_6" xml:space="preserve">
+    <value>Учинчи томон етказиб берувчилари</value>
+  </data>
+  <data name="PP_LABEL_6_1" xml:space="preserve">
+    <value>Илтимос эътибор қилин, бизнинг сайтимизда бошқа сайтларга ҳаволалар мавжудлигини ва учинчи томон сотувчилари томонидан тақдим этилган материалларни кўрсатишини унутманг. Ушбу махфийлик сиёсати фақат бизнинг сайтимиз ва хизматларимиз учун амал қилади. Агар сиз бошқа сайтларга улансангиз ёки учинчи томон хизматлари ва маҳсулотларидан фойдалансангиз, тегишли махфийлик сиёсати билан танишишингиз керак. Бундан ташқари, агар сиз ижтимоий тармоқлар орқали бизга мурожаат қилсангиз, ушбу махфийлик сиёсати бундай алоқа вақтида сиз юборган шахсий маълумотларга нисбатан қўлланилмайди. Бундай ҳолда, биз сизга ижтимоий медиа провайдерининг махфийлик сиёсатини ўқишни тавсия этамиз.</value>
+  </data>
+  <data name="PP_LABEL_7" xml:space="preserve">
+    <value>Сизнинг ҳуқуқларингиз</value>
+  </data>
+  <data name="PP_LABEL_7_1" xml:space="preserve">
+    <value>Маълумотларни муҳофаза қилиш бўйича амалдаги қонунчиликка мувофиқ сиз "маълумотлар мавзуси"сифатида муайян ҳуқуқларга эгасиз. Сизнинг ҳуқуқларингиз қуйида келтирилган. Қуйидаги ҳуқуқларингиз бор:</value>
+  </data>
+  <data name="PP_LABEL_7_2" xml:space="preserve">
+    <value>Кириш ҳуқуқи.</value>
+  </data>
+  <data name="PP_LABEL_7_2_1" xml:space="preserve">
+    <value>Сиз кўриб чиқаётган шахсий маълумотларингизга кириш ҳуқуқига эгасиз. Бундан ташқари, шахсий маълумотлар билан нима қилаётганимиз ҳақида аниқ маълумот олиш ҳуқуқига эгасиз. Ушбу маълумот ушбу ҳужжатда келтирилган.</value>
+  </data>
+  <data name="PP_LABEL_7_3" xml:space="preserve">
+    <value>Ўзгартиришлар киритиш ҳуқуқи.</value>
+  </data>
+  <data name="PP_LABEL_7_3_1" xml:space="preserve">
+    <value>Муайян ҳолатларда сиз билан боғлиқ нотўғри шахсий маълумотларни тузатиш ва тўлиқ бўлмаган шахсий маълумотларни тўлдириш ҳуқуқига эгасиз. Шуни эсда тутингки, айрим ҳолларда сиз тақдим этган нотўғри шахсий маълумотларни, масалан, авиакомпания қоидалари туфайли тузатолмаймиз ва бундай ўзгариш харажатларни келтириб чиқариши мумкин.</value>
+  </data>
+  <data name="PP_LABEL_7_4" xml:space="preserve">
+    <value>Олиб ташлаш ҳуқуқи.</value>
+  </data>
+  <data name="PP_LABEL_7_4_1" xml:space="preserve">
+    <value>Баъзи ҳолларда шахсий маълумотларингизни ўчириш ҳуқуқига эгасиз.</value>
+  </data>
+  <data name="PP_LABEL_7_5" xml:space="preserve">
+    <value>Қайта ишлашни чеклаш ҳуқуқи.</value>
+  </data>
+  <data name="PP_LABEL_7_5_1" xml:space="preserve">
+    <value>Баъзи ҳолларда сиз шахсий маълумотларингиздан фойдаланишни чеклаш ҳуқуқига эгасиз.</value>
+  </data>
+  <data name="PP_LABEL_7_6" xml:space="preserve">
+    <value>Маълумотларни узатиш ҳуқуқи.</value>
+  </data>
+  <data name="PP_LABEL_7_6_1" xml:space="preserve">
+    <value>Сизнинг шахсий маълумотларингизни (ёки шахсий маълумотларингизни тўғридан-тўғри бошқа маълумот эгасига) тузилган, тақсимланган, компьютерда ўқиладиган форматда олиш ҳуқуқига эгасиз.</value>
+  </data>
+  <data name="PP_LABEL_7_7" xml:space="preserve">
+    <value>Эътироз қилиш ҳуқуқи.</value>
+  </data>
+  <data name="PP_LABEL_7_7_1" xml:space="preserve">
+    <value>Биз амалга оширадиган шахсий маълумотларни қайта ишлашнинг муайян турларига эътироз билдириш ҳуқуқига эгасиз. Бу бизнинг қонуний манфаатларимизга асосланган барча ҳаракатларимиз учун амал қилади.</value>
+  </data>
+  <data name="PP_LABEL_8" xml:space="preserve">
+    <value>Cookie файллари</value>
+  </data>
+  <data name="PP_LABEL_8_1" xml:space="preserve">
+    <value>Cookie-компютерингизда сақланган кичик матнли файл. Баъзи Cookie файллари фақат браузер ёпилишидан олдин (сессия Cookie-файллари деб аталади) сақланади ва баъзилари узоқ вақт давомида сақланади (доимий Cookie-файллар деб аталади). Агар компютерингизда Cookie-файлларни сақлашни хоҳламасангиз, браузер созламаларини ўзгартиришингиз мумкин. Бироқ, баъзи ҳолларда бу бизнинг сайтимизнинг айрим функциялари нотўғри ишлашига ва баъзи материалларни нотўғри кўрсатишга олиб келиши мумкинлигига эътиборингизни қаратамиз.</value>
+  </data>
+  <data name="PP_LABEL_8_2" xml:space="preserve">
+    <value>Ушбу веб-сайт бир қатор сабабларга кўра Cookie-файллардан фойдаланади, жумладан, шахсий алоқани таъминлаш, веб-сайтдан фойдаланиш қулайлигини ошириш ва улардан фойдаланиш бўйича статистик маълумотларни тўплаш. Бундан ташқари, ушбу сайт хавфсизлигини ошириш учун сессия Cookie-файлларидан фойдаланамиз.</value>
+  </data>
+  <data name="PP_LABEL_8_3_1" xml:space="preserve">
+    <value>Баъзи ҳолларда Cookie - файллардан фойдаланишда маълумотларни учинчи шахсларга ўтказамиз. Мисол учун, биз Google Analytics ва Google AdWords хизматларидан фойдаланамиз. Google Аналйтиcс шахсий фойдаланувчиларни аниқламайди ва IP-манзилингизни бошқа Google маълумотларига боғламайди. Биз Google томонидан тақдим этилган ҳисоботлардан сайтдаги трафикни таҳлил қилиш, веб-саҳифалардан фойдаланишни тушуниш ва Google реклама тармоғида ва бошқа реклама тармоқларида сотиб олинган рекламаларни оптималлаштириш учун фойдаланамиз. Google Google махфийлик сиёсатига мувофиқ маълумотларни қайта ишлаши мумкин.</value>
+  </data>
+  <data name="PP_LABEL_8_3_2" xml:space="preserve">
+    <value>юқорида келтирилган мақсадлар учун ушбу бўлимда. Cookie-файлларни, JavaScript-ни ўчириб қўйиш ёки Google-дан фойдаланишни рад этиш хизматидан фойдаланиб, Google Аналйтиcс маълумотларини йиғишдан бош тортишингиз мумкин. Google реклама хусусиятларидан воз кечиш учун ушбу ҳаволадан фойдаланинг.</value>
+  </data>
+  <data name="PP_LABEL_8_4" xml:space="preserve">
+    <value>Бизнинг вебсайтимиз Facebook  (шу жумладан Инстаграм)нинг турли хил Facebook платформаларидан фойдаланади ва бу реклама сотиб олишни оптималлаштиришга ёрдам беради. Facebook Фойдаланувчининг Facebook Pixel сайтига ташриф буюрганлигини аниқлашга ёрдам берадиган фойдаланувчи идентификаторларини тўплайди. Бироқ, биз реклама берувчилар сифатида ҳар қандай ҳаракатни амалга оширадиган муайян фойдаланувчини аниқлай олмаймиз. Facebook ва Facebook билан боғлиқ платформалар фойдаланувчиларнинг рекламачиларнинг Facebook-да реклама сотиб олиш учун ўз сайтларида тўпланган маълумотлардан фойдаланишига рози бўлишлари ёки рози бўлмасликлари мумкин бўлган ёпиқ реклама экотизимида жойлашган. Facebookдаги реклама созламаларини кўриш ва ўзгартириш учун ушбу ҳаволадан фойдаланинг.</value>
+  </data>
+  <data name="PP_LABEL_9" xml:space="preserve">
+    <value>Маълумотлар хавфсизлиги</value>
+  </data>
+  <data name="PP_LABEL_9_1" xml:space="preserve">
+    <value>Шахсий маълумотларингизни ҳимоя қилиш учун биз бир қатор техник ва ташкилий хавфсизлик чораларини жорий қилдик. Мисол учун, биз барча тизимларнинг юқори даражадаги техник хавфсизлигини қўллаб-қувватлаймиз (жумладан, кузатиш, фалокатларни тиклаш, киришни чеклаш ва бошқалар). Бундан ташқари, бизнинг ходимларимиз (албатта, махфийликка риоя қилишлари шарт бўлган) шахсий маълумотлардан кераксиз ҳолатларда фойдаланмасликка қаратилган сиёсатни қабул қилдик. Бундай сиёсат етказиб берувчилар билан шартномалар тузишда ёки фаолиятимиз давомида янги Информацион Технологиялар тизимларини жорий этишда бизнинг стандартларимизни белгилайди..</value>
+  </data>
+  <data name="RD_BED" xml:space="preserve">
+    <value>бир кишилик кровать</value>
+  </data>
+  <data name="RD_BEDS" xml:space="preserve">
+    <value>кроватлар</value>
+  </data>
+  <data name="RD_BEFORE" xml:space="preserve">
+    <value>гача</value>
+  </data>
+  <data name="RD_NIGHT" xml:space="preserve">
+    <value>Тун</value>
+  </data>
+  <data name="RD_NIGHTS" xml:space="preserve">
+    <value>Тунлар</value>
+  </data>
+  <data name="RD_RESERVE" xml:space="preserve">
+    <value>Брон қилиш</value>
+  </data>
+  <data name="RD_TOTAL_FARE_FOR" xml:space="preserve">
+    <value>Умумий тариф учун</value>
+  </data>
+  <data name="RESET" xml:space="preserve">
+    <value>Тиклаш</value>
+  </data>
+  <data name="SC_BASE_PRICE" xml:space="preserve">
+    <value>Базис қиймати:</value>
+  </data>
+  <data name="SC_BILLING_ADDRES" xml:space="preserve">
+    <value>Ҳисоб тақдим этиладиган манзил</value>
+  </data>
+  <data name="SC_BOOKING_COMPLETE_TEXT" xml:space="preserve">
+    <value>FareLovers-ни танлаганингиз учун ташаккур, сизнинг буюртмангиз давом этмоқда. Тез орада электрон чипталарни электрон почта орқали оласиз. Сизнинг буюртма рақамингиз:</value>
+  </data>
+  <data name="SC_CANCELLATION_POLICY" xml:space="preserve">
+    <value>Бекор қилиш қонун-қоидаси:</value>
+  </data>
+  <data name="SC_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Карта эгасининг исми</value>
+  </data>
+  <data name="SC_CARD_NUMBER" xml:space="preserve">
+    <value>Карта рақами</value>
+  </data>
+  <data name="SC_CITY_NAME" xml:space="preserve">
+    <value>Шаҳар номи</value>
+  </data>
+  <data name="SC_COUNTRY_NAME" xml:space="preserve">
+    <value>Мамлакат номи</value>
+  </data>
+  <data name="SC_CVV" xml:space="preserve">
+    <value>Кредит картанинг хавфсизлик коди-CVV</value>
+  </data>
+  <data name="SC_DATE_OF_BIRTH" xml:space="preserve">
+    <value>Туғилган сана</value>
+  </data>
+  <data name="SC_DAY" xml:space="preserve">
+    <value>Кун</value>
+  </data>
+  <data name="SC_EMAIL" xml:space="preserve">
+    <value>Электрон почта</value>
+  </data>
+  <data name="SC_EXP_MONTH" xml:space="preserve">
+    <value>Картанинг амал қилиш ойи</value>
+  </data>
+  <data name="SC_EXP_YEAR" xml:space="preserve">
+    <value>Картанинг амал қилиш йили</value>
+  </data>
+  <data name="SC_FIRST_NAME" xml:space="preserve">
+    <value>Исм</value>
+  </data>
+  <data name="SC_GENDER" xml:space="preserve">
+    <value>Жинси</value>
+  </data>
+  <data name="SC_HOW_WOULD_YOU_PAY" xml:space="preserve">
+    <value>Сиз қайси тўлов усулини афзал кўрасиз?</value>
+  </data>
+  <data name="SC_LAST_NAME" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="SC_MIDDLE_NAME" xml:space="preserve">
+    <value>Отасининг Исми</value>
+  </data>
+  <data name="SC_MONTH" xml:space="preserve">
+    <value>Ой</value>
+  </data>
+  <data name="SC_MULTI_WAY_FLIGHT" xml:space="preserve">
+    <value>Бир неча  йўналишларда учиш</value>
+  </data>
+  <data name="SC_ONEWAY_FLIGHT" xml:space="preserve">
+    <value>Бир йўналишда учиш</value>
+  </data>
+  <data name="SC_PAY" xml:space="preserve">
+    <value>Тўлаш</value>
+  </data>
+  <data name="SC_PHONE" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="SC_PROTECTION_AND_COVERAGES" xml:space="preserve">
+    <value>Ҳимоя қилиш ва унинг қоидалари</value>
+  </data>
+  <data name="SC_REGION" xml:space="preserve">
+    <value>Минтақа/Давлат</value>
+  </data>
+  <data name="SC_ROOMS" xml:space="preserve">
+    <value>Хоналар:</value>
+  </data>
+  <data name="SC_ROUND_FLIGHT" xml:space="preserve">
+    <value>Бориш ва қайтиш</value>
+  </data>
+  <data name="SC_STREET_ADDRESS" xml:space="preserve">
+    <value>Кўча, уй манзили</value>
+  </data>
+  <data name="SC_TAXES" xml:space="preserve">
+    <value>Солиқлар</value>
+  </data>
+  <data name="SC_TAXES_AND_FEES" xml:space="preserve">
+    <value>Солиқлар ва Тўловлар</value>
+  </data>
+  <data name="SC_TICKET" xml:space="preserve">
+    <value>Билет</value>
+  </data>
+  <data name="SC_TICKETS" xml:space="preserve">
+    <value>Билетлар</value>
+  </data>
+  <data name="SC_TITLE" xml:space="preserve">
+    <value>Унвон</value>
+  </data>
+  <data name="SC_TOTAL" xml:space="preserve">
+    <value>Жами:</value>
+  </data>
+  <data name="SC_VALIDATION_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Карта эгасининг исми тўлдирилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_CVV" xml:space="preserve">
+    <value>Карта хавфсизлик коди-CVV тўлдирилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_MONTH" xml:space="preserve">
+    <value>Картанинг амал қилиш муддати тугаган ой тўлдирилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_NUMBER" xml:space="preserve">
+    <value>Карта рақами тўлдирилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_YEAR" xml:space="preserve">
+    <value>Картанинг амал қилиш йили тўлдирилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_CITY" xml:space="preserve">
+    <value>Шаҳар номи тўлдирилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_COUNTRY" xml:space="preserve">
+    <value>Мамлакат номи тўлдирилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_DAY" xml:space="preserve">
+    <value>Туғилган сана тўлдирилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_EMAIL" xml:space="preserve">
+    <value>Электрон почта манзили кўрсатилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_FIRST_NAME" xml:space="preserve">
+    <value>Исм кўрсатилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_GENDER" xml:space="preserve">
+    <value>Жинс танланмаган</value>
+  </data>
+  <data name="SC_VALIDATION_LAST_NAME" xml:space="preserve">
+    <value>Фамилия танланмаган</value>
+  </data>
+  <data name="SC_VALIDATION_MONTH" xml:space="preserve">
+    <value>Туғилган ойи танланмаган</value>
+  </data>
+  <data name="SC_VALIDATION_PHONE" xml:space="preserve">
+    <value>Телефон рақами кўрсатилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_REGION" xml:space="preserve">
+    <value>Минтақа/Давлат кўрсатилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_STREET" xml:space="preserve">
+    <value>Манзил кўрсатилмаган</value>
+  </data>
+  <data name="SC_VALIDATION_TITLE" xml:space="preserve">
+    <value>Унвон танланмаган</value>
+  </data>
+  <data name="SC_VALIDATION_YEAR" xml:space="preserve">
+    <value>Туғилган йили танланмаган</value>
+  </data>
+  <data name="SC_VALIDATION_ZIP" xml:space="preserve">
+    <value>Почта индекси танланмаган</value>
+  </data>
+  <data name="SC_WHO_IS_TRAVELING" xml:space="preserve">
+    <value>Саёхат қилаётган инсон ким?</value>
+  </data>
+  <data name="SC_YEAR" xml:space="preserve">
+    <value>Йил</value>
+  </data>
+  <data name="SC_YOUR_PRICE_SUMMARY" xml:space="preserve">
+    <value>Жами нарх</value>
+  </data>
+  <data name="SC_ZIP_CODE" xml:space="preserve">
+    <value>Почта индекси</value>
+  </data>
+  <data name="SF_ADULT" xml:space="preserve">
+    <value>Катта ёшли</value>
+  </data>
+  <data name="SF_ADULTS" xml:space="preserve">
+    <value>Катталар</value>
+  </data>
+  <data name="SF_ADULTS_YEARS" xml:space="preserve">
+    <value>12 ёшдан катта</value>
+  </data>
+  <data name="SF_APPLY" xml:space="preserve">
+    <value>Қўллаш</value>
+  </data>
+  <data name="SF_CABIN_CLASS" xml:space="preserve">
+    <value>Салон Класси</value>
+  </data>
+  <data name="SF_CABIN_SOLON" xml:space="preserve">
+    <value>Салон:</value>
+  </data>
+  <data name="SF_CHILD" xml:space="preserve">
+    <value>Бола</value>
+  </data>
+  <data name="SF_CHILDREN" xml:space="preserve">
+    <value>Болалар</value>
+  </data>
+  <data name="SF_CHILDREN_YEARS" xml:space="preserve">
+    <value>2-12 ёш</value>
+  </data>
+  <data name="SF_DEPARTURE" xml:space="preserve">
+    <value>Учиш</value>
+  </data>
+  <data name="SF_DEPARTURE_DATE" xml:space="preserve">
+    <value>Учиш санаси</value>
+  </data>
+  <data name="SF_DEPARTURE_SECOND_SEGMENT" xml:space="preserve">
+    <value>Бориш йўналиши иккинчи сегмент</value>
+  </data>
+  <data name="SF_DEPARTURE_THIRD_SEGMENT" xml:space="preserve">
+    <value>Бориш йўналиши учинчи сегмент</value>
+  </data>
+  <data name="SF_DESTINATION" xml:space="preserve">
+    <value>Қаерга</value>
+  </data>
+  <data name="SF_DESTINATION_SECOND_SEGMENT" xml:space="preserve">
+    <value>Йўналиш иккинчи сегмент</value>
+  </data>
+  <data name="SF_DESTINATION_THIRD_SEGMENT" xml:space="preserve">
+    <value>Йўналиш учинчи сегмент</value>
+  </data>
+  <data name="SF_DOCUMENTS" xml:space="preserve">
+    <value>Ҳужжатлар</value>
+  </data>
+  <data name="SF_FROM" xml:space="preserve">
+    <value>Қаердан</value>
+  </data>
+  <data name="SF_FROM_SECOND_SEGMENT" xml:space="preserve">
+    <value>Қаердан иккинчи сегмент</value>
+  </data>
+  <data name="SF_FROM_THIRD_SEGMENT" xml:space="preserve">
+    <value>Қаердан учинчи сегмент</value>
+  </data>
+  <data name="SF_INFANT" xml:space="preserve">
+    <value>Гўдак</value>
+  </data>
+  <data name="SF_INFANTS" xml:space="preserve">
+    <value>Гўдаклар</value>
+  </data>
+  <data name="SF_INFANTS_YEARS" xml:space="preserve">
+    <value>0-2 ёш</value>
+  </data>
+  <data name="SF_MULTI_CITY" xml:space="preserve">
+    <value>Мулти-Шахарлар</value>
+  </data>
+  <data name="SF_NO_AIRPORTS_FOUND" xml:space="preserve">
+    <value>Аэропортлар топилмади</value>
+  </data>
+  <data name="SF_ONE_WAY" xml:space="preserve">
+    <value>Бир томонга</value>
+  </data>
+  <data name="SF_POPULAR_PLACES" xml:space="preserve">
+    <value>Оммабоп жойлар</value>
+  </data>
+  <data name="SF_RETURN" xml:space="preserve">
+    <value>Қайтиб келиш</value>
+  </data>
+  <data name="SF_RETURN_DATE" xml:space="preserve">
+    <value>Қайтиб келиш санаси</value>
+  </data>
+  <data name="SF_ROUND_TRIP" xml:space="preserve">
+    <value>Бориш ва қайтиш саёхати</value>
+  </data>
+  <data name="SF_SEARCH_FLIGHTS" xml:space="preserve">
+    <value>Рейсларни қидириш</value>
+  </data>
+  <data name="SF_VALIDATION_ERROR" xml:space="preserve">
+    <value>Тасдиқлаш хатоси</value>
+  </data>
+  <data name="SF_VALIDATION_ERROR_SINGLE" xml:space="preserve">
+    <value>Битта тасдиқлаш хатоси</value>
+  </data>
+  <data name="SR_NO_FLIGHTS_FOUND" xml:space="preserve">
+    <value>Рейслар топилмади.</value>
+  </data>
+  <data name="UA_LABEL_1" xml:space="preserve">
+    <value>1. ХИЗМАТЛАР ТАРКИБИ</value>
+  </data>
+  <data name="UA_LABEL_1.1" xml:space="preserve">
+    <value>1. Туристик хизматлар кўрсатишда воситачилик </value>
+  </data>
+  <data name="UA_LABEL_1.1.1" xml:space="preserve">
+    <value>Порталда таклиф қилинаётган авиачипталар ва меҳмонхоналарни брон қилиш, автомобилларни суғурта қилдириш ва ижарага олиш бўйича хизматларни (биргаликда “Туристлар учун хизматлар деб номланади”) тақдим қилишда биз фақат воситачи сифатида иштирок этамиз. Шунинг учун бизнинг ролимиз ва мажбуриятларимиз авиакомпаниялар, туроператорлар, меҳмонхоналар, суғурта компаниялар, автомобил ижараси бўйича компаниялар ва бошқа хизматлар провайдерлари каби учинчи шахслар (қуйида ҳар бир муайян ҳолда “Хизматлар етказиб берувчиси” деб номланади) томонидан тақдим қилинадиган туристик хизматлар сабабли воситачилик билан чекланади.</value>
+  </data>
+  <data name="UA_LABEL_1.1.2" xml:space="preserve">
+    <value>Демак, туристик хизматларни амалда тақдим қилиш тўғрисида шартнома (масалан, ташиш шартномаси, суғурта шартномаси, ижара шартномаси) бевосита сиз ва тегишли Хизматлар етказиб берувчиси ўртасида кучга киради. Биз биргаликда туристик хизматларни етказиб берувчиси эмасмиз ҳамда сиз ва Хизматлар етказиб берувчиси ўртасида томон бўлиб ҳисобланмаймиз.</value>
+  </data>
+  <data name="UA_LABEL_1.1.3" xml:space="preserve">
+    <value>Портaллаpдан туристик хизматларни сотиб олиш учун фойдаланиб, сиз бизга сизнинг номингиздан тегишли Хизматлар етказиб берувчиси билан музокараларни, шу жумладан сиз ва Хизматлар етказиб берувчиси ўртасида битим якунланишини таъминлаш учун ушбу туристик хизматлар ҳақини тўлаш тўғрисида музокаралар олиб боришга рухсат берасиз. Амалдаги туристик хизматлар қийматига Сиз ва тегишли Хизматлар етказиб берувчиси ўртасида шартномани тузишда воситачи сифатида биз томонимизда кўрсатиладиган хизматлар ҳақи кириши мумкин.</value>
+  </data>
+  <data name="UA_LABEL_1.1.4" xml:space="preserve">
+    <value>Порталдан бизнинг воситачилигимиз орқали сотиб олинган туристик хизматларнинг амалда тақдим қилиниши учун жавобгарлик фақат тегишли Хизматлар етказиб берувчиси зиммасида бўлади. Воситачи сифатида иштирок этиб, биз Хизматлар етказиб берувчиси томонидан тақдим қилинган туристик хизматлар учун жавобгарликни зиммамизга олмаймиз, шунингдек Портал воситачилигида сотиб олинган туристик хизматларнинг яроқлилиги ёки сифатига нисбатан ҳеч қандай арзлар қилмаймиз ва ҳеч қандай каафолатлар (яққол ёки назарда тутиладиган) бермаймиз. Сизда туристик хизматларни тақдим қилиш ёки тақдим қилинмаслик юзасида пайдо бўлиши мумкин бўлган ҳар қандай эътирозлар Хизматлар Провайдерига йўналтирилиши зарур.</value>
+  </data>
+  <data name="UA_LABEL_1.1.5" xml:space="preserve">
+    <value>Агар туристик хизматларни брон қилишда Сизда алоҳида истакларни (масалан, махсус овқатланишни, ногиронлар учун хоналар ёки болалар учун жойларни тақдим қилиш тўғрисида)  изҳор этиш имконингиз бўлса, биз Сизнинг сўровингизни тегишли Хизматлар етказиб берувчисига етказамиз. Бироқ биз Хизматлар етказиб берувчиси амалда бундай истакларни бажара олиши мумкинлиги учун жавобгар бўлмаймиз.</value>
+  </data>
+  <data name="UA_LABEL_1.2" xml:space="preserve">
+    <value>2. Бизнинг ўз хизматларимиз</value>
+  </data>
+  <data name="UA_LABEL_1.2.1" xml:space="preserve">
+    <value>Юқоридаги 1.1-бандида таърифланганидек, туристик хизматларни сотиб олишда воситачиликка қўшимча равишда Портал қўшимча хизматларни (туристик хизматлар ҳисобланмайдиган) ҳам тақдим қилади ва улар учун жавобгар бўлади. Бундай қўшимча хизматлардан фойдаланиш учун Сиз бевосита биз билан шартномавий муносабатларга киришасиз. Ҳар бир ҳолда биз Сизни хизматларимиз ҳажми тўғрисида ва биз учинчи шахсларнинг хизматларини сотиб олишда воситачилик хизматларни шунчаки кўрсатмаймиз, балки ўз хизматларимизни таклиф этаётганлигимиз тўғрисида маълум хабар берамиз. Бизнинг ўз хизматларимизнинг мазмуни вақти-вақти билан ўзгариб туриши мумкин. Мазкур шартларда белгиланмаган қўшимча хизматларни кўрсатида брон қилиш вақтида Сизга бундай қўшимча хизматларнинг батафсил таърифи, шунингдек бизнинг нархларимиз ҳамда брон қилиш ва фойдаланишнинг қўшимча шартлари тўғрисида ахборот тақдим қилинади.</value>
+  </data>
+  <data name="UA_LABEL_1.3" xml:space="preserve">
+    <value>3. Амалдаги контракт шартлари</value>
+  </data>
+  <data name="UA_LABEL_1.3.1" xml:space="preserve">
+    <value>Ушбу шартлар 1.1-бандга мувофиқ саёҳат хизматларини сотиб олишда воситачиликни, шунингдек 1.2-бандга мувофиқ ўз хизматларини кўрсатишни тартибга солади.</value>
+  </data>
+  <data name="UA_LABEL_1.3.2" xml:space="preserve">
+    <value>Сиз билан тегишли Хизмат кўрсатувчи провайдер ўртасида тузилган шартнома (1.1.2-банд) Хизмат кўрсатувчи томонидан тақдим этилган тегишли хизмат кўрсатувчи провайдернинг умумий шартлари (ташиш, ўтказиш, суғурта қилиш ва бошқалар) билан тартибга солинади. Тегишли хизмат кўрсатувчи провайдернинг бундай умумий шартлари сизга брон қилиш пайтида хабар қилинади. Хизмат кўрсатувчи провайдернинг шартлари жавобгарликни, бекор қилишни, бронни ўзгартиришни ва пулни қайтариб беришни (агар мавжуд бўлса) ва бошқа чекловларни ўз ичига олиши мумкинлиги сабабли, ушбу шартларни диққат билан ўқиб чиқишингизни тавсия қиламиз.</value>
+  </data>
+  <data name="UA_LABEL_10" xml:space="preserve">
+    <value>10. Масъулият</value>
+  </data>
+  <data name="UA_LABEL_10.1" xml:space="preserve">
+    <value>Бунда сиз, Сиз ва Хизмат кўрсатувчи провайдер ўртасида воситачи сифатида иш олиб бораётганимизни тан оласиз. Сиз бир ёки бир нечта хизмат кўрсатувчи провайдерларга буюртма берган саёҳат хизматлари учун биз ҳеч қандай ҳолатда жавобгар эмасмиз ва тегишли хизмат кўрсатувчи томонидан тақдим этилган Порталда жойлаштирилган маълумотларнинг нотўғрилиги учун ҳам жавобгар эмасмиз. Агар хизмат кўрсатувчи провайдер бирор бир сабабга кўра саёҳат хизматини тақдим эта олмаса, шу жумладан хизмат кўрсатувчи провайдер банкрот деб эълон қилса, биз воситачи сифатида ишлай оламиз ва тўланган суммаларни фақат биз олган бўлсакгина қайтарамиз, агар биз уларни ўз хизматларимизга нисбатан тегишли хизмат кўрсатувчи провайдердан олган бўлсак, биз ушбу Фойдаланиш Шартларида назарда тутилган чекловлар ва қонун билан рухсат этилган даражада зарар учун жавобгар бўламиз. Биз сизнинг буюртмангизнинг умумий нархида (битта воқеа учун ҳам, бир қатор тегишли воқеалар учун ҳам) ўз хизматларимиз бўйича мажбуриятларимизни ҳақиқатан ҳам амалга оширилган, тўланган ёки тасдиқланмаганлиги натижасида келиб чиққан тўғридан-тўғри зарарингиз учун жавобгармиз. Шунингдек 10.3-бандда кўрсатилган жавобгарликни чеклаш, мажбуриятларнинг бузилишига нисбатан қўлланилади.</value>
+  </data>
+  <data name="UA_LABEL_11" xml:space="preserve">
+    <value>11. EВРОПА ИТТИФОҚИ НИЗОМ ОСТИДАГИ ИСТEЪМОЛЧИЛАР ҲУҚУҚЛАРИ</value>
+  </data>
+  <data name="UA_LABEL_11.1" xml:space="preserve">
+    <value>1. Парвозни бекор қилиш ёки кечиктириш</value>
+  </data>
+  <data name="UA_LABEL_11.1.1" xml:space="preserve">
+    <value>Агар сиз Европа Иттифоқига кирсангиз ёки ундан чиқсангиз ёки Европа Иттифоқи авиаташувчисидан фойдалансангиз, рейсингиз бекор қилинган ёки кечиктирилган ёки сизнинг самолётга чиқиш рад этилган тақдирда сиз тўғридан-тўғри авиакомпанияга тўловни қоплаш тўғрисидаги даъво билан мурожаат қилишингиз мумкин. Агар сиз 261/2004-сонли (ЕИ) низоми тўғрисида кўпроқ маълумот олишни истасангиз,</value>
+  </data>
+  <data name="UA_LABEL_11.2" xml:space="preserve">
+    <value>2. Ташувчининг жавобгарлиги</value>
+  </data>
+  <data name="UA_LABEL_11.2.1" xml:space="preserve">
+    <value>Бахтсиз ҳодиса юз берган тақдирда ҳаво ташувчиларнинг жавобгарлиги тўғрисидаги 889/2002 (ЕИ) низоми</value>
+  </data>
+  <data name="UA_LABEL_12" xml:space="preserve">
+    <value>12. МАЪЛУМОТЛАРНИ МУҲОФАЗА ҚИЛИШ</value>
+  </data>
+  <data name="UA_LABEL_12.1" xml:space="preserve">
+    <value>Биз сизнинг шахсий маълумотларингизни ҳимоя қилишга жиддий ёндашамиз. Шахсий маълумотларингизни йиғиш, қайта ишлаш ва улардан фойдаланиш ҳақида батафсил маълумотни Махфийлик сиёсатимизда топишингиз мумкин.</value>
+  </data>
+  <data name="UA_LABEL_13" xml:space="preserve">
+    <value>13. ҚОНУНЧИЛИКНИ ТАРТИБГА СОЛИШ ВА НИЗОЛАРНИ ҲАЛ ҚИЛИШ</value>
+  </data>
+  <data name="UA_LABEL_13.1" xml:space="preserve">
+    <value>1. Бошқарув қонунчилиги</value>
+  </data>
+  <data name="UA_LABEL_13.1.1" xml:space="preserve">
+    <value>Швеция қонунчилиги фақат ушбу Шартларга ва сиз билан биз ўртамиздаги шартномага тааллуқлидир. Истеъмолчи сифатида сиз ўзингизнинг мамлакатингизнинг мажбурий қонун қоидаларига мувофиқ ҳуқуқларингизга амал қиласиз. Ушбу Шартларнинг ҳеч бир қисми, шу жумладан ушбу 13.1-банди, ушбу мажбурий маҳаллий қонун қоидаларидан истеъмолчи сифатида фойдаланиш ҳуқуқингизни чекламайди.</value>
+  </data>
+  <data name="UA_LABEL_13.2" xml:space="preserve">
+    <value>2. Низоларни онлайн ҳал қилиш</value>
+  </data>
+  <data name="UA_LABEL_13.2.1" xml:space="preserve">
+    <value>Европа комиссияси низоларни онлайн тарзда ҳал қилиш учун платформани тақдим этади:</value>
+  </data>
+  <data name="UA_LABEL_2" xml:space="preserve">
+    <value>2. БРОН ҚИЛИШ ЖАРАЁНИ ВА АЛОҚА МАЪЛУМОТЛАРИ</value>
+  </data>
+  <data name="UA_LABEL_2.1" xml:space="preserve">
+    <value>Брон қилиш жараёнида сизга маълумот киритиш шаклларидаги хатоларни аниқлаш учун зарур бўлган техник воситалар тақдим этилади ва брон қилиш учун сўров юборишдан олдин уларни тузатиш имконияти мавжуд. Буюртма сўровини юборишдан олдин барча маълумотларни текширишингизни тавсия қиламиз. Кейинги ўзгартириш талаблари катта қўшимча харажатларни келтириб чиқариши мумкин.</value>
+  </data>
+  <data name="UA_LABEL_2.2" xml:space="preserve">
+    <value>Сиз билан боғланишимиз керак бўлиши мумкин, масалан, кейинчалик сотиб олинган саёҳат хизматлари ўзгарганда. Сиз аниқ алоқа маълумотларини - телефон рақами ва электрон почта манзилини кўрсатишингиз керак. Шунингдек, сиз бизнинг хабарларимизнинг келиб тушишини доимий равишда кузатиб боришингиз керак. Шунингдек, сиз бизнинг хабарларни қабул қилганингизга ишонч ҳосил қилишингиз керак. Агар сиз биздан ўзимизга тегишли бўлмаган сабабларга кўра хабар олмасангиз, биз жавобгар эмасмиз, шу жумладан: (i) нотўғри электрон почта манзилини кўрсатган бўлсангиз; (ii) сизнинг электрон почта созламалари бизнинг алоқаларимиз сизга етиб боришига тўсқинлик қилса; ёки (iii) сизнинг электрон почта созламаларингиз бизнинг хабарларимизни спам деб таснифласа.</value>
+  </data>
+  <data name="UA_LABEL_3" xml:space="preserve">
+    <value>3. ПАРВОЗЛАНИ БРОН ҚИЛИШ УЧУН ВОСИТАЧИЛИК</value>
+  </data>
+  <data name="UA_LABEL_3.1" xml:space="preserve">
+    <value>1. Шартнома тузиш ва нархларни қайта кўриб чиқиш</value>
+  </data>
+  <data name="UA_LABEL_3.1.1" xml:space="preserve">
+    <value>Буюртма сўровини юборганингиздан сўнг, биз сизнинг электрон почтангиз орқали сўровингиз олинганлигини тасдиқлаймиз. Айнан шу пайтда сиз ва биз ўртамаизда воситачилик хизматларини кўрсатиш бўйича келишув юзага келади. Агар сиз буюртмани юбориш ҳақидаги сўровингизни юборганингиздан кейин бир соат ичида бундай тасдиқни олмасангиз ва операторимиз муаммо ҳақида хабар бериш учун электрон почта ёки телефон орқали сиз билан боғланмаса, унда илтимос, вазиятни аниқлаштириш учун бизга қўнғироқ қилинг.</value>
+  </data>
+  <data name="UA_LABEL_3.1.2" xml:space="preserve">
+    <value>Сизга буюртма қилинган чипталар расмийлаштирилгандан сўнг, сизга чипта рақами кўрсатилган электрон почта хабарлари келади. Шу вақтда сиз ва тегишли авиакомпания (лар) ўртасида қонуний мажбурий шартнома тузилади.</value>
+  </data>
+  <data name="UA_LABEL_3.1.3" xml:space="preserve">
+    <value>Чипталар нархи ва мавжудлиги бевосита тегишли авиакомпания томонидан кўрсатилади. Агар авиачипта нархи бизга боғлиқ бўлмаган сабабларга кўра ўзгариб турса, брон ҳақида сўров юборилгандан сўнг, лекин авиакомпания билан шартнома кучга кирган кундан олдин (юқоридаги 3.1.2-бандда кўрсатилганидек), шартнома кучга кирмайди ва сизнинг тўловингиз сизга тўлиқ қайтарилади. Лекин нарх ўзгарганидан хабардор бўлганимиздан кейин 24 соатдан кечиктирмай ёки шу 24 соатдан кейинги биринчи иш кунида Биз сиз билан боғланиб, ўзгарган нархни одатдаги иш соатларида қабул қилишни таклиф қилишимиз мумкин.</value>
+  </data>
+  <data name="UA_LABEL_3.2" xml:space="preserve">
+    <value>2. Брон қилиш ва ташиш шартлари тўғрисида маълумот</value>
+  </data>
+  <data name="UA_LABEL_3.2.1" xml:space="preserve">
+    <value>Порталда тақдим этиладиган рейсларга келсак, биз фақат воситачи сифатида ҳаракат қиламиз. Юк ташиш шартномаси тўғридан-тўғри сиз ва тегишли авиакомпания ўртасида тузилади ва биз сизнинг рейсингиз амалга оширилиши ёки йўқлиги учун ҳеч қандай шартномавий жавобгарликни ўз зиммамизга олмаймиз. Фақатгина амалдаги авиакомпания сизнинг парвозингизни амалга ошириши / бажармаслиги учун жавобгардир.</value>
+  </data>
+  <data name="UA_LABEL_3.2.2" xml:space="preserve">
+    <value>Брон қилишдан олдин, сизга тегишли авиакомпания (лар) нинг шартлари тақдим этилади.</value>
+  </data>
+  <data name="UA_LABEL_3.2.3" xml:space="preserve">
+    <value>Авиакомпаниялар томонидан тақдим этиладиган саёҳат хизматларини сотиб олишда воситачи сифатида биз ушбу авиакомпанияларнинг бронлаштириш тизимларига киришни кафолатламаймиз. Агар керак бўлса, биз сиз ва авиакомпания ўртасида тузилган шартномага мувофиқ сизнинг номингиздан ҳаракат қилишимиз мумкин. Шунингдек, биз сиздан тўғридан-тўғри тегишли авиакомпания билан брон қилиш маълумотларини олиш ва бронни ўзгартириш ёки бекор қилишни сўрашимиз мумкин.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4" xml:space="preserve">
+    <value>Қуйида, умумий кўринишида, биз авиакомпаниялар томонидан одатда ушбу ёки ҳеч бўлмаганда бир хил тарзда қўлланиладиган брон қилиш ва ташиш шартлари тўғрисида маълумот берамиз. Шу билан бирга, ушбу авиакомпаниянинг ҳар қандай турли хил қоидалари ушбу 3.2.4-бандда келтирилган умумий маълумотдан устун туради. Шунинг учун, ҳар ҳолда, брон қилишдан олдин, сиз тегишли авиакомпаниянинг ҳозирги шароитларига эътибор беришингиз керак.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.1" xml:space="preserve">
+    <value>Чиқиш / Рўйхатдан ўтиш вақти
+Учиш вақти ҳар доим маҳаллий вақтга тўғри келади. Эртаси куни келиши жадвалда кўрсатилган. Белгиланган учиш вақти вақтинчалик ва чипталар чиқарилгандан кўп ўтмай огоҳлантириш билан ўзгартирилиши мумкин, масалан, ҳаво ҳаракатини бошқариш чекловлари, об-ҳаво шароити ёки авиакомпаниянинг функсионал чекловлари. Сиз парвознинг ҳозирги вақтини олдиндан билишингиз керак.
+Шунингдек, авиакомпания кўрсатган парвозга ўз вақтида рўйхатдан ўтишингиз керак. Рўйхатдан ўтишга кечикилган ҳолатда, авиакомпаниялар самолётга чиқишдан бош тортиш ҳуқуқига эга. Илтимос, диққат қилинг: баъзи авиакомпаниялар ўзларининг веб-сайтларида онлайн рўйхатдан ўтишни таклиф қиладилар ва қўлда рўйхатдан ўтиш учун тўловларни аеропортда амалга оширадилар.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.10" xml:space="preserve">
+    <value>Икки марта брон қилиш
+Икки марта брон қилиш - бу битта авиакомпаниянинг рейсида битта йўловчининг номига икки ёки ундан ортиқ бронни билдиради. Икки марта брон қилиш учун авиакомпания саёҳатни бекор қилиши мумкин. Агар брон қилиш турли хил сайёҳлик агентликлари орқали амалга оширилган бўлса ҳам бекор қилиниши мумкин. Агар авиакомпаниялар томонидан бекор қилинган рейслар ёки авиакомпаниялар томонидан қайтариб бериладиган тўловлар икки кишилик буюртма билан боғлиқ бўлса, биз жавобгар эмасмиз.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.2" xml:space="preserve">
+    <value>Алохида чипталарни бирлаштириш
+Бир марталик саёҳат сотиб олиш ўрнига икки томонлама бир томонлама чипталарни бирлаштириш брон қилиш тартибида аниқ кўрсатилган. Иш ташлашлар натижасида, шунингдек жадвалнинг ўзгариши натижасида ҳаво ҳаракатларининг бекор қилиниши, ўзгариши ёки бузилиши юз берганда чипталар бир-биридан мустақил равишда кўриб чиқилади. Ҳар бир авиакомпаниянинг қоидалари амал қилади.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.3" xml:space="preserve">
+    <value>Кўп сегментли парвозлар / фойдаланиш қоидалари
+Бир томонлик ёки қайтиши ҳам бор чиптангиз бир нечта сегментга эга бўлиши мумкин. Кўпгина авиакомпаниялар шартларига кўра, ушбу парвоз сегментлари маълум бир кетма-кетликда ишлатилади. Акс ҳолда, кўплаб авиакомпаниялар кейинги парвоз сегментларини ишлатишдан бош тортишади (яъни битта парвоз сегментидан фойдаланмаслик чиптанинг қолган қисмини бекор қилиши мумкин). Икки томонга чипта сотиб олинган тақдирда, белгиланган жойга парвоз қилмаслик авиакомпания томонидан тескари парвоз чиптасини бекор қилишга олиб келиши мумкин.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.4" xml:space="preserve">
+    <value>Ҳомиладорлик
+Баъзи бир авиакомпаниялар 28 ҳафтадан кўп ҳомиладор бўлган аёлларга белгиланган манзилга ёки у ердан учиб кетаётганда уларни ташишдан бош тортишади. Агар сиз ҳомиладор бўлсангиз, саёҳат қилишингиз мумкин бўлса, авиакомпания ва шифокор билан боғланишингиз керак.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.5" xml:space="preserve">
+    <value>Болалар чипталари
+Авиакомпаниянинг алоҳида жойга эга бўлмаган бола билан саёҳат қилиш шартларини текширинг. Одатда, 2 ёш ва ундан катта ёшдаги болалар учун алоҳида ўринди зарур бўлса, 0-2 ёшдаги болалар катталар қўлида алоҳида ўриндиқсиз саёҳат қилишади. Агар бола саёҳат тугагунига қадар 2 ёшга тўлган бўлса, бутун саёҳат даври учун алоҳида ўриндиқли болалар чиптасини брон қилишингиз керак. Икки ёшга тўлмаган болалар учун чипталарни туғилган пайтигача брон қилиш мумкин эмас, чунки фамилияси ва туғилган санаси паспортда кўрсатилган исмлар ва саналар билан тўлиқ мос келиши керак. Агар дастлаб чиптанинг нотўғри тури буюртма қилинган бўлса, биз харажатларни қайтариб бермаймиз.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.6" xml:space="preserve">
+    <value>Ҳеч кимнинг қарамоғида бўлмаган вояга етмаганлар
+Ҳеч кимнинг қарамоғида бўлмаган вояга етмаганлар учун чипталарни брон қилишда биз воситачилик қилмаймиз. 18 ёшгача бўлган болалар учун катталар билан буюртма бериш керак. Баъзи мамлакатлар ва авиакомпаниялар 18 ёшгача бўлган болаларни қабул қилишдан бош тортадилар, уларга васий ҳамроҳлик қилмайди. Илтимос, диққат қилинг, баъзи авиакомпаниялар 18 ёшгача бўлган болалар туғилганлик тўғрисидаги гувоҳномани олиб юришини талаб қилишади.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.7" xml:space="preserve">
+    <value>Йўқотилган / шикастланган юк
+Воситачи сифатида биз йўқолган ёки бузилган юк учун ҳеч қандай жавобгарликни ўз зиммамизга олмаймиз. Ҳар қандай муаммолар ҳақида дарҳол аеропортдаги авиакомпания вакилига хабар бериш керак.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.8" xml:space="preserve">
+    <value>Транзит ва тунаб қолиш
+GСаёҳат пайтида ер усти транспорти ва / ёки меҳмонхонада яшаш одатда чипта нархига қўшилмайди. Сиз ер усти транспорти жадвалини ва нархларини мустақил равишда кузатиб боришингиз керак.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.9" xml:space="preserve">
+    <value>Парвозга уланиш вақтлари
+Порталда жойлаштирилган стандарт чипталар тасдиқланган уланиш вақтига эга. Бир рейсдан иккинчисига ўтиш учун зарур бўлган вақт авиакомпаниялар томонидан ҳисобланади. Агар парвоз сегментларидан бири кечикса, бу сизнинг уланиш рейсингиз кечикишига олиб келадиган бўлса, авиакомпания сизга сўнгги манзилга етиб боришда ёрдам бериши керак (11.1-бандга қаранг).
+Шахсий чипталарни брон қилишда авиакомпания рейсларни улашда юзага келадиган кечикишлар учун жавобгар эмас. Шунинг учун, уланиш вақтининг етарли эканлигига ва авиакомпаниялар ва аэропортларнинг талабларига жавоб беришига ўзингиз ишонч ҳосил қилишингиз керак. Йўқолган уланиш рейслари билан боғлиқ ҳар қандай қўшимча харажатлар қайтарилмайди.
+</value>
+  </data>
+  <data name="UA_LABEL_3.3" xml:space="preserve">
+    <value>3. 3. Европа Иттифоқида фаолияти тақиқланган авиакомпаниялар ("қора рўйхат"). Эътибор беринг, баъзи авиакомпаниялар Европа Иттифоқи ҳудудида Европа Комиссияси томонидан миллий ҳаво транспорти органлари билан яқин келишилган ҳолда қабул қилинган қарорга биноан фаолият кўрсатиши тақиқланади. Ушбу авиакомпаниялар фаолият кўрсатиши тақиқланади, чунки улар хавфли деб ҳисобланади ёки ўз мамлакатлари расмийлари томонидан етарли даражада назорат қилинмайди.
+Қайси авиакомпаниялар тақиқланганлигини қуйидаги ҳавола орқали билиб олишингиз мумкин:</value>
+  </data>
+  <data name="UA_LABEL_3.4" xml:space="preserve">
+    <value>4. Авиакомпаниялар томонидан парвозлар жадвалини ўзгартириш ва бекор қилиш</value>
+  </data>
+  <data name="UA_LABEL_3.4.1" xml:space="preserve">
+    <value>Кўриб чиқилаётган авиакомпания билан тузган шартномангиз сизнинг буюртмангизни бекор қилиши ёки ўзгартириши мумкин. Ўзгаришлар тўғрисида авиакомпаниядан хабар топганимиздан сўнг сизга хабар берамиз.</value>
+  </data>
+  <data name="UA_LABEL_3.4.2" xml:space="preserve">
+    <value>Брон қилиш тасдиқида кўрсатилган учиш вақтлари брон қилинган кундан ҳақиқий саёҳат кунигача ўзгариши мумкин. Парвозлар жадвали ўзгарган тақдирда, авиакомпаниядан тегишли маълумотларни олишимиз билан бу ҳақда сизга хабар берамиз. Шу билан бирга, рейс (ва ҳар қандай уланган рейслар) белгиланган тартибда ишлашини таъминлаш учун авиакомпаниянгиз билан ҳар бир рейснинг режалаштирилган жўнашидан камида 72 соат олдин мурожаат қилишингизни қатъий тавсия қиламиз. Биз авиакомпания жадвалидаги ўзгаришларни назорат қилмаймиз ва бундай ўзгаришлар натижасида юзага келадиган ҳаражатлар учун жавобгар эмасмиз.</value>
+  </data>
+  <data name="UA_LABEL_3.5" xml:space="preserve">
+    <value>5.5. Сизнинг сўровингиз бўйича ўзгартириш ва бекор қилиш</value>
+  </data>
+  <data name="UA_LABEL_3.5.1" xml:space="preserve">
+    <value>Брон қилишни ўзгартириш шартлари (шу жумладан, йўловчи номи, борар жойи ва чиқиш санаси ўзгариши) ва пулни қайтариб олиш шартлари транспорт шартномаси бўйича ҳамкорингиз бўлган тегишли авиакомпания томонидан белгиланади. Воситачилар сифатида биз ушбу шартларга таъсир қила олмаймиз.</value>
+  </data>
+  <data name="UA_LABEL_3.5.2" xml:space="preserve">
+    <value>Агар брон қилишни ўзгартириш ёки бекор қилиш ва пулни қайтариб беришни хоҳласангиз, авиакомпания шартлари бундай ўзгаришларни ёки пулни қайтариб олишни бекор қилгандан сўнггина, сизнинг номингиздан қўшимча хизмат сифатида мурожаат қилишимиз мумкин. Қўшимча хизматларни бронлашда сиз бундай хизматларни тақдим этиш билан боғлиқ шартлар ва йиғимлар ҳақида маълумотга эга бўласиз. Бундан ташқари, тўғридан-тўғри авиакомпания билан боғланишингиз мумкин.</value>
+  </data>
+  <data name="UA_LABEL_3.5.3" xml:space="preserve">
+    <value>Сўровингиз бўйича ўзгаришларни бартараф этиш учун сизнинг сўровингизни 24 соатдан кечиктирмасдан (фақат телефон ёки электрон почта орқали) олишимиз керак.
+Брон қилишни тарк этишдан олдин қисқа вақт ичида ўзгартиришни хоҳласангиз, тегишли авиакомпанияга бевосита мурожаат қилишингизни тавсия қиламиз.</value>
+  </data>
+  <data name="UA_LABEL_3.6" xml:space="preserve">
+    <value>6. 6. Учиб кетиш куни сизни аэропортга кемаслигингиз. Бу билан сиз ўзингизнинг номингиздан фойдаланилмаган парвозни бекор қилиш ёки парвозга келмаслик ва авиакомпаниянгизни сизнинг номингиздан биз орқали билетни қайтариб олиш учун даъво қилиш учун бизга рухсат берасиз. Бизнинг ҳуқуқимиз бор, лекин буни амалга оширишимиз мажбурий эмас ва сиз авиакомпанияга тўлиқ қайтариб бериш билан боғлиқ масалани тўғридан-тўғри мурожаат қилиш ҳуқуқини ўзида сақлаб қоласиз.</value>
+  </data>
+  <data name="UA_LABEL_4" xml:space="preserve">
+    <value>4. МЕҲМОНХОНАЛАРНИ БРОН ҚИЛИШДА ВОСИТАЧИЛИК.</value>
+  </data>
+  <data name="UA_LABEL_4.1" xml:space="preserve">
+    <value>Меҳмонхона хизматларини Портал орқали брон қилиш турли компаниялар ва меҳмонхоналар билан ҳамкорлик воситачилигида амалга оширилади. Меҳмонлар меҳмонхонада жойлашаётган вақтида камида 18-дан 21-ёшгача  (меҳмонхонанинг шахсий сиёсатига қараб) бўлиши керак ёки  ота-оналари ( васийлари) билан бирга бўлишлари шарт. Меҳмонхона брон қилишини ўзгартириш ёки бекор қилишни сўраш учун АҚШ/Канада учун 1-888-50-777 билан боғланинг ва электрон почта орқали  АҚШ/Канада ва бошқа мамлакатлар учун customerservice@farelovers.com манзилига хабар юборинг.</value>
+  </data>
+  <data name="UA_LABEL_5" xml:space="preserve">
+    <value>5. ИЖАРАГА ОЛИНАДИГАН МАШИНАНИ БРОН ҚИЛИШДА ВОСИТАЧИЛИК</value>
+  </data>
+  <data name="UA_LABEL_5.1" xml:space="preserve">
+    <value>Автомобилларни ижарага бериш хизмати Портал орқали турли хил ижара компаниялари орқали брон қилинади. Агар ҳайдовчи маълум бир юридик энг кам ёш талабларига жавоб бермаса, автомобилни ижарага бериш рад этилади. Шунингдек, илтимос, шуни ёдда тутингки, ҳар қандай автоулов ижараси учун сизга ҳайдовчилик гувоҳномаси ва амалдаги кредит карта керак бўлади. Шу сабабли, брон қилишлар ва ўзгартиришларни бекор қилиш бўйича барча сўровлар тўғридан-тўғри автомобилларни ижарага берувчи компанияга юборилиши керак ёки АҚШ / Канада учун 1-888-5050-777 билан боғланиш ва АҚШ / Канада ва дунёнинг бошқа мамлакатлари  учун  customerservice@farelovers.com электрон почтасига хабарини юборинг.</value>
+  </data>
+  <data name="UA_LABEL_6" xml:space="preserve">
+    <value>6. БИР НЕЧТА ХИЗМАТЛАРНИ БРОН ҚИЛИШДА ВОСИТАЧИЛИК ҚИЛИШ БЎЙИЧА МАХСУС ҚОИДАЛАР</value>
+  </data>
+  <data name="UA_LABEL_6.1" xml:space="preserve">
+    <value>Портал сизнинг хоҳишингизга кўра бир нечта алоҳида хизматларни (масалан, парвоз + меҳмонхона) улаш ва бирлаштириш имкониятини беради. Бундай ҳолда, сиз турли провайдерлардан турли хил сайёҳлик хизматларини брон қилишда воситачилик қилишни буюрасиз. Тегишли провайдерлар уни тўлдиришдан олдин брон қилиш жараёнида сизга тақдим этилади. Агар сиз муайян хизматларни бирлаштирсангиз, сиз билан биз ўртамиздаги битта саёҳат шартномаси тузилмайди; балким бунинг ўрнига ҳар бир етказиб берувчи билан бир нечта хизмат кўрсатиш шартномалари биз орқали тузасиз. Шу билан бирга, биз фақат ҳар бир алоҳида сайёҳлик хизматига нисбатан воситачи сифатида ҳаракат қиламиз.</value>
+  </data>
+  <data name="UA_LABEL_7" xml:space="preserve">
+    <value>7. ПАСПОРТЛАР, ВИЗАЛАР ВА СОҒЛИҚНИ САҚЛАШ ҲОЛАТИ БИЛАН БОҒЛИҚ ҚОИДАЛАР ТЎҒРИСИДА МАЪЛУМОТ</value>
+  </data>
+  <data name="UA_LABEL_7.1" xml:space="preserve">
+    <value>Паспортлар, визалар ва соғлиқни сақлаш шароитларига қўйиладиган талаблар ўзгариши мумкин, шунинг учун саёҳат қилишдан олдин уларни тегишли идорада (элчихона, консуллик ва бошқалар) олдиндан текширишингиз керак. Сизда амалдаги паспортингиз борлигига ишонч ҳосил қилишингиз керак (ўзингизнинг мамлакатингиздан ташқарида саёхат қилиш учун аксарият мамлакатлар қайтиб келган кундан кейин камида 6 ой давомида амалдаги паспортни ва агар керак бўлса, визани талаб қилади). Сизга керак бўлган барча транзит бандларини ҳисобга олишни унутманг. Виза олиш кўпинча бир мунча вақтни талаб қилиши сабабли, олдиндан мурожаат қилишингизни маслаҳат берамиз, юқоридаги барча йўловчилар исмлари тўғри ёзилганлигини ва уларнинг саёҳат ҳужжатларида қандай ёзилганлигини узингиз текшириб, тасдиқлайсиз. Агар исмларга бирор бир ўзгартириш киритиш керак булса ва бунинг учун сиздан хизматлар кўрсатувчи компания пул ундириб олиши мумкин . Биз тегишли ҳужжатлари бўлмаган мижозлар учун жавобгар эмасмиз.</value>
+  </data>
+  <data name="UA_LABEL_7.2" xml:space="preserve">
+    <value>Ҳар бир йўналишнинг кириш расмийлаштируви, вакцинация ва бошқалар учун ўз талаблари бор, бу йўловчининг фуқаролигига ҳам боғлиқ бўлиши мумкин. Тегишли маълумотни ўзингиз олишингиз керак. Бундай расмий қоидаларга риоя қилмаслик натижасида келиб чиқадиган ҳодисалар бизнинг айбимиз деб ҳисобланмайди. Шунинг учун биз сизга ҳар доим танлаган манзилингиз ёки транзит мамлакатларингизда амалдаги турли хил расмиятчиликларни ҳамда барча тегишли ҳаракатларни бажариш учун зарур бўлган вақтни текширишингизни тавсия қиламиз.</value>
+  </data>
+  <data name="UA_LABEL_8" xml:space="preserve">
+    <value>8. ЙИҒИМЛАР ВА ТЎЛОВЛАР</value>
+  </data>
+  <data name="UA_LABEL_8.1" xml:space="preserve">
+    <value>Тўлов. Саёҳат хизматлари учун тўлов биз томонимиздан (тўловни амалга ошириш имкониятини таъминлайдиган тўлов хизматларини етказиб берувчимиз билан ҳамкорликда) ёки хизмат кўрсатувчи провайдер томонидан амалга оширилади. Шуни эсда тутингки, тўловни амалга ошириш учун тўлов хизматини кўрсатувчи провайдерга сизнинг тўловингиз тўғрисида маълумотларни (масалан, кредит ёки дебет карта маълумотлари) тақдим этишимиз керак. Тўлов хизмати кўрсатувчи провайдеримизга тақдим этилган мижозларимизнинг барча тўлов маълумотлари хавфсиз серверда шифрланган ҳолда сақланади.  Тўловни Бронлаш мезонлари ва қўшимча хизматларга қараб иккита алоҳида операцияларга бўлиш мумкин: бизга тўлов ва хизмат кўрсатувчи провайдерга тўлов. Сиздан олинадиган тўловлар бизнинг веб-сайтимизда кўрсатилган ҳақиқий нархдан ошиб кетиши мумкин эмас. Бундай ҳолда, худди шу хавфсизлик чоралари қўлланилади. Сизнинг тўловингизни амалга оширишимиз учун сиз етарли маблағ мавжудлигини таъминлашингиз керак. Агар сизда тўловни амалга оширишда муаммолар юзага келса, биз тўловларни етказиб берувчи провайдеримиз билан ҳамкорликда тўловингизни қайта ишлашга ҳаракат қиламиз. Агар сизнинг ҳисобингиздан маблағларни муваффақиятли туловни амалга ошира олмасак, биз бошқа тўлов усуллари бўйича кўрсатмалар олиш учун энг қисқа вақт ичида сиз билан боғланамиз. Агар биз сизнинг тўловингизни ушбу қўшимча кўрсатмаларга мувофиқ олмасак, унда биз сизнинг буюртмангизни бекор қилишга ҳақлимиз. Бекор қилиш учун 100% жарима қўлланилади. Сизнинг брон қилишингиздаги ўзгаришлар 100% жарима ва / ёки маъмурий тўловни талаб қилиши мумкин. Агар биз фирибгарликда гумон қилинадиган сабабларга эга бўлсак, биз бундай тўловни амалга оширишни рад этиш ҳуқуқини сақлаб қоламиз. Агар сиз мумкин бўлган жиноят ҳақида гумон қилсангиз, сиздан тўловнинг қонунийлигини тасдиқловчи ҳужжат талаб қилиниши мумкин. Тўловларни фирибгарликнинг барча турлари тўғрисида маълумот полиция ва мажбурий ижро хизматига хабар қилинади.</value>
+  </data>
+  <data name="UA_LABEL_9" xml:space="preserve">
+    <value>9. ШИКОЯТЛАР</value>
+  </data>
+  <data name="UA_LABEL_9.1" xml:space="preserve">
+    <value>Сайёҳлик хизматларини кўрсатиш билан боғлиқ шикоятлар, муаммоларга оид ҳар қандай шикоятлар, саёҳат хизматларининг ҳақиқий кўрсатилиши билан боғлиқ бўлган изоҳлар ёки даъволар тўғридан-тўғри тегишли хизмат кўрсатувчи сизга тегишли туризм хизмати учун шартнома тузган провайдерга (туроператор, авиакомпания, суғурта компанияси, автоуловларни ижарага берувчи компания, меҳмонхона) юборилиши керак.
+
+Ўз хизматларимиз ҳақидаги шикоятлар ёзма равишда ёзилиши ва сафарингиз тугаган кундан бошлаб икки ой ичида топширилиши керак, шикоят формасини олиш учун бизга электрон почта орқали хабар қилинг.
+
+Тўлдирилган шикоят формаси почта ёки электрон почта орқали қуйидаги манзилга юборилиши керак: Почта манзили:  Farelovers Travel Corporation 400, 906 12 Ave SW Calgary, AB T2R 1K7
+
+E-Электрон почта манзили : customer.relations@farelovers.com</value>
+  </data>
+  <data name="U_DONT_HAVE_ACC" xml:space="preserve">
+    <value>Сизнинг профилингиз йўқми?</value>
+  </data>
+  <data name="U_EDIT_PROFILE" xml:space="preserve">
+    <value>Профилни ўзгартириш</value>
+  </data>
+  <data name="U_NEW_PASSWORD" xml:space="preserve">
+    <value>Янги парол</value>
+  </data>
+  <data name="U_PASSWORD" xml:space="preserve">
+    <value>Паролни киритинг</value>
+  </data>
+  <data name="U_PASSWORD_EMPTY_FIELD" xml:space="preserve">
+    <value>Парол майдони бўш</value>
+  </data>
+  <data name="U_REGISTRATION" xml:space="preserve">
+    <value>Рўйхатдан ўтиш</value>
+  </data>
+  <data name="U_REPEAT_PASSWORD" xml:space="preserve">
+    <value>Паролни қайта киритинг</value>
+  </data>
+  <data name="U_SIGN_IN_WITH_FACEBOOK" xml:space="preserve">
+    <value>Facebook орқали кириш</value>
+  </data>
+  <data name="U_SIGN_IN_WITH_GOOGLE" xml:space="preserve">
+    <value>Google ҳисоб маълумотлари билан кириш</value>
+  </data>
+  <data name="U_SIGN_UP" xml:space="preserve">
+    <value>Рўйхатдан ўтиш</value>
+  </data>
+  <data name="U_SUBMIT" xml:space="preserve">
+    <value>Юбориш</value>
+  </data>
+  <data name="U_USERNAME" xml:space="preserve">
+    <value>фойдаланувчининг логини</value>
+  </data>
+  <data name="U_USERNAME_EMPTY_FIELD" xml:space="preserve">
+    <value>фойдаланувчи логин майдони бўш</value>
+  </data>
+  <data name="U_USERNAME_OR_EMAIL" xml:space="preserve">
+    <value>Фойдаланувчи номи ёки электрон почта манзили</value>
+  </data>
+  <data name="U_WITHOUT_LOGIN" xml:space="preserve">
+    <value>Рўйхатдан ўтмасдан давом эттириш</value>
+  </data>
+  <data name="VR_EMAIL_IS_NOT_IN_VALID_FORMAT" xml:space="preserve">
+    <value>Электрон почта тўғри форматда эмас!</value>
+  </data>
+  <data name="VR_IS_MANADTORY_FIELD" xml:space="preserve">
+    <value>Mажбурий майдон тўлдирилмаган!</value>
+  </data>
+  <data name="VR_PASSWORD_DOES_NOT_MATCH" xml:space="preserve">
+    <value>Парол мос келмаяпти!</value>
+  </data>
+</root>

@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"             
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers" xmlns:rf="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Flight.FlightDetailsPage"
+             Shell.TabBarIsVisible="False">
+    <Grid>
+        <MediaElement Source="ms-appx:///waitScreen.mp4" ShowsPlaybackControls="False"
+                      BackgroundColor="#101d23"
+                      IsLooping="True" Aspect="AspectFit" AutoPlay="True" 
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <StackLayout Orientation="Vertical" IsVisible="{Binding ShowWaitScreen, Converter={Helpers:NegateBooleanConverter}}" BackgroundColor="#F6FBFF">
+            <CollectionView ItemsSource="{Binding FlightDetails.ListDestinationOptions}" VerticalOptions="FillAndExpand">
+                <CollectionView.Footer>
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding GetFareRulesCommand}"/>
+                            </StackLayout.GestureRecognizers>
+                            <Image Source="rules" HeightRequest="20"/>
+                            <Label Text="{x:Static resources:AppResources.FD_FARE_RULES}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        </StackLayout>
+                        <Frame Margin="10"
+                                    HorizontalOptions="FillAndExpand"
+                                    HeightRequest="40"
+                                    Padding="0"
+                                    BackgroundColor="#2EDBB5">
+                            <Frame.CornerRadius>
+                                <OnPlatform x:TypeArguments="x:Single">
+                                    <On Platform="iOS" Value="20"/>
+                                    <On Platform="Android" Value="30"/>
+                                </OnPlatform>
+                            </Frame.CornerRadius>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AddToCart}"/>
+                            </Frame.GestureRecognizers>
+                            <Label Text="{Binding FlightDetails.BookText}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                        </Frame>
+                    </StackLayout>
+                </CollectionView.Footer>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="20,10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid Padding="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="{Binding FromToTitle}" Style="{StaticResource labelLargeBlack}" HorizontalOptions="Start"/>
+                                <Label Text="{Binding TotalDurationString}" Style="{StaticResource labelSmallBlack}" HorizontalOptions="Start" Grid.Row="1" />
+                            </Grid>
+                            <pv:PancakeView CornerRadius="10"
+                                        BackgroundColor="White"
+                                        HasShadow="True"
+                                        Grid.Row="1" 
+                                        Margin="0,10"
+                                        VerticalOptions="FillAndExpand"
+                                        Padding="5,5,5,20">
+                                <StackLayout Orientation="Vertical"
+                                             HorizontalOptions="FillAndExpand"
+                                             BindableLayout.ItemsSource="{Binding ListFlightSegments}">
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                                <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Padding="5">
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"/>
+                                                            <RowDefinition Height="Auto"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="Auto"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <Image Source="{Binding AirlineImage}" WidthRequest="40" HorizontalOptions="Start"/>
+                                                            <Label Text="{Binding AirlineNameAndNumber}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Start" Grid.Column="1"/>
+                                                        </Grid>
+                                                        <Label Text="{Binding Aircraft}" HorizontalOptions="Start" Style="{StaticResource labelSmallGray}" FontSize="10" Grid.Row="1" Padding="50,2"/>
+                                                    </Grid>
+                                                    <Grid HorizontalOptions="EndAndExpand">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"/>
+                                                            <RowDefinition Height="Auto"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Label Text="{Binding DurationString}" Style="{StaticResource labelSmallBlack}" HorizontalOptions="Center" Grid.Row="1"/>
+                                                    </Grid>
+                                                </StackLayout>
+                                                <BoxView BackgroundColor="#CCCCCC" HeightRequest="1" Opacity="0.5" />
+                                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                                    <Image Source="fromTo.png" HeightRequest="40" WidthRequest="20" Margin="10,5,0,0"/>
+                                                    <Grid HorizontalOptions="FillAndExpand">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"/>
+                                                            <RowDefinition Height="Auto"/>
+                                                            <RowDefinition Height="Auto"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid Margin="20,0,0,0">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="Auto"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackLayout Orientation="Vertical">
+                                                                <Label Text="{Binding DepartureTimeString}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource labelNormalBlack}" FontAttributes="Bold"/>
+                                                                <Label Text="{Binding DepartureDateString}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource labelSmallGray}" />
+                                                            </StackLayout>
+                                                            <StackLayout Grid.Column="1" Orientation="Vertical" Margin="80,0,0,0">
+                                                                <Label Text="{Binding DepartureAirport}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource labelNormalBlack}" FontAttributes="Bold"/>
+                                                                <Label Text="{Binding DepartureInfo}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource labelSmallGray}"/>
+                                                            </StackLayout>
+                                                        </Grid>
+
+                                                        <Frame WidthRequest="100"
+                                                               Margin="-40,0,0,0"
+                                                               HeightRequest="25"
+                                                               Padding="10,0"
+                                                               Grid.Row="1"
+                                                               HorizontalOptions="Center"
+                                                               BackgroundColor="#BEA7FF">
+                                                            <Frame.CornerRadius>
+                                                                <OnPlatform x:TypeArguments="x:Single">
+                                                                    <On Platform="iOS" Value="20"/>
+                                                                    <On Platform="Android" Value="30"/>
+                                                                </OnPlatform>
+                                                            </Frame.CornerRadius>
+                                                            <Label Text="{Binding CabinInfo}" Style="{StaticResource labelSmallWhite}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                                        </Frame>
+                                                        <Grid Grid.Row="2" Margin="20,5,0,0">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="Auto"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <StackLayout Orientation="Vertical">
+                                                                <Label Text="{Binding ArrivalTimeString}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource labelNormalBlack}" FontAttributes="Bold"/>
+                                                                <Label Text="{Binding ArrivalDateString}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource labelSmallGray}"/>
+                                                            </StackLayout>
+                                                            <StackLayout Grid.Column="1" Orientation="Vertical" Margin="80,0,0,0">
+                                                                <Label Text="{Binding ArrivalAirport}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource labelNormalBlack}" FontAttributes="Bold"/>
+                                                                <Label Text="{Binding ArrivalInfo}" HorizontalOptions="Start" VerticalOptions="Center" Style="{StaticResource labelSmallGray}"/>
+                                                            </StackLayout>
+                                                        </Grid>
+                                                    </Grid>
+                                                </StackLayout>
+                                                <StackLayout BindableLayout.ItemsSource="{Binding FreeBaggages}">
+                                                    <BindableLayout.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,10,0,0" Spacing="2">
+                                                                <Label Text="{x:Static resources:AppResources.FD_FREE_BAGGAGES}" Style="{StaticResource labelNormalGray}"/>
+                                                                <Label Style="{StaticResource labelNormalGray}">
+                                                                    <Label.FormattedText>
+                                                                        <FormattedString>
+                                                                            <Span Text="{Binding FreeQuantityInt}"/>
+                                                                            <Span Text=" x"/>
+                                                                        </FormattedString>
+                                                                    </Label.FormattedText>
+                                                                </Label>
+                                                                <Image Source="luggage" Aspect="AspectFit" HeightRequest="16" VerticalOptions="Center"/>
+                                                            </StackLayout>
+                                                        </DataTemplate>
+                                                    </BindableLayout.ItemTemplate>
+                                                </StackLayout>
+                                                <Label Text="{Binding OperatedBy}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center" TextColor="Gray" Margin="0,10,0,0" IsVisible="{Binding OperatedBy,Converter={Helpers:NotNullValueBoolConverter}}"/>
+                                                <Grid IsVisible="{Binding Layover,Converter={Helpers:NotNullValueBoolConverter}}" Padding="0,20">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <BoxView BackgroundColor="#CCCCCC" HeightRequest="1" Opacity="0.5" VerticalOptions="Center"/>
+                                                    <Grid Grid.Column="1" Padding="10,0">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Label Text="{x:Static resources:AppResources.FD_LAYOVER}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource labelNormalBlack}"/>
+                                                        <Label Text="{Binding Layover}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource labelNormalBlack}" Grid.Column="1"/>
+                                                    </Grid>
+                                                    <BoxView BackgroundColor="#CCCCCC" HeightRequest="1" Opacity="0.5" VerticalOptions="Center" Grid.Column="2"/>
+                                                </Grid>
+                                            </StackLayout>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </StackLayout>
+                            </pv:PancakeView>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+
+        <!--<ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="{Binding ShowWaitScreen}"/>-->
+    </Grid>
+</ContentPage>

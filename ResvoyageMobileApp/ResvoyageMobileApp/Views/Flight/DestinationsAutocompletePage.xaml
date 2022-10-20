@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources" 
+             xmlns:forms="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Flight.DestinationsAutocompletePage"
+             x:Name="FlightDestination"
+             Shell.TabBarIsVisible="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <forms:Frame2 BackgroundColor="White" BorderColor="LightGray" CornerRadius="5" Padding="5,0" Margin="20">
+            <Entry Placeholder="{Binding PlaceholderText}" Text="{Binding Search}" x:Name="Destination"/>
+        </forms:Frame2>
+        <StackLayout Orientation="Vertical" Grid.Row="1">
+            <StackLayout IsVisible="{Binding NearbyAirports, Converter={Helpers:CheckFilledList}}">
+                <StackLayout IsVisible="{Binding Search, Converter={Helpers:NullValueBoolConverter}}">
+                    <Label Text="Nearby airports:" Style="{StaticResource labelSmallBlack}" Padding="20,5"/>
+                    <StackLayout BindableLayout.ItemsSource="{Binding NearbyAirports}" BackgroundColor="White">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Orientation="Horizontal" Padding="20,5">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.SelecetAirportCommand, Source={x:Reference FlightDestination}}" CommandParameter="{Binding .}"/>
+                                    </StackLayout.GestureRecognizers>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="{Binding City}" Style="{StaticResource labelMediumBlack}" />
+                                        <Label Text="{Binding Country}" Style="{StaticResource labelSmallGray}" />
+                                    </StackLayout>
+                                    <Label Text="{Binding Code}" Style="{StaticResource labelMediumBlack}" TextColor="#2EDBB5" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                </StackLayout>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding RecentSearches, Converter={Helpers:CheckFilledList}}">
+                <CollectionView
+                        ItemsSource="{Binding RecentSearches}" 
+                        ItemsLayout="VerticalList" 
+                        SelectionMode="Single"
+                        SelectedItem="{Binding SelectedDestination,Mode=TwoWay}"
+                        IsVisible="{Binding Search, Converter={Helpers:NullValueBoolConverter}}">
+                    <CollectionView.Header>
+                        <Label Text="Recent searches:" Style="{StaticResource labelSmallBlack}" Padding="20,5"/>
+                    </CollectionView.Header>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="20,5" BackgroundColor="White" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid HorizontalOptions="Start">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding City}" Style="{StaticResource labelMediumBlack}" VerticalOptions="End"/>
+                                    <Label Text="{Binding Country}" Style="{StaticResource labelSmallGray}" Grid.Row="1" VerticalOptions="Start"/>
+                                </Grid>
+                                <Label Text="{Binding Code}" Style="{StaticResource labelMediumBlack}" TextColor="#2EDBB5" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </StackLayout>        
+        <CollectionView Grid.Row="1" 
+                        ItemsSource="{Binding Results}" 
+                        BackgroundColor="White" 
+                        ItemsLayout="VerticalList" 
+                        SelectionMode="Single"
+                        SelectedItem="{Binding SelectedDestination,Mode=TwoWay}"
+                        IsVisible="{Binding Results, Converter={Helpers:CheckFilledList}}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="20,5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid HorizontalOptions="Start">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="{Binding City}" Style="{StaticResource labelMediumBlack}" VerticalOptions="End"/>
+                            <Label Text="{Binding Country}" Style="{StaticResource labelSmallGray}" Grid.Row="1" VerticalOptions="Start"/>
+                        </Grid>
+                        <Label Text="{Binding Code}" Style="{StaticResource labelMediumBlack}" TextColor="#2EDBB5" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>            
+        </CollectionView>
+        <Grid IsVisible="{Binding Search, Converter={Helpers:NotNullValueBoolConverter}}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1">
+            <Label Text="{x:Static resources:AppResources.SF_NO_AIRPORTS_FOUND}" Style="{StaticResource labelNormalBlack}"  IsVisible="{Binding Results, Converter={Helpers:CheckEmptyList}}"/>
+        </Grid>
+    </Grid>
+</ContentPage>

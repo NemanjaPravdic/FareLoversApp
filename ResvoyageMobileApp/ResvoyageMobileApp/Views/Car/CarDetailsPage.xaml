@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:pancakeview="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             mc:Ignorable="d"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             x:Class="ResvoyageMobileApp.Views.Car.CarDetailsPage"
+             Shell.TabBarIsVisible="False">
+    <Shell.TitleView>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="{Binding Request.RequestText}" Style="{StaticResource labelSmallGray}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand" FontAttributes="Bold" TextColor="Gray" LineBreakMode="TailTruncation"/>
+        </StackLayout>
+    </Shell.TitleView>
+    <Grid>
+        <MediaElement Source="ms-appx:///waitScreen.mp4" ShowsPlaybackControls="False"
+                      BackgroundColor="#101d23"
+                      IsLooping="True" Aspect="AspectFit" AutoPlay="True" 
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <StackLayout x:Name="VisibilityResults" VerticalOptions="CenterAndExpand"  BackgroundColor="#F6FBFF">
+            <ScrollView HorizontalOptions="CenterAndExpand" IsVisible="{Binding ShowWaitScreen, Converter={Helpers:NegateBooleanConverter}}">
+                <ScrollView.InputTransparent>
+                    <OnPlatform x:TypeArguments="x:Boolean">
+                        <On Platform="iOS" Value="False"/>
+                        <On Platform="Android" Value="True"/>
+                    </OnPlatform>
+                </ScrollView.InputTransparent>
+                <StackLayout Orientation="Vertical">
+                    <pancakeview:PancakeView CornerRadius="20" Margin="10" BackgroundColor="White" VerticalOptions="EndAndExpand" HasShadow="True" Padding="20,10">
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="{Binding CarInformation.VehicleInfo.PictureURL}" Aspect="AspectFit" HeightRequest="130" IsVisible="{Binding CarInformation.VehicleInfo.PictureURL, Converter={Helpers:NotNullValueBoolConverter}}"/>
+                            <Image Source="carNoPhoto.png" Aspect="AspectFit" WidthRequest="130" IsVisible="{Binding CarInformation.VehicleInfo.PictureURL, Converter={Helpers:NullValueBoolConverter}}"/>
+                            <Label Text="{Binding CarInformation.VehicleInfo.VehClass}" Style="{StaticResource labelMediumBlack}" HorizontalOptions="Center"/>
+                            <Label Text="{Binding CarInformation.VehicleInfo.DisplayVehModel}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Center"/>
+                            <Label Style="{StaticResource labelMediumBlack}" FontAttributes="Bold"  TextColor="#2EDBB5" HorizontalOptions="Center">
+                                <Label.Text>
+                                    <MultiBinding StringFormat="{}{0}{1}">
+                                        <Binding Path="CarInformation.VehicleInfo.CurrencySymbol"/>
+                                        <Binding Path="CarInformation.VehicleInfo.DisplayTotalPrice"/>
+                                    </MultiBinding>
+                                </Label.Text>
+                            </Label>
+                            <Label Text="{x:Static resources:AppResources.CR_RATES_INCLUDE_ALL}" Style="{StaticResource labelSmallGray}" FontSize="10" HorizontalOptions="Center"/>
+                            <Label Margin="0,10" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Center">
+                                <Label.Text>
+                                    <MultiBinding StringFormat="{} {0}, {1} - {2}, {3}">
+                                        <Binding Path="Request.PickupDateString"/>
+                                        <Binding Path="Request.PickupTime"/>
+                                        <Binding Path="Request.DropOffDateString"/>
+                                        <Binding Path="Request.DropoffTime"/>
+                                    </MultiBinding>
+                                </Label.Text>
+                            </Label>
+                            <StackLayout Orientation="Horizontal" Margin="5,0">
+                                <Label Text="{x:Static resources:AppResources.CD_CAR_SUPPLIED_BY}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" HorizontalOptions="Start"/>
+                                <Image Source="{Binding CarInformation.CarVendorLogo}" HorizontalOptions="EndAndExpand" Aspect="AspectFit" WidthRequest="60"/>
+                            </StackLayout>
+                            <Line Stroke="Gray" X2="1000" HeightRequest="2" Margin="0,10"/>
+                            <Grid ColumnDefinitions="*,*" Margin="5">
+                                <StackLayout Orientation="Horizontal" IsVisible="{Binding CarInformation.VehicleInfo.VehCategory,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Image Source="carDoor.png" HeightRequest="30"/>
+                                    <Label Text="{Binding CarInformation.VehicleInfo.VehCategory}" Style="{StaticResource labelNormalBlack}" VerticalOptions="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Grid.Column="1">
+                                    <Image Source="transmission.png" HeightRequest="30"/>
+                                    <Label Text="{Binding CarInformation.VehicleInfo.TransmissionType}" Style="{StaticResource labelNormalBlack}" VerticalOptions="Center"/>
+                                </StackLayout>
+                            </Grid>
+                            <Grid ColumnDefinitions="*,*" Margin="5">
+                                <StackLayout Orientation="Horizontal" IsVisible="{Binding CarInformation.VehicleInfo.DistanceUnit,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Image Source="mileage.png" HeightRequest="30"/>
+                                    <Label Text="{Binding CarInformation.VehicleInfo.DistanceUnit}" Style="{StaticResource labelNormalBlack}" VerticalOptions="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Grid.Column="1" IsVisible="{Binding CarInformation.VehicleInfo.SeatsCount,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Image Source="passengers.png" HeightRequest="30"/>
+                                    <Label Text="{Binding CarInformation.VehicleInfo.Seats}" Style="{StaticResource labelNormalBlack}" VerticalOptions="Center"/>
+                                </StackLayout>
+                            </Grid>
+                            <StackLayout Orientation="Horizontal" IsVisible="{Binding CarInformation.VehicleInfo.AirConditioning}" Margin="5">
+                                <Image Source="airConditioning.png" HeightRequest="25"/>
+                                <Label Text="{x:Static resources:AppResources.HD_AIRCONDITIONING}" Style="{StaticResource labelNormalBlack}" VerticalOptions="Center"/>
+                            </StackLayout>
+                            <Line Stroke="Gray" X2="1000" HeightRequest="2" Margin="0,10"/>
+                            <StackLayout Orientation="Vertical"  Margin="5,0">
+                                <StackLayout Orientation="Horizontal" Spacing="0">
+                                    <Label Text="{x:Static resources:AppResources.CD_PICK_UP}" Style="{StaticResource labelNormalBlack}"/>
+                                    <Label Style="{StaticResource labelNormalBlack}" FontAttributes="Bold">
+                                        <Label.Text>
+                                            <MultiBinding StringFormat="{}{0}, {1}">
+                                                <Binding Path="Request.PickupDateString"/>
+                                                <Binding Path="Request.PickupTime"/>
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
+                                </StackLayout>
+
+                                <Label Text="{Binding CarInformation.VehicleInfo.CarRules.PickUpLocation.AddressString}" Style="{StaticResource labelNormalGray}"/>
+                                <StackLayout Orientation="Horizontal" Spacing="0">
+                                    <Label Text="{x:Static resources:AppResources.CD_OPENING_AT}" Style="{StaticResource labelNormalGray}"/>
+                                    <Label Text="{Binding CarInformation.VehicleInfo.CarRules.PickUpLocation.OpeningTime}" Style="{StaticResource labelNormalGray}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Spacing="0">
+                                    <Label Text="{x:Static resources:AppResources.CD_CLOSING_AT}" Style="{StaticResource labelNormalGray}"/>
+                                    <Label Text="{Binding CarInformation.VehicleInfo.CarRules.PickUpLocation.ClosingTime}" Style="{StaticResource labelNormalGray}"/>
+                                </StackLayout>
+                                <Line Stroke="Gray" X2="1000" HeightRequest="2" Margin="0,10"/>
+                                <StackLayout Orientation="Horizontal" Spacing="0">
+                                    <Label Text="{x:Static resources:AppResources.CD_DROP_OFF}" Style="{StaticResource labelNormalBlack}"/>
+                                    <Label Style="{StaticResource labelNormalBlack}" FontAttributes="Bold">
+                                        <Label.Text>
+                                            <MultiBinding StringFormat="{}{0}, {1}">
+                                                <Binding Path="Request.DropOffDateString"/>
+                                                <Binding Path="Request.DropoffTime"/>
+                                            </MultiBinding>
+                                        </Label.Text>
+                                    </Label>
+                                </StackLayout>
+                                <Label Text="{Binding CarInformation.VehicleInfo.CarRules.DropOffLocation.AddressString}" Style="{StaticResource labelNormalGray}"/>
+                                <StackLayout Orientation="Horizontal" Spacing="0" IsVisible="{Binding  CarInformation.VehicleInfo.CarRules.DropOffLocation.OpeningTime,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Label Text="{x:Static resources:AppResources.CD_OPENING_AT}" Style="{StaticResource labelNormalGray}"/>
+                                    <Label Text="{Binding CarInformation.VehicleInfo.CarRules.DropOffLocation.OpeningTime}" Style="{StaticResource labelNormalGray}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" Spacing="0" IsVisible="{Binding  CarInformation.VehicleInfo.CarRules.DropOffLocation.ClosingTime,Converter={Helpers:NotNullValueBoolConverter}}">
+                                    <Label Text="{x:Static resources:AppResources.CD_CLOSING_AT}" Style="{StaticResource labelNormalGray}"/>
+                                    <Label Text="{Binding CarInformation.VehicleInfo.CarRules.DropOffLocation.ClosingTime}" Style="{StaticResource labelNormalGray}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </pancakeview:PancakeView>
+                    <Frame Margin="40,10"
+                       HorizontalOptions="FillAndExpand"
+                       HeightRequest="40"
+                       Padding="0"
+                       Grid.Row="1"
+                       BackgroundColor="#2EDBB5">
+                        <Frame.CornerRadius>
+                            <OnPlatform x:TypeArguments="x:Single">
+                                <On Platform="iOS" Value="20"/>
+                                <On Platform="Android" Value="30"/>
+                            </OnPlatform>
+                        </Frame.CornerRadius>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding AddToCart}"/>
+                        </Frame.GestureRecognizers>
+                        <Label Text="{x:Static resources:AppResources.CD_BOOK}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <!--<ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" IsVisible="{Binding ShowWaitScreen}"/>-->
+        </StackLayout>
+        <!--<ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+    </Grid>
+</ContentPage>

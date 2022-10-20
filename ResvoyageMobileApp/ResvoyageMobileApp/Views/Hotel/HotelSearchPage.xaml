@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:vm="clr-namespace:ResvoyageMobileApp.ViewModels" 
+             xmlns:rf="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms" 
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers" 
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Hotel.HotelSearchPage"
+             BackgroundColor="#F6FBFF">
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="20">
+            <rf:Frame2 CornerRadius="10"
+                       HasShadow="True"
+                       HeightRequest="80"
+                       Padding="0"
+                       Margin="0,5"
+                       HorizontalOptions="FillAndExpand">
+                <rf:Frame2.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowHotelDestinationAutocomplete}" CommandParameter="departure"/>
+                </rf:Frame2.GestureRecognizers>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="pointer.png" Aspect="AspectFit" WidthRequest="20" Margin="15,0,0,0" />
+                    <Grid VerticalOptions="Center" Padding="20,0,0,0">
+                        <Grid VerticalOptions="Center" IsVisible="{Binding Request.CityName,Converter={Helpers:NotNullValueBoolConverter}}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="{x:Static resources:AppResources.HS_CHECK_IN_LOCATION}" Style="{StaticResource labelSmallGray}"  />
+                            <Label Text="{Binding Request.CityName}" Style="{StaticResource labelMediumBlack}" Grid.Row="1" LineBreakMode="TailTruncation"/>
+                        </Grid>
+                        <Label Text="{x:Static resources:AppResources.HS_CHECK_IN_LOCATION}" 
+                               Style="{StaticResource labelNormalGray}"
+                               VerticalOptions="Center"
+                               IsVisible="{Binding Request.CityName,Converter={Helpers:NullValueBoolConverter}}"/>
+                    </Grid>
+                </StackLayout>                
+            </rf:Frame2>
+            <Frame CornerRadius="10"
+                           HasShadow="True"
+                           Grid.Row="1"
+                           Margin="0,5"
+                           Padding="0"
+                       BackgroundColor="White"
+                           HeightRequest="60"
+                           HorizontalOptions="FillAndExpand">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowCalendarPage}"/>
+                </Frame.GestureRecognizers>
+                <Grid>
+                    <magic:GradientView VerticalOptions="Center" HeightRequest="60" Margin="20,0">
+                        <magic:GradientView.GradientSource>
+                            <magic:CssGradientSource>
+                                <x:String>
+                                    <![CDATA[
+                                linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(240,240,255,1) 50%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%) ]]>
+                                </x:String>
+                            </magic:CssGradientSource>
+                        </magic:GradientView.GradientSource>
+
+                    </magic:GradientView>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="calendar.png" HeightRequest="20" Margin="15,0,0,0"/>
+                            <Grid IsVisible="{Binding Request.CheckInDateString, Converter={Helpers:NotNullValueBoolConverter}}" HorizontalOptions="Center" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding Request.CheckInDateString}"
+                                       Style="{StaticResource labelNormalBlack}"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"/>
+                                <Label Text="{Binding Request.CheckInDateDayString}"
+                                       Style="{StaticResource labelNormalGray}"
+                                       VerticalOptions="Center"
+                                       Grid.Column="1"
+                                       HorizontalOptions="Center"/>
+                            </Grid>
+                            <Label Text="{x:Static resources:AppResources.HS_CHECK_IN_DATE}"
+                                   IsVisible="{Binding Request.CheckInDateString, Converter={Helpers:NullValueBoolConverter}}"                                        
+                                   VerticalOptions="Center"
+                                   Style="{StaticResource labelNormalGray}"
+                                   Grid.Column="1"
+                                   HorizontalOptions="Center"/>
+                        </Grid>
+                        <Grid IsVisible="{Binding Request.CheckOutDateString, Converter={Helpers:NotNullValueBoolConverter}}" HorizontalOptions="Center" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Request.CheckOutDateString}"
+                                   Style="{StaticResource labelNormalBlack}"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"/>
+                            <Label Text="{Binding Request.CheckOutDateDayString}"
+                                   Style="{StaticResource labelNormalGray}"
+                                   VerticalOptions="Center"
+                                   Grid.Column="1"
+                                   HorizontalOptions="Center"/>
+                        </Grid>
+                        <Label Text="{x:Static resources:AppResources.HS_CHECK_OUT_DATE}"
+                               IsVisible="{Binding Request.CheckOutDateString, Converter={Helpers:NullValueBoolConverter}}" 
+                               VerticalOptions="Center"
+                               Style="{StaticResource labelNormalGray}"
+                               HorizontalOptions="Center"
+                               Grid.Column="1"/>
+                    </Grid>
+                </Grid>
+                <!--<pv:PancakeView BackgroundGradientAngle="270" 
+                                HeightRequest="60"                                
+                                VerticalOptions="Center">
+                    <pv:PancakeView.BackgroundGradientStops>
+                        <pv:GradientStopCollection>
+                            <pv:GradientStop Color="#FFFFF" Offset="0.0" />
+                            <pv:GradientStop Color="#FFFFF" Offset="0.49" />
+                            <pv:GradientStop Color="#F0F0FF" Offset="0.5" />
+                            <pv:GradientStop Color="#FFFFF" Offset="0.6" />
+                            <pv:GradientStop Color="#FFFFF" Offset="1" />
+                        </pv:GradientStopCollection>
+                    </pv:PancakeView.BackgroundGradientStops>
+                    
+                </pv:PancakeView>-->
+            </Frame>
+            <Frame CornerRadius="10"
+                   HasShadow="True"
+                   Margin="0,5"
+                   Grid.Row="2"
+                   HeightRequest="60"
+                   BackgroundColor="White"
+                   Padding="0"
+                   HorizontalOptions="FillAndExpand">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowRoomInfo}"/>
+                </Frame.GestureRecognizers>
+                <Grid VerticalOptions="Center" HeightRequest="60">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Source="adult.png" HeightRequest="25" Margin="20,0,0,0" />
+                    <Label FontSize="16" Text="{Binding Request.Adults}" TextColor="Black" Grid.Column="1" VerticalOptions="Center"/>
+                    <Image Source="adult.png" HeightRequest="20" Grid.Column="2"/>
+                    <Label FontSize="16" Text="{Binding Request.Children}" TextColor="Black" Grid.Column="3" VerticalOptions="Center"/>
+                    <Grid Grid.Column="4" HorizontalOptions="EndAndExpand" Margin="20,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="door.png" HeightRequest="25" />
+                        <Label Text="{Binding Request.NoOfRooms}" Grid.Column="1" TextColor="Black" FontSize="16" FontFamily="DisplayLight" VerticalOptions="Center"/>
+                    </Grid>
+                </Grid>
+            </Frame>
+            <Frame Margin="40,10"
+                   HorizontalOptions="FillAndExpand"
+                   HeightRequest="40"
+                   Padding="0"
+                   Grid.Row="3"
+                   BackgroundColor="#2EDBB5">
+                <Frame.CornerRadius>
+                    <OnPlatform x:TypeArguments="x:Single">
+                        <On Platform="iOS" Value="20"/>
+                        <On Platform="Android" Value="30"/>
+                    </OnPlatform>
+                </Frame.CornerRadius>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SearchHotels}" CommandParameter="{Binding SearchType}"/>
+                </Frame.GestureRecognizers>
+                <Label Text="{x:Static resources:AppResources.HS_SEARCH_HOTELS}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             Shell.TabBarIsVisible="False"
+             Visual="Material"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"       
+             x:Class="ResvoyageMobileApp.Views.Flight.FareRulesPage">
+    <Shell.TitleView>
+        <Label Text="{x:Static resources:AppResources.FD_FARE_RULES}" Style="{StaticResource labelNormalBlack}" VerticalTextAlignment="Center"/>
+    </Shell.TitleView>
+    <ScrollView>
+        <StackLayout BindableLayout.ItemsSource="{Binding FareRuleResponseInfo}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <pv:PancakeView CornerRadius="10"
+                                        BackgroundColor="White"
+                                        HasShadow="True" 
+                                        Margin="5"
+                                        VerticalOptions="FillAndExpand"
+                                        Padding="10">
+                        <StackLayout Orientation="Vertical">
+                            <Label Style="{StaticResource labelMediumBlack}">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{x:Static resources:AppResources.FD_FARE_REFERENCE}"/>
+                                        <Span Text="{Binding FareRuleInfo.FareReference}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label Style="{StaticResource labelNormalGray}">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding FareRuleInfo.DepartureAirport.Value}"/>
+                                        <Span Text="{Binding FareRuleInfo.DepartureAirport.LocationCode, StringFormat=' ({0}) - '}"/>
+                                        <Span Text="{Binding FareRuleInfo.ArrivalAirport.Value}"/>
+                                        <Span Text="{Binding FareRuleInfo.ArrivalAirport.LocationCode, StringFormat=' ({0})'}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <StackLayout BindableLayout.ItemsSource="{Binding FareRules.SubSection}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout Orientation="Vertical">
+                                            <Label Style="{StaticResource labelNormalGray}" Text="{Binding SubTitle}" FontAttributes="Bold"/>
+                                            <StackLayout BindableLayout.ItemsSource="{Binding Paragraph}">
+                                                <BindableLayout.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Label Style="{StaticResource labelSmallGray}" Text="{Binding Text.Value}" Padding="20,0,0,0"/>
+                                                    </DataTemplate>
+                                                </BindableLayout.ItemTemplate>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </StackLayout>
+                    </pv:PancakeView>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ScrollView>    
+</ContentPage>

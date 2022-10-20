@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             mc:Ignorable="d"
+             Shell.TabBarIsVisible="False"
+             x:Name="CarResults"
+             x:Class="ResvoyageMobileApp.Views.Car.CarResultPage">
+    <Shell.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding Request.RequestText}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" FontAttributes="Bold" TextColor="Gray" LineBreakMode="TailTruncation"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" >
+                <Image Source="filters.png" HeightRequest="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowFilters}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="exchange.png" HeightRequest="30" Margin="10">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PickerFocusCommand}" CommandParameter="{x:Reference CurrencyPicker}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Picker ItemsSource="{Binding Currencies}"
+                        x:Name="CurrencyPicker"
+                        ItemDisplayBinding="{Binding Text}"
+                        SelectedItem="{Binding Currency, Mode=TwoWay}" 
+                        Title="{x:Static resources:AppResources.HP_CURRENCY}" 
+                        Style="{StaticResource labelNormalGray}" 
+                        TitleColor="Gray" TextColor="Black"
+                        IsEnabled="True" IsVisible="False"/>
+            </StackLayout>
+        </StackLayout>
+    </Shell.TitleView>
+    <StackLayout Orientation="Vertical">
+        <Grid x:Name="VisibilityResults"  VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Frame Padding="0" BackgroundColor="White">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Padding="15,5,5,0" BindableLayout.ItemsSource="{Binding Filters.Sort}" >
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical" WidthRequest="150">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.ChangeSorting, Source={x:Reference CarResults}}" CommandParameter="{Binding .}"/>
+                                </StackLayout.GestureRecognizers>
+                                <Label Text="{Binding Title}" Style="{StaticResource labelNormalBlack}" FontAttributes="Bold" HorizontalOptions="Center"  Margin="0,10"/>
+                                <BoxView BackgroundColor="#2EDBB5" HeightRequest="2" VerticalOptions="End" IsVisible="{Binding IsSelected}"/>
+                                <BoxView BackgroundColor="White" HeightRequest="2" VerticalOptions="End" IsVisible="{Binding IsSelected, Converter={Helpers:NegateBooleanConverter}}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </Frame>
+            <CollectionView Grid.Row="1" SelectionMode="Single" ItemsSource="{Binding FilterdResults}" SelectedItem="{Binding SelectedCar, Mode=TwoWay}" IsVisible="{Binding FilterdResults, Converter={Helpers:CheckFilledList}}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="20,10">
+                            <pv:PancakeView CornerRadius="10"
+                                            BackgroundColor="White"
+                                            HasShadow="True"
+                                            Padding="10"
+                                            VerticalOptions="FillAndExpand">
+                                <StackLayout Orientation="Vertical">
+                                    <Grid ColumnDefinitions="*,Auto">
+                                        <StackLayout Orientation="Vertical" VerticalOptions="Start" Spacing="2">
+                                            <Label Text="{Binding VehicleInfo.VehClass}" Style="{StaticResource labelNormalBlack}"/>
+                                            <Label Text="{Binding VehicleInfo.DisplayVehModel}" Style="{StaticResource labelNormalGray}" FontSize="12" LineBreakMode="TailTruncation"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" VerticalOptions="End">
+                                            <StackLayout Orientation="Horizontal" Spacing="0" IsVisible="{Binding VehicleInfo.SeatsCount,Converter={Helpers:NotNullValueBoolConverter}}">
+                                                <Image Source="passengers.png" HeightRequest="15"/>
+                                                <Label Text="{Binding VehicleInfo.Seats}" Style="{StaticResource labelSmallBlack}" FontSize="10" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" Spacing="0" IsVisible="{Binding VehicleInfo.VehCategory,Converter={Helpers:NotNullValueBoolConverter}}">
+                                                <Image Source="carDoor.png" HeightRequest="15"/>
+                                                <Label Text="{Binding VehicleInfo.VehCategory}" Style="{StaticResource labelSmallBlack}" FontSize="10" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" Spacing="0">
+                                                <Image Source="transmission.png" HeightRequest="15"/>
+                                                <Label Text="{Binding VehicleInfo.TransmissionType}" Style="{StaticResource labelSmallBlack}" FontSize="10" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                        </StackLayout>
+
+                                        <Image Source="carNoPhoto.png" Aspect="AspectFill" WidthRequest="120" HeightRequest="100" Grid.Column="1" HorizontalOptions="End"  IsVisible="{Binding VehicleInfo.PictureURL, Converter={Helpers:NullValueBoolConverter}}"/>
+                                        <Image Source="{Binding VehicleInfo.PictureURL}" Aspect="AspectFit" WidthRequest="120" HeightRequest="100" Grid.Column="1" HorizontalOptions="End" IsVisible="{Binding VehicleInfo.PictureURL, Converter={Helpers:NotNullValueBoolConverter}}"/>
+                                    </Grid>
+                                    <Line Stroke="LightGray" X2="1000" HeightRequest="2" Margin="-2,0"/>
+                                    <Grid ColumnDefinitions="Auto,*">
+                                        <Image Source="{Binding CarVendorLogo}" Aspect="AspectFit" WidthRequest="60" Margin="10"/>
+                                        <StackLayout Orientation="Vertical" Grid.Column="1" HorizontalOptions="End" Margin="0,0,10,10" Spacing="0">
+                                            <Label Style="{StaticResource labelNormalBlack}" FontAttributes="Bold"  TextColor="#2EDBB5" HorizontalOptions="Center">
+                                                <Label.Text>
+                                                    <MultiBinding StringFormat="{}{0}{1}">
+                                                        <Binding Path="VehicleInfo.CurrencySymbol"/>
+                                                        <Binding Path="VehicleInfo.DisplayTotalPrice"/>
+                                                    </MultiBinding>
+                                                </Label.Text>
+                                            </Label>
+                                            <Label Text="{x:Static resources:AppResources.CR_RATES_INCLUDE_ALL}" Style="{StaticResource labelSmallGray}" FontSize="10" WidthRequest="80"/>
+                                        </StackLayout>
+                                    </Grid>
+
+
+                                </StackLayout>
+                            </pv:PancakeView>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Label Text="{x:Static resources:AppResources.CR_NO_CARS_FOUND}" Style="{StaticResource labelNormalBlack}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" IsVisible="{Binding FilterdResults, Converter={Helpers:CheckEmptyList}}"/>
+        </Grid>
+        <MediaElement Source="ms-appx:///waitScreen.mp4" ShowsPlaybackControls="False"
+                      BackgroundColor="#101d23"
+                       x:Name="waitScreen"
+                      IsLooping="True" Aspect="AspectFit" AutoPlay="True"
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <!--<ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+    </StackLayout>
+</ContentPage>

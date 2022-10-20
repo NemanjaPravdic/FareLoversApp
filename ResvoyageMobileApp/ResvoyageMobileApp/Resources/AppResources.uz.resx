@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APP_CAR" xml:space="preserve">
+    <value>Avto ijarasi</value>
+  </data>
+  <data name="APP_ERROR" xml:space="preserve">
+    <value>Xato</value>
+  </data>
+  <data name="APP_FLIGHT" xml:space="preserve">
+    <value>Aviachiptalar</value>
+  </data>
+  <data name="APP_FOR" xml:space="preserve">
+    <value>uchun</value>
+  </data>
+  <data name="APP_HOTEL" xml:space="preserve">
+    <value>Otellar</value>
+  </data>
+  <data name="APP_LATER" xml:space="preserve">
+    <value>Keyinroq</value>
+  </data>
+  <data name="APP_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="APP_RATE_APP" xml:space="preserve">
+    <value>Ilovani baholash</value>
+  </data>
+  <data name="APP_RATE_TEXT" xml:space="preserve">
+    <value>Agar siz bizning ilovamizni yoqtirsangiz, iltimos, unga baho bering</value>
+  </data>
+  <data name="APP_SELECT" xml:space="preserve">
+    <value>Tanlash</value>
+  </data>
+  <data name="APP_SUCCESS" xml:space="preserve">
+    <value>Muvaffaqiyatli</value>
+  </data>
+  <data name="BD_AIR_PRICE" xml:space="preserve">
+    <value>Havo safarining narxi: </value>
+  </data>
+  <data name="BD_CAR_RPICE" xml:space="preserve">
+    <value>Avto ijarasi narxi: </value>
+  </data>
+  <data name="BD_CHECK_IN" xml:space="preserve">
+    <value>Kirib kelish:</value>
+  </data>
+  <data name="BD_CHECK_OUT" xml:space="preserve">
+    <value>Chiqib ketish:</value>
+  </data>
+  <data name="BD_HOTEL_PRICE" xml:space="preserve">
+    <value>Otel narxi:</value>
+  </data>
+  <data name="BD_REQUESTED" xml:space="preserve">
+    <value>So'ralgan: </value>
+  </data>
+  <data name="BK_NO_BOOKINGS_FOUND" xml:space="preserve">
+    <value>Bronlar topilmadi.</value>
+  </data>
+  <data name="CD_BOOK" xml:space="preserve">
+    <value>Bron qiling</value>
+  </data>
+  <data name="CD_CAR_SUPPLIED_BY" xml:space="preserve">
+    <value>Avtomobil taqdim qilinadi:</value>
+  </data>
+  <data name="CD_CLOSING_AT" xml:space="preserve">
+    <value>Yopilish vaqti: </value>
+  </data>
+  <data name="CD_DROP_OFF" xml:space="preserve">
+    <value>qaytarish</value>
+  </data>
+  <data name="CD_OPENING_AT" xml:space="preserve">
+    <value>Ochilish vaqti: </value>
+  </data>
+  <data name="CD_PICK_UP" xml:space="preserve">
+    <value>Olib ketish</value>
+  </data>
+  <data name="CF_CATEGORIES" xml:space="preserve">
+    <value>Toifalar</value>
+  </data>
+  <data name="CF_TYPES" xml:space="preserve">
+    <value>Tiplar</value>
+  </data>
+  <data name="CN_TEXT" xml:space="preserve">
+    <value>Farelovers - Kanadaning Kalgari shahrida joylashgan 2019 yilda boshlangan yosh sayyohlik kompaniyasi. Farelovers - bu Xalqaro havo transporti assotsiatsiyasi tomonidan akkreditatsiyadan o'tgan sayyohlik agentligi va veb-sayt to'lov kartalari ma'lumotlarining xavfsizligi standartlariga to'liq mos keladi. Farelovers odamlarga orzu qilish va kashf etishga yordam berish uchun yaratilgan! Bizning bronlash tizimimiz real vaqt rejimida parvozlar, mehmonxonalar va avtoulovlarni ijaraga olish narxlarini topadi va taqqoslaydi, shuning uchun siz o'zingiz uchun eng arzon, eng tezkor, eng qulay yoki eng yaxshi variantni osongina tanlashingiz mumkin. Siz bir necha marta bosishingiz kerak va siz safarga tayyorsiz!</value>
+  </data>
+  <data name="CN_WHAT_WE_DO" xml:space="preserve">
+    <value>NIMA QILAMIZ</value>
+  </data>
+  <data name="CR_CAR_NAME" xml:space="preserve">
+    <value>Avtomobil nomi</value>
+  </data>
+  <data name="CR_CATEGORY" xml:space="preserve">
+    <value>Toifa</value>
+  </data>
+  <data name="CR_NO_CARS_FOUND" xml:space="preserve">
+    <value>Avtomobil topilmadi.</value>
+  </data>
+  <data name="CR_RATES_INCLUDE_ALL" xml:space="preserve">
+    <value>Narx barcha soliqlar va yig’imlarni o’z ichiga oladi</value>
+  </data>
+  <data name="CS_DROP_OFF_DATE" xml:space="preserve">
+    <value>Qaytarib berish sanasi</value>
+  </data>
+  <data name="CS_DROP_OFF_LOCATION" xml:space="preserve">
+    <value>Qaytarib berish joyi</value>
+  </data>
+  <data name="CS_PICK_UP_DATE" xml:space="preserve">
+    <value>Olish sanasi</value>
+  </data>
+  <data name="CS_PICK_UP_LOCATION" xml:space="preserve">
+    <value>Olish joyi</value>
+  </data>
+  <data name="CS_SEARCH_CARS" xml:space="preserve">
+    <value>Avtomobilni izlash</value>
+  </data>
+  <data name="CS_TIME" xml:space="preserve">
+    <value>Vaqt</value>
+  </data>
+  <data name="ER_SOME_ERROR_OCCURED" xml:space="preserve">
+    <value>Xato yuz berdi</value>
+  </data>
+  <data name="EU_SUCCESSFULY_EDIT" xml:space="preserve">
+    <value>Muvaffaqiyatli to’g’rilandi.</value>
+  </data>
+  <data name="EU_WRONG_OLD_PASSWORD" xml:space="preserve">
+    <value>Noto’g’ri eski parol!</value>
+  </data>
+  <data name="FD_CABIN" xml:space="preserve">
+    <value>Salon klassi</value>
+  </data>
+  <data name="FD_FARE_REFERENCE" xml:space="preserve">
+    <value>Narx ko'rsatkichi::</value>
+  </data>
+  <data name="FD_FARE_RULES" xml:space="preserve">
+    <value>Tariflash qoidalari</value>
+  </data>
+  <data name="FD_FLIGHT_DURATION" xml:space="preserve">
+    <value>Yo’ldagi vaqt</value>
+  </data>
+  <data name="FD_FLIGHT_NUMBER" xml:space="preserve">
+    <value>Reys raqami</value>
+  </data>
+  <data name="FD_FREE_BAGGAGES" xml:space="preserve">
+    <value>Bepul yuk:</value>
+  </data>
+  <data name="FD_LAYOVER" xml:space="preserve">
+    <value>Peresadka</value>
+  </data>
+  <data name="FD_OPERATED_BY" xml:space="preserve">
+    <value>Tomonidan boshqariladi:</value>
+  </data>
+  <data name="FF_AIRLINES" xml:space="preserve">
+    <value>Aviakompaniyalar</value>
+  </data>
+  <data name="FF_CHEAPEST" xml:space="preserve">
+    <value>Eng arzon</value>
+  </data>
+  <data name="FF_EARLIEST" xml:space="preserve">
+    <value>Eng erta</value>
+  </data>
+  <data name="FF_FILTERS" xml:space="preserve">
+    <value>Filtrlar</value>
+  </data>
+  <data name="FF_INBOUND_DEPARTURE" xml:space="preserve">
+    <value>Borish yo'nalishi</value>
+  </data>
+  <data name="FF_INOUND_ARRIVAL" xml:space="preserve">
+    <value>Qaytish yo'nalishi</value>
+  </data>
+  <data name="FF_NONSTOP" xml:space="preserve">
+    <value>Peresadkalarsiz</value>
+  </data>
+  <data name="FF_ONESTOP" xml:space="preserve">
+    <value>1 ta peresadka</value>
+  </data>
+  <data name="FF_OUTBOUND_ARRIVAL" xml:space="preserve">
+    <value>Qaytish yo'nalishi</value>
+  </data>
+  <data name="FF_OUTBOUND_DEPARTURE" xml:space="preserve">
+    <value>Borish yo'nalishi</value>
+  </data>
+  <data name="FF_QUICKEST" xml:space="preserve">
+    <value>Eng tez</value>
+  </data>
+  <data name="FF_SELECT_AIRLINES" xml:space="preserve">
+    <value>Avialiniyalarni tanlash</value>
+  </data>
+  <data name="FF_STOPS" xml:space="preserve">
+    <value>Peresadkalar</value>
+  </data>
+  <data name="FF_TIME_RANGE" xml:space="preserve">
+    <value>Vaqt oralig’i</value>
+  </data>
+  <data name="FF_TWOSTOPS" xml:space="preserve">
+    <value>2+ peresadka</value>
+  </data>
+  <data name="FR_CABIN" xml:space="preserve">
+    <value>Salon</value>
+  </data>
+  <data name="FR_CHEAPEST_FLIGHT" xml:space="preserve">
+    <value>eng arzon, boshqa sana bilan</value>
+  </data>
+  <data name="FR_DURATION" xml:space="preserve">
+    <value>Davomiylik</value>
+  </data>
+  <data name="FR_PASSENGER" xml:space="preserve">
+    <value>Yo‘lovchi</value>
+  </data>
+  <data name="FR_PASSENGERS" xml:space="preserve">
+    <value>Yoʻlovchilar</value>
+  </data>
+  <data name="FR_TRANSFER" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="HD_AIRCONDITIONING" xml:space="preserve">
+    <value>Konditsioner</value>
+  </data>
+  <data name="HD_BAR" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="HD_BREAKBAST" xml:space="preserve">
+    <value>Nonushta</value>
+  </data>
+  <data name="HD_DESCRIPTION" xml:space="preserve">
+    <value>Ta’rif</value>
+  </data>
+  <data name="HD_FREE_CANCELLATION" xml:space="preserve">
+    <value>Bepul bekor qilish</value>
+  </data>
+  <data name="HD_GYM" xml:space="preserve">
+    <value>Sport zal</value>
+  </data>
+  <data name="HD_HAIRDRYER" xml:space="preserve">
+    <value>Fen</value>
+  </data>
+  <data name="HD_HOTEL_AMENITIES" xml:space="preserve">
+    <value>Mexmonxonaning maishiy qulayliklari</value>
+  </data>
+  <data name="HD_HOUSEKEEPING" xml:space="preserve">
+    <value>Nomerni tozalash xizmati</value>
+  </data>
+  <data name="HD_LOCATION_DESCRIPTION" xml:space="preserve">
+    <value>Joylashgan manzilning ta’rifi</value>
+  </data>
+  <data name="HD_OTHER_INFORMATION" xml:space="preserve">
+    <value>Boshqa ma’lumotlar</value>
+  </data>
+  <data name="HD_PARKING" xml:space="preserve">
+    <value>Parkovka</value>
+  </data>
+  <data name="HD_PET_FRIENDLY" xml:space="preserve">
+    <value>Uy jonivorlari bilan joylashtirish</value>
+  </data>
+  <data name="HD_POOL" xml:space="preserve">
+    <value>Basseyn</value>
+  </data>
+  <data name="HD_RESTAURANT" xml:space="preserve">
+    <value>Restoran</value>
+  </data>
+  <data name="HD_ROOM_AMENITIES" xml:space="preserve">
+    <value>Nomerning maishiy qulayliklari</value>
+  </data>
+  <data name="HD_ROOM_SERVICE" xml:space="preserve">
+    <value>Nomerlarga xizmat ko’rsatish</value>
+  </data>
+  <data name="HD_SPA" xml:space="preserve">
+    <value>Spa</value>
+  </data>
+  <data name="HD_TV" xml:space="preserve">
+    <value>TV</value>
+  </data>
+  <data name="HD_WiFi" xml:space="preserve">
+    <value>Wifi</value>
+  </data>
+  <data name="HF_CHAINS" xml:space="preserve">
+    <value>Do’konlar tarmog’i</value>
+  </data>
+  <data name="HF_HOTEL_NAME" xml:space="preserve">
+    <value>Otel-nomi</value>
+  </data>
+  <data name="HF_PRICE" xml:space="preserve">
+    <value>Narx</value>
+  </data>
+  <data name="HF_STARS" xml:space="preserve">
+    <value>Yulduzlar</value>
+  </data>
+  <data name="HF_STAR_RATING" xml:space="preserve">
+    <value>Yulduzlik reyting</value>
+  </data>
+  <data name="HP_CONTACT" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="HP_CURRENCY" xml:space="preserve">
+    <value>Pul birligi</value>
+  </data>
+  <data name="HP_EDIT_PROFILE" xml:space="preserve">
+    <value>Profilni o’zgartirish</value>
+  </data>
+  <data name="HP_HOME" xml:space="preserve">
+    <value>Bosh sahifa</value>
+  </data>
+  <data name="HP_LANGUAGE" xml:space="preserve">
+    <value>Til</value>
+  </data>
+  <data name="HP_LOGIN" xml:space="preserve">
+    <value>Kirish</value>
+  </data>
+  <data name="HP_LOGOUT" xml:space="preserve">
+    <value>Chiqish</value>
+  </data>
+  <data name="HP_MY_BOOKINGS" xml:space="preserve">
+    <value>Mening bron qilishim</value>
+  </data>
+  <data name="HP_PRIVACY_POLICY" xml:space="preserve">
+    <value>Maxfiylik Siyosati</value>
+  </data>
+  <data name="HP_USER_AGREEMENT" xml:space="preserve">
+    <value>Foydalanuvchilik Kelishuvi</value>
+  </data>
+  <data name="HR_NO_HOTELS_FOUND" xml:space="preserve">
+    <value>Otellar topilmadi.</value>
+  </data>
+  <data name="HR_NO_STAR_RATING" xml:space="preserve">
+    <value>Yulduzli reyting yo’q</value>
+  </data>
+  <data name="HR_PER_NIGHT_PER_ROOM" xml:space="preserve">
+    <value>nomerda bir kecha tunash uchun</value>
+  </data>
+  <data name="HS_ADD_ROOM" xml:space="preserve">
+    <value>Xona qo‘shish</value>
+  </data>
+  <data name="HS_CHECK_IN_DATE" xml:space="preserve">
+    <value>Kirib kelish sanasi</value>
+  </data>
+  <data name="HS_CHECK_IN_LOCATION" xml:space="preserve">
+    <value>Kirib kelish joylashgan manzili</value>
+  </data>
+  <data name="HS_CHECK_OUT_DATE" xml:space="preserve">
+    <value>Chiqib ketish sanasi</value>
+  </data>
+  <data name="HS_CHLD" xml:space="preserve">
+    <value>Bolalar</value>
+  </data>
+  <data name="HS_NO_LOCATIONS_FOUND" xml:space="preserve">
+    <value>Joylashgan manzil topilmadi.</value>
+  </data>
+  <data name="HS_REMOVE_ROOM" xml:space="preserve">
+    <value>Nomerni olib tashlash</value>
+  </data>
+  <data name="HS_ROOM" xml:space="preserve">
+    <value>Xona</value>
+  </data>
+  <data name="HS_ROOMS" xml:space="preserve">
+    <value>Xonalar</value>
+  </data>
+  <data name="HS_SEARCH_HOTELS" xml:space="preserve">
+    <value>Otellarni izlash</value>
+  </data>
+  <data name="HS_Y_O" xml:space="preserve">
+    <value>Yosh</value>
+  </data>
+  <data name="MB_ARCHIVE" xml:space="preserve">
+    <value>Arxiv</value>
+  </data>
+  <data name="MB_UPCOMING" xml:space="preserve">
+    <value>Kelgusi</value>
+  </data>
+  <data name="PP_LABEL_1" xml:space="preserve">
+    <value>Kirish</value>
+  </data>
+  <data name="PP_LABEL_10" xml:space="preserve">
+    <value>Biz bilan bog‘laning</value>
+  </data>
+  <data name="PP_LABEL_10_1" xml:space="preserve">
+    <value>Agar shaxsiy ma'lumotlaringizni qayta ishlash yoki cookie - fayllardan foydalanish haqida savollaringiz bo'lsa yoki mavjud bo'lgan ma'lumotlarni muhofaza qilish to'g'risidagi qonun hujjatlariga muvofiq huquqlaringizdan foydalanishni istasangiz, elektron pochta manzilini quyidagi manzilga yuboring privacy@farelovers.com yoki aloqa uchun quyidagi ma'lumotlardan foydalaning:</value>
+  </data>
+  <data name="PP_LABEL_11" xml:space="preserve">
+    <value>Maxfiylik siyosatidagi o'zgarishlar</value>
+  </data>
+  <data name="PP_LABEL_11_1" xml:space="preserve">
+    <value>Agar biz sizning shaxsiy ma'lumotlaringizni qayta ishlash qoidalarini yoki cookie-fayllardan foydalanish qoidalarini o'zgartirsak, darhol ushbu maxfiylik siyosatini yangilab, uni saytda joylashtiramiz.</value>
+  </data>
+  <data name="PP_LABEL_1_1" xml:space="preserve">
+    <value>Ushbu sayt Farelovers Travel Corporation kompaniyasitomonidan boshqariladi (bundan keyin "biz", "biz", "bizning" va boshqalar). Sayohat ixlosmandlari har xil shaxsiy ma'lumotlarni, shu jumladan ismlar, elektron pochta manzillari va boshqa sayohat bilan bog'liq ma'lumotlarni o'zlarining kundalik faoliyati doirasida qayta ishlashadi. Shuning uchun biz ma'lumotlar xavfsizligi va ma'lumotlarni himoya qilish to'g'risidagi qonunlarga rioya qilishni juda jiddiy qabul qilamiz. Ushbu maxfiylik siyosati ushbu saytdan foydalanganda shaxsiy ma'lumotlaringizni qanday yig'ishimiz, saqlashimiz, ulardan foydalanishimiz va oshkor qilishimiz, shaxsiy ma'lumotlaringizning maxfiyligini qanday himoya qilishimiz to'g'risida ma'lumotlarni o'z ichiga oladi. Biz sizning shaxsiy hayotingizni hurmat qilamiz. Siz boshlang'ich yoki xizmatlarimizning uzoq vaqtdan beri foydalanuvchisi bo'lishingizning ahamiyati yo'q, iltimos, bizning ishlash uslublarimizni ko'rib chiqing va savollaringiz bo'lsa biz bilan bog'laning.</value>
+  </data>
+  <data name="PP_LABEL_1_2" xml:space="preserve">
+    <value>Farelovers Travel Kompaniyasi (bundan keyin - "biz", "biz", "bizning" va boshqalar) sizning shaxsiy ma'lumotlaringizni nazorat qiladi va shuning uchun ular bilan qilingan harakatlarimiz qonuniyligi uchun javobgardir.</value>
+  </data>
+  <data name="PP_LABEL_2" xml:space="preserve">
+    <value>Shaxsiy ma'lumotlar to'plami</value>
+  </data>
+  <data name="PP_LABEL_2_1" xml:space="preserve">
+    <value>Umuman olganda, biz to'plagan shaxsiy ma'lumotlar sizning sayohatingiz va bronlaringizni tashkil qilish uchun zarurdir. Bu sizning ismingiz, familiyangiz, tug'ilgan kuningiz, telefon raqamingiz, elektron pochta manzilingiz va pochta manzilingiz va hisob-kitob ma'lumotlari (kredit karta raqami, karta egasining ismi va amal qilish muddati kabi) kabi ma'lumotlarni o'z ichiga oladi. Siz taqdim etishingiz kerak bo'lgan yagona ma'lumot - bu sizning shaxsiy ma’lumotlaringiz, sizning sayohatingizni veb-saytimiz orqali sizning broningizga muvofiq ravishda tashkil qilishimiz kerak. Siz foydalanadigan xizmat turiga qarab, biz sizdan tez-tez uchish raqamini, maxsus oziq-ovqat va sog'liqqa oid so'rovlaringizni (agar mavjud bo'lsa) va sayohatingizga tegishli yoki sayohat uchun zarur bo'lgan boshqa ma'lumotlarni shuningdek, boshqa xizmat ko'rsatuvchi provayder (masalan, aviakompaniyalar va mehmonxonalar) so'rashimiz mumkin. Ushbu ro'yxat to'liq emas. Agar siz bizning qo'llab-quvvatlash guruhimizga murojaat qilsangiz, biz sizning telefon qo'ng'irog'ingiz paytida taqdim etgan ma'lumotlarni to'playmiz. Quyida ko'rib turganingizdek, bizning cookie-fayllarimiz ham ma'lum ma'lumotlarni to'playdi.</value>
+  </data>
+  <data name="PP_LABEL_2_2" xml:space="preserve">
+    <value>Agar siz boshqa odam uchun bizning veb-saytimiz orqali bron qilsangiz, biz u kishining shaxsiy ma'lumotlarini so'raymiz. Bunday vaziyatda biz ushbu shaxsdan maxfiylik siyosati to'g'risida xabardor qilishingizni kutamiz.</value>
+  </data>
+  <data name="PP_LABEL_3" xml:space="preserve">
+    <value>Maxfiy shaxsiy ma'lumotlarni yig'ish</value>
+  </data>
+  <data name="PP_LABEL_3_1" xml:space="preserve">
+    <value>Ba'zi hollarda biz maxfiy deb hisoblanishi mumkin bo'lgan "shaxsiy ma'lumotlarning maxsus toifalari" deb nomlanishi mumkin. Masalan, agar siz (i) aviakompaniya mablag'lari bekor qilingan yoki qaytarilgan bo'lsa, sug'urta xizmatidan foydalanish uchun tibbiy ma'lumotnoma bergan bo'lsangiz; (ii) sizning yordamingiz so'ralgan yoki maxsus ruxsat talab qilinadigan sayohatingizga ta'sir qiladigan tibbiy holatingiz yoki sog'lig'ingiz; yoki (iii) ba'zi boshqa shaxsiy shaxsiy ma'lumotlaringizni oshkor qilishni talab qilgan.</value>
+  </data>
+  <data name="PP_LABEL_3_2" xml:space="preserve">
+    <value>Shaxsiy ma'lumotlaringizni qayta ishlashdan oldin, sizdan bunday ishlov berishga rozilik berishingizni so'raymiz. Shuning uchun biz sizga elektron pochta orqali maxfiy ma'lumotlarni yuborish uchun elektron pochta manzilimizdan privacy@farelovers.com maxsus mulohazalar formalarini yuboramiz. Ushbu shakllar ma'lumotlarni muhofaza qilishning amaldagi qonunlarida talab qilingan rozilikni berishga imkon beradi. Siz ushbu rozilikni istalgan vaqtda bekor qilishingiz mumkin. Agar sizning ruxsatingiz bo'lmasa yoki siz bizga ushbu ma'lumotni taqdim qilmasangiz, biz sizning shaxsiy shaxsiy ma'lumotlaringizni qayta ishlamaymiz. Cheklangan sonli xodimlarimiz sizning shaxsiy ma'lumotlaringizga kirish huquqiga ega bo'ladilar va sizning so'rovingizga binoan sizning maxfiy ma'lumotlaringizni qayta ishlagandan so'ng, biz sizning ma'lumotlaringizni eng qisqa vaqt ichida o'chirib tashlaymiz.</value>
+  </data>
+  <data name="PP_LABEL_4" xml:space="preserve">
+    <value>Shaxsiy ma'lumotlaringizdan foydalanish</value>
+  </data>
+  <data name="PP_LABEL_4_1" xml:space="preserve">
+    <value>Shaxsiy ma'lumotlarni qayta ishlash huquqiga ega bo'lish uchun, amaldagi ma'lumotlarni muhofaza qilish to'g'risidagi qonunga muvofiq, biz shaxsiy ma'lumotlarni qayta ishlash maqsadlarimizning har biri uchun huquqiy asosga ega bo'lishimiz shart. Shuning uchun biz har bir maqsadimiz uchun huquqiy asosni taqdim etadigan quyidagi jadvalni tayyorladik.</value>
+  </data>
+  <data name="PP_LABEL_4_2" xml:space="preserve">
+    <value>Biz nima qilamiz (shaxsiy ma'lumotlaringizni qayta ishlash maqsadlari)</value>
+  </data>
+  <data name="PP_LABEL_4_2_1" xml:space="preserve">
+    <value>Sizning so'rovingiz bo'yicha sayohatni tashkil qilish va bron qilish (ya'ni bizning vositachiligimizda sayyohlik xizmatlarini bron qilish, shuningdek o'z xizmatlarini ko'rsatish).</value>
+  </data>
+  <data name="PP_LABEL_4_2_2" xml:space="preserve">
+    <value>Agar siz bronlash jarayonini boshlagan bo'lsangiz, lekin to'lovni amalga oshirolmagan bo'lsangiz, biz sizga veb-saytdagi bron qilish jarayoni qachon to'xtatilganiga qarab, qidiruv natijalariga yoki bron qilish jarayoni boshlanganiga havola bilan elektron pochta xabarini yuborishimiz mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_2_3" xml:space="preserve">
+    <value>Sayohatingizni boshlashdan oldin biz sizga qo'shimcha ma'lumot va sizning sayohatingiz bilan bog'liq takliflarni va sizning sayohatingiz uchun foydali bo'lgan boshqa ma'lumotlar taqdim etamiz, masalan, qo'shimcha yuklar kabi mumkin bo'lgan qo'shimcha xizmatlar. Ushbu ma'lumotlarning ba'zilari siz bron qilish jarayonida taqdim etgan ma'lumotlaringizni tahlil qilishga asoslangan (masalan, sayohat sanasi, boradigan joy va hk).</value>
+  </data>
+  <data name="PP_LABEL_4_2_4" xml:space="preserve">
+    <value>Sayohatingizdan keyin biz sizga o'zingizni qiziqtirishi mumkin bo'lgan boshqa sayohat, sayohat mahsulotlari va xizmatlari bo'yicha tavsiyalar bilan o'z xabarnomamizni yuborishimiz mumkin. Ba'zi ko'rsatmalar sizning sayohat uchun avvalgi qarorlaringizni va bizning elektron pochtamizga nisbatan xatti-harakatlaringizni tahlil qilishga asoslangan bo'lishi mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_2_5" xml:space="preserve">
+    <value>Telefoningizni qo'ng'iroqlarni sifat nazorati maqsadida yozib oling va kelgusi so'rovlaringiz yoki savollaringizni ko'rib chiqing.</value>
+  </data>
+  <data name="PP_LABEL_4_2_6" xml:space="preserve">
+    <value>Cookie-lardan foydalanish, masalan, ushbu veb-saytning qulayligini yaxshilash, shaxsiylashtirish va foydalanish bo'yicha statistik ma'lumotlarni to'plash uchun. Shuningdek, biz ushbu sayt xavfsizligini yaxshilash uchun sessiya cookie-fayllaridan foydalanamiz.</value>
+  </data>
+  <data name="PP_LABEL_4_3" xml:space="preserve">
+    <value>Bizning huquqiy asoslarimiz</value>
+  </data>
+  <data name="PP_LABEL_4_3_1" xml:space="preserve">
+    <value>Siz bilan shartnomamizning bajarilishi. Agar siz bizga shaxsiy shaxsiy ma'lumotlarni taqdim etgan bo'lsangiz, unda buning uchun qonuniy asos sizning ruxsatingizdir.</value>
+  </data>
+  <data name="PP_LABEL_4_3_2" xml:space="preserve">
+    <value>Bizning qonuniy manfaatimiz - bu biznesni olib borish va barcha ma'lumotlarni qayta kiritmasdan sotib olishingizni yakunlash. Agar siz ushbu elektron pochta xabarlarini olishni istamasangiz, istalgan vaqtda elektron pochtadagi havoladan foydalanib obunani bekor qilishingiz mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_3_3" xml:space="preserve">
+    <value>Bizning qonuniy qiziqishimiz sayohatingizni yanada qulayroq qilish va qo'shimcha foydali ma'lumotlarni osongina topishingizga imkon berishdir. Agar siz ushbu ma'lumotni olishni istamasangiz, elektron pochtadagi havoladan foydalanib istalgan vaqtda obunani bekor qilishingiz mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_3_4" xml:space="preserve">
+    <value>Bizning qonuniy manfaatimiz biznes qilish va sayohatlaringizni uyushtirishga imkon berishdir. Agar siz ushbu elektron pochta xabarlarini olishni istamasangiz, istalgan vaqtda elektron pochtadagi yoki veb-saytimizdagi havoladan foydalanib obunani bekor qilishingiz mumkin. Shu bilan bir qatorda, siz sotib olishni tugatmasdan oldin xabarnomani olishni rad etishingiz mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_3_5" xml:space="preserve">
+    <value>Bizning qonuniy manfaatimiz (i) ichki mashg'ulotlar orqali xizmatlarimiz sifatini oshirish va (ii) sizdan mumkin bo'lgan so'rovlar yoki shikoyatlarni hal qilish. Agar siz telefon suhbati yozib olinishini istamasangiz, u boshlanishidan oldin bunday yozuvga e'tiroz bildirishingiz mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_3_6" xml:space="preserve">
+    <value>Bizning qonuniy manfaatimiz (i) veb-saytimizni takomillashtirish, (ii) sizni qiziqtirishi mumkin bo'lgan takliflarni namoyish qilish va (iii) xizmatlarimiz va veb-saytimiz xavfsizligini ta'minlashdan iborat. Agar cookie-fayllarni kompyuteringizda saqlashimizni istamasangiz, xohlagan vaqtda brauzer sozlamalarini o'zgartirishingiz mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_4" xml:space="preserve">
+    <value>Saqlash vaqti</value>
+  </data>
+  <data name="PP_LABEL_4_4_1" xml:space="preserve">
+    <value>Maxfiy shaxsiy ma'lumotlarni qayta ishlashga rozilik istalgan vaqtda bekor qilinishi mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_4_2" xml:space="preserve">
+    <value>Bronlash jarayoni tugaganidan 24 soat o'tgach.</value>
+  </data>
+  <data name="PP_LABEL_4_4_3" xml:space="preserve">
+    <value>Safar boshlanishidan oldin maksimal. Shunga o'xshash boshqa ishlov berish quyida keltirilgan maqsadlar uchun davom etishi mumkin.</value>
+  </data>
+  <data name="PP_LABEL_4_4_4" xml:space="preserve">
+    <value>Sotib olingan kundan boshlab 3 yil.</value>
+  </data>
+  <data name="PP_LABEL_4_4_5" xml:space="preserve">
+    <value>Telefon orqali suhbatlashgan kundan boshlab 6 oy. Yozib olish faqat cheklangan miqdordagi odamlar uchun mavjud.</value>
+  </data>
+  <data name="PP_LABEL_4_4_6" xml:space="preserve">
+    <value>Cookie turiga qarab.</value>
+  </data>
+  <data name="PP_LABEL_4_4_6_LINK" xml:space="preserve">
+    <value>Saqlash vaqti quyida batafsilroq tavsiflanadi.</value>
+  </data>
+  <data name="PP_LABEL_4_5" xml:space="preserve">
+    <value>Yuqorida aytib o'tilganlardan tashqari, biz iste'molchilarga buxgalteriya hisobi, hisob-kitoblar, jinoiy faoliyatdan olingan daromadlarni legallashtirishga qarshi majburiyatlarni bajarish va saytimiz xavfsizligini ta'minlash kabi xizmatlarni ko'rsatish uchun zarur bo'lgan bir qator kundalik tadbirlarni amalga oshirmoqdamiz. Amaldagi qonunchilikda zarur bo'lmagan darajada, biz qonuniy manfaatlarimiz asosida ushbu choralarni ko'ramiz. Shuningdek, biz mijozlarimizning veb-saytlari va xizmatlarini takomillashtirish bo'yicha xatti-harakatlarini tahlil qilishimiz mumkin. Biroq, bunday tahlil umumlashtirilgan yoki anonimlashtirilgan ma'lumotlar yordamida amalga oshiriladi.</value>
+  </data>
+  <data name="PP_LABEL_5" xml:space="preserve">
+    <value>Shaxsiy ma'lumotlaringizni uchinchi shaxslarga taqdim etish</value>
+  </data>
+  <data name="PP_LABEL_5_1" xml:space="preserve">
+    <value>Shaxsiy ma'lumotlaringizni faqat ushbu maxfiylik siyosatida keltirilgan maqsadlar uchun zarur bo'lgan hollarda uchinchi shaxslarga yetkazamiz. Uchinchi tomonlarga boshqa kompaniyalar, davlat idoralari va ishonchli biznes sheriklarimiz kirishi mumkin. Masalan, biz sizning shaxsiy ma'lumotlaringizni (kerak bo'lganda maxfiy ma'lumotlarni ham o'z ichiga olgan holda) aviakompaniyalar, mehmonxonalar, sug'urta kompaniyalari va global tarqatish tizimlari (GDS deb nomlangan) kabi biznes sheriklar bilan baham ko'rishimiz mumkin.</value>
+  </data>
+  <data name="PP_LABEL_5_2" xml:space="preserve">
+    <value>Har bir hamkor sizning shaxsiy ma'lumotlaringizni kompaniyamizdan olingandan keyin qanday ishlashi uchun shaxsan javob beradi. Bu shuni anglatadiki, sizning huquqlaringiz bilan bog'liq barcha masalalar bo'yicha amaldagi ma'lumotlarni muhofaza qilish to'g'risidagi qonunga muvofiq tegishli hamkorga murojaat qilishingiz kerak. Sizning shaxsiy ma'lumotlaringizni qanday ishlashi haqida ma'lumot olish uchun hamkorlarning tegishli maxfiylik siyosatini ko'rib chiqishni tavsiya etamiz.</value>
+  </data>
+  <data name="PP_LABEL_5_3" xml:space="preserve">
+    <value>Siz so'ragan xizmatlarni taqdim etish uchun biz sizning shaxsiy ma'lumotlaringizni boshqa kompaniyalar bilan (ma'lumot protsessorlari deb ataladi), masalan, bizning aloqa markazlarimizning ishlashi uchun mas'ul bo'lgan xizmat ko'rsatuvchi provayderlar va bizga xizmatlarimizni taqdim qilishda sizning shaxsiy ma'lumotlaringizni qayta ishlaydigan boshqa provayderlar bilan ham baham ko'ramiz ( masalan, tashqi xotira).</value>
+  </data>
+  <data name="PP_LABEL_6" xml:space="preserve">
+    <value>Uchinchi tomon yetkazib beruvchilari</value>
+  </data>
+  <data name="PP_LABEL_6_1" xml:space="preserve">
+    <value>Iltimos, bizning saytimizda boshqa saytlarga havolalar mavjudligini va uchinchi tomon sotuvchilari tomonidan taqdim etilgan materiallarni ko'rsatishini unutmang. Ushbu maxfiylik siyosati faqat bizning saytimiz va xizmatlarimiz uchun amal qiladi. Agar siz boshqa saytlarga ulansangiz yoki uchinchi tomon xizmatlari va mahsulotlaridan foydalansangiz, tegishli maxfiylik siyosati bilan tanishishingiz kerak. Bundan tashqari, agar siz ijtimoiy tarmoqlar orqali bizga murojaat qilsangiz, ushbu maxfiylik siyosati bunday aloqa vaqtida siz yuborgan shaxsiy ma'lumotlarga nisbatan qo'llanilmaydi. Bunday holda, biz sizga ijtimoiy media provayderining maxfiylik siyosatini o'qishni tavsiya etamiz.</value>
+  </data>
+  <data name="PP_LABEL_7" xml:space="preserve">
+    <value>Sizning huquqlaringiz</value>
+  </data>
+  <data name="PP_LABEL_7_1" xml:space="preserve">
+    <value>Ma'lumotlarni muhofaza qilish bo'yicha amaldagi qonunchilikka muvofiq siz "ma'lumotlar mavzusi"sifatida muayyan huquqlarga egasiz. Sizning huquqlaringiz quyida keltirilgan. Quyidagi huquqlaringiz bor:</value>
+  </data>
+  <data name="PP_LABEL_7_2" xml:space="preserve">
+    <value>Kirish huquqi.</value>
+  </data>
+  <data name="PP_LABEL_7_2_1" xml:space="preserve">
+    <value>Siz ko'rib chiqayotgan shaxsiy ma'lumotlaringizga kirish huquqiga egasiz. Bundan tashqari, shaxsiy ma'lumotlar bilan nima qilayotganimiz haqida aniq ma'lumot olish huquqiga egasiz. Ushbu ma'lumot ushbu hujjatda keltirilgan.</value>
+  </data>
+  <data name="PP_LABEL_7_3" xml:space="preserve">
+    <value>O'zgartirishlar kiritish huquqi.</value>
+  </data>
+  <data name="PP_LABEL_7_3_1" xml:space="preserve">
+    <value>Muayyan holatlarda siz bilan bog'liq noto'g'ri shaxsiy ma'lumotlarni tuzatish va to'liq bo'lmagan shaxsiy ma'lumotlarni to'ldirish huquqiga egasiz. Shuni esda tutingki, ayrim hollarda siz taqdim etgan noto'g'ri shaxsiy ma'lumotlarni, masalan, aviakompaniya qoidalari tufayli tuzatolmaymiz va bunday o'zgarish xarajatlarni keltirib chiqarishi mumkin.</value>
+  </data>
+  <data name="PP_LABEL_7_4" xml:space="preserve">
+    <value>O'chirib tashlash huquqi.</value>
+  </data>
+  <data name="PP_LABEL_7_4_1" xml:space="preserve">
+    <value>Ba'zi hollarda shaxsiy ma'lumotlaringizni o'chirish huquqiga egasiz..</value>
+  </data>
+  <data name="PP_LABEL_7_5" xml:space="preserve">
+    <value>Qayta ishlashni cheklash huquqi.</value>
+  </data>
+  <data name="PP_LABEL_7_5_1" xml:space="preserve">
+    <value>Ba'zi hollarda siz shaxsiy ma'lumotlaringizdan foydalanishni cheklash huquqiga egasiz.</value>
+  </data>
+  <data name="PP_LABEL_7_6" xml:space="preserve">
+    <value>Ma'lumotlarni uzatish huquqi.</value>
+  </data>
+  <data name="PP_LABEL_7_6_1" xml:space="preserve">
+    <value>Sizning shaxsiy ma'lumotlaringizni (yoki shaxsiy ma'lumotlaringizni to'g'ridan-to'g'ri boshqa ma'lumot egasiga) tuzilgan, taqsimlangan, mashinada o'qiladigan formatda olish huquqiga egasiz.</value>
+  </data>
+  <data name="PP_LABEL_7_7" xml:space="preserve">
+    <value>E'tiroz qilish huquqi.</value>
+  </data>
+  <data name="PP_LABEL_7_7_1" xml:space="preserve">
+    <value>Biz amalga oshiradigan shaxsiy ma'lumotlarni qayta ishlashning muayyan turlariga e'tiroz bildirish huquqiga egasiz. Bu bizning qonuniy manfaatlarimizga asoslangan barcha harakatlarimiz uchun amal qiladi.</value>
+  </data>
+  <data name="PP_LABEL_8" xml:space="preserve">
+    <value>“Cookie” fayllari</value>
+  </data>
+  <data name="PP_LABEL_8_1" xml:space="preserve">
+    <value>Cookie-kompyuteringizda saqlangan kichik matnli fayl. Ba'zi cookie fayllari faqat brauzer yopilishidan oldin (sessiya cookie-fayllari deb ataladi) saqlanadi va ba'zilari uzoq vaqt davomida saqlanadi (doimiy cookie-fayllar deb ataladi). Agar kompyuteringizda cookie-fayllarni saqlashni xohlamasangiz, brauzer sozlamalarini o'zgartirishingiz mumkin. Biroq, ba'zi hollarda bu bizning saytimizning ayrim funktsiyalari noto'g'ri ishlashiga va ba'zi materiallarni noto'g'ri ko'rsatishga olib kelishi mumkinligiga e'tiboringizni qaratamiz.</value>
+  </data>
+  <data name="PP_LABEL_8_2" xml:space="preserve">
+    <value>Ushbu veb-sayt bir qator sabablarga ko'ra cookie-fayllardan foydalanadi, jumladan, shaxsiy aloqani ta'minlash, veb-saytdan foydalanish qulayligini oshirish va ulardan foydalanish bo'yicha statistik ma'lumotlarni to'plash. Bundan tashqari, ushbu sayt xavfsizligini oshirish uchun sessiya cookie-fayllaridan foydalanamiz.</value>
+  </data>
+  <data name="PP_LABEL_8_3_1" xml:space="preserve">
+    <value>Ba'zi hollarda cookie - fayllardan foydalanishda ma'lumotlarni uchinchi shaxslarga o'tkazamiz. Misol uchun, biz Google Analytics va Google AdWords xizmatlaridan foydalanamiz. Google Analytics shaxsiy foydalanuvchilarni aniqlamaydi va IP-manzilingizni boshqa Google ma'lumotlariga bog'lamaydi. Biz Google tomonidan taqdim etilgan hisobotlardan saytdagi trafikni tahlil qilish, veb-sahifalardan foydalanishni tushunish va Google reklama tarmog'ida va boshqa reklama tarmoqlarida sotib olingan reklamalarni optimallashtirish uchun foydalanamiz. Google Google maxfiylik siyosatiga muvofiq ma'lumotlarni qayta ishlashi mumkin.</value>
+  </data>
+  <data name="PP_LABEL_8_3_2" xml:space="preserve">
+    <value>yuqorida keltirilgan maqsadlar uchun ushbu bo'limda. Cookie-fayllarni, JavaScript-ni o'chirib qo'yish yoki Google-dan foydalanishni rad etish xizmatidan foydalanib, Google Analytics ma'lumotlarini yig'ishdan bosh tortishingiz mumkin. Google reklama xususiyatlaridan voz kechish uchun ushbu havoladan foydalaning.</value>
+  </data>
+  <data name="PP_LABEL_8_4" xml:space="preserve">
+    <value>Facebook (shu jumladan Instagram) turli xil Facebook platformalarida reklama sotib olishni optimallashtirishga yordam berib, depersonalizatsiyalangan to'plangan ma'lumotlarni to'playdigan Pixel Facebook vositasidan ham foydalanadi. Facebook Foydalanuvchining Facebook Pixel saytiga tashrif buyurganligini aniqlashga yordam beradigan foydalanuvchi identifikatorlarini to'playdi. Biroq, biz reklama beruvchilar sifatida har qanday harakatni amalga oshiradigan muayyan foydalanuvchini aniqlay olmaymiz. Facebook va Facebook bilan bog'liq platformalar foydalanuvchilarning reklamachilarning Facebook-da reklama sotib olish uchun o'z saytlarida to'plangan ma'lumotlardan foydalanishiga rozi bo'lishlari yoki rozi bo'lmasliklari mumkin bo'lgan yopiq reklama ekotizimida joylashgan. Facebookdagi reklama sozlamalarini ko'rish va o'zgartirish uchun ushbu havoladan foydalaning.</value>
+  </data>
+  <data name="PP_LABEL_9" xml:space="preserve">
+    <value>Ma'lumotlar xavfsizligi</value>
+  </data>
+  <data name="PP_LABEL_9_1" xml:space="preserve">
+    <value>Shaxsiy ma'lumotlaringizni himoya qilish uchun biz bir qator texnik va tashkiliy xavfsizlik choralarini joriy qildik. Misol uchun, biz barcha tizimlarning yuqori darajadagi texnik xavfsizligini qo'llab-quvvatlaymiz (jumladan, kuzatish, falokatlarni tiklash, kirishni cheklash va boshqalar). Bundan tashqari, bizning xodimlarimiz (albatta, maxfiylikka rioya qilishlari shart bo'lgan) shaxsiy ma'lumotlardan keraksiz holatlarda foydalanmaslikka qaratilgan siyosatni qabul qildik. Bunday siyosat yetkazib beruvchilar bilan shartnomalar tuzishda yoki faoliyatimiz davomida yangi it tizimlarini joriy etishda bizning standartlarimizni belgilaydi.</value>
+  </data>
+  <data name="RD_BED" xml:space="preserve">
+    <value>Bir kishilik krovat</value>
+  </data>
+  <data name="RD_BEDS" xml:space="preserve">
+    <value>Krovatlar</value>
+  </data>
+  <data name="RD_BEFORE" xml:space="preserve">
+    <value>oldin</value>
+  </data>
+  <data name="RD_NIGHT" xml:space="preserve">
+    <value>Tun</value>
+  </data>
+  <data name="RD_NIGHTS" xml:space="preserve">
+    <value>Tunlar</value>
+  </data>
+  <data name="RD_RESERVE" xml:space="preserve">
+    <value>Bron qilish</value>
+  </data>
+  <data name="RD_TOTAL_FARE_FOR" xml:space="preserve">
+    <value>Umumiy tariff uchun</value>
+  </data>
+  <data name="RESET" xml:space="preserve">
+    <value>Tiklash</value>
+  </data>
+  <data name="SC_BASE_PRICE" xml:space="preserve">
+    <value>Bazis qiymati:</value>
+  </data>
+  <data name="SC_BILLING_ADDRES" xml:space="preserve">
+    <value>Hisob taqdim etiladigan manzil</value>
+  </data>
+  <data name="SC_BOOKING_COMPLETE_TEXT" xml:space="preserve">
+    <value>FareLovers-ni tanlaganingiz uchun tashakkur, sizning buyurtmangiz davom etmoqda. Tez orada elektron chiptalarni olasiz. Sizning buyurtma raqamingiz</value>
+  </data>
+  <data name="SC_CANCELLATION_POLICY" xml:space="preserve">
+    <value>Bekor qilish siyosati:</value>
+  </data>
+  <data name="SC_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Karta egasining ismi</value>
+  </data>
+  <data name="SC_CARD_NUMBER" xml:space="preserve">
+    <value>Karta raqami</value>
+  </data>
+  <data name="SC_CITY_NAME" xml:space="preserve">
+    <value>Shahar nomi</value>
+  </data>
+  <data name="SC_COUNTRY_NAME" xml:space="preserve">
+    <value>Mamlakat nomi</value>
+  </data>
+  <data name="SC_CVV" xml:space="preserve">
+    <value>Kredit kartaning xavfsizlik kodi (CVV-kod)</value>
+  </data>
+  <data name="SC_DATE_OF_BIRTH" xml:space="preserve">
+    <value>Tug’ilgan sana</value>
+  </data>
+  <data name="SC_DAY" xml:space="preserve">
+    <value>Kun</value>
+  </data>
+  <data name="SC_EMAIL" xml:space="preserve">
+    <value>Elektron pochta</value>
+  </data>
+  <data name="SC_EXP_MONTH" xml:space="preserve">
+    <value>Kartaning amal qilish oyi</value>
+  </data>
+  <data name="SC_EXP_YEAR" xml:space="preserve">
+    <value>Kartaning amal qilish yili</value>
+  </data>
+  <data name="SC_FIRST_NAME" xml:space="preserve">
+    <value>Ism</value>
+  </data>
+  <data name="SC_GENDER" xml:space="preserve">
+    <value>Jinsi</value>
+  </data>
+  <data name="SC_HOW_WOULD_YOU_PAY" xml:space="preserve">
+    <value>Siz qaysi to’lov usulini afzal ko’rasiz?</value>
+  </data>
+  <data name="SC_LAST_NAME" xml:space="preserve">
+    <value>Familiya</value>
+  </data>
+  <data name="SC_MIDDLE_NAME" xml:space="preserve">
+    <value>Otasining ismi</value>
+  </data>
+  <data name="SC_MONTH" xml:space="preserve">
+    <value>Oy</value>
+  </data>
+  <data name="SC_MULTI_WAY_FLIGHT" xml:space="preserve">
+    <value>Bir necha yo’nalashlarda uchish</value>
+  </data>
+  <data name="SC_ONEWAY_FLIGHT" xml:space="preserve">
+    <value>Bir yo’nalishda uchish</value>
+  </data>
+  <data name="SC_PAY" xml:space="preserve">
+    <value>To‘lash</value>
+  </data>
+  <data name="SC_PHONE" xml:space="preserve">
+    <value>Telefon:</value>
+  </data>
+  <data name="SC_PROTECTION_AND_COVERAGES" xml:space="preserve">
+    <value>Himoya qilish va uning qoidalari</value>
+  </data>
+  <data name="SC_REGION" xml:space="preserve">
+    <value>Mintaqa/Davlat</value>
+  </data>
+  <data name="SC_ROOMS" xml:space="preserve">
+    <value>Xonalar</value>
+  </data>
+  <data name="SC_ROUND_FLIGHT" xml:space="preserve">
+    <value>Borish va Qaytish</value>
+  </data>
+  <data name="SC_STREET_ADDRESS" xml:space="preserve">
+    <value>Ko‘cha, uy manzili</value>
+  </data>
+  <data name="SC_TAXES" xml:space="preserve">
+    <value>Soliqlar</value>
+  </data>
+  <data name="SC_TAXES_AND_FEES" xml:space="preserve">
+    <value>Soliqlar va To'lovlar</value>
+  </data>
+  <data name="SC_TICKET" xml:space="preserve">
+    <value>Bilet</value>
+  </data>
+  <data name="SC_TICKETS" xml:space="preserve">
+    <value>Biletlar</value>
+  </data>
+  <data name="SC_TITLE" xml:space="preserve">
+    <value>Unvon</value>
+  </data>
+  <data name="SC_TOTAL" xml:space="preserve">
+    <value>Jami:</value>
+  </data>
+  <data name="SC_VALIDATION_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Karta egasining ismi to'ldirilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_CVV" xml:space="preserve">
+    <value>Karta xavfsizlik kodi to'ldirilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_MONTH" xml:space="preserve">
+    <value>kartaning amal qilish muddati tugagan oy to'ldirilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_NUMBER" xml:space="preserve">
+    <value>karta raqami to'ldirilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_YEAR" xml:space="preserve">
+    <value>kartaning amal qilish yili to'ldirilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_CITY" xml:space="preserve">
+    <value>Shahar nomi to'ldirilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_COUNTRY" xml:space="preserve">
+    <value>Mamlakat nomi to'ldirilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_DAY" xml:space="preserve">
+    <value>tug'ilgan sana to'ldirilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_EMAIL" xml:space="preserve">
+    <value>Elektron pochta manzili ko'rsatilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_FIRST_NAME" xml:space="preserve">
+    <value>Ism ko'rsatilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_GENDER" xml:space="preserve">
+    <value>Jins tanlanmagan</value>
+  </data>
+  <data name="SC_VALIDATION_LAST_NAME" xml:space="preserve">
+    <value>Familiya ko'rsatilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_MONTH" xml:space="preserve">
+    <value>tug'ilgan oyi tanlanmagan</value>
+  </data>
+  <data name="SC_VALIDATION_PHONE" xml:space="preserve">
+    <value>Telefon raqami ko'rsatilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_REGION" xml:space="preserve">
+    <value>Mintaqa/Davlat ko'rsatilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_STREET" xml:space="preserve">
+    <value>Manzil ko'rsatilmagan</value>
+  </data>
+  <data name="SC_VALIDATION_TITLE" xml:space="preserve">
+    <value>Unvon tanlanmagan</value>
+  </data>
+  <data name="SC_VALIDATION_YEAR" xml:space="preserve">
+    <value>Tug'ilgan yili tanlanmagan</value>
+  </data>
+  <data name="SC_VALIDATION_ZIP" xml:space="preserve">
+    <value>Pochta indeksi tanlanmagan</value>
+  </data>
+  <data name="SC_WHO_IS_TRAVELING" xml:space="preserve">
+    <value>Sayohat qilayotgan inson kim?</value>
+  </data>
+  <data name="SC_YEAR" xml:space="preserve">
+    <value>Yil</value>
+  </data>
+  <data name="SC_YOUR_PRICE_SUMMARY" xml:space="preserve">
+    <value>Jami narx</value>
+  </data>
+  <data name="SC_ZIP_CODE" xml:space="preserve">
+    <value>Pochta indeksi</value>
+  </data>
+  <data name="SF_ADULT" xml:space="preserve">
+    <value>Katta yoshli</value>
+  </data>
+  <data name="SF_ADULTS" xml:space="preserve">
+    <value>Kattalar</value>
+  </data>
+  <data name="SF_ADULTS_YEARS" xml:space="preserve">
+    <value>12 yoshdan katta</value>
+  </data>
+  <data name="SF_APPLY" xml:space="preserve">
+    <value>Qo‘llash</value>
+  </data>
+  <data name="SF_CABIN_CLASS" xml:space="preserve">
+    <value>Salon klassi</value>
+  </data>
+  <data name="SF_CABIN_SOLON" xml:space="preserve">
+    <value>Salon:</value>
+  </data>
+  <data name="SF_CHILD" xml:space="preserve">
+    <value>Bola</value>
+  </data>
+  <data name="SF_CHILDREN" xml:space="preserve">
+    <value>Bolalar</value>
+  </data>
+  <data name="SF_CHILDREN_YEARS" xml:space="preserve">
+    <value>2-12 yosh</value>
+  </data>
+  <data name="SF_DEPARTURE" xml:space="preserve">
+    <value>Uchib ketish</value>
+  </data>
+  <data name="SF_DEPARTURE_DATE" xml:space="preserve">
+    <value>Uchib ketish sanasi</value>
+  </data>
+  <data name="SF_DEPARTURE_SECOND_SEGMENT" xml:space="preserve">
+    <value>Borish yo'nalishi ikkinchi segment</value>
+  </data>
+  <data name="SF_DEPARTURE_THIRD_SEGMENT" xml:space="preserve">
+    <value>Borish yo'nalishi uchinchi segment</value>
+  </data>
+  <data name="SF_DESTINATION" xml:space="preserve">
+    <value>Qayerga</value>
+  </data>
+  <data name="SF_DESTINATION_SECOND_SEGMENT" xml:space="preserve">
+    <value>Yo'nalish ikkinchi segment</value>
+  </data>
+  <data name="SF_DESTINATION_THIRD_SEGMENT" xml:space="preserve">
+    <value>Yo'nalish uchinchi segment</value>
+  </data>
+  <data name="SF_DOCUMENTS" xml:space="preserve">
+    <value>Hujjatlar</value>
+  </data>
+  <data name="SF_FROM" xml:space="preserve">
+    <value>Qayerdan</value>
+  </data>
+  <data name="SF_FROM_SECOND_SEGMENT" xml:space="preserve">
+    <value>Qayerdan ikkinchi segment</value>
+  </data>
+  <data name="SF_FROM_THIRD_SEGMENT" xml:space="preserve">
+    <value>Qayerdan uchinchi segment</value>
+  </data>
+  <data name="SF_INFANT" xml:space="preserve">
+    <value>Go'dak</value>
+  </data>
+  <data name="SF_INFANTS" xml:space="preserve">
+    <value>Go'daklar</value>
+  </data>
+  <data name="SF_INFANTS_YEARS" xml:space="preserve">
+    <value>0-2 yosh</value>
+  </data>
+  <data name="SF_MULTI_CITY" xml:space="preserve">
+    <value>Multi-Shahar</value>
+  </data>
+  <data name="SF_NO_AIRPORTS_FOUND" xml:space="preserve">
+    <value>Aeroportlar topilmadi.</value>
+  </data>
+  <data name="SF_ONE_WAY" xml:space="preserve">
+    <value>Bir tomonga</value>
+  </data>
+  <data name="SF_POPULAR_PLACES" xml:space="preserve">
+    <value>Ommabop joylar</value>
+  </data>
+  <data name="SF_RETURN" xml:space="preserve">
+    <value>Qaytib kelish</value>
+  </data>
+  <data name="SF_RETURN_DATE" xml:space="preserve">
+    <value>Qaytib kelish sanasi</value>
+  </data>
+  <data name="SF_ROUND_TRIP" xml:space="preserve">
+    <value>Borish va qaytish sayohati</value>
+  </data>
+  <data name="SF_SEARCH_FLIGHTS" xml:space="preserve">
+    <value>Reyslarni qidirish</value>
+  </data>
+  <data name="SF_VALIDATION_ERROR" xml:space="preserve">
+    <value>Tasdiqlash xatosi!</value>
+  </data>
+  <data name="SF_VALIDATION_ERROR_SINGLE" xml:space="preserve">
+    <value>Bitta tasdiqlash xatosi </value>
+  </data>
+  <data name="SR_NO_FLIGHTS_FOUND" xml:space="preserve">
+    <value>Reyslar topilmadi.</value>
+  </data>
+  <data name="UA_LABEL_1" xml:space="preserve">
+    <value>1. XIZMATLAR TARKIBI</value>
+  </data>
+  <data name="UA_LABEL_1.1" xml:space="preserve">
+    <value>1. Turistik xizmatlar ko’rsatishda vositachilik</value>
+  </data>
+  <data name="UA_LABEL_1.1.1" xml:space="preserve">
+    <value>Portalda taklif qilinayotgan aviachiptalar va mehmonxonalarni bron qilish, avtomobillarni sug’urta qildirish va ijaraga olish bo’yicha xizmatlarni (birgalikda “Turistlar uchun xizmatlar deb nomlanadi”) taqdim qilishda biz faqat vositachi sifatida ishtirok etamiz. SHuning uchun bizning rolimiz va majburiyatlarimiz aviakompaniyalar, tutsroperatorlar, mehmonxonalar, sug’urta kompaniyalar, avtomobil ijarasi bo’yicha kompaniyalar va boshqa xizmatlar provayderlari kabi uchinchi shaxslar (quyida har bir muayyan holda “Xizmatlar yetkazib beruvchisi” deb nomlanadi) tomonidan taqdim qilinadigan turistik xizmatlar sababli vositachilik bilan cheklanadi.</value>
+  </data>
+  <data name="UA_LABEL_1.1.2" xml:space="preserve">
+    <value>Demak, turistik xizmatlarni amalda taqdim qilish to’g’risida shartnoma (masalan, tashish shartnomasi, sug’urta shartnomasi, ijara shartnomasi) bevosita siz va tegishli Xizmatlar yetkazib beruvchisi o’rtasida kuchga kiradi. Biz birgalikda turistik xizmatlarni yetkazib beruvchisi emasmiz hamda siz va Xizmatlar yetkazib beruvchisi o’rtasida tomon bo’lib hisoblanmaymiz.</value>
+  </data>
+  <data name="UA_LABEL_1.1.3" xml:space="preserve">
+    <value>Portladanturistik xizmatlarni sotib olish uchun foydalanib, siz bizga sizning nomingizdan tegishli Xizmatlar yetkazib beruvchisi bilan muzokaralarni, shu jumladan siz va Xizmatlar yetkazib beruvchisi o’rtasida bitim yakunlanishini ta’minlash uchun ushbu turistik xizmatlar haqini to’lash to’g’risida muzokaralar olib borishga ruxsat berasiz. Amaldagi turistik xizmatlar qiymatiga Siz va tegishli Xizmatlar yetkazib beruvchisi o’rtasida shartnomani tuzishda vositachi sifatida biz tomonimizda ko’rsatiladigan xizmatlar haqi kirishi mumkin.</value>
+  </data>
+  <data name="UA_LABEL_1.1.4" xml:space="preserve">
+    <value>Portaldan bizning vositachiligimiz orqali sotib olingan turistik xizmatlarning amalda taqdim qilinishi uchun javobgarlik faqat tegishli Xizmatlar yetkazib beruvchisi zimmasida bo’ladi. Vositachi sifatida ishtirok etib, biz Xizmatlar yetkazib beruvchisi tomonidan taqdim qilingan turistik xizmatlar uchun javobgarlikni zimmamizga olmaymiz, shuningdek Portal vositachiligida sotib olingan turistik xizmatlarning yaroqliligi yoki sifatiga nisbatan hech qanday arzlar qilmaymiz va hech qanday kaafolatlar (yaqqol yoki nazarda tutiladigan) bermaymiz. Sizda turistik xizmatlarni taqdim qilish yoki taqdim qilinmaslik yuzasida paydo bo’lishi mumkin bo’lgan har qanday e’tirozlar Xizmatlar Provayderiga yo’naltirilishi zarur.</value>
+  </data>
+  <data name="UA_LABEL_1.1.5" xml:space="preserve">
+    <value>Agar turistik xizmatlarni bron qilishda Sizda alohida istaklarni ()masalan, maxsus ovqatlanishni, nogironlar uchun xonalar yoki bolalar uchun joylarni taqdim qilish to’g’risida) izhor etish imkoningiz bo’lsa, biz Sizning so’rovingizni tegishli Xizmatlar yetkazib beruvchisiga yetkazamiz. Biroq biz Xizmatlar yetkazib beruvchisi amalda bunday istaklarni bajara olishi mumkinligi uchun javobgar bo’lmaymiz.</value>
+  </data>
+  <data name="UA_LABEL_1.2" xml:space="preserve">
+    <value>2. Bizning o’z xizmatlarimiz</value>
+  </data>
+  <data name="UA_LABEL_1.2.1" xml:space="preserve">
+    <value>Yuqoridagi 1.1-bandida ta’riflanganidek, turistik xizmatlarni sotib olishda vositachilikka qo’shimcha ravishda Portal qo’shimcha xizmatlarni (turistik xizmatlar hisoblanmaydigan) ham taqdim qiladi va ular uchun javobgar bo’ladi. Bunday qo’shimcha xizmatlardan foydalanish uchun Siz bevosita biz bilan shartnomaviy munosabatlarga kirishasiz. Har bir holda biz Sizni xizmatlarimiz hajmi to’g’risida va biz uchinchi shaxslarning xizmatlarini sotib olishda vositachilik xizmatlarni shunchaki ko’rsatmaymiz, balki o’z xizmatlarimizni taklif etayotganligimiz to’g’risida ma’lum xabar beramiz. Bizning o’z xizmatlarimizning mazmuni vaqti-vaqti bilan o’zgarib turishi mumkin. Mazkur SHartlarda belgilanmagan qo’shimcha xizmatlarni ko’rsatida bron qilish vaqtida Sizga bunday qo’shimcha xizmatlarning batafsil ta’rifi, shuningdek bizning narxlarimiz hamda bron qilish va foydalanishning qo’shimcha shartlari to’g’risida axborot taqdim qilinadi.</value>
+  </data>
+  <data name="UA_LABEL_1.3" xml:space="preserve">
+    <value>3. Amaldagi kontrakt shartlari</value>
+  </data>
+  <data name="UA_LABEL_1.3.1" xml:space="preserve">
+    <value>Ushbu shartlar 1.1-bandga muvofiq sayohat xizmatlarini sotib olishda vositachilikni, shuningdek 1.2-bandga muvofiq o'z xizmatlarini ko'rsatishni tartibga soladi.</value>
+  </data>
+  <data name="UA_LABEL_1.3.2" xml:space="preserve">
+    <value>Siz bilan tegishli Xizmat ko'rsatuvchi provayder o'rtasida tuzilgan shartnoma (1.1.2-band) Xizmat ko'rsatuvchi tomonidan taqdim etilgan tegishli xizmat ko'rsatuvchi provayderning umumiy shartlari (tashish, o'tkazish, sug'urta qilish va boshqalar) bilan tartibga solinadi. Tegishli xizmat ko'rsatuvchi provayderning bunday umumiy shartlari sizga bron qilish paytida xabar qilinadi. Xizmat ko'rsatuvchi provayderning shartlari javobgarlikni, bekor qilishni, bronni o'zgartirishni va pulni qaytarib berishni (agar mavjud bo'lsa) va boshqa cheklovlarni o'z ichiga olishi mumkinligi sababli, ushbu shartlarni diqqat bilan o'qib chiqishingizni tavsiya qilamiz.</value>
+  </data>
+  <data name="UA_LABEL_10" xml:space="preserve">
+    <value>10. Mas'uliyat</value>
+  </data>
+  <data name="UA_LABEL_10.1" xml:space="preserve">
+    <value>Bunda siz, Siz va Xizmat ko'rsatuvchi provayder o'rtasida vositachi sifatida ish olib borayotganimizni tan olasiz. Siz bir yoki bir nechta xizmat ko'rsatuvchi provayderlarga buyurtma bergan sayohat xizmatlari uchun biz hech qanday holatda javobgar emasmiz va tegishli xizmat ko'rsatuvchi tomonidan taqdim etilgan Portalda joylashtirilgan ma'lumotlarning noto'g'riligi uchun ham javobgar emasmiz. Agar xizmat ko'rsatuvchi provayder biror bir sababga ko'ra sayohat xizmatini taqdim eta olmasa, shu jumladan xizmat ko'rsatuvchi provayder bankrot deb e'lon qilsa, biz vositachi sifatida ishlay olamiz va to'langan summalarni faqat biz olgan bo'lsakgina qaytaramiz, agar biz ularni o'z xizmatlarimizga nisbatan tegishli xizmat ko'rsatuvchi provayderdan olgan bo'lsak, biz ushbu Foydalanish Shartlarida nazarda tutilgan cheklovlar va qonun bilan ruxsat etilgan darajada zarar uchun javobgar bo'lamiz. Biz sizning buyurtmangizning umumiy narxida (bitta voqea uchun ham, bir qator tegishli voqealar uchun ham) o'z xizmatlarimiz bo'yicha majburiyatlarimizni haqiqatan ham amalga oshirilgan, to'langan yoki tasdiqlanmaganligi natijasida kelib chiqqan to'g'ridan-to'g'ri zararingiz uchun javobgarmiz. Shuningdek 10.3-bandda ko'rsatilgan javobgarlikni cheklash, majburiyatlarning buzilishiga nisbatan qo'llaniladi</value>
+  </data>
+  <data name="UA_LABEL_11" xml:space="preserve">
+    <value>11. YEVROPA ITTIFOQI NIZOM OSTIDAGI ISTE'MOLCHILAR HUQUQLARI</value>
+  </data>
+  <data name="UA_LABEL_11.1" xml:space="preserve">
+    <value>1. Parvozni bekor qilish yoki kechiktirish.</value>
+  </data>
+  <data name="UA_LABEL_11.1.1" xml:space="preserve">
+    <value>Agar siz Yevropa Ittifoqiga kirsangiz yoki undan chiqsangiz yoki Yevropa Ittifoqi aviatashuvchisidan foydalansangiz, reysingiz bekor qilingan yoki kechiktirilgan yoki sizning samolyotga chiqish rad etilgan taqdirda siz to'g'ridan-to'g'ri aviakompaniyaga to'lovni qoplash to'g'risidagi da'vo bilan murojaat qilishingiz mumkin. Agar siz 261/2004-sonli (EC) nizomi to'g'risida ko'proq ma'lumot olishni istasangiz,</value>
+  </data>
+  <data name="UA_LABEL_11.2" xml:space="preserve">
+    <value>2. Tashuvchining javobgarligi</value>
+  </data>
+  <data name="UA_LABEL_11.2.1" xml:space="preserve">
+    <value>Baxtsiz hodisa yuz bergan taqdirda havo tashuvchilarning javobgarligi to'g'risidagi 889/2002 (EC) nizom.</value>
+  </data>
+  <data name="UA_LABEL_12" xml:space="preserve">
+    <value>12. MA'LUMOTLARNI MUHOFAZA QILISH</value>
+  </data>
+  <data name="UA_LABEL_12.1" xml:space="preserve">
+    <value>Biz sizning shaxsiy ma'lumotlaringizni himoya qilishga jiddiy yondashamiz. Shaxsiy ma'lumotlaringizni yig'ish, qayta ishlash va ulardan foydalanish haqida batafsil ma'lumotni Maxfiylik siyosatimizda topishingiz mumkin.</value>
+  </data>
+  <data name="UA_LABEL_13" xml:space="preserve">
+    <value>13. QONUNCHILIKNI TARTIBGA SOLISH VA NIZOLARNI HAL QILISH</value>
+  </data>
+  <data name="UA_LABEL_13.1" xml:space="preserve">
+    <value>1. Boshqaruv qonunchiligiю</value>
+  </data>
+  <data name="UA_LABEL_13.1.1" xml:space="preserve">
+    <value>Shvetsiya qonunchiligi faqat ushbu Shartlarga va siz bilan biz o'rtamizdagi shartnomaga taalluqlidir. Iste'molchi sifatida siz o'zingizning mamlakatingizning majburiy qonun qoidalariga muvofiq huquqlaringizga amal qilasiz. Ushbu Shartlarning hech bir qismi, shu jumladan ushbu 13.1-bandi, ushbu majburiy mahalliy qonun qoidalaridan iste'molchi sifatida foydalanish huquqingizni cheklamaydi.</value>
+  </data>
+  <data name="UA_LABEL_13.2" xml:space="preserve">
+    <value>2. Nizolarni onlayn hal qilish.</value>
+  </data>
+  <data name="UA_LABEL_13.2.1" xml:space="preserve">
+    <value>Yevropa komissiyasi nizolarni onlayn tarzda hal qilish uchun platformani taqdim etadi:</value>
+  </data>
+  <data name="UA_LABEL_2" xml:space="preserve">
+    <value>2. BRON QILISH JARAYONI VA ALOQA MA'LUMOTLARI.</value>
+  </data>
+  <data name="UA_LABEL_2.1" xml:space="preserve">
+    <value>Bron qilish jarayonida sizga ma'lumot kiritish shakllaridagi xatolarni aniqlash uchun zarur bo'lgan texnik vositalar taqdim etiladi va bron qilish uchun so'rov yuborishdan oldin ularni tuzatish imkoniyati mavjud. Buyurtma so'rovini yuborishdan oldin barcha ma'lumotlarni tekshirishingizni tavsiya qilamiz. Keyingi o'zgartirish talablari katta qo'shimcha xarajatlarni keltirib chiqarishi mumkin.</value>
+  </data>
+  <data name="UA_LABEL_2.2" xml:space="preserve">
+    <value>Siz bilan bog'lanishimiz kerak bo'lishi mumkin, masalan, keyinchalik sotib olingan sayohat xizmatlari o'zgarganda. Siz aniq aloqa ma'lumotlarini - telefon raqami va elektron pochta manzilini ko'rsatishingiz kerak. Shuningdek, siz bizning xabarlarimizning kelib tushishini doimiy ravishda kuzatib borishingiz kerak. Shuningdek, siz bizning xabarlarni qabul qilganingizga ishonch hosil qilishingiz kerak. Agar siz bizdan o'zimizga tegishli bo'lmagan sabablarga ko'ra xabar olmasangiz, biz javobgar emasmiz, shu jumladan: (i) noto'g'ri elektron pochta manzilini ko'rsatgan bo'lsangiz; (ii) sizning elektron pochta sozlamalari bizning aloqalarimiz sizga yetib borishiga to'sqinlik qilsa; yoki (iii) sizning elektron pochta sozlamalaringiz bizning xabarlarimizni spam deb tasniflasa.</value>
+  </data>
+  <data name="UA_LABEL_3" xml:space="preserve">
+    <value>3.PARVOZLANI BRON QILISH UCHUN VOSITACHILIK </value>
+  </data>
+  <data name="UA_LABEL_3.1" xml:space="preserve">
+    <value>1. Shartnoma tuzish va narxlarni qayta ko'rib chiqish.</value>
+  </data>
+  <data name="UA_LABEL_3.1.1" xml:space="preserve">
+    <value>Buyurtma so'rovini yuborganingizdan so'ng, biz sizning elektron pochtangiz orqali so'rovingiz olinganligini tasdiqlaymiz. Aynan shu paytda siz va biz o'rtamaizda vositachilik xizmatlarini ko'rsatish bo'yicha kelishuv yuzaga keladi. Agar siz buyurtmani yuborish haqidagi so'rovingizni yuborganingizdan keyin bir soat ichida bunday tasdiqni olmasangiz va operatorimiz muammo haqida xabar berish uchun elektron pochta yoki telefon orqali siz bilan bog'lanmasa, iltimos, vaziyatni aniqlashtirish uchun bizga qo'ng'iroq qiling.</value>
+  </data>
+  <data name="UA_LABEL_3.1.2" xml:space="preserve">
+    <value>Sizga buyurtma qilingan chiptalar rasmiylashtirilgandan so'ng, sizga chipta raqami ko'rsatilgan elektron pochta xabarlari keladi. Shu vaqtda siz va tegishli aviakompaniya (lar) o'rtasida qonuniy majburiy shartnoma tuziladi.</value>
+  </data>
+  <data name="UA_LABEL_3.1.3" xml:space="preserve">
+    <value>Chiptalar narxi va mavjudligi bevosita tegishli aviakompaniya tomonidan ko'rsatiladi. Agar aviachipta narxi bizga bog’liq bo’lmagan sabablarga ko'ra o'zgarib tursa, bron haqida so'rov yuborilgandan so'ng, lekin aviakompaniya bilan shartnoma kuchga kirgan kundan oldin (yuqoridagi 3.1.2-bandda ko'rsatilganidek), shartnoma kuchga kirmaydi va sizning to'lovingiz sizga to’liq qaytariladi. Lekin narx o'zgarganidan xabardor bo'lganimizdan keyin 24 soatdan kechiktirmay yoki shu 24 soatdan keyingi birinchi ish kunida Biz siz bilan bog'lanib, o'zgargan narxni odatdagi ish soatlarida qabul qilishni taklif qilishimiz mumkin.</value>
+  </data>
+  <data name="UA_LABEL_3.2" xml:space="preserve">
+    <value>2. Bron qilish va tashish shartlari to'g'risida ma'lumot</value>
+  </data>
+  <data name="UA_LABEL_3.2.1" xml:space="preserve">
+    <value>Portalda taqdim etiladigan reyslarga kelsak, biz faqat vositachi sifatida harakat qilamiz. Yuk tashish shartnomasi to'g'ridan-to'g'ri siz va tegishli aviakompaniya o'rtasida tuziladi va biz sizning reysingiz amalga oshirilishi yoki yo'qligi uchun hech qanday shartnomaviy javobgarlikni o'z zimmamizga olmaymiz. Faqatgina amaldagi aviakompaniya sizning parvozingizni amalga oshirishi / bajarmasligi uchun javobgardir.</value>
+  </data>
+  <data name="UA_LABEL_3.2.2" xml:space="preserve">
+    <value>Bron qilishdan oldin, sizga tegishli aviakompaniya (lar) ning shartlari taqdim etiladi.</value>
+  </data>
+  <data name="UA_LABEL_3.2.3" xml:space="preserve">
+    <value>Aviakompaniyalar tomonidan taqdim etiladigan sayohat xizmatlarini sotib olishda vositachi sifatida biz ushbu aviakompaniyalarning bronlashtirish tizimlariga kirishni kafolatlamaymiz. Agar kerak bo'lsa, biz siz va aviakompaniya o'rtasida tuzilgan shartnomaga muvofiq sizning nomingizdan harakat qilishimiz mumkin. Shuningdek, biz sizdan to'g'ridan-to'g'ri tegishli aviakompaniya bilan bron qilish ma'lumotlarini olish va bronni o'zgartirish yoki bekor qilishni so'rashimiz mumkin.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4" xml:space="preserve">
+    <value>Quyida, umumiy ko'rinishida, biz aviakompaniyalar tomonidan odatda ushbu yoki hech bo'lmaganda bir xil tarzda qo'llaniladigan bron qilish va tashish shartlari to'g'risida ma'lumot beramiz. Shu bilan birga, ushbu aviakompaniyaning har qanday turli xil qoidalari ushbu 3.2.4-bandda keltirilgan umumiy ma'lumotdan ustun turadi. Shuning uchun, har holda, bron qilishdan oldin, siz tegishli aviakompaniyaning hozirgi sharoitlariga e'tibor berishingiz kerak.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.1" xml:space="preserve">
+    <value>Chiqish / Ro'yxatdan o'tish vaqti.
+Uchish vaqti har doim mahalliy vaqtga to'g'ri keladi. Ertasi kuni kelishi jadvalda ko'rsatilgan. Belgilangan uchish vaqti vaqtinchalik va chiptalar chiqarilgandan ko'p o'tmay ogohlantirish bilan o'zgartirilishi mumkin, masalan, havo harakatini boshqarish cheklovlari, ob-havo sharoiti yoki aviakompaniyaning funksional cheklovlari. Siz parvozning hozirgi vaqtini oldindan bilishingiz kerak.
+Shuningdek, aviakompaniya ko'rsatgan parvozga o'z vaqtida ro'yxatdan o'tishingiz kerak. Ro'yxatdan o'tishga kechikilgan holatda, aviakompaniyalar samolyotga chiqishdan bosh tortish huquqiga ega. Iltimos, diqqat qiling: ba'zi aviakompaniyalar o'zlarining veb-saytlarida onlayn ro'yxatdan o'tishni taklif qiladilar va qo'lda ro'yxatdan o'tish uchun to'lovlarni aeroportda amalga oshiradilar.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.10" xml:space="preserve">
+    <value>Ikki marta bron qilish
+Ikki marta bron qilish - bu bitta aviakompaniyaning reysida bitta yo'lovchining nomiga ikki yoki undan ortiq bronni bildiradi. Ikki marta bron qilish uchun aviakompaniya sayohatni bekor qilishi mumkin. Agar bron qilish turli xil sayyohlik agentliklari orqali amalga oshirilgan bo'lsa ham bekor qilinishi mumkin. Agar aviakompaniyalar tomonidan bekor qilingan reyslar yoki aviakompaniyalar tomonidan qaytarib beriladigan to'lovlar ikki kishilik buyurtma bilan bog'liq bo'lsa, biz javobgar emasmiz.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.2" xml:space="preserve">
+    <value>Combining separate tickets.
+Bir martalik sayohat sotib olish o'rniga ikki tomonlama bir tomonlama chiptalarni birlashtirish bron qilish tartibida aniq ko'rsatilgan. Ish tashlashlar natijasida, shuningdek jadvalning o'zgarishi natijasida havo harakatlarining bekor qilinishi, o'zgarishi yoki buzilishi yuz berganda chiptalar bir-biridan mustaqil ravishda ko'rib chiqiladi. Har bir aviakompaniyaning qoidalari amal qiladi.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.3" xml:space="preserve">
+    <value>Ko'p segmentli parvozlar / foydalanish qoidalari.
+Bir tomonlik yoki qaytishi ham bor chiptangiz bir nechta segmentga ega bo'lishi mumkin. Ko'pgina aviakompaniyalar shartlariga ko'ra, ushbu parvoz segmentlari ma'lum bir ketma-ketlikda ishlatiladi. Aks holda, ko'plab aviakompaniyalar keyingi parvoz segmentlarini ishlatishdan bosh tortishadi (ya'ni bitta parvoz segmentidan foydalanmaslik chiptaning qolgan qismini bekor qilishi mumkin). Ikki tomonga chipta sotib olingan taqdirda, belgilangan joyga parvoz qilmaslik aviakompaniya tomonidan teskari parvoz chiptasini bekor qilishga olib kelishi mumkin.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.4" xml:space="preserve">
+    <value>Homiladorlik.
+Ba'zi bir aviakompaniyalar 28 haftadan ko'p homilador bo'lgan ayollarga belgilangan manzilga yoki u yerdan uchib ketayotganda ularni tashishdan bosh tortishadi. Agar siz homilador bo'lsangiz, sayohat qilishingiz mumkin bo'lsa, aviakompaniya va shifokor bilan bog'lanishingiz kerak.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.5" xml:space="preserve">
+    <value>Bolalar chiptalari.
+Aviakompaniyaning alohida joyga ega bo'lmagan bola bilan sayohat qilish shartlarini tekshiring. Odatda, 2 yosh va undan katta yoshdagi bolalar uchun alohida o'rindi zarur bo’lsa, 0-2 yoshdagi bolalar kattalar qo'lida alohida o'rindiqsiz sayohat qilishadi. Agar bola sayohat tugaguniga qadar 2 yoshga to'lgan bo'lsa, butun sayohat davri uchun alohida o'rindiqli bolalar chiptasini bron qilishingiz kerak. Ikki yoshga to'lmagan bolalar uchun chiptalarni tug'ilgan paytigacha bron qilish mumkin emas, chunki familiyasi va tug'ilgan sanasi pasportda ko'rsatilgan ismlar va sanalar bilan to'liq mos kelishi kerak. Agar dastlab chiptaning noto'g'ri turi buyurtma qilingan bo'lsa, biz xarajatlarni qaytarib bermaymiz.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.6" xml:space="preserve">
+    <value>Hech kimning qaramog’ida bo’lmagan voyaga yetmaganlar.
+Hech kimning qaramog’ida bo’lmagan voyaga yetmaganlar uchun chiptalarni bron qilishda biz vositachilik qilmaymiz. 18 yoshgacha bo'lgan bolalar uchun kattalar bilan buyurtma berish kerak. Ba'zi mamlakatlar va aviakompaniyalar 18 yoshgacha bo'lgan bolalarni qabul qilishdan bosh tortadilar, ularga vasiy hamrohlik qilmaydi. Iltimos, diqqat qiling, ba'zi aviakompaniyalar 18 yoshgacha bo'lgan bolalar tug'ilganlik to'g'risidagi guvohnomani olib yurishini talab qilishadi.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.7" xml:space="preserve">
+    <value>Yo'qotilgan / shikastlangan yuk.
+Vositachi sifatida biz yo'qolgan yoki buzilgan yuk uchun hech qanday javobgarlikni o'z zimmamizga olmaymiz. Har qanday muammolar haqida darhol aeroportdagi aviakompaniya vakiliga xabar berish kerak.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.8" xml:space="preserve">
+    <value>Tranzit va tunab qolish.
+Sayohat paytida yer usti transporti va / yoki mehmonxonada yashash odatda chipta narxiga qo'shilmaydi. Siz yer usti transporti jadvalini va narxlarini mustaqil ravishda kuzatib borishingiz kerak.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.9" xml:space="preserve">
+    <value>Parvozga ulanish vaqtlari.
+Portalda joylashtirilgan standart chiptalar tasdiqlangan ulanish vaqtiga ega. Bir reysdan ikkinchisiga o'tish uchun zarur bo'lgan vaqt aviakompaniyalar tomonidan hisoblanadi. Agar parvoz segmentlaridan biri kechiksa, bu sizning ulanish reysingiz kechikishiga olib keladigan bo'lsa, aviakompaniya sizga so'nggi manzilga yetib borishda yordam berishi kerak (11.1-bandga qarang).
+Shaxsiy chiptalarni bron qilishda aviakompaniya reyslarni ulashda yuzaga keladigan kechikishlar uchun javobgar emas. Shuning uchun, ulanish vaqtining yetarli ekanligiga va aviakompaniyalar va aeroportlarning talablariga javob berishiga o'zingiz ishonch hosil qilishingiz kerak. Yo'qolgan ulanish reyslari bilan bog'liq har qanday qo'shimcha xarajatlar qaytarilmaydi.</value>
+  </data>
+  <data name="UA_LABEL_3.3" xml:space="preserve">
+    <value>3.  Yevropa Ittifoqida faoliyati taqiqlangan aviakompaniyalar ("qora ro'yxat"). E'tibor bering, ba'zi aviakompaniyalar Yevropa Ittifoqi hududida Yevropa Komissiyasi tomonidan milliy havo transporti organlari bilan yaqin kelishilgan holda qabul qilingan qarorga binoan faoliyat ko'rsatishi taqiqlanadi. Ushbu aviakompaniyalar faoliyat ko'rsatishi taqiqlanadi, chunki ular xavfli deb hisoblanadi yoki o'z mamlakatlari rasmiylari tomonidan yetarli darajada nazorat qilinmaydi.
+Qaysi aviakompaniyalar taqiqlanganligini quyidagi havola orqali bilib olishingiz mumkin:</value>
+  </data>
+  <data name="UA_LABEL_3.4" xml:space="preserve">
+    <value>4. Aviakompaniyalar tomonidan parvozlar jadvalini o'zgartirish va bekor qilish</value>
+  </data>
+  <data name="UA_LABEL_3.4.1" xml:space="preserve">
+    <value>Ko'rib chiqilayotgan aviakompaniya bilan tuzgan shartnomangiz sizning buyurtmangizni bekor qilishi yoki o'zgartirishi mumkin. O'zgarishlar to'g'risida aviakompaniyadan xabar topganimizdan so'ng sizga xabar beramiz.</value>
+  </data>
+  <data name="UA_LABEL_3.4.2" xml:space="preserve">
+    <value>Bron qilish tasdiqida ko'rsatilgan uchish vaqtlari bron qilingan kundan haqiqiy sayohat kunigacha o'zgarishi mumkin. Parvozlar jadvali o'zgargan taqdirda, aviakompaniyadan tegishli ma'lumotlarni olishimiz bilan bu haqda sizga xabar beramiz. Shu bilan birga, reys (va har qanday ulangan reyslar) belgilangan tartibda ishlashini ta'minlash uchun aviakompaniyangiz bilan har bir reysning rejalashtirilgan jo'nashidan kamida 72 soat oldin murojaat qilishingizni qat'iy tavsiya qilamiz. Biz aviakompaniya jadvalidagi o'zgarishlarni nazorat qilmaymiz va bunday o'zgarishlar natijasida yuzaga keladigan harajatlar uchun javobgar emasmiz.</value>
+  </data>
+  <data name="UA_LABEL_3.5" xml:space="preserve">
+    <value>5.Sizning so'rovingiz bo'yicha o'zgartirish va bekor qilish.</value>
+  </data>
+  <data name="UA_LABEL_3.5.1" xml:space="preserve">
+    <value>Bron qilishni o'zgartirish shartlari (shu jumladan, yo'lovchi nomi, borar joyi va chiqish sanasi o'zgarishi) va pulni qaytarib olish shartlari transport shartnomasi bo'yicha hamkoringiz bo'lgan tegishli aviakompaniya tomonidan belgilanadi. Vositachilar sifatida biz ushbu shartlarga ta'sir qila olmaymiz.</value>
+  </data>
+  <data name="UA_LABEL_3.5.2" xml:space="preserve">
+    <value>Agar bron qilishni o'zgartirish yoki bekor qilish va pulni qaytarib berishni xohlasangiz, aviakompaniya shartlari bunday o'zgarishlarni yoki pulni qaytarib olishni bekor qilgandan so'nggina, sizning nomingizdan qo'shimcha xizmat sifatida murojaat qilishimiz mumkin. Qo'shimcha xizmatlarni bronlashda siz bunday xizmatlarni taqdim etish bilan bog'liq shartlar va yig'imlar haqida ma'lumotga ega bo'lasiz. Bundan tashqari, to'g'ridan-to'g'ri aviakompaniya bilan bog'lanishingiz mumkin.</value>
+  </data>
+  <data name="UA_LABEL_3.5.3" xml:space="preserve">
+    <value>So'rovingiz bo'yicha o'zgarishlarni bartaraf etish uchun sizning so'rovingizni 24 soatdan kechiktirmasdan (faqat telefon yoki elektron pochta orqali) olishimiz kerak.
+Bron qilishni tark etishdan oldin qisqa vaqt ichida o'zgartirishni xohlasangiz, tegishli aviakompaniyaga bevosita murojaat qilishingizni tavsiya qilamiz.</value>
+  </data>
+  <data name="UA_LABEL_3.6" xml:space="preserve">
+    <value>6. Uchib ketishning imkonsizligi. Bu bilan siz o'zingizning nomingizdan foydalanilmagan parvozni bekor qilish yoki parvozga kelmaslik va aviakompaniyangizni sizning nomingizdan qaytarib olish uchun da'vo qilish uchun bizga ruxsat berasiz. Bizning huquqimiz bor, lekin buni amalga oshirishimiz majburiy emas va siz aviakompaniyaga to'liq qaytarib berish bilan to'g'ridan-to'g'ri murojaat qilish huquqini o'zida saqlab qolasiz.</value>
+  </data>
+  <data name="UA_LABEL_4" xml:space="preserve">
+    <value>4. MEHMONXONALARNI BRON QILISHDA VOSITACHILIK.</value>
+  </data>
+  <data name="UA_LABEL_4.1" xml:space="preserve">
+    <value>Mehmonxona xizmatlarini Portal orqali bron qilish turli kompaniyalar va mehmonxonalar bilan hamkorlik vositachiligida amalga oshiriladi. Mehmonlar ota-onalar yoki vasiylar bilan birga bo'lmasa, turar-joy vaqtida (mehmonxonaning shaxsiy siyosatiga qarab) 18-dan 21-yoshgacha bo'lishi kerak. Mehmonxona bron qilishini o'zgartirish yoki bekor qilishni so'rash uchun AQSh/Kanada uchun 1-888-50-777 bilan bog'laning va elektron pochta orqali AQSh/Kanada va boshqa mamlakatlar uchun customerservice@farelovers.com manziliga xabar yuboring.</value>
+  </data>
+  <data name="UA_LABEL_5" xml:space="preserve">
+    <value>5.  IJARAGA OLINADIGAN MASHINANI BRON QILISHDA VOSITACHILIK.</value>
+  </data>
+  <data name="UA_LABEL_5.1" xml:space="preserve">
+    <value>Avtomobillarni ijaraga berish xizmati Portal orqali turli xil ijara kompaniyalari orqali bron qilinadi. Agar haydovchi ma'lum bir yurisdik eng kam yosh talablariga javob bermasa, avtomobilni ijaraga berish rad etiladi. Shuningdek, iltimos, shuni yodda tutingki, har qanday avtoulov ijarasi uchun sizga haydovchilik guvohnomasi va amaldagi kredit karta kerak bo'ladi. Shu sababli, bron qilishlar va o'zgartirishlarni bekor qilish bo'yicha barcha so'rovlar to'g'ridan-to'g'ri avtomobillarni ijaraga beruvchi kompaniyaga yuborilishi kerak yoki AQSh / Kanada uchun 1-888-5050-777 bilan bog'lanish va AQSh / Kanada va dunyoning boshqa mamlakatlari uchun customerservice@farelovers.com elektron pochtasiga xabarini yuboring.</value>
+  </data>
+  <data name="UA_LABEL_6" xml:space="preserve">
+    <value>6. BIR NECHTA XIZMATLARNI BRON QILISHDA VOSITACHILIK QILISH BO'YICHA MAXSUS QOIDALAR.</value>
+  </data>
+  <data name="UA_LABEL_6.1" xml:space="preserve">
+    <value>Portal sizning xohishingizga ko'ra bir nechta alohida xizmatlarni (masalan, parvoz + mehmonxona) ulash va birlashtirish imkoniyatini beradi. Bunday holda, siz turli provayderlardan turli xil sayyohlik xizmatlarini bron qilishda vositachilik qilishni buyurasiz. Tegishli provayderlar uni to'ldirishdan oldin bron qilish jarayonida sizga taqdim etiladi. Agar siz muayyan xizmatlarni birlashtirsangiz, siz bilan biz o'rtamizdagi sayohat shartnomasi tuzilmaydi; buning o'rniga har bir yetkazib beruvchi bilan bir nechta xizmat ko'rsatish shartnomalari tuzasiz. Shu bilan birga, biz faqat har bir alohida sayyohlik xizmatiga nisbatan vositachi sifatida harakat qilamiz.</value>
+  </data>
+  <data name="UA_LABEL_7" xml:space="preserve">
+    <value>7. PASPORTLAR, VISALAR VA SOG'LIQNI SAQLASH HOLATI BILAN BOG'LIQ QOIDALAR TO'G'RISIDA MA'LUMOT.</value>
+  </data>
+  <data name="UA_LABEL_7.1" xml:space="preserve">
+    <value>Pasportlar, vizalar va sog'liqni saqlash sharoitlariga qo'yiladigan talablar o'zgarishi mumkin, shuning uchun sayohat qilishdan oldin ularni tegishli idorada (elchixona, konsullik va boshqalar) oldindan tekshirishingiz kerak. Sizda amaldagi pasportingiz borligiga ishonch hosil qilishingiz kerak (o'zingizning mamlakatingizdan  tashqarida sayohat qilish uchun, aksariyat mamlakatlar qaytib kelgan kundan keyin kamida 6 oy davomida amaldagi pasportni va agar kerak bo'lsa, vizani talab qiladi). Sizga kerak bo'lgan barcha tranzit bandlarini hisobga olishni unutmang. Viza olish ko'pincha bir muncha vaqtni talab qilishi sababli, oldindan murojaat qilishingizni maslahat beramiz, yuqoridagi barcha yo'lovchilar ismlari to'g'ri yozilganligini va ularning sayohat hujjatlarida qanday paydo bo'lganligini tasdiqlaysiz. ismlarga biror bir o'zgartirish kiritish uchun yetkazib beruvchi to'lovni talab qiladi. Biz tegishli hujjatlari bo'lmagan mijozlar uchun javobgar emasmiz.</value>
+  </data>
+  <data name="UA_LABEL_7.2" xml:space="preserve">
+    <value>Har bir yo'nalishning kirish rasmiylashtiruvi, emlash va boshqalar uchun o'z talablari bor, bu yo'lovchining fuqaroligiga ham bog'liq bo'lishi mumkin. Tegishli ma'lumotni o'zingiz olishingiz kerak. Bunday rasmiy qoidalarga rioya qilmaslik natijasida kelib chiqadigan hodisalar bizning aybimiz deb hisoblanmaydi. Shuning uchun biz sizga har doim tanlagan manzilingiz yoki tranzit mamlakatlaringizda amaldagi turli xil rasmiyatchiliklarni hamda barcha tegishli harakatlarni bajarish uchun zarur bo'lgan vaqtni tekshirishingizni tavsiya qilamiz.</value>
+  </data>
+  <data name="UA_LABEL_8" xml:space="preserve">
+    <value>8. YIG’IMLAR VA TO'LOVLAR.</value>
+  </data>
+  <data name="UA_LABEL_8.1" xml:space="preserve">
+    <value>To'lov. Sayohat xizmatlari uchun to'lov biz tomonimizdan (to'lovni amalga oshirish imkoniyatini ta'minlaydigan to'lov xizmatlarini yetkazib beruvchimiz bilan hamkorlikda) yoki xizmat ko'rsatuvchi provayder tomonidan amalga oshiriladi. Shuni esda tutingki, to'lovni amalga oshirish uchun to'lov xizmatini ko'rsatuvchi provayderga sizning to'lovingiz to'g'risida ma'lumotlarni (masalan, kredit yoki debet karta ma'lumotlari) taqdim etishimiz kerak. To'lov xizmati ko'rsatuvchi provayderimizga taqdim etilgan mijozlarimizning barcha to'lov ma'lumotlari xavfsiz serverda shifrlangan holda saqlanadi. To'lovni Bronlash mezonlari va qo'shimcha xizmatlarga qarab ikkita alohida operatsiyalarga bo'lish mumkin: bizga to'lov va xizmat ko'rsatuvchi provayderga to'lov. Sizdan olinadigan to'lovlar bizning veb-saytimizda ko'rsatilgan haqiqiy narxdan oshib ketishi mumkin emas. Bunday holda, xuddi shu xavfsizlik choralari qo'llaniladi. Sizning to'lovingizni amalga oshirishimiz uchun siz yetarli mablag 'mavjudligini ta'minlashingiz kerak. Agar sizda to'lovni amalga oshirishda muammolar yuzaga kelsa, biz to'lovlarni yetkazib beruvchi provayderimiz bilan hamkorlikda to'lovingizni qayta ishlashga harakat qilamiz. Agar sizning hisobingizdan mablag'larni muvaffaqiyatli olib tashlashga olib kelmasa, biz boshqa to'lov usullari bo'yicha ko'rsatmalar olish uchun eng qisqa vaqt ichida siz bilan bog'lanamiz. Agar biz sizning to'lovingizni ushbu qo'shimcha ko'rsatmalarga muvofiq olmasak, unda biz sizning buyurtmangizni bekor qilishga haqlimiz. Bekor qilish uchun 100% jarima qo'llaniladi. Sizning bron qilishingizdagi o'zgarishlar 100% jarima va / yoki ma'muriy to'lovni talab qilishi mumkin. Agar biz firibgarlikda gumon qilinadigan sabablarga ega bo'lsak, biz bunday to'lovni amalga oshirishni rad etish huquqini saqlab qolamiz. Agar siz mumkin bo'lgan jinoyat haqida gumon qilsangiz, sizdan to'lovning qonuniyligini tasdiqlovchi hujjat talab qilinishi mumkin. To'lovlarni firibgarlikning barcha turlari to'g'risida ma'lumot politsiya va inkassatsiya xizmatiga xabar qilinadi.</value>
+  </data>
+  <data name="UA_LABEL_9" xml:space="preserve">
+    <value>9. SHIKOYATLAR.</value>
+  </data>
+  <data name="UA_LABEL_9.1" xml:space="preserve">
+    <value>Sayyohlik xizmatlarini ko'rsatish bilan bog'liq shikoyatlar, muammolarga oid har qanday shikoyatlar, sayohat xizmatlarining haqiqiy ko'rsatilishi bilan bog'liq bo'lgan izohlar yoki da'volar to'g'ridan-to'g'ri tegishli xizmat ko'rsatuvchi sizga tegishli turizm xizmati uchun shartnoma tuzgan provayderga (turoperator, aviakompaniya, sug'urta kompaniyasi, avtoulovlarni ijaraga beruvchi kompaniya, mehmonxona) yuborilishi kerak.
+O'z xizmatlarimiz haqidagi shikoyatlar yozma ravishda yozilishi va safaringiz tugagan kundan boshlab ikki oy ichida topshirilishi kerak, shikoyat formasini olish uchun bizga elektron pochta orqali xabar qiling.
+To'ldirilgan shikoyat formasi pochta yoki elektron pochta orqali quyidagi manzilga yuborilishi kerak: Pochta manzili: Farelovers Travel Corporation 400, 906 12 Ave SW Calgary, AB T2R 1K7
+Elektron pochta manzili :customer.relations@farelovers.com</value>
+  </data>
+  <data name="U_DONT_HAVE_ACC" xml:space="preserve">
+    <value>Hisobingiz yo'qmi?</value>
+  </data>
+  <data name="U_EDIT_PROFILE" xml:space="preserve">
+    <value>Profilni o'zgartirish.</value>
+  </data>
+  <data name="U_NEW_PASSWORD" xml:space="preserve">
+    <value>Yangi parol</value>
+  </data>
+  <data name="U_PASSWORD" xml:space="preserve">
+    <value>Parolni kiriting</value>
+  </data>
+  <data name="U_PASSWORD_EMPTY_FIELD" xml:space="preserve">
+    <value>Parol maydoni bo'sh.</value>
+  </data>
+  <data name="U_REGISTRATION" xml:space="preserve">
+    <value>Ro'yxatdan o'tish.</value>
+  </data>
+  <data name="U_REPEAT_PASSWORD" xml:space="preserve">
+    <value>Parolni qayta kiriting.</value>
+  </data>
+  <data name="U_SIGN_IN_WITH_FACEBOOK" xml:space="preserve">
+    <value>Facebook orqali kirish</value>
+  </data>
+  <data name="U_SIGN_IN_WITH_GOOGLE" xml:space="preserve">
+    <value>Google hisobi bilan kirish</value>
+  </data>
+  <data name="U_SIGN_UP" xml:space="preserve">
+    <value>Ro‘yxatdan o‘tish</value>
+  </data>
+  <data name="U_SUBMIT" xml:space="preserve">
+    <value>Yuborish</value>
+  </data>
+  <data name="U_USERNAME" xml:space="preserve">
+    <value>Foydalanuvchining ismi</value>
+  </data>
+  <data name="U_USERNAME_EMPTY_FIELD" xml:space="preserve">
+    <value>Foydalanuvchi nomi maydoni bo'sh</value>
+  </data>
+  <data name="U_USERNAME_OR_EMAIL" xml:space="preserve">
+    <value>Foydalanuvchi nomi yoki elektron pochta manzili.</value>
+  </data>
+  <data name="U_WITHOUT_LOGIN" xml:space="preserve">
+    <value>Royxatdan o’tmasdan davom ettirish.</value>
+  </data>
+  <data name="VR_EMAIL_IS_NOT_IN_VALID_FORMAT" xml:space="preserve">
+    <value>Elektron pochta noto’g’ri formatda!</value>
+  </data>
+  <data name="VR_IS_MANADTORY_FIELD" xml:space="preserve">
+    <value>Majburiy maydon to'ldirilmagan!</value>
+  </data>
+  <data name="VR_PASSWORD_DOES_NOT_MATCH" xml:space="preserve">
+    <value>Parol mos kelmadi!</value>
+  </data>
+</root>

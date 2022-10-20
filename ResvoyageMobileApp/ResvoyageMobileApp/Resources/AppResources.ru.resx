@@ -1,0 +1,1162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APP_CAR" xml:space="preserve">
+    <value>Автомобиль</value>
+  </data>
+  <data name="APP_FLIGHT" xml:space="preserve">
+    <value>Авиабилеты</value>
+  </data>
+  <data name="APP_FOR" xml:space="preserve">
+    <value>для</value>
+  </data>
+  <data name="APP_HOTEL" xml:space="preserve">
+    <value>Отель</value>
+  </data>
+  <data name="APP_SELECT" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="CD_BOOK" xml:space="preserve">
+    <value>Забронируйте</value>
+  </data>
+  <data name="CD_CAR_SUPPLIED_BY" xml:space="preserve">
+    <value>Автомобиль предоставляется:</value>
+  </data>
+  <data name="CD_CLOSING_AT" xml:space="preserve">
+    <value>Закрытие в: </value>
+  </data>
+  <data name="CD_DROP_OFF" xml:space="preserve">
+    <value>Возврат:</value>
+  </data>
+  <data name="CD_OPENING_AT" xml:space="preserve">
+    <value>Открытие в: </value>
+  </data>
+  <data name="CD_PICK_UP" xml:space="preserve">
+    <value>Получение</value>
+  </data>
+  <data name="CF_CATEGORIES" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="CF_TYPES" xml:space="preserve">
+    <value>Типы</value>
+  </data>
+  <data name="CR_CAR_NAME" xml:space="preserve">
+    <value>Наименование Автомобиля</value>
+  </data>
+  <data name="CR_CATEGORY" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="CR_NO_CARS_FOUND" xml:space="preserve">
+    <value>Автомобиль не найден.</value>
+  </data>
+  <data name="CR_RATES_INCLUDE_ALL" xml:space="preserve">
+    <value>Цены включают все налоги и сборы</value>
+  </data>
+  <data name="CS_DROP_OFF_DATE" xml:space="preserve">
+    <value>Дата возврата</value>
+  </data>
+  <data name="CS_DROP_OFF_LOCATION" xml:space="preserve">
+    <value>Место возврата</value>
+  </data>
+  <data name="CS_PICK_UP_DATE" xml:space="preserve">
+    <value>Дата получения</value>
+  </data>
+  <data name="CS_PICK_UP_LOCATION" xml:space="preserve">
+    <value>Место получения</value>
+  </data>
+  <data name="CS_SEARCH_CARS" xml:space="preserve">
+    <value>Поиск автомобиля</value>
+  </data>
+  <data name="CS_TIME" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="ER_SOME_ERROR_OCCURED" xml:space="preserve">
+    <value>Произошла ошибка</value>
+  </data>
+  <data name="EU_SUCCESSFULY_EDIT" xml:space="preserve">
+    <value>Успешно исправлено</value>
+  </data>
+  <data name="EU_WRONG_OLD_PASSWORD" xml:space="preserve">
+    <value>Неверный старый пароль!</value>
+  </data>
+  <data name="FD_CABIN" xml:space="preserve">
+    <value>Класс салона</value>
+  </data>
+  <data name="FD_FLIGHT_DURATION" xml:space="preserve">
+    <value>Время в пути</value>
+  </data>
+  <data name="FD_FLIGHT_NUMBER" xml:space="preserve">
+    <value>Номер рейса</value>
+  </data>
+  <data name="FD_LAYOVER" xml:space="preserve">
+    <value>Пересадка</value>
+  </data>
+  <data name="FD_OPERATED_BY" xml:space="preserve">
+    <value>Управляется:</value>
+  </data>
+  <data name="FF_AIRLINES" xml:space="preserve">
+    <value>Авиакомпании</value>
+  </data>
+  <data name="FF_CHEAPEST" xml:space="preserve">
+    <value>Самый дешевый</value>
+  </data>
+  <data name="FF_EARLIEST" xml:space="preserve">
+    <value>Самый ранний</value>
+  </data>
+  <data name="FF_FILTERS" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="FF_INBOUND_DEPARTURE" xml:space="preserve">
+    <value>Вылет</value>
+  </data>
+  <data name="FF_INBOUND_ARRIVAL" xml:space="preserve">
+    <value>Прилёт</value>
+  </data>
+  <data name="FF_NONSTOP" xml:space="preserve">
+    <value>Без пересадок</value>
+  </data>
+  <data name="FF_ONESTOP" xml:space="preserve">
+    <value>1 Пересадка</value>
+  </data>
+  <data name="FF_OUTBOUND_ARRIVAL" xml:space="preserve">
+    <value>Прилёт</value>
+  </data>
+  <data name="FF_OUTBOUND_DEPARTURE" xml:space="preserve">
+    <value>Вылет</value>
+  </data>
+  <data name="FF_QUICKEST" xml:space="preserve">
+    <value>Самый Быстрый</value>
+  </data>
+  <data name="FF_SELECT_AIRLINES" xml:space="preserve">
+    <value>Выбрать Авиалинии</value>
+  </data>
+  <data name="FF_STOPS" xml:space="preserve">
+    <value>Пересадки</value>
+  </data>
+  <data name="FF_TIME_RANGE" xml:space="preserve">
+    <value>Интервал времени</value>
+  </data>
+  <data name="FF_TWOSTOPS" xml:space="preserve">
+    <value>2+ Пересадки</value>
+  </data>
+  <data name="FR_CABIN" xml:space="preserve">
+    <value>Салон</value>
+  </data>
+  <data name="FR_DURATION" xml:space="preserve">
+    <value>Длительность</value>
+  </data>
+  <data name="FR_PASSENGER" xml:space="preserve">
+    <value>Пассажир</value>
+  </data>
+  <data name="FR_PASSENGERS" xml:space="preserve">
+    <value>Пассажиры</value>
+  </data>
+  <data name="FR_TRANSFER" xml:space="preserve">
+    <value>Трансфер</value>
+  </data>
+  <data name="HD_AIRCONDITIONING" xml:space="preserve">
+    <value>Кондиционер</value>
+  </data>
+  <data name="HD_BAR" xml:space="preserve">
+    <value>Бар</value>
+  </data>
+  <data name="HD_BREAKBAST" xml:space="preserve">
+    <value>Завтрак</value>
+  </data>
+  <data name="HD_DESCRIPTION" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="HD_FREE_CANCELLATION" xml:space="preserve">
+    <value>Бесплатная отмена</value>
+  </data>
+  <data name="HD_GYM" xml:space="preserve">
+    <value>Спортзал</value>
+  </data>
+  <data name="HD_HAIRDRYER" xml:space="preserve">
+    <value>Фен</value>
+  </data>
+  <data name="HD_HOTEL_AMENITIES" xml:space="preserve">
+    <value>Удобства Отеля</value>
+  </data>
+  <data name="HD_HOUSEKEEPING" xml:space="preserve">
+    <value>Уборка Номера</value>
+  </data>
+  <data name="HD_LOCATION_DESCRIPTION" xml:space="preserve">
+    <value>Описание местоположения</value>
+  </data>
+  <data name="HD_OTHER_INFORMATION" xml:space="preserve">
+    <value>Другие сведения</value>
+  </data>
+  <data name="HD_PARKING" xml:space="preserve">
+    <value>Парковка</value>
+  </data>
+  <data name="HD_PET_FRIENDLY" xml:space="preserve">
+    <value>Размещение с питомцами</value>
+  </data>
+  <data name="HD_POOL" xml:space="preserve">
+    <value>Бассейн</value>
+  </data>
+  <data name="HD_RESTAURANT" xml:space="preserve">
+    <value>Ресторан</value>
+  </data>
+  <data name="HD_ROOM_AMENITIES" xml:space="preserve">
+    <value>Удобства Номера</value>
+  </data>
+  <data name="HD_ROOM_SERVICE" xml:space="preserve">
+    <value>Обслуживание номеров</value>
+  </data>
+  <data name="HD_SPA" xml:space="preserve">
+    <value>СПА-центр</value>
+  </data>
+  <data name="HD_TV" xml:space="preserve">
+    <value>ТВ</value>
+  </data>
+  <data name="HD_WiFi" xml:space="preserve">
+    <value>Wi-Fi</value>
+  </data>
+  <data name="HF_CHAINS" xml:space="preserve">
+    <value>Сети магазинов</value>
+  </data>
+  <data name="HF_HOTEL_NAME" xml:space="preserve">
+    <value>Название Отеля</value>
+  </data>
+  <data name="HF_PRICE" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="HF_STARS" xml:space="preserve">
+    <value>Звезды</value>
+  </data>
+  <data name="HF_STAR_RATING" xml:space="preserve">
+    <value>Звездный рейтинг</value>
+  </data>
+  <data name="HP_CONTACT" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="HP_EDIT_PROFILE" xml:space="preserve">
+    <value>Изменить профиль</value>
+  </data>
+  <data name="HP_HOME" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="HP_LOGIN" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="HP_LOGOUT" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="HP_MY_BOOKINGS" xml:space="preserve">
+    <value>Мои бронирования</value>
+  </data>
+  <data name="HP_PRIVACY_POLICY" xml:space="preserve">
+    <value>Политика конфиденциальности</value>
+  </data>
+  <data name="HP_USER_AGREEMENT" xml:space="preserve">
+    <value>Пользовательское соглашение</value>
+  </data>
+  <data name="HR_NO_HOTELS_FOUND" xml:space="preserve">
+    <value>Отели не найдены.</value>
+  </data>
+  <data name="HR_NO_STAR_RATING" xml:space="preserve">
+    <value>Нет звездного рейтинга</value>
+  </data>
+  <data name="HR_PER_NIGHT_PER_ROOM" xml:space="preserve">
+    <value>за ночь за номер</value>
+  </data>
+  <data name="HS_ADD_ROOM" xml:space="preserve">
+    <value>Добавить номер</value>
+  </data>
+  <data name="HS_CHECK_IN_DATE" xml:space="preserve">
+    <value>Дата заезда</value>
+  </data>
+  <data name="HS_CHECK_IN_LOCATION" xml:space="preserve">
+    <value>Место заезда</value>
+  </data>
+  <data name="HS_CHECK_OUT_DATE" xml:space="preserve">
+    <value>Дата выезда</value>
+  </data>
+  <data name="HS_CHLD" xml:space="preserve">
+    <value>Дети</value>
+  </data>
+  <data name="HS_NO_LOCATIONS_FOUND" xml:space="preserve">
+    <value>Местонахождение не найдено.</value>
+  </data>
+  <data name="HS_REMOVE_ROOM" xml:space="preserve">
+    <value>Удалить номер</value>
+  </data>
+  <data name="HS_ROOM" xml:space="preserve">
+    <value>Комната</value>
+  </data>
+  <data name="HS_ROOMS" xml:space="preserve">
+    <value>Комнаты</value>
+  </data>
+  <data name="HS_SEARCH_HOTELS" xml:space="preserve">
+    <value>Поиск отелей</value>
+  </data>
+  <data name="HS_Y_O" xml:space="preserve">
+    <value>лет</value>
+  </data>
+  <data name="RD_BED" xml:space="preserve">
+    <value>Кровать</value>
+  </data>
+  <data name="RD_BEDS" xml:space="preserve">
+    <value>КРОВАТИ</value>
+  </data>
+  <data name="RD_BEFORE" xml:space="preserve">
+    <value>перед</value>
+  </data>
+  <data name="RD_NIGHT" xml:space="preserve">
+    <value>Ночь</value>
+  </data>
+  <data name="RD_NIGHTS" xml:space="preserve">
+    <value>Ночей</value>
+  </data>
+  <data name="RD_RESERVE" xml:space="preserve">
+    <value>Забронировать</value>
+  </data>
+  <data name="RD_TOTAL_FARE_FOR" xml:space="preserve">
+    <value>Общий тариф для</value>
+  </data>
+  <data name="RESET" xml:space="preserve">
+    <value>Сбросить</value>
+  </data>
+  <data name="SC_BASE_PRICE" xml:space="preserve">
+    <value>Базисная стоимость:</value>
+  </data>
+  <data name="SC_BILLING_ADDRES" xml:space="preserve">
+    <value>Адрес выставления счета</value>
+  </data>
+  <data name="SC_CANCELLATION_POLICY" xml:space="preserve">
+    <value>Политика отмены:</value>
+  </data>
+  <data name="SC_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Ф.И.О. владельца карты</value>
+  </data>
+  <data name="SC_CARD_NUMBER" xml:space="preserve">
+    <value>Номер карты</value>
+  </data>
+  <data name="SC_CITY_NAME" xml:space="preserve">
+    <value>Название Города</value>
+  </data>
+  <data name="SC_COUNTRY_NAME" xml:space="preserve">
+    <value>Название страны</value>
+  </data>
+  <data name="SC_CVV" xml:space="preserve">
+    <value>CVV-код</value>
+  </data>
+  <data name="SC_DATE_OF_BIRTH" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="SC_DAY" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="SC_EMAIL" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="SC_EXP_MONTH" xml:space="preserve">
+    <value>Срок действия месяц</value>
+  </data>
+  <data name="SC_EXP_YEAR" xml:space="preserve">
+    <value>Срок действия год</value>
+  </data>
+  <data name="SC_FIRST_NAME" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="SC_GENDER" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="SC_HOW_WOULD_YOU_PAY" xml:space="preserve">
+    <value>Какой метод оплаты вы предпочитаете?</value>
+  </data>
+  <data name="SC_LAST_NAME" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="SC_MIDDLE_NAME" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="SC_MONTH" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="SC_MULTI_WAY_FLIGHT" xml:space="preserve">
+    <value>Multi-City</value>
+  </data>
+  <data name="SC_ONEWAY_FLIGHT" xml:space="preserve">
+    <value>В одну сторону</value>
+  </data>
+  <data name="SC_PAY" xml:space="preserve">
+    <value>Оплатить</value>
+  </data>
+  <data name="SC_PHONE" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="SC_PROTECTION_AND_COVERAGES" xml:space="preserve">
+    <value>Защита и покрытия</value>
+  </data>
+  <data name="SC_REGION" xml:space="preserve">
+    <value>Регион/Штат</value>
+  </data>
+  <data name="SC_ROOMS" xml:space="preserve">
+    <value>Номеры</value>
+  </data>
+  <data name="SC_ROUND_FLIGHT" xml:space="preserve">
+    <value>Туда и обратно</value>
+  </data>
+  <data name="SC_STREET_ADDRESS" xml:space="preserve">
+    <value>Адрес улицы</value>
+  </data>
+  <data name="SC_TAXES" xml:space="preserve">
+    <value>Налоги</value>
+  </data>
+  <data name="SC_TAXES_AND_FEES" xml:space="preserve">
+    <value>Налоги и сборы</value>
+  </data>
+  <data name="SC_TICKET" xml:space="preserve">
+    <value>Билет</value>
+  </data>
+  <data name="SC_TICKETS" xml:space="preserve">
+    <value>Билеты</value>
+  </data>
+  <data name="SC_TITLE" xml:space="preserve">
+    <value>Титул</value>
+  </data>
+  <data name="SC_TOTAL" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="SC_WHO_IS_TRAVELING" xml:space="preserve">
+    <value>Кто приезжает?</value>
+  </data>
+  <data name="SC_YEAR" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="SC_YOUR_PRICE_SUMMARY" xml:space="preserve">
+    <value>Обзор итоговая цена</value>
+  </data>
+  <data name="SC_ZIP_CODE" xml:space="preserve">
+    <value>Индекс/Почтовый код</value>
+  </data>
+  <data name="SF_ADULT" xml:space="preserve">
+    <value>Взрослый</value>
+  </data>
+  <data name="SF_ADULTS" xml:space="preserve">
+    <value>Взрослые</value>
+  </data>
+  <data name="SF_ADULTS_YEARS" xml:space="preserve">
+    <value>Старше 12 лет</value>
+  </data>
+  <data name="SF_APPLY" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="SF_CABIN_CLASS" xml:space="preserve">
+    <value>Класс салона</value>
+  </data>
+  <data name="SF_CABIN_SOLON" xml:space="preserve">
+    <value>Салон</value>
+  </data>
+  <data name="SF_CHILD" xml:space="preserve">
+    <value>Ребенок</value>
+  </data>
+  <data name="SF_CHILDREN" xml:space="preserve">
+    <value>Дети</value>
+  </data>
+  <data name="SF_CHILDREN_YEARS" xml:space="preserve">
+    <value>2-12 лет</value>
+  </data>
+  <data name="SF_DEPARTURE" xml:space="preserve">
+    <value>Вылет</value>
+  </data>
+  <data name="SF_DEPARTURE_DATE" xml:space="preserve">
+    <value>Дата вылета</value>
+  </data>
+  <data name="SF_DEPARTURE_SECOND_SEGMENT" xml:space="preserve">
+    <value>Вылет второй сегмент</value>
+  </data>
+  <data name="SF_DEPARTURE_THIRD_SEGMENT" xml:space="preserve">
+    <value>Вылет третий сегмент</value>
+  </data>
+  <data name="SF_DESTINATION" xml:space="preserve">
+    <value>Куда</value>
+  </data>
+  <data name="SF_DESTINATION_SECOND_SEGMENT" xml:space="preserve">
+    <value>Направления второй сегмент</value>
+  </data>
+  <data name="SF_DESTINATION_THIRD_SEGMENT" xml:space="preserve">
+    <value>Направления третий сегмент</value>
+  </data>
+  <data name="SF_DOCUMENTS" xml:space="preserve">
+    <value>Документы</value>
+  </data>
+  <data name="SF_FROM" xml:space="preserve">
+    <value>Откуда</value>
+  </data>
+  <data name="SF_FROM_SECOND_SEGMENT" xml:space="preserve">
+    <value>От второго сегмента</value>
+  </data>
+  <data name="SF_FROM_THIRD_SEGMENT" xml:space="preserve">
+    <value>От третого сегмента</value>
+  </data>
+  <data name="SF_INFANT" xml:space="preserve">
+    <value>Младенец</value>
+  </data>
+  <data name="SF_INFANTS" xml:space="preserve">
+    <value>Infants</value>
+  </data>
+  <data name="SF_INFANTS_YEARS" xml:space="preserve">
+    <value>0-2 годиков</value>
+  </data>
+  <data name="SF_MULTI_CITY" xml:space="preserve">
+    <value>Multi-City</value>
+  </data>
+  <data name="SF_NO_AIRPORTS_FOUND" xml:space="preserve">
+    <value>Аэропортов не найдено</value>
+  </data>
+  <data name="SF_ONE_WAY" xml:space="preserve">
+    <value>В одну сторону</value>
+  </data>
+  <data name="SF_POPULAR_PLACES" xml:space="preserve">
+    <value>Популярные места</value>
+  </data>
+  <data name="SF_RETURN" xml:space="preserve">
+    <value>Туда и обратно</value>
+  </data>
+  <data name="SF_RETURN_DATE" xml:space="preserve">
+    <value>Дата возврата</value>
+  </data>
+  <data name="SF_ROUND_TRIP" xml:space="preserve">
+    <value>Туда и обратно</value>
+  </data>
+  <data name="SF_SEARCH_FLIGHTS" xml:space="preserve">
+    <value>Поиск билетов</value>
+  </data>
+  <data name="SF_VALIDATION_ERROR" xml:space="preserve">
+    <value>Ошибка проверки</value>
+  </data>
+  <data name="SF_VALIDATION_ERROR_SINGLE" xml:space="preserve">
+    <value>Одна ошибка проверки</value>
+  </data>
+  <data name="SR_NO_FLIGHTS_FOUND" xml:space="preserve">
+    <value>Рейсов не найдено.</value>
+  </data>
+  <data name="UA_LABEL_1" xml:space="preserve">
+    <value>1. СОСТАВ УСЛУГ</value>
+  </data>
+  <data name="UA_LABEL_1.1" xml:space="preserve">
+    <value>1. Посредничество при оказании туристических услуг</value>
+  </data>
+  <data name="UA_LABEL_1.1.1" xml:space="preserve">
+    <value>При предоставлении услуг по бронированию авиабилетов и гостиниц, страхованию и аренде автомобилей, предлагаемых на Портале (совместно именуемых "Услуги для путешественников"), мы выступаем исключительно в качестве посредника. Поэтому наша роль и обязанности ограничиваются посредничеством в связи с туристическими услугами, которые будут предоставляться третьими лицами, такими как авиакомпании, туроператоры, гостиницы, страховые компании, компании по прокату автомобилей и другие провайдеры услуг (далее в каждом конкретном случае - "Поставщик услуг").</value>
+  </data>
+  <data name="UA_LABEL_1.1.2" xml:space="preserve">
+    <value>Следовательно, договор о фактическом предоставлении туристических услуг (например, договор перевозки, договор страхования, договор аренды) вступает в силу непосредственно между вами и соответствующим Поставщиком услуг. Мы не являемся совместным поставщиком туристических услуг и не являемся стороной в договорных отношениях между вами и Поставщиком услуг.</value>
+  </data>
+  <data name="UA_LABEL_1.1.3" xml:space="preserve">
+    <value>Используя Портал для приобретения туристических услуг, вы разрешаете нам вести переговоры с соответствующим Поставщиком услуг от вашего имени, в том числе об оплате этих туристических услуг, чтобы обеспечить завершение сделки между вами и Поставщиком услуг. В стоимость действительных туристических услуг может входить плата за услуги, оказываемые нами в качестве посредника при заключении договора между Вами и соответствующим Поставщиком услуг.</value>
+  </data>
+  <data name="UA_LABEL_1.1.4" xml:space="preserve">
+    <value>Ответственность за фактическое предоставление туристических услуг, приобретенных через наше посредничество через Портал, лежит исключительно на соответствующем Поставщике услуг. Выступая в качестве посредника, мы не принимаем на себя ответственность за предоставленные Поставщиками услуг туристические услуги, а также не делаем никаких заявлений и не даем никаких гарантий (явных или подразумеваемых) в отношении пригодности или качества туристических услуг, приобретенных при посредничестве Портала. Любые претензии, которые могут возникнуть у Вас в связи с предоставлением или непредоставлением туристических услуг, должны быть адресованы Провайдеру Услуг.</value>
+  </data>
+  <data name="UA_LABEL_1.1.5" xml:space="preserve">
+    <value>Если при бронировании туристических услуг у Вас есть возможность выразить особые пожелания (например, о предоставлении специального питания, помещений для инвалидов или мест для детей), мы передадим Ваш запрос соответствующему Поставщику услуг. Однако мы не можем нести ответственность за то, сможет ли Поставщик услуг действительно выполнить такие пожелания.</value>
+  </data>
+  <data name="UA_LABEL_1.2" xml:space="preserve">
+    <value>2. Наши собственные услуги</value>
+  </data>
+  <data name="UA_LABEL_1.2.1" xml:space="preserve">
+    <value>В дополнение к посредничеству в приобретении туристических услуг, как описано в пункте 1.1 выше, Портал также предоставляет дополнительные услуги (не являющиеся туристическими услугами), за которые мы берем на себя ответственность. Чтобы воспользоваться такими дополнительными услугами, Вы вступаете в договорные отношения непосредственно с нами. В каждом случае мы определенно информируем Вас об объеме наших услуг и о том, что мы предлагаем свои услуги, а не просто оказываем посреднические услуги при покупке услуг третьих лиц. Содержание наших собственных услуг может со временем меняться. При оказании дополнительных услуг, не оговоренных в настоящих Условиях, во время бронирования Вам предоставляется подробное описание таких дополнительных услуг, а также информация о наших ценах и дополнительных условиях бронирования и использования.</value>
+  </data>
+  <data name="UA_LABEL_1.3" xml:space="preserve">
+    <value>3. Действующие контрактные условия</value>
+  </data>
+  <data name="UA_LABEL_1.3.1" xml:space="preserve">
+    <value>Настоящие условия регулируют посредничество в приобретении туристических услуг в соответствии с пунктом 1.1, а также предоставление собственных услуг в соответствии с пунктом 1.2.</value>
+  </data>
+  <data name="UA_LABEL_1.3.2" xml:space="preserve">
+    <value>Договор между Вами и соответствующим Поставщиком услуг (п. 1.1.2) регулируется общими условиями соответствующего Поставщика услуг (условия перевозки, передачи, страхования и т.п.), выданными Поставщиком услуг. Такие общие условия соответствующегопоставщика услуг, будут сообщены Вам в процессе бронирования. Так как условия Поставщика услуг могут включать в себя положения об ответственности, отмене, изменении бронирования и возврате денег (если это возможно) и другие ограничения, мы рекомендуем Вам внимательно прочитать эти условия.</value>
+  </data>
+  <data name="UA_LABEL_10" xml:space="preserve">
+    <value>10. ОТВЕТСТВЕННОСТЬ</value>
+  </data>
+  <data name="UA_LABEL_10.1" xml:space="preserve">
+    <value>Вы признаете, что мы выступаем в качестве посредника между Вами и Поставщиком услуг. Мы ни при каких обстоятельствах не несём ответственности за туристические услуги, которые Вы заказали у одного или нескольких Поставщиков услуг, и не несём ответственности за неточности в информации, размещённой на Портале, которую предоставляет соответствующий Поставщик услуг. Если лицо, оказывающее услугу, по какой-либо причине не может предоставить туристическую услугу, в том числе в случае объявления лицом, оказывающим услугу, банкротства, мы можем действовать в качестве посредника и возвращать уплаченные суммы только в том случае, если мы уже получили их от соответствующего лица, оказывающего услугу, в отношении наших собственных услуг, мы несём ответственность за ущерб с учётом ограничений, предусмотренных настоящими Условиями пользования, и в пределах, разрешённых законом. Мы несем ответственность только за Ваш прямой ущерб, фактически понесенный, оплаченный или возникший в результате подтвержденного невыполнения наших обязательств по собственным услугам в пределах общей стоимости Вашего бронирования (как для одного события, так и для ряда взаимосвязанных событий). Ограничение ответственности, указанное в п. 10.3, распространяется также на нарушения обязательств путем</value>
+  </data>
+  <data name="UA_LABEL_11" xml:space="preserve">
+    <value>11. ПРАВА ПОТРЕБИТЕЛЯ ПО РЕГЛАМЕНТУ ЕС</value>
+  </data>
+  <data name="UA_LABEL_11.1" xml:space="preserve">
+    <value>1. Отмена или задержка рейса</value>
+  </data>
+  <data name="UA_LABEL_11.1.1" xml:space="preserve">
+    <value>Если Вы въезжаете или выезжаете из ЕС или используете перевозчика из ЕС, у вас может быть право подать иск о возмещении расходов непосредственно в авиакомпанию в случае, если Ваш рейс отменяется или задерживается, или если в посадке было отказано. Если Вам нужна дополнительная информация о Постановлении (ЕС) 261/2004,</value>
+  </data>
+  <data name="UA_LABEL_11.2" xml:space="preserve">
+    <value>2. Ответственность перевозчика</value>
+  </data>
+  <data name="UA_LABEL_11.2.1" xml:space="preserve">
+    <value>Регламент (ЕС) 889/2002 об ответственности воздушных перевозчиков в случае аварии</value>
+  </data>
+  <data name="UA_LABEL_12" xml:space="preserve">
+    <value>12. ЗАЩИТА ДАННЫХ</value>
+  </data>
+  <data name="UA_LABEL_12.1" xml:space="preserve">
+    <value>Мы очень серьезно относимся к защите Ваших персональных данных. Подробную информацию о сборе, обработке и использовании Ваших личных данных Вы найдете в нашей Политике конфиденциальности.</value>
+  </data>
+  <data name="UA_LABEL_13" xml:space="preserve">
+    <value>13. РЕГУЛИРУЮЩЕЕ ЗАКОНОДАТЕЛЬСТВО И РАЗРЕШЕНИЕ СПОРОВ</value>
+  </data>
+  <data name="UA_LABEL_13.1" xml:space="preserve">
+    <value>1. Регулирующее законодательство</value>
+  </data>
+  <data name="UA_LABEL_13.1.1" xml:space="preserve">
+    <value>Шведское законодательство применяется исключительно к настоящим Условиям и договору между вами и нами. Как потребитель вы пользуетесь правами, предусмотренными обязательными положениями законодательства страны проживания. Ничто в настоящих Условиях, включая данный пункт 13.1, не ограничивает ваше право использовать такие обязательные положения местного законодательства в качестве потребителя.</value>
+  </data>
+  <data name="UA_LABEL_13.2" xml:space="preserve">
+    <value>2. Урегулирование споров онлайн</value>
+  </data>
+  <data name="UA_LABEL_13.2.1" xml:space="preserve">
+    <value>Европейская комиссия обеспечивает платформу для урегулирования споров в режиме онлайн:</value>
+  </data>
+  <data name="UA_LABEL_2" xml:space="preserve">
+    <value>2. ПРОЦЕСС БРОНИРОВАНИЯ И КОНТАКТНАЯ ИНФОРМАЦИЯ</value>
+  </data>
+  <data name="UA_LABEL_2.1" xml:space="preserve">
+    <value>В процессе бронирования вам будут предоставлены необходимые технические средства для обнаружения ошибок в формах ввода информации и возможность их исправления перед отправкой запроса на бронирование. Мы рекомендуем вам проверить всю информацию перед отправкой запроса на бронирование. Запросы на последующие изменения могут быть связаны со значительными дополнительными расходами.</value>
+  </data>
+  <data name="UA_LABEL_2.2" xml:space="preserve">
+    <value>Нам может понадобиться связаться с вами, например, в случае последующего изменения приобретенных туристических услуг. Вы должны предоставить точную контактную информацию - номер телефона и адрес электронной почты. Вы также должны постоянно следить за получением наших сообщений. Вы также должны убедиться в том, что вы получаете наши сообщения. Мы не несем ответственности, если вы не получаете от нас сообщений по причинам, которые находятся вне нашего разумного контроля, включая, но не ограничиваясь следующим: (i) вы указали неверный адрес электронной почты; (ii) настройки вашей электронной почты не позволяют нашим сообщениям доходить до вас; или (iii) настройки вашей электронной почты классифицируют наши сообщения как спам.</value>
+  </data>
+  <data name="UA_LABEL_3" xml:space="preserve">
+    <value>3. ПОСРЕДНИЧЕСТВО ПРИ БРОНИРОВАНИИ РЕЙСОВ</value>
+  </data>
+  <data name="UA_LABEL_3.1" xml:space="preserve">
+    <value>1. Заключение контракта и пересмотр цены</value>
+  </data>
+  <data name="UA_LABEL_3.1.1" xml:space="preserve">
+    <value>После того, как вы отправите запрос на бронирование, мы подтвердим получение вашего запроса по электронной почте. Именно в этот момент между вами и нами возникает договор на предоставление посреднических услуг. Если вы не получите такого подтверждения в течение часа с момента отправки запроса на бронирование и наш оператор не свяжется с вами по электронной почте или телефону, чтобы сообщить о возникшей проблеме, пожалуйста, позвоните нам, чтобы прояснить ситуацию.</value>
+  </data>
+  <data name="UA_LABEL_3.1.2" xml:space="preserve">
+    <value>Как только заказанные билеты будут оформлены, вы получите письмо-подтверждение по электронной почте с номером билета. В этот момент между вами и соответствующей авиакомпанией (авиакомпаниями) заключается юридически обязательный договор.</value>
+  </data>
+  <data name="UA_LABEL_3.1.3" xml:space="preserve">
+    <value>Цены и наличие билетов указываются непосредственно соответствующей авиакомпанией. Если цена авиабилета изменяется по независящим от нас причинам, после подачи запроса на бронирование, но до даты вступления в силу договора с авиакомпанией (как это предусмотрено в пункте 3.1.2 выше), договор не вступает в силу, и Ваш платеж будет возвращен Вам в полном объеме. Мы можем связаться с вами и предложить вам принять измененную цену в обычные рабочие часы, но не позднее, чем через 24 часа после того, как нам стало известно об изменении цены, или в первый рабочий день после этих 24 часов.</value>
+  </data>
+  <data name="UA_LABEL_3.2" xml:space="preserve">
+    <value>2. Информация о бронировании и условиях перевозки</value>
+  </data>
+  <data name="UA_LABEL_3.2.1" xml:space="preserve">
+    <value>В отношении рейсов, предлагаемых на Портале, мы выступаем исключительно в качестве посредника. Договор перевозки заключается непосредственно между Вами и соответствующей авиакомпанией, и мы не берем на себя никакой договорной ответственности за то, будет ли выполняться Ваш рейс. Ответственность за выполнение/не выполнение вашего рейса лежит исключительно на авиакомпании-операторе.</value>
+  </data>
+  <data name="UA_LABEL_3.2.2" xml:space="preserve">
+    <value>Перед тем, как оформить бронирование, вам будут представлены условия соответствующей авиакомпании (авиакомпаний).</value>
+  </data>
+  <data name="UA_LABEL_3.2.3" xml:space="preserve">
+    <value>Выступая в качестве посредника при приобретении туристических услуг, предоставляемых авиакомпаниями, мы не гарантируем предоставление доступа к системам бронирования этих авиакомпаний. При необходимости мы можем действовать от вашего имени в соответствии с договором, заключенным между вами и авиакомпанией. Мы также можем попросить Вас связаться непосредственно с соответствующей авиакомпанией для получения информации о бронировании, а также изменить или отменить Ваше бронирование.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4" xml:space="preserve">
+    <value>Ниже, в форме общего обзора, мы предоставляем информацию об условиях бронирования и перевозки, обычно применяемых авиакомпаниями таким или, по крайней мере, аналогичным образом. Тем не менее, любые отличающиеся положения соответствующей авиакомпании имеют преимущественную силу по сравнению с общей информацией, приведенной в настоящем пункте 3.2.4. Поэтому в каждом случае перед бронированием следует обратить внимание на актуальные условия соответствующей авиакомпании.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.1" xml:space="preserve">
+    <value>Время вылета/регистрации
+Время вылета всегда указывается по местному времени. Прибытие на следующий день указано в расписании. Указанное время вылета является предварительным и может быть изменено с уведомлением вскоре после выписки билета, например, из-за ограничений, установленных диспетчерской службой, погодных условий или функциональных ограничений авиакомпании. Вы должны заранее знать текущее время вылета рейса.
+Вы также должны вовремя зарегистрироваться на рейс, время которого указано авиакомпанией. Авиакомпании имеют право отказать в посадке в случае опоздания на регистрацию. Пожалуйста, обратите внимание: некоторые авиалинии предлагают регистрацию на рейс онлайн на своих веб-сайтах и взимают сбор за регистрацию вручную в аэропорту.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.10" xml:space="preserve">
+    <value>Двойное бронирование
+Двойное бронирование означает два или более бронирования на имя одного и того же пассажира на рейсе одной и той же авиакомпании. При двойном бронировании авиакомпания может отменить поездку. Это также может произойти, если бронирование было сделано через разные туристические агентства. Мы не несем ответственности за отмену рейсов авиакомпаний и за отказ авиакомпаний вернуть средства в случае, если они предполагают двойное бронирование.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.2" xml:space="preserve">
+    <value>Комбинирование отдельных билетов
+Объединение двух отдельных билетов в один конец вместо покупки одного билета туда и обратно четко указано в процедуре бронирования. В случае отмены, изменения или нарушения воздушного движения, например, в результате забастовок, а также изменения расписания, билеты рассматриваются независимо друг от друга. Применяются правила каждой авиакомпании.
+Авиаперелеты с разными номерами бронирования всегда рассматриваются как самостоятельная поездка.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.3" xml:space="preserve">
+    <value>Авиабилеты с несколькими сегментами / правила использования
+Ваш билет в один конец или туда и обратно может состоять из нескольких сегментов. По условиям большинства авиакомпаний, такие полетные сегменты используются в определенной последовательности. В противном случае многие авиакомпании отказываются от выполнения последующих сегментов рейса (т.е. неиспользование одного сегмента рейса может привести к недействительности остальной части билета). В случае покупки билета туда-обратно, неявка на рейс в пункт назначения может привести к аннулированию билета на обратный рейс авиакомпанией.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.4" xml:space="preserve">
+    <value>Беременность
+Некоторые авиакомпании отказывают в перевозке женщинам с периодом беременности более 28 недель во время полета в пункт назначения или из него. Если вы беременны, вам необходимо обратиться в авиакомпанию и к вашему врачу, если вы можете отправиться в путешествие.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.5" xml:space="preserve">
+    <value>Детские билеты
+Проверьте в авиакомпании условия путешествия с ребенком, у которого нет отдельного места. Как правило, детям в возрасте от 2 лет и старше требуется отдельное место, а дети в возрасте от 0 до 2 лет путешествуют на руках взрослого без отдельного места. Если до конца путешествия ребенку исполнилось 2 года, необходимо забронировать детский билет с отдельным посадочным местом на весь период путешествия. Билеты для детей до двух лет нельзя забронировать до момента рождения, так как фамилия и дата рождения должны точно совпадать с именами и датами, указанными в паспорте. Мы не возмещаем расходы, если билет неправильного типа был первоначально забронирован.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.6" xml:space="preserve">
+    <value>Несовершеннолетние без сопровождения
+Мы не оказываем посреднических услуг при бронировании билетов для несовершеннолетних без сопровождения. Билеты для детей до 18 лет должны быть забронированы со взрослым. Некоторые страны и авиакомпании отказываются принимать детей до 18 лет, не сопровождаемых опекуном. Пожалуйста, обратите внимание, что некоторые авиакомпании требуют, чтобы дети до 18 лет имели при себе свидетельство о рождении.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.7" xml:space="preserve">
+    <value>Потерянный/поврежденный багаж
+Выступая в качестве посредника, мы не несем никакой ответственности за утерянный или поврежденный багаж. О любых проблемах необходимо немедленно сообщать представителю авиакомпании в аэропорту.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.8" xml:space="preserve">
+    <value>Транзит и ночевка
+Наземный транспорт и/или ночлег в гостинице во время Вашей поездки, как правило, не включены в стоимость билета. Вам необходимо самостоятельно следить за расписанием наземного транспорта и ценами.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.9" xml:space="preserve">
+    <value>Время стыковки рейсов
+Стандартные билеты, забронированные на Портале, имеют утвержденное время стыковки. Время, достаточное для пересадки с одного рейса на другой, рассчитывается авиакомпаниями. Если один из сегментов рейса задерживается, что приводит к задержке на стыковочном рейсе, авиакомпания должна помочь Вам добраться до конечного пункта назначения (см. 11.1).
+При бронировании отдельных билетов авиакомпания не несет ответственности за задержки, которые привели к задержкам стыковочных рейсов. Поэтому Вы должны самостоятельно убедиться в том, что время стыковки достаточно и соответствует требованиям авиакомпаний и аэропортов. Любые дополнительные расходы, связанные с пропущенными стыковочными рейсами, не возмещаются.</value>
+  </data>
+  <data name="UA_LABEL_3.3" xml:space="preserve">
+    <value>3. Авиакомпании, которым запрещено работать на территории ЕС ("черный список"). Пожалуйста, обратите внимание, что некоторым авиакомпаниям запрещено работать на территории ЕС в соответствии с резолюцией, принятой Европейской Комиссией в тесной консультации с национальными органами управления воздушным транспортом. Этим авиакомпаниям запрещено работать, так как они считаются небезопасными или недостаточно контролируемыми властями своей страны.:</value>
+  </data>
+  <data name="UA_LABEL_3.4" xml:space="preserve">
+    <value>4. Изменение расписания и отмена рейсов авиакомпаниями</value>
+  </data>
+  <data name="UA_LABEL_3.4.1" xml:space="preserve">
+    <value>Возможно, ваш контракт с соответствующей авиакомпанией позволяет ей отменить или изменить бронирование. Мы уведомим Вас о любых изменениях, как только узнаем о них от авиакомпании.</value>
+  </data>
+  <data name="UA_LABEL_3.4.2" xml:space="preserve">
+    <value>Время вылета, указанное в подтверждении бронирования, может измениться с даты бронирования до даты фактической поездки. В случае изменения расписания рейсов мы уведомим вас об этом, как только получим соответствующую информацию от авиакомпании. Тем не менее, мы настоятельно рекомендуем Вам связаться с Вашей авиакомпанией не позднее, чем за 72 часа до запланированного вылета каждого рейса, чтобы убедиться, что рейс (и любые стыковочные рейсы) будут выполняться в соответствии с расписанием. Мы не контролируем изменения в расписании авиакомпании и не несем ответственности за расходы, которые могут возникнуть в результате таких изменений.</value>
+  </data>
+  <data name="UA_LABEL_3.5" xml:space="preserve">
+    <value>5.Изменения и отмены по вашему запросу</value>
+  </data>
+  <data name="UA_LABEL_3.5.1" xml:space="preserve">
+    <value>Условия изменения бронирования (включая изменение имени пассажира, пункта назначения и даты вылета) и возврата денег за отмену бронирования определяются соответствующей авиакомпанией, которая является вашим партнером по договору перевозки. В качестве посредников мы не можем влиять на эти условия.</value>
+  </data>
+  <data name="UA_LABEL_3.5.2" xml:space="preserve">
+    <value>Если Вы хотите изменить бронирование или отменить бронирование и вернуть деньги, и если условия авиакомпании позволяют такое изменение или возврат денег после отмены бронирования, мы можем подать запрос от Вашего имени в качестве дополнительной услуги. При бронировании дополнительных услуг Вы будете проинформированы об условиях и сборах, связанных с предоставлением таких услуг. Вы также можете связаться с авиакомпанией напрямую.</value>
+  </data>
+  <data name="UA_LABEL_3.5.3" xml:space="preserve">
+    <value>Чтобы мы могли справиться с изменениями по Вашему запросу, мы должны получить Ваш запрос не позднее, чем за 24 часа до начала путешествия (только по телефону или электронной почте).
+Если вы хотите изменить бронирование в течение более короткого времени до вылета, мы рекомендуем вам связаться с соответствующей авиакомпанией напрямую.</value>
+  </data>
+  <data name="UA_LABEL_3.6" xml:space="preserve">
+    <value>6.  Неспособность прийти на рейс. Настоящим Вы уполномочиваете нас отменить бронирование неиспользованного рейса от Вашего имени в случае Вашего неявки или неявки на рейс и предъявить авиакомпании претензию на возможный возврат средств от Вашего имени. Мы имеем право, но не обязаны это делать, и вы оставляете за собой право обратиться непосредственно в авиакомпанию с претензией о возмещении в полном объеме.</value>
+  </data>
+  <data name="UA_LABEL_4" xml:space="preserve">
+    <value>4. ПОСРЕДНИЧЕСТВО ПРИ БРОНИРОВАНИИ ГОСТИНИЦ</value>
+  </data>
+  <data name="UA_LABEL_4.1" xml:space="preserve">
+    <value>Бронирование гостиничных услуг через Портал осуществляется при посредничестве партнерства с различными компаниями и отелями. Гостям должно быть от 18 до 21 года на момент заселения (в зависимости от индивидуальной политики отеля), если они не сопровождаются родителями или опекунами. Чтобы запросить изменение или отмену бронирования отеля, пожалуйста, свяжитесь с 1-888-5050-777 для США/Канады и отправьте электронное письмо по адресу customerservice@farelovers.com для США/Канады и других стран мира.</value>
+  </data>
+  <data name="UA_LABEL_5" xml:space="preserve">
+    <value>5. ПОСРЕДНИЧЕСТВО ПРИ БРОНИРОВАНИИ АРЕНДЫ АВТОМОБИЛЕЙ</value>
+  </data>
+  <data name="UA_LABEL_5.1" xml:space="preserve">
+    <value>Услуга проката автомобилей бронируется через Портал при посредничестве различных прокатных компаний.  Если водитель не удовлетворяет минимальным возрастным требованиям в определенной юрисдикции, в прокате автомобиля будет отказано. Также, пожалуйста, имейте в виду, что для любого проката автомобилей Вам понадобятся действительные водительские права и действующая кредитная карта. Поэтому все вопросы относительно бронирования и любых запросов на изменение или отмену следует направлять непосредственно в компании по прокату автомобилей или, пожалуйста, свяжитесь с 1-888-5050-777 для США/Канады и отправьте электронное письмо по адресу customerservice@farelovers.com для США/Канады и других стран мира.</value>
+  </data>
+  <data name="UA_LABEL_6" xml:space="preserve">
+    <value>6. СПЕЦИАЛЬНЫЕ ПОЛОЖЕНИЯ О ПОСРЕДНИЧЕСТВЕ ПРИ БРОНИРОВАНИИ НЕСКОЛЬКИХ УСЛУГ</value>
+  </data>
+  <data name="UA_LABEL_6.1" xml:space="preserve">
+    <value>Портал предлагает возможность соединить и объединить по Вашему желанию несколько отдельных сервисов (например, перелет + гостиница). В этом случае вы поручаете нам выступить посредником при бронировании различных туристических услуг от разных поставщиков. Соответствующие провайдеры обязательно будут представлены вам в процессе бронирования до его завершения. Если вы комбинируете определенные услуги, договор о путешествии между вами и нами не заключается; вместо этого вы заключаете несколько договоров о предоставлении услуг с каждым отдельным поставщиком. В то же время, мы выступаем исключительно в качестве посредника по отношению к каждой отдельной туристической услуге.</value>
+  </data>
+  <data name="UA_LABEL_7" xml:space="preserve">
+    <value>7. ИНФОРМАЦИЯ О ПОЛОЖЕНИЯХ, ОТНОСЯЩИХСЯ К ПАСПОРТАМ, ВИЗАМ И СОСТОЯНИЮ ЗДОРОВЬЯ</value>
+  </data>
+  <data name="UA_LABEL_7.1" xml:space="preserve">
+    <value>Требования к паспортам, визам и состоянию здоровья могут меняться, поэтому перед поездкой вам следует заранее уточнить их в соответствующем органе (посольстве, консульстве и т.д.). Вы должны убедиться, что у Вас есть действительный паспорт (для поездок за пределы страны большинство стран требуют действительный паспорт как минимум на 6 месяцев после даты возвращения и, при необходимости, визу. Не забудьте принять во внимание все транзитные пункты, где Вам также может потребоваться виза. Поскольку получение визы часто занимает некоторое время, мы рекомендуем подавать документы на ее получение заранее. Вы подтверждаете, что все перечисленные выше имена пассажиров написаны правильно и так, как они указаны в их проездных документах. Вы понимаете, что если после этого бронирования потребуется внести какие-либо изменения в имена, поставщик взимает плату. Мы не несем ответственности за клиентов, которые не имеют должным образом оформленных документов.</value>
+  </data>
+  <data name="UA_LABEL_7.2" xml:space="preserve">
+    <value>Каждый пункт назначения имеет свои требования в отношении въездных формальностей, вакцинации и т.д., которые также могут зависеть от национальности пассажира. Вы должны получить соответствующую информацию самостоятельно. Инциденты, возникшие в результате несоблюдения таких официальных правил, не считаются произошедшими по нашей вине. Поэтому мы рекомендуем вам всегда уточнять различные формальности, действующие в выбранном вами пункте назначения или странах транзита, а также время, необходимое для выполнения всех соответствующих действий.</value>
+  </data>
+  <data name="UA_LABEL_8" xml:space="preserve">
+    <value>8.  СБОРЫ И ОПЛАТА</value>
+  </data>
+  <data name="UA_LABEL_8.1" xml:space="preserve">
+    <value>Оплата. Оплату туристических услуг осуществляет либо мы (в сотрудничестве с нашим поставщиком платежных услуг, который предоставляет возможность обработки платежа), либо Поставщик услуг. Обращаем ваше внимание на то, что для того, чтобы обработать платеж, нам необходимо предоставить информацию о вашем платеже (например, реквизиты кредитной или дебетовой карты) нашему поставщику платежных услуг. Вся платежная информация наших клиентов, предоставленная нашему поставщику платежных услуг, хранится в зашифрованном виде на защищенном сервере. В зависимости от критериев бронирования и дополнительных услуг, оплата может быть разделена на две отдельные операции: оплата нам и оплата поставщику услуг. Плата, взимаемая с Вас, не может превышать фактическую общую цену, указанную на нашем сайте. В этом случае применяются те же меры безопасности. Чтобы мы могли обработать ваш платеж, вам необходимо обеспечить наличие средств в достаточном объеме. Если у Вас возникнут проблемы с обработкой Вашего платежа, мы постараемся обработать Ваш платеж еще раз в сотрудничестве с нашим поставщиком платежных услуг. Если это не приведет к успешному списанию средств с Вашего счета, мы свяжемся с Вами в кратчайшие сроки для получения инструкций по другим способам оплаты.  Если мы не получим ваш платеж в соответствии с такими дальнейшими инструкциями, то мы имеем право отменить ваш заказ. Отмена влечет за собой штраф в размере 100%. Изменения в бронировании могут повлечь за собой штраф в размере 100% и/или административный сбор. Мошенничество во время оплаты, Если у нас есть основания подозревать мошенничество, мы оставляем за собой право отказать в обработке такого платежа. В случае подозрения в возможном преступлении, Вас могут попросить предоставить доказательства законности платежа. Информация обо всех видах мошенничества с платежами будет передана в полицию и инкассационную службу.</value>
+  </data>
+  <data name="UA_LABEL_9" xml:space="preserve">
+    <value>9.  ЖАЛОБЫ</value>
+  </data>
+  <data name="UA_LABEL_9.1" xml:space="preserve">
+    <value>Жалобы, связанные с предоставлением туристических услуг, любые жалобы, касающиеся проблемы, замечания или претензии в связи с фактическим предоставлением туристических услуг, должны быть адресованы непосредственно соответствующему Поставщику услуг (туроператору, авиакомпании, страховой компании, компании по прокату автомобилей, гостинице), с которым у Вас заключен договор на соответствующую туристическую услугу.
+
+Жалобы на наши собственные услуги должны быть составлены в письменном виде и поданы в течение двух месяцев с даты окончания вашей поездки, пожалуйста, напишите нам по электронной почте, чтобы получить форму жалобы.
+
+Заполненная форма жалобы должна быть отправлена обычной или электронной почтой по следующему адресу: Почтовый адрес: Farelovers Travel Corporation400, 906 12 Ave SW Calgary, AB T2R 1K7.
+E-mail address:customer.relations@farelovers.com</value>
+  </data>
+  <data name="U_DONT_HAVE_ACC" xml:space="preserve">
+    <value>Нет учетной записи</value>
+  </data>
+  <data name="U_EDIT_PROFILE" xml:space="preserve">
+    <value>Изменить профиль</value>
+  </data>
+  <data name="U_NEW_PASSWORD" xml:space="preserve">
+    <value>Новый пароль</value>
+  </data>
+  <data name="U_PASSWORD" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="U_REGISTRATION" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="U_REPEAT_PASSWORD" xml:space="preserve">
+    <value>Повторите пароль</value>
+  </data>
+  <data name="U_SIGN_IN_WITH_FACEBOOK" xml:space="preserve">
+    <value>Войти через Facebook</value>
+  </data>
+  <data name="U_SIGN_IN_WITH_GOOGLE" xml:space="preserve">
+    <value>Войти по учетным данным Google</value>
+  </data>
+  <data name="U_SIGN_UP" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="U_SUBMIT" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="U_USERNAME" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="U_USERNAME_OR_EMAIL" xml:space="preserve">
+    <value>Имя пользователя или адрес электронной почты</value>
+  </data>
+  <data name="U_WITHOUT_LOGIN" xml:space="preserve">
+    <value>Продолжить без логина</value>
+  </data>
+  <data name="VR_EMAIL_IS_NOT_IN_VALID_FORMAT" xml:space="preserve">
+    <value>Электронная почта в неверном формате!</value>
+  </data>
+  <data name="VR_IS_MANADTORY_FIELD" xml:space="preserve">
+    <value> обязательное поле!</value>
+  </data>
+  <data name="VR_PASSWORD_DOES_NOT_MATCH" xml:space="preserve">
+    <value>Введённые пароли не совпадают</value>
+  </data>
+  <data name="HP_CURRENCY" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="HP_LANGUAGE" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="BK_NO_BOOKINGS_FOUND" xml:space="preserve">
+    <value>Бронь не найдена.</value>
+  </data>
+  <data name="CN_TEXT" xml:space="preserve">
+    <value>Farelovers - это молодая канадская компания по организации путешествий, расположенная в центре Калгари, которая была запущена в 2019 году. Farelovers является туристическим агентством, аккредитованным Международной ассоциацией воздушного транспорта и веб-сайт полностью соответствует правилам Стандартов безопасности данных в сфере платежных карт.  Farelovers был разработан, чтобы помочь людям исследовать, мечтать и открывать для себя новые места! Наша система бронирования найдет и сравнит цены на рейсы, гостиницы и прокат автомобилей в режиме реального времени, так что вы сможете легко выбрать самый дешевый, быстрый, удобный или лучший для вас вариант. Вам нужно всего лишь сделать пару кликов, и вы готовы к поездке!</value>
+  </data>
+  <data name="CN_WHAT_WE_DO" xml:space="preserve">
+    <value>Что мы делаем</value>
+  </data>
+  <data name="PP_LABEL_1" xml:space="preserve">
+    <value>Введение</value>
+  </data>
+  <data name="PP_LABEL_10" xml:space="preserve">
+    <value>Свяжитесь с нами</value>
+  </data>
+  <data name="PP_LABEL_10_1" xml:space="preserve">
+    <value>Если у вас возникли вопросы относительно обработки ваших персональных данных или использования файлов cookie, или вы хотите воспользоваться какими-либо из своих прав в соответствии с действующим законодательством о защите данных, отправьте электронное письмо по адресу privacy@farelovers.com или используйте следующие данные для связи.</value>
+  </data>
+  <data name="PP_LABEL_11" xml:space="preserve">
+    <value>Изменения в политике конфиденциальности</value>
+  </data>
+  <data name="PP_LABEL_11_1" xml:space="preserve">
+    <value>Если мы изменим правила обработки Ваших личных данных или правила использования cookie-файлов, мы немедленно обновим эту политику конфиденциальности и опубликуем ее на этом сайте.</value>
+  </data>
+  <data name="PP_LABEL_1_1" xml:space="preserve">
+    <value>Данный сайт управляется компанией Farelovers Travel Corporation (далее - "мы", "нас", "наш" и т.д.). Любители путешествий обрабатывают различные личные данные, включая имена, адреса электронной почты и другую информацию, связанную с путешествиями, в рамках своей повседневной деятельности. Поэтому мы очень серьезно относимся к безопасности данных и соблюдению законов о защите данных. Настоящая политика конфиденциальности содержит информацию о том, как мы собираем, храним, используем и раскрываем ваши личные данные, когда вы пользуетесь этим сайтом, и как мы защищаем конфиденциальность и секретность вашей личной информации. Мы уважаем вашу конфиденциальность. Неважно, являетесь ли вы начинающим или давним пользователем наших услуг, пожалуйста, ознакомьтесь с нашими методами работы и свяжитесь с нами, если у вас возникнут какие-либо вопросы.</value>
+  </data>
+  <data name="PP_LABEL_1_2" xml:space="preserve">
+    <value>Farelovers Travel Corporation (далее - "мы", "нас", "наш" и т.д.), является контролером Ваших персональных данных и, следовательно, несет ответственность за законность действий, которые мы совершаем с ними.</value>
+  </data>
+  <data name="PP_LABEL_2" xml:space="preserve">
+    <value>Сбор персональных данных</value>
+  </data>
+  <data name="PP_LABEL_2_1" xml:space="preserve">
+    <value>Как правило, личные данные, которые мы собираем, необходимы нам для организации Вашей поездки и бронирования. Сюда входит такая информация, как ваше имя и фамилия, дата рождения, номер телефона, адрес электронной почты и почтовый адрес, а также информация для выставления счетов (например, номер кредитной карты, имя владельца карты и срок ее действия). Единственные данные, которые вам следует предоставить, это личные данные, которые нам необходимы для организации вашей поездки в соответствии с бронированием через наш веб-сайт. В зависимости от типа используемой вами услуги, мы также можем запросить у вас номер часто летающего пассажира, информацию о ваших особых запросах на питание и проблемах со здоровьем (если таковые имеются), а также другую информацию, имеющую отношение к вашей поездке или необходимую для путешествия другим поставщиком услуг (например, авиакомпаниями и гостиницами). Этот список не является исчерпывающим. Если вы обращаетесь в нашу службу поддержки, мы собираем данные, которые вы предоставляете во время телефонного разговора. Как вы увидите ниже, наши файлы cookie также собирают определенную информацию.</value>
+  </data>
+  <data name="PP_LABEL_2_2" xml:space="preserve">
+    <value>Если вы сделаете бронирование через наш сайт для другого человека, мы запросим личные данные этого человека. В этой ситуации мы ожидаем, что вы сообщите этому человеку о политике конфиденциальности.</value>
+  </data>
+  <data name="PP_LABEL_3" xml:space="preserve">
+    <value>Сбор конфиденциальных персональных данных</value>
+  </data>
+  <data name="PP_LABEL_3_1" xml:space="preserve">
+    <value>В некоторых случаях мы можем обрабатывать так называемые "специальные категории персональных данных", которые могут считаться конфиденциальными. Это возможно, например, если Вы (i) предоставили медицинскую справку, чтобы воспользоваться услугой страхования в случае отмены или возврата средств авиакомпании; (ii) у Вас есть заболевание или состояние здоровья, влияющее на Вашу поездку, для которой Вы запросили помощь или которая требует специального разрешения; или (iii) сделали запрос, который раскрыл некоторые из Ваших других конфиденциальных личных данных.</value>
+  </data>
+  <data name="PP_LABEL_3_2" xml:space="preserve">
+    <value>Перед обработкой Ваших конфиденциальных личных данных мы просим Вас дать согласие на такую обработку. Поэтому мы направляем Вам по электронной почте специальные формы обратной связи с нашего электронного адреса: privacy@farelovers.com для отправки любых конфиденциальных данных. Эти формы позволяют Вам дать согласие, требуемое действующим законодательством о защите данных. Разумеется, Вы можете в любое время отозвать такое согласие. Мы не будем обрабатывать Ваши конфиденциальные личные данные, если у нас не будет Вашего разрешения на это или если Вы не предоставили нам эти данные. Ограниченное число наших сотрудников будет иметь доступ к Вашим конфиденциальным личным данным, и после обработки Ваших конфиденциальных данных в соответствии с Вашим запросом мы удалим Ваши данные в кратчайшие сроки.</value>
+  </data>
+  <data name="PP_LABEL_4" xml:space="preserve">
+    <value>Использование Ваших личных данных</value>
+  </data>
+  <data name="PP_LABEL_4_1" xml:space="preserve">
+    <value>Для того, чтобы иметь право на обработку Ваших персональных данных, в соответствии с действующим законодательством о защите данных, мы обязаны иметь так называемую правовую основу для каждой из наших целей обработки персональных данных. По этой причине мы подготовили нижеследующую таблицу, в которой представлена правовая основа для каждой из наших целей.</value>
+  </data>
+  <data name="PP_LABEL_4_2" xml:space="preserve">
+    <value>Что мы делаем (цели обработки Ваших персональных данных)</value>
+  </data>
+  <data name="PP_LABEL_4_2_1" xml:space="preserve">
+    <value>Организация путешествий и бронирование по Вашему запросу (т.е. бронирование туристических услуг при нашем посредничестве, а также предоставление собственных услуг).</value>
+  </data>
+  <data name="PP_LABEL_4_2_2" xml:space="preserve">
+    <value>Если вы начали процесс бронирования, но не дошли до точки оплаты, мы можем отправить вам электронное письмо со ссылкой на результаты поиска или начатую процедуру бронирования, в зависимости от того, когда процесс бронирования на сайте был прерван.</value>
+  </data>
+  <data name="PP_LABEL_4_2_3" xml:space="preserve">
+    <value>Перед началом Вашей поездки мы предоставим Вам дополнительную информацию и предложения, связанные с Вашей поездкой, например, возможные дополнительные услуги, такие как провоз дополнительного багажа, а также другую информацию, полезную для Вашей поездки. Часть этой информации основана на анализе данных, которые Вы предоставили в процессе бронирования (например, даты поездки, пункт назначения и т.д.).</value>
+  </data>
+  <data name="PP_LABEL_4_2_4" xml:space="preserve">
+    <value>После вашей поездки мы можем отправить вам наш информационный бюллетень, содержащий рекомендации по другим поездкам, туристическим продуктам и услугам, которые могут вас заинтересовать. Некоторые рекомендации могут быть основаны на анализе ваших предыдущих решений при бронировании путешествий и вашего поведения в отношении нашей электронной почты.</value>
+  </data>
+  <data name="PP_LABEL_4_2_5" xml:space="preserve">
+    <value>Записывайте телефонные разговоры в целях контроля качества и для обработки любых будущих запросов или вопросов с вашей стороны.</value>
+  </data>
+  <data name="PP_LABEL_4_2_6" xml:space="preserve">
+    <value>Использование cookie-файлов, например, для повышения удобства использования данного веб-сайта, более индивидуального подхода и сбора статистических данных об использовании. Мы также используем сессионные cookie-файлы для повышения безопасности этого сайта.</value>
+  </data>
+  <data name="PP_LABEL_4_3" xml:space="preserve">
+    <value>Наши юридические основания</value>
+  </data>
+  <data name="PP_LABEL_4_3_1" xml:space="preserve">
+    <value>Выполнение нашего контракта с вами. Если вы предоставили нам конфиденциальные личные данные, то законным основанием для этого является ваше разрешение.</value>
+  </data>
+  <data name="PP_LABEL_4_3_2" xml:space="preserve">
+    <value>Наш законный интерес заключается в ведении бизнеса и предоставлении вам возможности завершить покупку без необходимости повторного ввода всей информации. Если вы не хотите получать эти электронные письма, вы можете отказаться от подписки в любое время, воспользовавшись ссылкой в электронном письме.</value>
+  </data>
+  <data name="PP_LABEL_4_3_3" xml:space="preserve">
+    <value>Наш законный интерес заключается в том, чтобы сделать Вашу поездку более удобной и позволить Вам легко найти дополнительную полезную информацию. Если вы не хотите получать эту информацию, вы можете отказаться от подписки в любое время, воспользовавшись ссылкой в электронном письме.</value>
+  </data>
+  <data name="PP_LABEL_4_3_4" xml:space="preserve">
+    <value>Наш законный интерес заключается в ведении бизнеса и предоставлении Вам возможности организовать свои поездки. Если вы не хотите получать эти электронные письма, вы можете отказаться от подписки в любое время, воспользовавшись ссылкой в электронном письме или на нашем сайте. Кроме того, вы можете отказаться от получения информационного бюллетеня до завершения покупки.</value>
+  </data>
+  <data name="PP_LABEL_4_3_5" xml:space="preserve">
+    <value>Наш законный интерес заключается в (i) повышении качества наших услуг путем внутреннего обучения и (ii) разрешении возможных запросов или жалоб от вас. Если вы не хотите, чтобы телефонный разговор записывался, вы можете возразить против такой записи до ее начала.</value>
+  </data>
+  <data name="PP_LABEL_4_3_6" xml:space="preserve">
+    <value>Наш законный интерес заключается в (i) улучшении нашего веб-сайта, (ii) демонстрации предложений, которые могут вас заинтересовать, и (iii) обеспечении безопасности услуг и веб-сайта. Если вы не хотите, чтобы мы сохраняли файлы cookie на вашем компьютере, вы можете в любое время изменить настройки вашего браузера.</value>
+  </data>
+  <data name="PP_LABEL_4_4" xml:space="preserve">
+    <value>Время хранения</value>
+  </data>
+  <data name="PP_LABEL_4_4_1" xml:space="preserve">
+    <value>Согласие на обработку конфиденциальных личных данных может быть отозвано в любое время.</value>
+  </data>
+  <data name="PP_LABEL_4_4_2" xml:space="preserve">
+    <value>24 часа с момента окончания процесса бронирования.</value>
+  </data>
+  <data name="PP_LABEL_4_4_3" xml:space="preserve">
+    <value>Максимум до начала путешествия. Другая аналогичная обработка может быть продолжена в соответствии с целями, изложенными ниже.</value>
+  </data>
+  <data name="PP_LABEL_4_4_4" xml:space="preserve">
+    <value>3 года с даты покупки.</value>
+  </data>
+  <data name="PP_LABEL_4_4_5" xml:space="preserve">
+    <value>6 месяцев со дня телефонного разговора. Запись доступна только ограниченному числу лиц.</value>
+  </data>
+  <data name="PP_LABEL_4_4_6" xml:space="preserve">
+    <value>В зависимости от типа файлов cookie.</value>
+  </data>
+  <data name="PP_LABEL_4_4_6_LINK" xml:space="preserve">
+    <value>Более подробно время хранения описано ниже.</value>
+     </data>
+  <data name="PP_LABEL_4_5" xml:space="preserve">
+    <value>В дополнение к вышесказанному, мы принимаем ряд повседневных мер, необходимых для предоставления услуг потребителям, таких как бухгалтерский учет, выставление счетов, выполнение обязательств по борьбе с отмыванием денег и поддержание безопасности нашего сайта. В той мере, в которой это не является необходимым согласно действующему законодательству, мы принимаем эти меры, исходя из наших законных интересов. Мы также можем анализировать поведение наших клиентов для общего улучшения наших веб-сайтов и услуг. Однако такой анализ проводится с использованием обобщенных или обезличенных агрегированных данных.</value>
+  </data>
+  <data name="PP_LABEL_5" xml:space="preserve">
+    <value>Предоставление Ваших персональных данных третьим лицам</value>
+  </data>
+  <data name="PP_LABEL_5_1" xml:space="preserve">
+    <value>Мы будем передавать вашу личную информацию третьим лицам только в том случае, если это необходимо для целей, перечисленных в настоящей политике конфиденциальности. К третьим сторонам могут относиться другие компании, государственные учреждения и наши доверенные бизнес-партнеры. Например, мы можем предоставлять ваши личные данные (в том числе, при необходимости, конфиденциальные) деловым партнерам, таким как авиакомпании, отели, страховые компании и глобальные системы распространения (называемые GDS), для организации ваших поездок и бронирования.</value>
+  </data>
+  <data name="PP_LABEL_5_2" xml:space="preserve">
+    <value>Каждый партнер несет персональную ответственность за то, как он обрабатывает Ваши личные данные после их получения от нашей компании. Это означает, что по всем вопросам, связанным с вашими правами в соответствии с действующим законодательством о защите данных, вы должны обращаться к соответствующему партнеру. Мы рекомендуем вам ознакомиться с соответствующей политикой конфиденциальности партнеров для получения информации о том, как они обрабатывают ваши личные данные.</value>
+  </data>
+  <data name="PP_LABEL_5_3" xml:space="preserve">
+    <value>Для предоставления запрошенных Вами услуг мы также предоставим Ваши персональные данные другим компаниям (так называемым обработчикам данных), например, провайдерам услуг, которые отвечают за работу наших контакт-центров, и другим провайдерам, которые будут обрабатывать Ваши персональные данные при предоставлении нам наших услуг (например, внешнее хранение).</value>
+  </data>
+  <data name="PP_LABEL_6" xml:space="preserve">
+    <value>Cторонние поставщики</value>
+  </data>
+  <data name="PP_LABEL_6_1" xml:space="preserve">
+    <value>Пожалуйста, обратите внимание, что наш сайт содержит ссылки на другие сайты и отображает материалы, предоставленные сторонними поставщиками. Данная политика конфиденциальности применима только к нашему сайту и нашим услугам. Если вы переходите по ссылкам на другие сайты или пользуетесь услугами и продуктами третьих сторон, вам следует ознакомиться с соответствующей политикой конфиденциальности. Кроме того, если вы обращаетесь к нам через социальные сети, настоящая политика конфиденциальности не распространяется на личные данные, передаваемые вами во время такого обращения. В этом случае мы рекомендуем вам ознакомиться с политикой конфиденциальности поставщика социальных сетей.</value>
+  </data>
+  <data name="PP_LABEL_7" xml:space="preserve">
+    <value>Ваши права</value>
+  </data>
+  <data name="PP_LABEL_7_1" xml:space="preserve">
+    <value>В соответствии с действующим законодательством о защите данных Вы имеете определенные права как "субъект данных". Ваши права перечислены ниже. Вы имеете следующие права:</value>
+  </data>
+  <data name="PP_LABEL_7_2" xml:space="preserve">
+    <value>Право доступа.</value>
+  </data>
+  <data name="PP_LABEL_7_2_1" xml:space="preserve">
+    <value>Вы имеете право на доступ к вашим персональным данным, которые мы обрабатываем. Вы также имеете право получать определенную информацию о том, что мы делаем с личными данными. Эта информация представлена в настоящем документе.</value>
+  </data>
+  <data name="PP_LABEL_7_3" xml:space="preserve">
+    <value>Право на внесение изменений.</value>
+  </data>
+  <data name="PP_LABEL_7_3_1" xml:space="preserve">
+    <value>При определенных обстоятельствах вы имеете право исправить неточные персональные данные, касающиеся вас, и дополнить неполные персональные данные. Обратите внимание, что в некоторых ситуациях мы не сможем исправить неточные личные данные, которые вы предоставили, например, из-за правил авиакомпании, и что такое изменение может повлечь за собой расходы.</value>
+  </data>
+  <data name="PP_LABEL_7_4" xml:space="preserve">
+    <value>Право на удаление.</value>
+  </data>
+  <data name="PP_LABEL_7_4_1" xml:space="preserve">
+    <value>При определенных обстоятельствах вы имеете право удалить свои личные данные.</value>
+  </data>
+  <data name="PP_LABEL_7_5" xml:space="preserve">
+    <value>Право ограничить обработку.</value>
+  </data>
+  <data name="PP_LABEL_7_5_1" xml:space="preserve">
+    <value>При определенных обстоятельствах Вы имеете право ограничить использование нами Ваших личных данных.</value>
+  </data>
+  <data name="PP_LABEL_7_6" xml:space="preserve">
+    <value>Право на перенос данных.</value>
+  </data>
+  <data name="PP_LABEL_7_6_1" xml:space="preserve">
+    <value>Вы имеете право получать от нас Ваши персональные данные (или передавать Ваши персональные данные непосредственно другому владельцу данных) в структурированном, распределенном, машиночитаемом формате.</value>
+  </data>
+  <data name="PP_LABEL_7_7" xml:space="preserve">
+    <value>Право на возражение.</value>
+  </data>
+  <data name="PP_LABEL_7_7_1" xml:space="preserve">
+    <value>Вы имеете право возражать против определенных видов обработки персональных данных, которые мы осуществляем. Это относится ко всем нашим действиям, основанным на наших законных интересах.</value>
+  </data>
+  <data name="PP_LABEL_8" xml:space="preserve">
+    <value>Файлы "cookie"</value>
+  </data>
+  <data name="PP_LABEL_8_1" xml:space="preserve">
+    <value>Файл cookie - это небольшой текстовый файл, который хранится на вашем компьютере. Некоторые cookie-файлы хранятся только до закрытия браузера (так называемые сессионные cookie-файлы), а некоторые хранятся в течение длительного времени (так называемые постоянные cookie-файлы). Если Вы не хотите, чтобы cookie-файлы сохранялись на Вашем компьютере, Вы можете изменить настройки браузера. Однако обращаем Ваше внимание на то, что в некоторых случаях это может привести к некорректной работе некоторых функций нашего сайта и некорректному отображению некоторых материалов.</value>
+  </data>
+  <data name="PP_LABEL_8_2" xml:space="preserve">
+    <value>Данный веб-сайт использует cookie-файлы по ряду причин, в том числе для обеспечения персонального контакта, улучшения удобства пользования веб-сайтом и сбора статистических данных об использовании. Мы также используем сессионные cookie-файлы для повышения безопасности данного сайта.</value>
+  </data>
+  <data name="PP_LABEL_8_3_1" xml:space="preserve">
+    <value>В некоторых случаях при использовании cookie-файлов мы передаем данные третьим лицам. Например, мы используем службы Google Analytics и Google AdWords, которые передают данные о посещаемости сайта на серверы Google. Google Analytics не идентифицирует отдельных пользователей и не связывает ваш IP-адрес с другими данными Google. Мы используем предоставленные Google отчеты для анализа трафика на сайте, понимания использования веб-страниц и оптимизации рекламы, приобретаемой в рекламной сети Google и других рекламных сетях. Google может обрабатывать данные в соответствии с политикой конфиденциальности Google.</value>
+  </data>
+  <data name="PP_LABEL_8_3_2" xml:space="preserve">
+    <value>для целей, описанных выше в этом разделе. Вы можете отказаться от сбора данных Google Analytics, отключив Cookie-файлы, JavaScript или воспользовавшись службой отказа от использования Google. Чтобы отказаться от рекламных функций Google, воспользуйтесь этой ссылкой.</value>
+  </data>
+  <data name="PP_LABEL_8_4" xml:space="preserve">
+    <value>Наш сайт также использует инструмент Pixel Facebook, который собирает деперсонализированные агрегированные данные, помогая нам оптимизировать покупку рекламы на различных платформах Facebook (включая Instagram). Facebook собирает идентификаторы пользователей, которые помогают определить, посетил ли пользователь сайт с пикселем Facebook. Однако мы, как рекламодатели, не можем идентифицировать конкретного пользователя, который выполняет какое-либо действие. Facebook и связанные с ней платформы расположены в закрытой рекламной экосистеме, в которой пользователи могут соглашаться или не соглашаться с тем, что рекламодатели будут использовать данные, собранные на их сайтах, для покупки рекламы на Facebook. Чтобы увидеть и изменить настройки рекламы в Facebook, воспользуйтесь этой ссылкой.</value>
+  </data>
+  <data name="PP_LABEL_9" xml:space="preserve">
+    <value>Безопасность данных</value>
+  </data>
+  <data name="PP_LABEL_9_1" xml:space="preserve">
+    <value>Для защиты ваших персональных данных мы ввели ряд технических и организационных мер безопасности. Например, мы поддерживаем высокий уровень технической безопасности всех систем (включая отслеживаемость, аварийное восстановление, ограничение доступа и т.д.). Кроме того, мы приняли политику, направленную на то, чтобы наши сотрудники (которые, разумеется, обязаны соблюдать конфиденциальность) не использовали личные данные без необходимости. Такая политика также определяет наши стандарты при заключении контрактов с поставщиками или внедрении новых ИТ-систем в ходе нашей деятельности.</value>
+  </data>
+  <data name="BD_AIR_PRICE" xml:space="preserve">
+    <value>Стоимость авиаперелета: </value>
+  </data>
+  <data name="BD_CAR_RPICE" xml:space="preserve">
+    <value>Cтоимость автомобиля: </value>
+  </data>
+  <data name="BD_CHECK_IN" xml:space="preserve">
+    <value>Заезд:</value>
+  </data>
+  <data name="BD_CHECK_OUT" xml:space="preserve">
+    <value>Отъезд:</value>
+  </data>
+  <data name="BD_HOTEL_PRICE" xml:space="preserve">
+    <value>Цена Отеля:</value>
+  </data>
+  <data name="BD_REQUESTED" xml:space="preserve">
+    <value>Запрошено: </value>
+  </data>
+  <data name="FR_CHEAPEST_FLIGHT" xml:space="preserve">
+    <value>Cамый дешевый рейс, с другой датой</value>
+  </data>
+  <data name="MB_ARCHIVE" xml:space="preserve">
+    <value>Архив</value>
+  </data>
+  <data name="MB_UPCOMING" xml:space="preserve">
+    <value>Предстоящие</value>
+  </data>
+  <data name="FD_FREE_BAGGAGES" xml:space="preserve">
+    <value>Бесплатный багаж:</value>
+  </data>
+  <data name="APP_ERROR" xml:space="preserve">
+    <value>Ошибка.</value>
+  </data>
+  <data name="APP_LATER" xml:space="preserve">
+    <value>Позже</value>
+  </data>
+  <data name="APP_OK" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="APP_RATE_APP" xml:space="preserve">
+    <value>Оценить приложение</value>
+  </data>
+  <data name="APP_RATE_TEXT" xml:space="preserve">
+    <value>Если вам понравилось наше приложение, пожалуйста, оцените его</value>
+  </data>
+  <data name="APP_SUCCESS" xml:space="preserve">
+    <value>Успешно</value>
+  </data>
+  <data name="FD_FARE_RULES" xml:space="preserve">
+    <value>Правила Тарификации</value>
+  </data>
+  <data name="SC_BOOKING_COMPLETE_TEXT" xml:space="preserve">
+    <value>Спасибо за то, что выбрали FareLovers, ваше бронирование в процессе. В ближайшее время Вы получите Ваши электронные билеты. Ваш номер брони</value>
+  </data>
+  <data name="SC_VALIDATION_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Не заполнено имя владельца карты</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_CVV" xml:space="preserve">
+    <value>Не заполнен код безопасности карты (CVV code)</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_MONTH" xml:space="preserve">
+    <value>Не выбран месяц окончания срока действия карты</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_NUMBER" xml:space="preserve">
+    <value>Не указан номер карты</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_YEAR" xml:space="preserve">
+    <value>Не выбран год окончания срока действия карты</value>
+  </data>
+  <data name="SC_VALIDATION_CITY" xml:space="preserve">
+    <value>Не заполнено название города</value>
+  </data>
+  <data name="SC_VALIDATION_COUNTRY" xml:space="preserve">
+    <value>Не заполнено название страны</value>
+  </data>
+  <data name="SC_VALIDATION_DAY" xml:space="preserve">
+    <value>не выбрана дата рождения</value>
+  </data>
+  <data name="SC_VALIDATION_EMAIL" xml:space="preserve">
+    <value>Не указан адрес электронной почты</value>
+  </data>
+  <data name="SC_VALIDATION_FIRST_NAME" xml:space="preserve">
+    <value>Не указано имя</value>
+  </data>
+  <data name="SC_VALIDATION_GENDER" xml:space="preserve">
+    <value>Не выбран пол</value>
+  </data>
+  <data name="SC_VALIDATION_LAST_NAME" xml:space="preserve">
+    <value>Не выбрана фамилия </value>
+  </data>
+  <data name="SC_VALIDATION_MONTH" xml:space="preserve">
+    <value>Не выбран месяц рождения</value>
+  </data>
+  <data name="SC_VALIDATION_PHONE" xml:space="preserve">
+    <value>Не указан номер телефона</value>
+  </data>
+  <data name="SC_VALIDATION_REGION" xml:space="preserve">
+    <value>Не указан регион/штат</value>
+  </data>
+  <data name="SC_VALIDATION_STREET" xml:space="preserve">
+    <value>Не указан адрес</value>
+  </data>
+  <data name="SC_VALIDATION_TITLE" xml:space="preserve">
+    <value>Не выбран титул</value>
+  </data>
+  <data name="SC_VALIDATION_YEAR" xml:space="preserve">
+    <value>Не выбран год рождения</value>
+  </data>
+  <data name="SC_VALIDATION_ZIP" xml:space="preserve">
+    <value>Не выбран почтовый индекс</value>
+  </data>
+  <data name="U_PASSWORD_EMPTY_FIELD" xml:space="preserve">
+    <value>Поле пароля не заполнено</value>
+  </data>
+  <data name="U_USERNAME_EMPTY_FIELD" xml:space="preserve">
+    <value>Поле имени пользователя не заполнено</value>
+  </data>
+  <data name="FD_FARE_REFERENCE" xml:space="preserve">
+    <value>Указание цены::</value>
+  </data>
+</root>

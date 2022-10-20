@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"             
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers" 
+             xmlns:forms="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms" 
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Other.RegistrationPage"
+             Shell.TabBarIsVisible="False">
+    <Grid>
+        <ScrollView IsVisible="{Binding ShowWaitScreen, Converter={Helpers:NegateBooleanConverter}}">
+            <StackLayout Orientation="Vertical">
+                <pv:PancakeView BackgroundColor="White"
+                    HasShadow="True"
+                    Padding="15"
+                    CornerRadius="10"
+                    Margin="20"
+                    VerticalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical" Spacing="0">
+                        <Label Text="{x:Static resources:AppResources.U_REGISTRATION}" Style="{StaticResource labelMediumBlack}" Margin="0,10"/>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.U_USERNAME}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="White" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Entry Text="{Binding User.Username, Mode=TwoWay}" FontSize="12"/>
+                        </forms:Frame2>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.SC_TITLE}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="#eeeef0" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Picker ItemsSource="{Binding User.PassengerTitle}" SelectedItem="{Binding User.Title, Mode=TwoWay}" FontSize="12" Margin="0"/>
+                                <Image Source="dropdown.png" HeightRequest="15" HorizontalOptions="End" Margin="5,0" VerticalOptions="Center" Grid.Column="1"/>
+                            </Grid>
+                        </forms:Frame2>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.SC_FIRST_NAME}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="White" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Entry Text="{Binding User.FirstName, Mode=TwoWay}" FontSize="12"/>
+                        </forms:Frame2>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.SC_MIDDLE_NAME}" Style="{StaticResource labelSmallBlack}"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="White" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Entry Text="{Binding User.MiddleName, Mode=TwoWay}" FontSize="12"/>
+                        </forms:Frame2>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.SC_LAST_NAME}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="White" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Entry Text="{Binding User.LastName, Mode=TwoWay}" FontSize="12"/>
+                        </forms:Frame2>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.SC_GENDER}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Margin="0,5,0,20">
+                            <RadioButton Text="Male"
+                            TextColor="Black" 
+                            Font="12" 
+                            Padding="0,5"
+                            Command="{Binding User.ChangeGenderCommand}"
+                            CommandParameter="Male"/>
+                            <RadioButton Text="Female" 
+                            TextColor="Black" Font="12" 
+                            Padding="0,5"
+                            Command="{Binding User.ChangeGenderCommand}"
+                            CommandParameter="Female"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.SC_DATE_OF_BIRTH}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <Grid ColumnDefinitions="*,*,*">
+                            <forms:Frame2 BackgroundColor="#eeeef0" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <Picker ItemsSource="{Binding User.Days}" SelectedItem="{Binding User.Day, Mode=TwoWay}" Title="{x:Static resources:AppResources.SC_DAY}" TitleColor="Black" FontSize="12"/>
+                                    <Image Source="dropdown.png" HeightRequest="15" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,5,0" Grid.Column="1"/>
+                                </Grid>
+                            </forms:Frame2>
+                            <forms:Frame2 BackgroundColor="#eeeef0" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20" Grid.Column="1">
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <Picker ItemsSource="{Binding User.Months}" SelectedItem="{Binding User.Month, Mode=TwoWay}" Title="{x:Static resources:AppResources.SC_MONTH}" TitleColor="Black" FontSize="12"/>
+                                    <Image Source="dropdown.png" HeightRequest="15" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,5,0" Grid.Column="1"/>
+                                </Grid>
+                            </forms:Frame2>
+                            <forms:Frame2 BackgroundColor="#eeeef0" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20" Grid.Column="2">
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <Picker ItemsSource="{Binding User.Years}" SelectedItem="{Binding User.Year, Mode=TwoWay}" Title="{x:Static resources:AppResources.SC_YEAR}" TitleColor="Black" FontSize="12"/>
+                                    <Image Source="dropdown.png" HeightRequest="15" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,5,0" Grid.Column="1"/>
+                                </Grid>
+                            </forms:Frame2>
+                        </Grid>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.SC_EMAIL}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="White" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Entry Text="{Binding User.Email, Mode=TwoWay}" FontSize="12" Keyboard="Email"/>
+                        </forms:Frame2>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.SC_PHONE}" Style="{StaticResource labelSmallBlack}"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="White" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Entry Text="{Binding User.Phone, Mode=TwoWay}" FontSize="12" Keyboard="Telephone"/>
+                        </forms:Frame2>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.U_PASSWORD}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="White" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Entry Text="{Binding User.Password, Mode=TwoWay}" FontSize="12" IsPassword="True"/>
+                        </forms:Frame2>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Margin="5,0">
+                            <Label Text="{x:Static resources:AppResources.U_REPEAT_PASSWORD}" Style="{StaticResource labelSmallBlack}"/>
+                            <Label Text="*" Style="{StaticResource labelSmallBlack}" TextColor="Red"/>
+                        </StackLayout>
+                        <forms:Frame2 BackgroundColor="White" BorderColor="Gray" CornerRadius="5" Padding="5,0" Margin="1,5,1,20">
+                            <Entry Text="{Binding User.RepeatPassword, Mode=TwoWay}" FontSize="12" IsPassword="True"/>
+                        </forms:Frame2>
+                    </StackLayout>
+                </pv:PancakeView>
+                <Frame Margin="60,10"
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="40"
+                        Padding="0"
+                        BackgroundColor="#2EDBB5">
+                    <Frame.CornerRadius>
+                        <OnPlatform x:TypeArguments="x:Single">
+                            <On Platform="iOS" Value="20"/>
+                            <On Platform="Android" Value="30"/>
+                        </OnPlatform>
+                    </Frame.CornerRadius>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SingUpCommand}"/>
+                    </Frame.GestureRecognizers>
+                    <Label Text="{x:Static resources:AppResources.U_SIGN_UP}" Style="{StaticResource labelMediumWhite}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+        <ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" IsVisible="{Binding ShowWaitScreen}"/>
+    </Grid>    
+</ContentPage>

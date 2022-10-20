@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:forms="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms"
+             xmlns:xforms="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Flight.CalendarPage"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             BackgroundColor="White"
+             Visual="Material"
+             Shell.TabBarIsVisible="False">
+
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid IsVisible="{Binding IsMultiCity,Converter={Helpers:NegateBooleanConverter}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid IsVisible="{Binding Request.DepartureDate1, Converter={Helpers:NotNullValueBoolConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="{x:Static resources:AppResources.SF_DEPARTURE_DATE}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Start" VerticalOptions="End"/>
+                <forms:Frame2 BackgroundColor="#2EDBB5" CornerRadius="20" Padding="10" Grid.Row="1">
+                    <Label Text="{Binding Request.DepartureDate1}" Style="{StaticResource labelNormalWhite}"/>
+                </forms:Frame2>
+            </Grid>
+            <Grid IsVisible="{Binding Request.DepartureDate2, Converter={Helpers:NotNullValueBoolConverter}}" Grid.Column="1" Margin="30,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="{x:Static resources:AppResources.SF_RETURN_DATE}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Start" VerticalOptions="End"/>
+                <forms:Frame2 BackgroundColor="#2EDBB5" CornerRadius="20"  Padding="10" Grid.Row="1">
+                    <Label Text="{Binding Request.DepartureDate2}" Style="{StaticResource labelNormalWhite}"/>
+                </forms:Frame2>
+            </Grid>
+        </Grid>
+        <Grid IsVisible="{Binding IsFirstSegment}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid IsVisible="{Binding Request.DepartureDate1, Converter={Helpers:NotNullValueBoolConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="{x:Static resources:AppResources.SF_DEPARTURE_DATE}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Start" VerticalOptions="End"/>
+                <forms:Frame2 BackgroundColor="#2EDBB5" CornerRadius="20" Padding="10" Grid.Row="1">
+                    <Label Text="{Binding Request.DepartureDate1}" Style="{StaticResource labelNormalWhite}"/>
+                </forms:Frame2>
+            </Grid>
+        </Grid>
+        <Grid IsVisible="{Binding IsSecondSegment}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid IsVisible="{Binding Request.DepartureDate2, Converter={Helpers:NotNullValueBoolConverter}}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="{x:Static resources:AppResources.SF_DEPARTURE_DATE}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Start" VerticalOptions="End"/>
+                <forms:Frame2 BackgroundColor="#2EDBB5" CornerRadius="20" Padding="10" Grid.Row="1">
+                    <Label Text="{Binding Request.DepartureDate2}" Style="{StaticResource labelNormalWhite}"/>
+                </forms:Frame2>
+            </Grid>
+        </Grid>
+        <Grid IsVisible="{Binding IsThirdSegment}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid IsVisible="{Binding Request.DepartureDate3, Converter={Helpers:NotNullValueBoolConverter}}" HorizontalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="{x:Static resources:AppResources.SF_DEPARTURE_DATE}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Start" VerticalOptions="End"/>
+                <forms:Frame2 BackgroundColor="#2EDBB5" CornerRadius="20" Padding="10" Grid.Row="1">
+                    <Label Text="{Binding Request.DepartureDate3}" Style="{StaticResource labelNormalWhite}"/>
+                </forms:Frame2>
+            </Grid>
+        </Grid>
+        <xforms:SfCalendar ShowInlineEvents="True"
+                           SelectionMode="RangeSelection"
+                           SelectedRange ="{Binding SelectedRange, Mode=TwoWay}"
+                           MinDate="{Binding MinimumDate}"
+                           EnableDatesInPast="False"
+                           Margin="0,10"
+                           SelectionChangedCommand="{Binding CalendarCellTapped}"
+                           Grid.Row="1">
+        </xforms:SfCalendar>
+    </Grid>
+</ContentPage>

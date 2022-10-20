@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             Shell.TabBarIsVisible="False"
+             Visual="Material"
+             BackgroundColor="White"
+             x:Class="ResvoyageMobileApp.Views.Other.PrivacyPolicyPage">
+    <Shell.TitleView>
+        <Label Text="{x:Static resources:AppResources.HP_PRIVACY_POLICY}" Style="{StaticResource labelNormalBlack}" VerticalTextAlignment="Center"/>
+    </Shell.TitleView>
+    <ScrollView Margin="10,20">
+        <StackLayout Orientation="Vertical">
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_1}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_1_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_1_2}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_2}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_2_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_2_2}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_3}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_3_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_3_2}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_4}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_4_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_4_2}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_2_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_2_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_2_3}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_2_4}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_2_5}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_2_6}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_4_3}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_3_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_3_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_3_3}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_3_4}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_3_5}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_3_6}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_4_4}" Style="{StaticResource labelNormalBlack}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_4_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_4_2}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_4_3}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_4_4}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_4_5}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_4_6}"/>
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_4_4_6_LINK}" TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LinkClickCommand}" CommandParameter="https://ru.trip.ru/personal-data-policy#Cookies"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_4_5}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_5}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_5_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_5_2}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_5_3}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_6}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_6_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_7}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_7_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_2}" FontAttributes="Bold"/>
+                        <Span Text=" "/>
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_2_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_3}" FontAttributes="Bold"/>
+                        <Span Text=" "/>
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_3_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_4}" FontAttributes="Bold"/>
+                        <Span Text=" "/>
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_4_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_5}" FontAttributes="Bold"/>
+                        <Span Text=" "/>
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_5_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_6}" FontAttributes="Bold"/>
+                        <Span Text=" "/>
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_6_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_7}" FontAttributes="Bold"/>
+                        <Span Text=" "/>
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_7_7_1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_8}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_8_1}" Style="{StaticResource labelSmallGray}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_8_2}" Style="{StaticResource labelSmallGray}"/>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_8_3_1}"/>
+                        <Span Text=" ("/>
+                        <Span Text=" https://policies.google.com/privacy " TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LinkClickCommand}" CommandParameter="https://policies.google.com/privacy"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text=") "/>
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_8_3_2}"/>
+                        <Span Text=" ("/>
+                        <Span Text=" https://tools.google.com/dlpage/gaoptout " TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LinkClickCommand}" CommandParameter="https://tools.google.com/dlpage/gaoptout"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text=") "/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Style="{StaticResource labelSmallGray}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="-" />
+                        <Span Text="{x:Static resources:AppResources.PP_LABEL_8_4}"/>
+                        <Span Text=" ("/>
+                        <Span Text=" https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fads%2Fpreferences " TextColor="Blue">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding LinkClickCommand}" CommandParameter="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fads%2Fpreferences"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text=") "/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_9}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_9_1}" Style="{StaticResource labelSmallGray}"/>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_10}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_10_1}" Style="{StaticResource labelSmallGray}"/>
+            <StackLayout Orientation="Vertical" Spacing="0">
+                <Label Text="Farelovers Travel Corporation" Style="{StaticResource labelSmallGray}" FontAttributes="Bold"/>
+                <Label Text="Attn: Privacy Manager" Style="{StaticResource labelSmallGray}" FontAttributes="Bold"/>
+                <Label Text="400,906 12 Ave SW," Style="{StaticResource labelSmallGray}"/>
+                <Label Text="Calgary, AB T2R 1K7" Style="{StaticResource labelSmallGray}"/>
+            </StackLayout>
+
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_11}" Style="{StaticResource labelMediumBlack}"/>
+            <Label Text="{x:Static resources:AppResources.PP_LABEL_11_1}" Style="{StaticResource labelSmallGray}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

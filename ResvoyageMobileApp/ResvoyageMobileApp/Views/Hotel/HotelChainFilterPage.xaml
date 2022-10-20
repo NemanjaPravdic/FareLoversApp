@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Name="ChainFilter"
+             x:Class="ResvoyageMobileApp.Views.Hotel.HotelChainFilterPage"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"             
+             Shell.TabBarIsVisible="False">
+
+    <Grid BackgroundColor="White" VerticalOptions="FillAndExpand" Padding="0,10,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Text="{x:Static resources:AppResources.HF_CHAINS}" Style="{StaticResource labelMediumBlack}" HorizontalOptions="Center"/>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding ChoosenChains}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.ApplyCheckChain, Source={x:Reference ChainFilter}}" CommandParameter="{Binding .}"/>
+                            </Grid.GestureRecognizers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <CheckBox IsChecked="{Binding IsSelected}" Color="#BEA7FF" Margin="0,0,20,0"/>
+                            <Label Text="{Binding Title}" Style="{StaticResource labelNormalBlack}" Grid.Column="1" VerticalOptions="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </ScrollView>
+        <Grid ColumnSpacing="0" RowSpacing="0" Grid.Row="2" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Frame BorderColor="White" BackgroundColor="#baded7" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0" CornerRadius="0" HeightRequest="50">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ResetChain}"/>
+                </Frame.GestureRecognizers>
+                <Label Text="{x:Static resources:AppResources.RESET}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource labelMediumWhite}" />
+            </Frame>
+            <Frame BorderColor="White" BackgroundColor="#2EDBB5" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Padding="0" HeightRequest="50" CornerRadius="0">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ApplyChain}"/>
+                </Frame.GestureRecognizers>
+                <Label Text="{x:Static resources:AppResources.SF_APPLY}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource labelMediumWhite}"/>
+            </Frame>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:rf="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources" xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Car.CarSearchPage">
+    <StackLayout Orientation="Vertical" Padding="20">
+        <rf:Frame2 CornerRadius="10"
+                    HasShadow="True"
+                    HeightRequest="120"
+                    Padding="0,10"
+                    Margin="0,5"
+                    HorizontalOptions="FillAndExpand">
+            <Grid>
+                <magic:GradientView VerticalOptions="CenterAndExpand" HeightRequest="60" Margin="0,20">
+                    <magic:GradientView.GradientSource>
+                        <magic:CssGradientSource>
+                            <x:String>
+                                <![CDATA[
+                                linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(240,240,255,1) 50%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%) ]]>
+                            </x:String>
+                        </magic:CssGradientSource>
+                    </magic:GradientView.GradientSource>
+                </magic:GradientView>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Padding="20,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid HeightRequest="60" VerticalOptions="Center">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ShowDestinationAutocomplete}" CommandParameter="PickUp"/>
+                            </Grid.GestureRecognizers>
+                            <Grid VerticalOptions="Center" IsVisible="{Binding Request.PickupCity,Converter={Helpers:NotNullValueBoolConverter}}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="{x:Static resources:AppResources.CS_PICK_UP_LOCATION}" Style="{StaticResource labelSmallGray}"  />
+                                <Label Text="{Binding Request.PickupCity}"  Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                            </Grid>
+                            <Label Text="{x:Static resources:AppResources.CS_PICK_UP_LOCATION}" 
+                                               Style="{StaticResource labelMediumGray}"
+                                               VerticalOptions="Center"
+                                               IsVisible="{Binding Request.PickupCity,Converter={Helpers:NullValueBoolConverter}}"/>
+                        </Grid>
+                        <Grid HeightRequest="60" Grid.Row="1" VerticalOptions="Center">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ShowDestinationAutocomplete}" CommandParameter="DropOff"/>
+                            </Grid.GestureRecognizers>
+                            <Grid VerticalOptions="Center" IsVisible="{Binding Request.DropOffCity,Converter={Helpers:NotNullValueBoolConverter}}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="{x:Static resources:AppResources.CS_DROP_OFF_LOCATION}" Style="{StaticResource labelSmallGray}"   />
+                                <Label Text="{Binding Request.DropOffCity}" Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                            </Grid>
+                            <Label Text="{x:Static resources:AppResources.CS_DROP_OFF_LOCATION}" 
+                                               Style="{StaticResource labelMediumGray}"
+                                               VerticalOptions="Center"
+                                               IsVisible="{Binding Request.DropOffCity,Converter={Helpers:NullValueBoolConverter}}"/>
+                        </Grid>
+                    </Grid>
+                    <StackLayout Grid.Column="1" Padding="0,45,0,0">
+                        <Image Source="refresh.png"
+                                           HeightRequest="60"
+                                           VerticalOptions="Center" 
+                                           HorizontalOptions="End">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SwitchDestinations}"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </rf:Frame2>
+        <Frame CornerRadius="10"
+                           HasShadow="True"
+                           Grid.Row="1"
+                           Margin="0,5"
+                           Padding="0"
+                       BackgroundColor="White"
+                           HeightRequest="60"
+                           HorizontalOptions="FillAndExpand">
+            <Grid>
+                <magic:GradientView VerticalOptions="Center" HeightRequest="60" Margin="20,0">
+                    <magic:GradientView.GradientSource>
+                        <magic:CssGradientSource>
+                            <x:String>
+                                <![CDATA[
+                                linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(240,240,255,1) 50%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%) ]]>
+                            </x:String>
+                        </magic:CssGradientSource>
+                    </magic:GradientView.GradientSource>
+
+                </magic:GradientView>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowCalendarPage}" CommandParameter="PickUp"/>
+                        </Grid.GestureRecognizers>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="calendar.png" HeightRequest="20" Margin="15,0,0,0"/>
+                        <Grid IsVisible="{Binding Request.PickupDate, Converter={Helpers:NotNullValueBoolConverter}}" HorizontalOptions="Center" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Request.PickupDateString}"
+                                               Style="{StaticResource labelNormalBlack}"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                            <Label Text="{Binding Request.PickupDateDayString}"
+                                               Style="{StaticResource labelNormalGray}"
+                                               VerticalOptions="Center"
+                                               Grid.Column="1"
+                                               HorizontalOptions="Center"/>
+                        </Grid>
+                        <Label Text="{x:Static resources:AppResources.CS_PICK_UP_DATE}"
+                                           IsVisible="{Binding Request.PickupDate, Converter={Helpers:NullValueBoolConverter}}"                                        
+                                           VerticalOptions="Center"
+                                           Style="{StaticResource labelNormalGray}"
+                                           Grid.Column="1"
+                                           HorizontalOptions="Center"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="*,Auto" Grid.Column="1">
+                        <Picker ItemsSource="{Binding Time}" 
+                                SelectedItem="{Binding Request.PickupTime, Mode=TwoWay}" 
+                                Title="{x:Static resources:AppResources.CS_TIME}" 
+                                Style="{StaticResource labelNormalGray}" 
+                                TitleColor="Gray" TextColor="Black" HorizontalOptions="Center"/>
+                        <Image Source="clock.png" HeightRequest="20" Margin="0,0,15,0" Grid.Column="1"/>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Frame>
+        <Frame CornerRadius="10"
+                           HasShadow="True"
+                           Grid.Row="1"
+                           Margin="0,5"
+                       BackgroundColor="White"
+                           Padding="0"
+                           HeightRequest="60"
+                           HorizontalOptions="FillAndExpand">
+            <Grid>
+                <magic:GradientView VerticalOptions="Center" HeightRequest="60" Margin="20,0">
+                    <magic:GradientView.GradientSource>
+                        <magic:CssGradientSource>
+                            <x:String>
+                                <![CDATA[
+                                linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(240,240,255,1) 50%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%) ]]>
+                            </x:String>
+                        </magic:CssGradientSource>
+                    </magic:GradientView.GradientSource>
+
+                </magic:GradientView>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowCalendarPage}" CommandParameter="DropOff"/>
+                        </Grid.GestureRecognizers>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="calendar.png" HeightRequest="20" Margin="15,0,0,0"/>
+                        <Grid IsVisible="{Binding Request.DropOffDate, Converter={Helpers:NotNullValueBoolConverter}}" HorizontalOptions="Center" Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Request.DropOffDateString}"
+                                               Style="{StaticResource labelNormalBlack}"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                            <Label Text="{Binding Request.DropOffDateDayString}"
+                                               Style="{StaticResource labelNormalGray}"
+                                               VerticalOptions="Center"
+                                               Grid.Column="1"
+                                               HorizontalOptions="Center"/>
+                        </Grid>
+                        <Label Text="{x:Static resources:AppResources.CS_DROP_OFF_DATE}"
+                                           IsVisible="{Binding Request.DropOffDate, Converter={Helpers:NullValueBoolConverter}}"                                        
+                                           VerticalOptions="Center"
+                                           Style="{StaticResource labelNormalGray}"
+                                           Grid.Column="1"
+                                           HorizontalOptions="Center"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="*,Auto" Grid.Column="1">
+                        <Picker ItemsSource="{Binding Time}" 
+                                SelectedItem="{Binding Request.DropoffTime, Mode=TwoWay}" 
+                                Title="{x:Static resources:AppResources.CS_TIME}" 
+                                Style="{StaticResource labelNormalGray}" 
+                                TitleColor="Gray" TextColor="Black" HorizontalOptions="Center"/>
+                        <Image Source="clock.png" HeightRequest="20" Margin="0,0,15,0" Grid.Column="1"/>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Frame>
+        <Frame Margin="40,10"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="40"
+                Padding="0"
+                Grid.Row="3"
+                BackgroundColor="#2EDBB5"
+                IsVisible="{Binding Request.To1City,Converter={Helpers:NotNullValueBoolConverter}}">
+            <Frame.CornerRadius>
+                <OnPlatform x:TypeArguments="x:Single">
+                    <On Platform="iOS" Value="20"/>
+                    <On Platform="Android" Value="30"/>
+                </OnPlatform>
+            </Frame.CornerRadius>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding SearchCars}"/>
+            </Frame.GestureRecognizers>
+            <Label Text="{x:Static resources:AppResources.CS_SEARCH_CARS}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </Frame>
+    </StackLayout>
+</ContentPage>

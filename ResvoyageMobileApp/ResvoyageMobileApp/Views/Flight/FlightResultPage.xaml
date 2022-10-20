@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             mc:Ignorable="d"
+             x:Name="FlightResults"
+             x:Class="ResvoyageMobileApp.Views.Flight.FlightResultPage"
+             Shell.TabBarIsVisible="False"
+             Shell.BackgroundColor="White">
+    <Shell.TitleView>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding RequestTextInfo}" Style="{StaticResource labelNormalGray}" VerticalOptions="Center" FontAttributes="Bold" TextColor="Gray"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" >
+                <Image Source="filters.png" HeightRequest="30">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowFilters}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="exchange.png" HeightRequest="30" Margin="10">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding PickerFocusCommand}" CommandParameter="{x:Reference CurrencyPicker}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Picker ItemsSource="{Binding Currencies}"
+                                x:Name="CurrencyPicker"
+                                ItemDisplayBinding="{Binding Text}"
+                                SelectedItem="{Binding Currency, Mode=TwoWay}" 
+                                Title="{x:Static resources:AppResources.HP_CURRENCY}" 
+                                Style="{StaticResource labelNormalGray}" 
+                                TitleColor="Gray" TextColor="Black"
+                                IsEnabled="True" IsVisible="False"/>
+            </StackLayout>
+        </StackLayout>
+        </Shell.TitleView>
+
+            <Grid>
+        <Grid x:Name="VisibilityResults">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Frame Padding="0" BackgroundColor="White">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Padding="15,5,5,0" BindableLayout.ItemsSource="{Binding Filters.Sort}" >
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical" WidthRequest="150">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.ChangeSorting, Source={x:Reference FlightResults}}" CommandParameter="{Binding .}"/>
+                                </StackLayout.GestureRecognizers>
+                                <Label Text="{Binding Title}" Style="{StaticResource labelNormalBlack}" FontAttributes="Bold" HorizontalOptions="Center"  Margin="0,10"/>
+                                <BoxView BackgroundColor="#2EDBB5" HeightRequest="2" VerticalOptions="End" IsVisible="{Binding IsSelected}"/>
+                                <BoxView BackgroundColor="White" HeightRequest="2" VerticalOptions="End" IsVisible="{Binding IsSelected, Converter={Helpers:NegateBooleanConverter}}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </Frame>
+            <CollectionView Grid.Row="1" SelectionMode="Single" ItemsSource="{Binding FilterdResults}" SelectedItem="{Binding SelectedFlight, Mode=TwoWay}" IsVisible="{Binding FilterdResults, Converter={Helpers:CheckFilledList}}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="20,10">
+                            <pv:PancakeView CornerRadius="10"
+                                    BackgroundColor="White"
+                                    HasShadow="True"
+                                    VerticalOptions="FillAndExpand">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <StackLayout Orientation="Vertical" Spacing="0">
+                                        <Frame BackgroundColor="ForestGreen" Padding="5" IsVisible="{Binding IsBestPrice}" HorizontalOptions="CenterAndExpand">
+                                            <Grid>
+                                                <StackLayout Orientation="Horizontal" IsVisible="{Binding IsDifferentDate}" HorizontalOptions="Center">
+                                                    <Label Text="{x:Static resources:AppResources.FR_CHEPEST_FLIGHT}" Style="{StaticResource labelSmallWhite}"/>
+                                                    <Label Text="{Binding NewDate}" Style="{StaticResource labelSmallWhite}"/>
+                                                </StackLayout>
+                                            </Grid>
+                                        </Frame>
+                                        <Grid Padding="10,15,10,0" >
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Source="{Binding AirlineImage}" Aspect="AspectFit" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start"/>
+                                            <Label Text="{Binding AirlaneName}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="1"/>
+                                            <Label Text="{Binding StringPrice}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="End" VerticalOptions="Center" TextColor="#2EDBB5" Grid.Column="2"/>
+                                        </Grid>
+                                    </StackLayout>                                    
+                                    <BoxView BackgroundColor="#CCCCCC" HeightRequest="1" Margin="10,0" Grid.Row="1" Opacity="0.7" />
+                                    <StackLayout Grid.Row="2" Padding="10,10,10,20">
+                                        <StackLayout Orientation="Vertical"
+                                         HorizontalOptions="Center"
+                                         BindableLayout.ItemsSource="{Binding ListSegments}">
+                                            <BindableLayout.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid HorizontalOptions="StartAndExpand">
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition Height="Auto"/>
+                                                                <RowDefinition Height="Auto"/>
+                                                            </Grid.RowDefinitions>
+                                                            <Label Text="{Binding IATAInfo}" Style="{StaticResource labelSmallBlack}" HorizontalOptions="Center"/>
+                                                            <Label Text="{Binding TimeInfo}" Style="{StaticResource labelSmallBlack}" Grid.Row="1" HorizontalOptions="Center"/>
+                                                        </Grid>
+                                                        <Grid Grid.Column="1" HorizontalOptions="CenterAndExpand">
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition Height="Auto"/>
+                                                                <RowDefinition Height="Auto"/>
+                                                            </Grid.RowDefinitions>
+                                                            <Label Text="{x:Static resources:AppResources.FR_DURATION}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                                            <Label Text="{Binding DurationTotal}" Style="{StaticResource labelSmallBlack}" Grid.Row="1" HorizontalOptions="Center" />
+                                                        </Grid>
+                                                        <Grid Grid.Column="2" HorizontalOptions="EndAndExpand">
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition Height="Auto"/>
+                                                                <RowDefinition Height="Auto"/>
+                                                            </Grid.RowDefinitions>
+                                                            <Label Text="{x:Static resources:AppResources.FR_TRANSFER}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                                            <Label Text="{Binding Transfer}" Style="{StaticResource labelSmallBlack}" Grid.Row="1" HorizontalOptions="Center"/>
+                                                        </Grid>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </BindableLayout.ItemTemplate>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                            </pv:PancakeView>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Label Text="{x:Static resources:AppResources.SR_NO_FLIGHTS_FOUND}" Style="{StaticResource labelNormalBlack}" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" IsVisible="{Binding FilterdResults, Converter={Helpers:CheckEmptyList}}"/>
+        </Grid>
+        <MediaElement Source="ms-appx:///waitScreen.mp4" ShowsPlaybackControls="False"
+                      BackgroundColor="#101d23"
+                       x:Name="waitScreen"
+                      IsLooping="True" Aspect="AspectFit" AutoPlay="True"
+                      HorizontalOptions="FillAndExpand"/>
+        <!--<ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+    </Grid>
+</ContentPage>

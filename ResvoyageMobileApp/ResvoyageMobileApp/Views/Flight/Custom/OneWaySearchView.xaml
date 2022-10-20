@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:rf="clr-namespace:RedCorners.Forms;assembly=RedCorners.Forms" 
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources" xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Name="OneWay"
+             x:Class="ResvoyageMobileApp.Views.Flight.Custom.OneWaySearchView">
+    <CollectionView x:Name="oneWayPopularPlaces" VerticalScrollBarVisibility="Never" ItemsSource="{Binding Places}" Grid.Row="1">
+        <CollectionView.ItemsLayout>
+            <GridItemsLayout Orientation="Vertical" Span="2"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.Header>
+            <Grid Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <rf:Frame2 CornerRadius="10"
+                               HasShadow="True"
+                               HeightRequest="120"
+                               Padding="0,10"
+                               Margin="0,5"
+                               HorizontalOptions="FillAndExpand">
+                    <Grid>
+                        <magic:GradientView VerticalOptions="CenterAndExpand" HeightRequest="60" Margin="0,20">
+                            <magic:GradientView.GradientSource>
+                                <magic:CssGradientSource>
+                                    <x:String>
+                                        <![CDATA[
+                                linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(240,240,255,1) 50%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%) ]]>
+                                    </x:String>
+                                </magic:CssGradientSource>
+                            </magic:GradientView.GradientSource>
+                        </magic:GradientView>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="1" Padding="20,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid HeightRequest="60" VerticalOptions="Center">
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding ShowDestinationAutocomplete}" CommandParameter="departure"/>
+                                    </Grid.GestureRecognizers>
+                                    <Grid VerticalOptions="Center" IsVisible="{Binding Request.From1City,Converter={Helpers:NotNullValueBoolConverter}}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Text="{x:Static resources:AppResources.SF_FROM}" Style="{StaticResource labelSmallGray}"  />
+                                        <Label Text="{Binding Request.From1City}"  Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                                    </Grid>
+                                    <Label Text="{x:Static resources:AppResources.SF_FROM}" 
+                                               Style="{StaticResource labelMediumGray}"
+                                               VerticalOptions="Center"
+                                               IsVisible="{Binding Request.From1City,Converter={Helpers:NullValueBoolConverter}}"/>
+                                </Grid>
+                                <Grid HeightRequest="60" Grid.Row="1" VerticalOptions="Center">
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding ShowDestinationAutocomplete}" CommandParameter="arrival"/>
+                                    </Grid.GestureRecognizers>
+                                    <Grid VerticalOptions="Center" IsVisible="{Binding Request.To1City,Converter={Helpers:NotNullValueBoolConverter}}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Text="{x:Static resources:AppResources.SF_DESTINATION}" Style="{StaticResource labelSmallGray}"   />
+                                        <Label Text="{Binding Request.To1City}" Style="{StaticResource labelMediumBlack}" Grid.Row="1" />
+                                    </Grid>
+                                    <Label Text="{x:Static resources:AppResources.SF_DESTINATION}" 
+                                               Style="{StaticResource labelMediumGray}"
+                                               VerticalOptions="Center"
+                                               IsVisible="{Binding Request.To1City,Converter={Helpers:NullValueBoolConverter}}"/>
+                                </Grid>
+                            </Grid>
+
+                            <Image Source="fromTo.png" 
+                                    Grid.Column="0"
+                                    VerticalOptions="Center" 
+                                    HorizontalOptions="Start"
+                                   Margin="10,0"/>
+                            <StackLayout Grid.Column="2" Padding="0,45,0,0">
+                                <Image Source="refresh.png"
+                                           HeightRequest="60"
+                                           VerticalOptions="Center" 
+                                           HorizontalOptions="End">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding SwitchDestinations}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </StackLayout>
+                        </Grid>
+                    </Grid>
+                </rf:Frame2>
+                <Frame CornerRadius="10"
+                           HasShadow="True"
+                           Grid.Row="1"
+                           Margin="0,5"
+                           HeightRequest="60"
+                           Padding="0"
+                           BackgroundColor="White"
+                           HorizontalOptions="FillAndExpand"
+                           IsVisible="{Binding Request.To1City,Converter={Helpers:NotNullValueBoolConverter}}">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowCalendarPage}" CommandParameter="{Binding SearchType}"/>
+                    </Frame.GestureRecognizers>
+                    <Grid VerticalOptions="Center" HeightRequest="60">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="calendar.png" HeightRequest="20" Margin="15,0,0,0"/>
+                            <Grid IsVisible="{Binding Request.DepartureDate1, Converter={Helpers:NotNullValueBoolConverter}}" Margin="10,0" HorizontalOptions="Start" Grid.Column="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding Request.DepartureDate1String}"
+                                           Style="{StaticResource labelNormalBlack}"
+                                           VerticalOptions="Center"
+                                           HorizontalOptions="Center"/>
+                                <Label Text="{Binding Request.DepartureDate1DayString}"
+                                           Style="{StaticResource labelNormalGray}"
+                                           VerticalOptions="Center"
+                                           Grid.Column="1"
+                                           HorizontalOptions="Center"/>
+                            </Grid>
+                            <Label Text="{x:Static resources:AppResources.SF_DEPARTURE}"
+                                       IsVisible="{Binding Request.DepartureDate1, Converter={Helpers:NullValueBoolConverter}}" 
+                                       VerticalOptions="Center"
+                                       Padding="10,0"
+                                       Style="{StaticResource labelMediumGray}"
+                                       Grid.Column="1"
+                                       HorizontalOptions="Start"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+                <Frame CornerRadius="10"
+                           HasShadow="True"
+                           Margin="0,5"
+                       BackgroundColor="White"
+                           Grid.Row="2"
+                           HeightRequest="60"
+                           Padding="0"
+                           HorizontalOptions="FillAndExpand"
+                           IsVisible="{Binding Request.To1City,Converter={Helpers:NotNullValueBoolConverter}}">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowOtherInfoPage}"/>
+                    </Frame.GestureRecognizers>
+                    <Grid VerticalOptions="Center" HeightRequest="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="adult.png" HeightRequest="25" Margin="20,0,0,0" />
+                        <Label FontSize="16" Text="{Binding Request.Adults}" TextColor="Black" Grid.Column="1" VerticalOptions="Center" FontFamily="DisplayLight"/>
+                        <Image Source="adult.png" HeightRequest="20" Grid.Column="2"/>
+                        <Label FontSize="16" Text="{Binding Request.Children}" TextColor="Black" Grid.Column="3" VerticalOptions="Center" FontFamily="DisplayLight"/>
+                        <Image Source="infant.png" HeightRequest="15" Grid.Column="4"/>
+                        <Label FontSize="16" Text="{Binding Request.Infants}" TextColor="Black" Grid.Column="5" VerticalOptions="Center" FontFamily="DisplayLight"/>
+                        <Grid Grid.Column="6"
+                                  HorizontalOptions="End"
+                                  Padding="20,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{x:Static resources:AppResources.SF_CABIN_COLON}" Style="{StaticResource labelSmallGray}" FontSize="16"  VerticalOptions="Center"/>
+                            <Label Text="{Binding Request.Cabin}" Grid.Column="1" TextColor="Black" FontSize="16" FontFamily="DisplayLight" VerticalOptions="Center"/>
+                        </Grid>
+                    </Grid>
+                </Frame>
+                <Frame Margin="40,10"
+                           HorizontalOptions="FillAndExpand"
+                           HeightRequest="40"
+                           Padding="0"
+                           Grid.Row="3"
+                           BackgroundColor="#2EDBB5"
+                           IsVisible="{Binding Request.To1City,Converter={Helpers:NotNullValueBoolConverter}}">
+                    <Frame.CornerRadius>
+                        <OnPlatform x:TypeArguments="x:Single">
+                            <On Platform="iOS" Value="20"/>
+                            <On Platform="Android" Value="30"/>
+                        </OnPlatform>
+                    </Frame.CornerRadius>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding SearchFlights}" CommandParameter="{Binding SearchType}"/>
+                    </Frame.GestureRecognizers>
+                    <Label Text="{x:Static resources:AppResources.SF_SEARCH_FLIGHTS}" TextColor="White" FontSize="20" FontFamily="DisplayLight" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Frame>
+                <Label Text="{x:Static resources:AppResources.SF_POPULAR_PLACES}"
+                           Style="{StaticResource labelLargeBlack}"
+                           HorizontalOptions="Start" 
+                           Grid.Row="4"/>
+            </Grid>
+        </CollectionView.Header>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid Padding="5">
+                    <pv:PancakeView CornerRadius="20"
+                                    Padding="0"
+                                    BackgroundColor="White"                               
+                                    Margin="10,0,10,20"
+                                    HasShadow="True">
+                        <Grid>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding BindingContext.ShowPlaceInfo, Source={x:Reference OneWay}}" CommandParameter="{Binding .}"/>
+                            </Grid.GestureRecognizers>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="{Binding Image}" Aspect="AspectFill" HeightRequest="150"/>
+                            <Grid Grid.Row="1" Margin="15">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="{Binding City}" FontSize="20" TextColor="Black" FontFamily="DisplayLight" HorizontalOptions="Start"/>
+                                <Label Text="{Binding Country}" FontSize="20" TextColor="Black" FontFamily="DisplayLight" HorizontalOptions="Start" Grid.Row="1"/>
+                                <Label Text="{Binding AvailableFlights, StringFormat='{0} available flights'}" FontSize="12" TextColor="#BAC9D9" FontFamily="DisplayLight" HorizontalOptions="Start" Grid.Row="2"/>
+                            </Grid>
+                        </Grid>
+                    </pv:PancakeView>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentView>

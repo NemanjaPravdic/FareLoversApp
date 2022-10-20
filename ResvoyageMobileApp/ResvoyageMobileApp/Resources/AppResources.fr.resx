@@ -1,0 +1,1165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APP_CAR" xml:space="preserve">
+    <value>Voitures</value>
+  </data>
+  <data name="APP_ERROR" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="APP_FLIGHT" xml:space="preserve">
+    <value>Vols</value>
+  </data>
+  <data name="APP_FOR" xml:space="preserve">
+    <value>Pour</value>
+  </data>
+  <data name="APP_HOTEL" xml:space="preserve">
+    <value>Hôtels</value>
+  </data>
+  <data name="APP_LATER" xml:space="preserve">
+    <value>Plus tard</value>
+  </data>
+  <data name="APP_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="APP_RATE_APP" xml:space="preserve">
+    <value>Évaluer l'application</value>
+  </data>
+  <data name="APP_RATE_TEXT" xml:space="preserve">
+    <value>Si Vous avez aimé notre application, veuillez l’évaluer</value>
+  </data>
+  <data name="APP_SELECT" xml:space="preserve">
+    <value>Sélectionner</value>
+  </data>
+  <data name="APP_SUCCESS" xml:space="preserve">
+    <value>Avec succès</value>
+  </data>
+  <data name="BD_AIR_PRICE" xml:space="preserve">
+    <value>Prix du billet d'avion: </value>
+  </data>
+  <data name="BD_CAR_PRICE" xml:space="preserve">
+    <value>Prix de la voiture: </value>
+  </data>
+  <data name="BD_CHECK_IN" xml:space="preserve">
+    <value>Date d’enregistrement:</value>
+  </data>
+  <data name="BD_CHECK_OUT" xml:space="preserve">
+    <value>Date de départ:</value>
+  </data>
+  <data name="BD_HOTEL_PRICE" xml:space="preserve">
+    <value>Prix des Hôtels:</value>
+  </data>
+  <data name="BD_REQUESTED" xml:space="preserve">
+    <value>Demandé:</value>
+  </data>
+  <data name="BK_NO_BOOKINGS_FOUND" xml:space="preserve">
+    <value>Aucune réservation trouvée.</value>
+  </data>
+  <data name="CD_BOOK" xml:space="preserve">
+    <value>Réservation</value>
+  </data>
+  <data name="CD_CAR_SUPPLIED_BY" xml:space="preserve">
+    <value>Voiture fournie par:</value>
+  </data>
+  <data name="CD_CLOSING_AT" xml:space="preserve">
+    <value>Clôture: </value>
+  </data>
+  <data name="CD_DROP_OFF" xml:space="preserve">
+    <value>Retour:</value>
+  </data>
+  <data name="CD_OPENING_AT" xml:space="preserve">
+    <value>Ouverture: </value>
+  </data>
+  <data name="CD_PICK_UP" xml:space="preserve">
+    <value>Départ:</value>
+  </data>
+  <data name="CF_CATEGORIES" xml:space="preserve">
+    <value>Catégories</value>
+  </data>
+  <data name="CF_TYPES" xml:space="preserve">
+    <value>Types</value>
+  </data>
+  <data name="CN_TEXT" xml:space="preserve">
+    <value>Farelovers est une jeune compagnie de voyages canadienne située au centre-ville de Calgary qui a commencé son activité en 2019.  Farelovers est une agence de voyage accréditée par l'Association internationale du transport aérien et le site Web est entièrement conforme aux normes de sécurité des données des cartes de paiement.   Farelovers a été conçu pour aider les gens à explorer, rêver et découvrir! Notre système de réservation trouvera et comparera les prix des vols, des hôtels et des locations de voitures en temps réel, afin que Vous puissiez facilement choisir l'option la moins chère, la plus rapide, la plus pratique ou la meilleure pour Vous.  Il Vous suffit de faire quelques clicks et vous êtes prêt à partir!</value>
+  </data>
+  <data name="CN_WHAT_WE_DO" xml:space="preserve">
+    <value>QUE FAISONS-NOUS?</value>
+  </data>
+  <data name="CR_CAR_NAME" xml:space="preserve">
+    <value>Nom de la voiture</value>
+  </data>
+  <data name="CR_CATEGORY" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="CR_NO_CARS_FOUND" xml:space="preserve">
+    <value>Aucune voiture trouvée.</value>
+  </data>
+  <data name="CR_RATES_INCLUDE_ALL" xml:space="preserve">
+    <value>Les tarifs incluent toutes les taxes et frais</value>
+  </data>
+  <data name="CS_DROP_OFF_DATE" xml:space="preserve">
+    <value>Date de restitution</value>
+  </data>
+  <data name="CS_DROP_OFF_LOCATION" xml:space="preserve">
+    <value>Lieu de restitution:</value>
+  </data>
+  <data name="CS_PICK_UP_DATE" xml:space="preserve">
+    <value>Date de retrait</value>
+  </data>
+  <data name="CS_PICK_UP_LOCATION" xml:space="preserve">
+    <value>Lieu de retrait:</value>
+  </data>
+  <data name="CS_SEARCH_CARS" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="CS_TIME" xml:space="preserve">
+    <value>Temps</value>
+  </data>
+  <data name="ER_SOME_ERROR_OCCURED" xml:space="preserve">
+    <value>Désolé..Une erreur est survenue</value>
+  </data>
+  <data name="EU_SUCCESSFULY_EDIT" xml:space="preserve">
+    <value>Modifie avec succès</value>
+  </data>
+  <data name="EU_WRONG_OLD_PASSWORD" xml:space="preserve">
+    <value>Ancien mot de passe incorrect!</value>
+  </data>
+  <data name="FD_CABIN" xml:space="preserve">
+    <value>Classe de la cabine</value>
+  </data>
+  <data name="FD_FARE_REFERENCE" xml:space="preserve">
+    <value>Indication de prix:</value>
+  </data>
+  <data name="FD_FARE_RULES" xml:space="preserve">
+    <value>Règles de tarification</value>
+  </data>
+  <data name="FD_FLIGHT_DURATION" xml:space="preserve">
+    <value>Durée totale du trajet</value>
+  </data>
+  <data name="FD_FLIGHT_NUMBER" xml:space="preserve">
+    <value>Numéro du vol</value>
+  </data>
+  <data name="FD_FREE_BAGGAGES" xml:space="preserve">
+    <value>Bagage gratuit:</value>
+  </data>
+  <data name="FD_LAYOVER" xml:space="preserve">
+    <value>Escale</value>
+  </data>
+  <data name="FD_OPERATED_BY" xml:space="preserve">
+    <value>Opéré par:</value>
+  </data>
+  <data name="FF_AIRLINES" xml:space="preserve">
+    <value>Compagnies Aériennes</value>
+  </data>
+  <data name="FF_CHEAPEST" xml:space="preserve">
+    <value>Le moins cher</value>
+  </data>
+  <data name="FF_EARLIEST" xml:space="preserve">
+    <value>Le plus tôt possible</value>
+  </data>
+  <data name="FF_FILTERS" xml:space="preserve">
+    <value>Filtres</value>
+  </data>
+  <data name="FF_INBOUND_DEPARTURE" xml:space="preserve">
+    <value>Départ du vol national</value>
+  </data>
+  <data name="FF_INOUND_ARRIVAL" xml:space="preserve">
+    <value>Arrivée du vol national</value>
+  </data>
+  <data name="FF_NONSTOP" xml:space="preserve">
+    <value>Direct</value>
+  </data>
+  <data name="FF_ONESTOP" xml:space="preserve">
+    <value>1 escale</value>
+  </data>
+  <data name="FF_OUTBOUND_ARRIVAL" xml:space="preserve">
+    <value>Arrivée du vol international</value>
+  </data>
+  <data name="FF_OUTBOUND_DEPARTURE" xml:space="preserve">
+    <value>Départ du vol international</value>
+  </data>
+  <data name="FF_QUICKEST" xml:space="preserve">
+    <value>Le plus rapide</value>
+  </data>
+  <data name="FF_SELECT_AIRLINES" xml:space="preserve">
+    <value>Choisir des lignes aériennes</value>
+  </data>
+  <data name="FF_STOPS" xml:space="preserve">
+    <value>Escales</value>
+  </data>
+  <data name="FF_TIME_RANGE" xml:space="preserve">
+    <value>Intervalle de temps</value>
+  </data>
+  <data name="FF_TWOSTOPS" xml:space="preserve">
+    <value>2 escales et</value>
+  </data>
+  <data name="FR_CABIN" xml:space="preserve">
+    <value>Salon</value>
+  </data>
+  <data name="FR_CHEAPEST_FLIGHT" xml:space="preserve">
+    <value>Le moins cher, avec une date différente</value>
+  </data>
+  <data name="FR_DURATION" xml:space="preserve">
+    <value>Durée</value>
+  </data>
+  <data name="FR_PASSENGER" xml:space="preserve">
+    <value>Passager</value>
+  </data>
+  <data name="FR_PASSENGERS" xml:space="preserve">
+    <value>Passagers</value>
+  </data>
+  <data name="FR_TRANSFER" xml:space="preserve">
+    <value>Transfert</value>
+  </data>
+  <data name="HD_AIRCONDITIONING" xml:space="preserve">
+    <value>Climatisation</value>
+  </data>
+  <data name="HD_BAR" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="HD_BREAKBAST" xml:space="preserve">
+    <value>Petit-déjeuner</value>
+  </data>
+  <data name="HD_DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="HD_FREE_CANCELLATION" xml:space="preserve">
+    <value>Annulation gratuite</value>
+  </data>
+  <data name="HD_GYM" xml:space="preserve">
+    <value>Gym</value>
+  </data>
+  <data name="HD_HAIRDRYER" xml:space="preserve">
+    <value>Sèche-cheveux</value>
+  </data>
+  <data name="HD_HOTEL_AMENITIES" xml:space="preserve">
+    <value>équipements de l'hôtel</value>
+  </data>
+  <data name="HD_HOUSEKEEPING" xml:space="preserve">
+    <value>Nettoyage de la chambre</value>
+  </data>
+  <data name="HD_LOCATION_DESCRIPTION" xml:space="preserve">
+    <value>Description de l'emplacement</value>
+  </data>
+  <data name="HD_OTHER_INFORMATION" xml:space="preserve">
+    <value>Autres informations</value>
+  </data>
+  <data name="HD_PARKING" xml:space="preserve">
+    <value>Parking</value>
+  </data>
+  <data name="HD_PET_FRIENDLY" xml:space="preserve">
+    <value>Animaux autorisés</value>
+  </data>
+  <data name="HD_POOL" xml:space="preserve">
+    <value>Piscine</value>
+  </data>
+  <data name="HD_RESTAURANT" xml:space="preserve">
+    <value>Restaurant</value>
+  </data>
+  <data name="HD_ROOM_AMENITIES" xml:space="preserve">
+    <value>Commodités de la chambre</value>
+  </data>
+  <data name="HD_ROOM_SERVICE" xml:space="preserve">
+    <value>Service de la chambre</value>
+  </data>
+  <data name="HD_SPA" xml:space="preserve">
+    <value>SPA</value>
+  </data>
+  <data name="HD_TV" xml:space="preserve">
+    <value>TV</value>
+  </data>
+  <data name="HD_WiFi" xml:space="preserve">
+    <value>WiFi</value>
+  </data>
+  <data name="HF_CHAINS" xml:space="preserve">
+    <value>Réseaux de magasins</value>
+  </data>
+  <data name="HF_HOTEL_NAME" xml:space="preserve">
+    <value>Nom de l'hôtel</value>
+  </data>
+  <data name="HF_PRICE" xml:space="preserve">
+    <value>Prix</value>
+  </data>
+  <data name="HF_STARS" xml:space="preserve">
+    <value>Étoiles</value>
+  </data>
+  <data name="HF_STAR_RATING" xml:space="preserve">
+    <value>Nombre d'étoiles attribuées</value>
+  </data>
+  <data name="HP_CONTACT" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="HP_CURRENCY" xml:space="preserve">
+    <value>Devise</value>
+  </data>
+  <data name="HP_EDIT_PROFILE" xml:space="preserve">
+    <value>Changer le profil</value>
+  </data>
+  <data name="HP_HOME" xml:space="preserve">
+    <value>page d'accueil</value>
+  </data>
+  <data name="HP_LANGUAGE" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="HP_LOGIN" xml:space="preserve">
+    <value>S'identifier</value>
+  </data>
+  <data name="HP_LOGOUT" xml:space="preserve">
+    <value>Se déconnecter</value>
+  </data>
+  <data name="HP_MY_BOOKINGS" xml:space="preserve">
+    <value>Mes réservations</value>
+  </data>
+  <data name="HP_PRIVACY_POLICY" xml:space="preserve">
+    <value>Politique de confidentialité</value>
+  </data>
+  <data name="HP_USER_AGREEMENT" xml:space="preserve">
+    <value>Accord de l'utilisateur</value>
+  </data>
+  <data name="HR_NO_HOTELS_FOUND" xml:space="preserve">
+    <value>Aucun hôtel trouvé.</value>
+  </data>
+  <data name="HR_NO_STAR_RATING" xml:space="preserve">
+    <value>Pas de nombre d‘étoile</value>
+  </data>
+  <data name="HR_PER_NIGHT_PER_ROOM" xml:space="preserve">
+    <value>Par nuit, par chambre</value>
+  </data>
+  <data name="HS_ADD_ROOM" xml:space="preserve">
+    <value>Ajouter une chambre</value>
+  </data>
+  <data name="HS_CHECK_IN_DATE" xml:space="preserve">
+    <value>Date d'entrée</value>
+  </data>
+  <data name="HS_CHECK_IN_LOCATION" xml:space="preserve">
+    <value>Check-in</value>
+  </data>
+  <data name="HS_CHECK_OUT_DATE" xml:space="preserve">
+    <value>départ</value>
+  </data>
+  <data name="HS_CHLD" xml:space="preserve">
+    <value>Enfants</value>
+  </data>
+  <data name="HS_NO_LOCATIONS_FOUND" xml:space="preserve">
+    <value>Location n'est pas trouvé.</value>
+  </data>
+  <data name="HS_REMOVE_ROOM" xml:space="preserve">
+    <value>Annuler la chambre</value>
+  </data>
+  <data name="HS_ROOM" xml:space="preserve">
+    <value>Chambre</value>
+  </data>
+  <data name="HS_ROOMS" xml:space="preserve">
+    <value>Chambres</value>
+  </data>
+  <data name="HS_SEARCH_HOTELS" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="HS_Y_O" xml:space="preserve">
+    <value>Ans</value>
+  </data>
+  <data name="MB_ARCHIVE" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="MB_UPCOMING" xml:space="preserve">
+    <value>À venir</value>
+  </data>
+  <data name="PP_LABEL_1" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="PP_LABEL_10" xml:space="preserve">
+    <value>Nous contacter</value>
+  </data>
+  <data name="PP_LABEL_10_1" xml:space="preserve">
+    <value>Si Vous avez des questions concernant le traitement de vos données personnelles ou l'utilisation de cookies, ou si Vous souhaitez exercer l'un de vos droits en vertu des lois en vigueur en matière de protection des données, veuillez envoyer un lettre électronique à l’adresse suivante: privacy@farelovers.com ou utiliser les coordonnées suivantes pour vous connecter.</value>
+  </data>
+  <data name="PP_LABEL_11" xml:space="preserve">
+    <value>Changements à la politique de confidentialité</value>
+  </data>
+  <data name="PP_LABEL_11_1" xml:space="preserve">
+    <value>Si nous modifions les règles de traitement de vos données personnelles ou les règles d'utilisation des cookies, nous actualisons immédiatement cette politique de confidentialité et la publierons sur ce site.</value>
+  </data>
+  <data name="PP_LABEL_1_1" xml:space="preserve">
+    <value>Ce site est dirigé par la compagnie Farelovers Travel Corporation (ci-après «nous», «notre», etc.).  Les passionnés de voyages traitent une variété de données personnelles, y compris les noms, adresses électroniques et autres informations liées au voyage, dans le cadre de leurs activités quotidiennes. C’est pourquoi nous prenons au sérieux la sécurité des données et le respect des lois sur la protection des données.  Cette politique de confidentialité contient des informations sur la manière dont nous collectons, gardons, utilisons et divulguons vos informations personnelles lorsque Vous utilisez ce site, et comment nous protégeons la confidentialité et le secret de vos informations personnelles.  Nous respectons votre confidentialité.  Peu importe que Vous soyez un utilisateur débutant ou  de longue date de nos services, veuillez consulter nos méthodes de travail et nous contacter si Vous avez des questions.</value>
+  </data>
+  <data name="PP_LABEL_1_2" xml:space="preserve">
+    <value>Farelovers Travel Corporation (ci-après - «nous», «notre», etc.), est le contrôleur de vos données personnelles et, par conséquent, est responsable de la légalité des actions que nous entreprenons avec eux.</value>
+  </data>
+  <data name="PP_LABEL_2" xml:space="preserve">
+    <value>Collecte de données personnelles</value>
+  </data>
+  <data name="PP_LABEL_2_1" xml:space="preserve">
+    <value>En règle générale, les données personnelles que nous collectons nous sont nécessaires pour organiser votre voyage et vos réservations.  Cela comprend des données telles que vos nom et prénom, date de naissance, numéro de téléphone, adresse électronique et adresse postale, ainsi que l’information de facturation (telles que le numéro de carte de crédit, le nom du titulaire de la carte et la date d'expiration).  Les seules données que vous devez nous fournir sont les données personnelles dont nous avons besoin pour organiser votre voyage conformément à votre réservation via notre site Web.  Selon le type de service que vous utilisez, nous pouvons également vous demander votre numéro de voyageur fréquent, de l'information sur vos demandes spéciales de nourriture et de santé (le cas échéant), et d'autre information relative à votre voyage ou nécessaires pour l’autre prestataire de services (par exemple, compagnies aériennes et hôtels).  Cette liste n'est pas exhaustive.  Si vous contactez notre équipe d'assistance, nous collectons les données que Vous fournissez lors de votre appel téléphonique.  Comme Vous le verrez ci-dessous, nos cookies collectent également certaine information.</value>
+  </data>
+  <data name="PP_LABEL_2_2" xml:space="preserve">
+    <value>Si Vous effectuez une réservation via notre site Web pour une autre personne, nous Vous demanderons les données personnelles de cette personne.  Dans cette situation, nous attendons de Vous que Vous informiez cette personne de la politique de confidentialité.</value>
+  </data>
+  <data name="PP_LABEL_3" xml:space="preserve">
+    <value>Collecte de données personnelles confidentielles</value>
+  </data>
+  <data name="PP_LABEL_3_1" xml:space="preserve">
+    <value>Dans certains cas, nous pouvons traiter des «catégories spéciales de données personnelles» qui peuvent être considérées comme confidentielles.  Cela est possible, par exemple, si Vous (i) avez fourni un certificat médical afin d'utiliser le service d'assurance en cas d'annulation ou de remboursement des fonds de la compagnie aérienne; (ii) Vous avez une maladie ou l’état de santé influençant  à votre voyage pour laquelle Vous avez demandé une assistance ou qui nécessite une autorisation spéciale; ou si Vous (iii) avez fait une demande qui dévoile de certaines de vos autres données personnelles confidentielles.</value>
+  </data>
+  <data name="PP_LABEL_3_2" xml:space="preserve">
+    <value>Avant de traiter vos données personnelles confidentielles, nous Vous demandons de donner votre accord à ce traitement.  C’est pourquoi nous Vous envoyons par courriel des formulaires de liaison en retour de notre adresse électronique pour envoyer des données confidentielles: privacy@farelovers.com  Ces formulaires Vous permettent de donner votre accord exigé par la législation en vigueur de protection des données.  Bien entendu, Vous pouvez retirer ce consentement à tout moment.  Nous ne traiterons pas vos données personnelles confidentielles si nous n'avons pas votre permission de le faire ou si Vous ne nous avez pas fourni ces données.  Un nombre limité de nos employés auront accès à vos données personnelles confidentielles, et conformément à votre demande, après avoir traité vos données confidentielles  nous supprimerons vos données dans les plus brefs délais.</value>
+  </data>
+  <data name="PP_LABEL_4" xml:space="preserve">
+    <value>Utilisation de Vos données personnelles</value>
+  </data>
+  <data name="PP_LABEL_4_1" xml:space="preserve">
+    <value>Afin d'avoir droit au traitement de Vos données personnelles, conformément à la législation en vigueur de protection des données, nous sommes tenus de disposer d'une base légale pour chacune de nos objectifs de traitement des données personnelles.  Pour cette raison nous avons préparé le tableau suivant qui présente la base juridique de chacun de nos objectifs.</value>
+  </data>
+  <data name="PP_LABEL_4_2" xml:space="preserve">
+    <value>Ce que nous faisons (objectifs du traitement de Vos données personnelles)</value>
+  </data>
+  <data name="PP_LABEL_4_2_1" xml:space="preserve">
+    <value>Organisation de voyages et réservation à votre demande (c'est-à-dire la réservation de services de voyage via notre médiation, ainsi que la fourniture de nos propres services).</value>
+  </data>
+  <data name="PP_LABEL_4_2_2" xml:space="preserve">
+    <value>Si Vous avez commencé le processus de réservation mais Vous n'avez pas atteint le point de paiement, nous pouvons vous envoyer un courriel avec un lien vers les résultats de la recherche ou le processus de réservation commencé, selon le moment où le processus de réservation sur le site Web a été interrompu.</value>
+  </data>
+  <data name="PP_LABEL_4_2_3" xml:space="preserve">
+    <value>Avant de commencer votre voyage, nous Vous fournirons de l’information supplémentaire et des propositions liées à votre voyage, par exemple,  les services supplémentaires éventuels tels que le transport du bagage supplémentaire, ainsi que d'autre information utile pour Votre voyage.  Une partie de ces données sont basées à l’analyse des données que Vous avez fournies lors du processus de réservation (par exemple, dates de voyage, destination, etc.).</value>
+  </data>
+  <data name="PP_LABEL_4_2_4" xml:space="preserve">
+    <value>Après Votre voyage, nous pouvons Vous envoyer notre brochure contenant des recommandations pour d'autres voyages, produits de voyage et services susceptibles de Vous intéresser.  Certaines recommandations peuvent être basées sur une analyse de vos décisions de réservation de voyage précédentes et de votre comportement par rapport à notre courrier électronique.</value>
+  </data>
+  <data name="PP_LABEL_4_2_5" xml:space="preserve">
+    <value>Enregistrez les appels téléphoniques aux fins du contrôle de la qualité et du traitement de toute demande ou question future de votre part.</value>
+  </data>
+  <data name="PP_LABEL_4_2_6" xml:space="preserve">
+    <value>L'utilisation de cookies, par exemple, pour améliorer la convivialité d’utilisation de ce site Web, une manière plus personnalisée de collecter des statistiques d'utilisation.  Nous utilisons également des cookies de session pour améliorer la sécurité de ce site.</value>
+  </data>
+  <data name="PP_LABEL_4_3" xml:space="preserve">
+    <value>Nos supports juridiques</value>
+  </data>
+  <data name="PP_LABEL_4_3_1" xml:space="preserve">
+    <value>Exécution de notre contrat avec Vous.  Si Vous nous avez fourni des données personnelles confidentielles, le support juridique est votre autorisation.</value>
+  </data>
+  <data name="PP_LABEL_4_3_2" xml:space="preserve">
+    <value>Notre intérêt légitime est de gérer les affaires et de vous permettre d’achever votre achat sans réintroduisant toutes les données.  Si vous ne souhaitez pas recevoir ces courriels, vous pouvez vous désinscrire à tout moment en utilisant le lien dans le courriel.</value>
+  </data>
+  <data name="PP_LABEL_4_3_3" xml:space="preserve">
+    <value>Notre intérêt légitime est de rendre Votre voyage plus confortable et de vous permettre de trouver facilement l’information complémentaire utile.  Si vous ne souhaitez pas recevoir cette information, vous pouvez vous désinscrire à tout moment en utilisant le lien dans le courriel.</value>
+  </data>
+  <data name="PP_LABEL_4_3_4" xml:space="preserve">
+    <value>Notre intérêt légitime est de gérer les affaires et de Vous offrir la possibilité d'organiser vos voyages.  Si vous ne souhaitez pas recevoir ces courriels, vous pouvez vous désinscrire à tout moment en utilisant le lien dans le courriel ou dans notre site. Vous pouvez également refuser de recevoir la brochure avant de finir votre achat.</value>
+  </data>
+  <data name="PP_LABEL_4_3_5" xml:space="preserve">
+    <value>Notre intérêt légitime est (i) d'améliorer la qualité de nos services grâce à une formation interne et (ii) de résoudre des demandes ou plaintes éventuelles  de votre part.  Si Vous ne souhaitez pas que la conversation téléphonique soit enregistrée, vous pouvez vous opposer à cet enregistrement avant qu'il ne commence.</value>
+  </data>
+  <data name="PP_LABEL_4_3_6" xml:space="preserve">
+    <value>Notre intérêt légitime est (i) d'améliorer notre site Web, (ii) de présenter des offres susceptibles de vous intéresser et (iii) de maintenir la sécurité de nos services et de notre site Web.  Si Vous ne souhaitez pas que nous sauvegardons des cookies sur votre ordinateur, Vous pouvez modifier les paramètres de votre navigateur à tout moment.</value>
+  </data>
+  <data name="PP_LABEL_4_4" xml:space="preserve">
+    <value>Temps de stockage</value>
+  </data>
+  <data name="PP_LABEL_4_4_1" xml:space="preserve">
+    <value>L’accord au traitement des données personnelles confidentielles peut être rétiré à tout moment.</value>
+  </data>
+  <data name="PP_LABEL_4_4_2" xml:space="preserve">
+    <value>24 heures à compter de la fin du processus de réservation.</value>
+  </data>
+  <data name="PP_LABEL_4_4_3" xml:space="preserve">
+    <value>Maximum avant le début du voyage. D'autres traitements similaires peuvent se poursuivre aux fins décrites ci-dessous.</value>
+  </data>
+  <data name="PP_LABEL_4_4_4" xml:space="preserve">
+    <value>3 ans à compter de la date d'achat.</value>
+  </data>
+  <data name="PP_LABEL_4_4_5" xml:space="preserve">
+    <value>6 mois à compter de la date de la conversation téléphonique.  L'enregistrement n'est disponible que pour un nombre limité de personnes.</value>
+  </data>
+  <data name="PP_LABEL_4_4_6" xml:space="preserve">
+    <value>Selon le type de cookie.</value>
+  </data>
+  <data name="PP_LABEL_4_4_6_LINK" xml:space="preserve">
+    <value>La durée de stockage est décrite plus en détail ci-dessous.</value>
+     </data>
+  <data name="PP_LABEL_4_5" xml:space="preserve">
+    <value>En plus de ce qui précède, nous prenons un certain nombre de mesures quotidiennes nécessaires pour fournir des services aux consommateurs, tels que la comptabilité, la facturation, le respect des obligations de lutte contre le blanchiment d'argent et le maintien de la sécurité de notre site.  Dans la mesure où cela n'est pas nécessaire en vertu de la loi en vigueur, nous prenons ces mesures selon nos intérêts légitimes.  Nous pouvons également analyser le comportement de nos clients pour l'amélioration globale de nos sites Web et services.  Cependant, une telle analyse est effectuée à l'aide de données agrégées généralisées ou dépersonnalisées.</value>
+  </data>
+  <data name="PP_LABEL_5" xml:space="preserve">
+    <value>Fournir vos données personnelles à des tiers</value>
+  </data>
+  <data name="PP_LABEL_5_1" xml:space="preserve">
+    <value>Nous ne partagerons vos données personnelles avec des tiers que si cela est nécessaire aux fins énumérées dans cette politique de confidentialité.  Les tiers peuvent être d'autres entreprises, des agences gouvernementales et nos partenaires commerciaux de confiance.  Par exemple, nous pouvons fournir vos renseignements personnels (y compris, en cas de nécessité, confidentiels) avec des partenaires commerciaux tels que des compagnies aériennes, des hôtels, des compagnies d'assurance et des systèmes globaux  de distribution (appelés GDS) pour organiser votre voyage et vos réservations.</value>
+  </data>
+  <data name="PP_LABEL_5_2" xml:space="preserve">
+    <value>Chaque partenaire porte la responsabilité personnelle  pour la façon de traitement de Vos données personnelles après les avoir reçues de notre société.  Cela signifie que pour toutes les questions relatives à vos droits en vertu de la législation en vigueur concernant la protection des données, Vous devez contacter le partenaire concerné.  Nous Vous recommandons à lire la politique de confidentialité relative des partenaires pour savoir comment ils traitent vos données personnelles.</value>
+  </data>
+  <data name="PP_LABEL_5_3" xml:space="preserve">
+    <value>Pour fournir les services que vous avez demandés, nous partagerons également vos données personnelles avec d'autres sociétés (dites traiteurs de données), par exemple, des prestataires de services responsables du fonctionnement de nos centres de contact et d'autres prestataires qui traiteront vos données personnelles lors de la fourniture de nos services ( par exemple stockage externe).</value>
+  </data>
+  <data name="PP_LABEL_6" xml:space="preserve">
+    <value>Prestataires tiers</value>
+  </data>
+  <data name="PP_LABEL_6_1" xml:space="preserve">
+    <value>Veuillez noter que notre site contient des liens vers d'autres sites et affiche des éléments fournis par des prestataires tiers.  Cette politique de confidentialité s'applique uniquement à notre site Web et à nos services.  Si vous suivez des liens vers d'autres sites ou utilisez des services et produits de tiers, vous devez lire la politique de confidentialité correspondante.  De plus, si vous nous contactez via les réseaux sociaux, cette politique de confidentialité ne s'applique pas aux données personnelles que vous transmettez lors d'un tel contact.  Dans ce cas, nous vous recommandons de lire la politique de confidentialité du fournisseur de médias sociaux.</value>
+  </data>
+  <data name="PP_LABEL_7" xml:space="preserve">
+    <value>Vos droits</value>
+  </data>
+  <data name="PP_LABEL_7_1" xml:space="preserve">
+    <value>Conformément à la législation en vigueur en matière de la protection des données, vous disposez de certains droits en tant que «personne concernée».  Vos droits sont énumérés ci-dessous.  Vous disposez des droits suivants:</value>
+  </data>
+  <data name="PP_LABEL_7_2" xml:space="preserve">
+    <value>Droit d'accès.</value>
+  </data>
+  <data name="PP_LABEL_7_2_1" xml:space="preserve">
+    <value>Vous avez le droit d'accéder à vos données personnelles que nous traitons. 
+ Vous avez également le droit de recevoir certaines informations sur ce que nous faisons avec les données personnelles. Cette information est présentée dans ce document.</value>
+  </data>
+  <data name="PP_LABEL_7_3" xml:space="preserve">
+    <value>Droit d'apporter des changements.</value>
+  </data>
+  <data name="PP_LABEL_7_3_1" xml:space="preserve">
+    <value>Dans certaines circonstances, Vous avez le droit de corriger les données personnelles inexactes vous concernant et de compléter les données personnelles incomplètes.  Veuillez noter que dans certaines situations, nous ne pourrons pas corriger les données personnelles inexactes que vous avez fournies, par exemple, en raison de la réglementation des compagnies aériennes et qu'un tel changement peut entraîner des coûts.</value>
+  </data>
+  <data name="PP_LABEL_7_4" xml:space="preserve">
+    <value>Droit d'effacement.</value>
+  </data>
+  <data name="PP_LABEL_7_4_1" xml:space="preserve">
+    <value>Dans certaines circonstances, vous avez le droit de supprimer vos données personnelles.</value>
+  </data>
+  <data name="PP_LABEL_7_5" xml:space="preserve">
+    <value>Droit de restreindre le traitement.</value>
+  </data>
+  <data name="PP_LABEL_7_5_1" xml:space="preserve">
+    <value>Dans certaines circonstances Vous avez le droit de restreindre notre utilisation de vos données personnelles.</value>
+  </data>
+  <data name="PP_LABEL_7_6" xml:space="preserve">
+    <value>Droit à la transformation des données.</value>
+  </data>
+  <data name="PP_LABEL_7_6_1" xml:space="preserve">
+    <value>Vous avez le droit de recevoir Vos données personnelles de notre part (ou de transférer Vos données personnelles directement à un autre propriétaire de données) dans un format structuré, distribué et lisible par machine.</value>
+  </data>
+  <data name="PP_LABEL_7_7" xml:space="preserve">
+    <value>Droit d'objection.</value>
+  </data>
+  <data name="PP_LABEL_7_7_1" xml:space="preserve">
+    <value>Vous avez le droit de vous opposer à certains types de traitement de données personnelles que nous effectuons.  Cela s'applique à toutes nos actions basées sur nos intérêts légitimes.</value>
+  </data>
+  <data name="PP_LABEL_8" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PP_LABEL_8_1" xml:space="preserve">
+    <value>Un cookie est un petit fichier de texte qui est gardé dans votre ordinateur.  Certains cookies ne sont stockés que jusqu'à la fermeture de votre navigateur (appelés cookies de session), et certains sont stockés pendant une longue période (appelés cookies persistants).  Si Vous ne souhaitez pas que les cookies soient stockés dans votre ordinateur, Vous pouvez modifier les paramètres de votre navigateur.  Cependant nous attirons votre attention sur le fait que, dans certains cas, cela peut entraîner un fonctionnement incorrect de certaines fonctions de notre site et un affichage incorrect de certains matériaux.</value>
+  </data>
+  <data name="PP_LABEL_8_2" xml:space="preserve">
+    <value>Ce site Web utilise des cookies pour diverses raisons, notamment pour fournir un contact personnalisé, améliorer la convivialité du site Web et collecter des  données statistiques de l'utilisation.  Nous utilisons également des cookies de session pour améliorer la sécurité de ce site.</value>
+  </data>
+  <data name="PP_LABEL_8_3_1" xml:space="preserve">
+    <value>Dans certains cas lors de l'utilisation de cookies, nous transférons des données à des tiers.  Par exemple nous utilisons les services Google Analytics et Google AdWords qui transmettent les données de fréquentation du site Web aux serveurs de Google.  Google Analytics n'identifie pas les utilisateurs individuels et ne lie pas votre adresse IP à d'autres données Google.  Nous utilisons les rapports fournis par Google pour analyser le trafic du site Web, comprendre l'utilisation des pages Web et optimiser les publicités achetées sur le réseau publicitaire Google et d'autres réseaux publicitaires.  Google peut traiter les données conformément à la politique de confidentialité de Google.</value>
+  </data>
+  <data name="PP_LABEL_8_3_2" xml:space="preserve">
+    <value>aux fins décrites précédemment dans cette section.  Vous pouvez désactiver la collecte de données par Google Analytics en désactivant les cookies, JavaScript ou en utilisant le service de désactivation de Google.  Pour désactiver les fonctionnalités publicitaires de Google, veuillez utiliser ce lien.</value>
+  </data>
+  <data name="PP_LABEL_8_4" xml:space="preserve">
+    <value>Notre site utilise également l'outil Pixel de Facebook qui collecte des données agrégées dépersonnalisées pour nous aider à optimiser l'achat de publicités sur diverses plateformes Facebook (y compris Instagram).  Facebook recueille des identifiants d'utilisateurs pour aider à déterminer si un utilisateur a visité un site avec le pixel Facebook.  Cependant, en tant qu'annonceurs publicitaires, nous ne pouvons pas identifier un utilisateur concret qui effectue une action.  Facebook et ses plateformes associées sont situés dans un écosystème publicitaire fermé où les utilisateurs peuvent accepter ou non que les annonceurs utilisent les données collectées sur leurs sites pour acheter des publicités sur Facebook.  Pour voir et modifier les paramètres des publicités Facebook, utilisez ce lien.</value>
+  </data>
+  <data name="PP_LABEL_9" xml:space="preserve">
+    <value>Sécurité des données</value>
+  </data>
+  <data name="PP_LABEL_9_1" xml:space="preserve">
+    <value>Pour protéger vos données personnelles, nous avons mis en place un certain nombre de mesures de sécurité techniques et organisationnelles.  Par exemple, nous maintenons un haut niveau de sécurité technique tous les systèmes (y compris la traçabilité, la reprise d'incident, la restriction d'accès, etc.).  En outre, nous avons adopté une politique pour nous assurer que nos employés (qui, bien sûr, sont tenus de maintenir la confidentialité) n'utilisent pas inutilement des données personnelles. Cette politique définit également nos normes en matière de contrats avec les fournisseurs ou d'introduction de nouveaux systèmes informatiques dans le cadre de nos activités.</value>
+  </data>
+  <data name="RD_BED" xml:space="preserve">
+    <value>Lit</value>
+  </data>
+  <data name="RD_BEDS" xml:space="preserve">
+    <value>Lits</value>
+  </data>
+  <data name="RD_BEFORE" xml:space="preserve">
+    <value>avant</value>
+  </data>
+  <data name="RD_NIGHT" xml:space="preserve">
+    <value>Nuit</value>
+  </data>
+  <data name="RD_NIGHTS" xml:space="preserve">
+    <value>Nuits</value>
+  </data>
+  <data name="RD_RESERVE" xml:space="preserve">
+    <value>Réserver</value>
+  </data>
+  <data name="RD_TOTAL_FARE_FOR" xml:space="preserve">
+    <value>Prix total</value>
+  </data>
+  <data name="RESET" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="SC_BASE_PRICE" xml:space="preserve">
+    <value>Prix de base:</value>
+  </data>
+  <data name="SC_BILLING_ADDRES" xml:space="preserve">
+    <value>Adresse de facturation</value>
+  </data>
+  <data name="SC_BOOKING_COMPLETE_TEXT" xml:space="preserve">
+    <value>Merci d'avoir choisi FareLovers, votre réservation est en cours. Vous recevrez vos e-billets prochainement. Votre numéro de réservation</value>
+  </data>
+  <data name="SC_CANCELLATION_POLICY" xml:space="preserve">
+    <value>Politique d'annulation:</value>
+  </data>
+  <data name="SC_CARDHOLDER_NAME" xml:space="preserve">
+    <value>Nom du titulaire de la carte</value>
+  </data>
+  <data name="SC_CARD_NUMBER" xml:space="preserve">
+    <value>Numéro de la carte</value>
+  </data>
+  <data name="SC_CITY_NAME" xml:space="preserve">
+    <value>Nom de la ville</value>
+  </data>
+  <data name="SC_COUNTRY_NAME" xml:space="preserve">
+    <value>Nom du pays</value>
+  </data>
+  <data name="SC_CVV" xml:space="preserve">
+    <value>CVV- code(numéro de vérification de la carte de crédit)</value>
+  </data>
+  <data name="SC_DATE_OF_BIRTH" xml:space="preserve">
+    <value>Date de naissance</value>
+  </data>
+  <data name="SC_DAY" xml:space="preserve">
+    <value>Jour</value>
+  </data>
+  <data name="SC_EMAIL" xml:space="preserve">
+    <value>E-MAIL</value>
+  </data>
+  <data name="SC_EXP_MONTH" xml:space="preserve">
+    <value>Mois d'expiration</value>
+  </data>
+  <data name="SC_EXP_YEAR" xml:space="preserve">
+    <value>Année d'expiration</value>
+  </data>
+  <data name="SC_FIRST_NAME" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="SC_GENDER" xml:space="preserve">
+    <value>Sexe</value>
+  </data>
+  <data name="SC_HOW_WOULD_YOU_PAY" xml:space="preserve">
+    <value>Quel moyen de payement voudriez-vous choisir?</value>
+  </data>
+  <data name="SC_LAST_NAME" xml:space="preserve">
+    <value>Nom de famille</value>
+  </data>
+  <data name="SC_MIDDLE_NAME" xml:space="preserve">
+    <value>Deuxième prénom</value>
+  </data>
+  <data name="SC_MONTH" xml:space="preserve">
+    <value>Mois</value>
+  </data>
+  <data name="SC_MULTI_WAY_FLIGHT" xml:space="preserve">
+    <value>Multi-destinations</value>
+  </data>
+  <data name="SC_ONEWAY_FLIGHT" xml:space="preserve">
+    <value>ALLER SIMPLE</value>
+  </data>
+  <data name="SC_PAY" xml:space="preserve">
+    <value>Payer</value>
+  </data>
+  <data name="SC_PHONE" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="SC_PROTECTION_AND_COVERAGES" xml:space="preserve">
+    <value>Protection et couvertures</value>
+  </data>
+  <data name="SC_REGION" xml:space="preserve">
+    <value>Région/état</value>
+  </data>
+  <data name="SC_ROOMS" xml:space="preserve">
+    <value>Chambres</value>
+  </data>
+  <data name="SC_ROUND_FLIGHT" xml:space="preserve">
+    <value>ALLER-RETOUR</value>
+  </data>
+  <data name="SC_STREET_ADDRESS" xml:space="preserve">
+    <value>Rue,maison</value>
+  </data>
+  <data name="SC_TAXES" xml:space="preserve">
+    <value>Taxes</value>
+  </data>
+  <data name="SC_TAXES_AND_FEES" xml:space="preserve">
+    <value>Taxes, frais et droits.</value>
+  </data>
+  <data name="SC_TICKET" xml:space="preserve">
+    <value>billet</value>
+  </data>
+  <data name="SC_TICKETS" xml:space="preserve">
+    <value>billets</value>
+  </data>
+  <data name="SC_TITLE" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="SC_TOTAL" xml:space="preserve">
+    <value>TOTAL GÉNÉRAL</value>
+  </data>
+  <data name="SC_VALIDATION_CARDHOLDER_NAME" xml:space="preserve">
+    <value>le nom du titulaire de la carte n'est pas tapé</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_CVV" xml:space="preserve">
+    <value>le code de sécurité de la carte n'est pas rempli</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_MONTH" xml:space="preserve">
+    <value>Le mois d'expiration de la carte n’est pas sélectionné</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_NUMBER" xml:space="preserve">
+    <value>Le numéro de carte n’est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_CARD_YEAR" xml:space="preserve">
+    <value>l’année d'expiration de la carte n’est pas sélectionné</value>
+  </data>
+  <data name="SC_VALIDATION_CITY" xml:space="preserve">
+    <value>le nom de la ville n'est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_COUNTRY" xml:space="preserve">
+    <value>le nom du pays n'est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_DAY" xml:space="preserve">
+    <value>La date de naissance n’est pas choisie</value>
+  </data>
+  <data name="SC_VALIDATION_EMAIL" xml:space="preserve">
+    <value>l’adresse électronique n'est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_FIRST_NAME" xml:space="preserve">
+    <value>Le prénom n'est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_GENDER" xml:space="preserve">
+    <value>Le sexe n'est pas choisi</value>
+  </data>
+  <data name="SC_VALIDATION_LAST_NAME" xml:space="preserve">
+    <value>Le nom n'est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_MONTH" xml:space="preserve">
+    <value>Le mois de naissance n’est pas choisie</value>
+  </data>
+  <data name="SC_VALIDATION_PHONE" xml:space="preserve">
+    <value>Le numéro de téléphone n’est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_REGION" xml:space="preserve">
+    <value>La région / l’état n’est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_STREET" xml:space="preserve">
+    <value>L’adresse  n’est pas indiqué</value>
+  </data>
+  <data name="SC_VALIDATION_TITLE" xml:space="preserve">
+    <value>Le titre n'est pas choisi</value>
+  </data>
+  <data name="SC_VALIDATION_YEAR" xml:space="preserve">
+    <value>L’année de naissance n’est pas choisie</value>
+  </data>
+  <data name="SC_VALIDATION_ZIP" xml:space="preserve">
+    <value>Le code postal n’est pas choisi</value>
+  </data>
+  <data name="SC_WHO_IS_TRAVELING" xml:space="preserve">
+    <value>Qui voyage?</value>
+  </data>
+  <data name="SC_YEAR" xml:space="preserve">
+    <value>Année</value>
+  </data>
+  <data name="SC_YOUR_PRICE_SUMMARY" xml:space="preserve">
+    <value>Votre prix total</value>
+  </data>
+  <data name="SC_ZIP_CODE" xml:space="preserve">
+    <value>Code postal</value>
+  </data>
+  <data name="SF_ADULT" xml:space="preserve">
+    <value>Adulte</value>
+  </data>
+  <data name="SF_ADULTS" xml:space="preserve">
+    <value>Adultes</value>
+  </data>
+  <data name="SF_ADULTS_YEARS" xml:space="preserve">
+    <value>Plus de 12 ans</value>
+  </data>
+  <data name="SF_APPLY" xml:space="preserve">
+    <value>Appliquer</value>
+  </data>
+  <data name="SF_CABIN_CLASS" xml:space="preserve">
+    <value>classe de la cabine</value>
+  </data>
+  <data name="SF_CABIN_SOLON" xml:space="preserve">
+    <value>Cabine salon</value>
+  </data>
+  <data name="SF_CHILD" xml:space="preserve">
+    <value>Enfant</value>
+  </data>
+  <data name="SF_CHILDREN" xml:space="preserve">
+    <value>Enfants</value>
+  </data>
+  <data name="SF_CHILDREN_YEARS" xml:space="preserve">
+    <value>2-12 ans</value>
+  </data>
+  <data name="SF_DEPARTURE" xml:space="preserve">
+    <value>Départ</value>
+  </data>
+  <data name="SF_DEPARTURE_DATE" xml:space="preserve">
+    <value>Date de départ</value>
+  </data>
+  <data name="SF_DEPARTURE_SECOND_SEGMENT" xml:space="preserve">
+    <value>Départ du deuxième segment</value>
+  </data>
+  <data name="SF_DEPARTURE_THIRD_SEGMENT" xml:space="preserve">
+    <value>Départ du troisième segment</value>
+  </data>
+  <data name="SF_DESTINATION" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="SF_DESTINATION_SECOND_SEGMENT" xml:space="preserve">
+    <value>Destination deuxième segment</value>
+  </data>
+  <data name="SF_DESTINATION_THIRD_SEGMENT" xml:space="preserve">
+    <value>Destination troisième segment</value>
+  </data>
+  <data name="SF_DOCUMENTS" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="SF_FROM" xml:space="preserve">
+    <value>Départ</value>
+  </data>
+  <data name="SF_FROM_SECOND_SEGMENT" xml:space="preserve">
+    <value>Du deuxième segment</value>
+  </data>
+  <data name="SF_FROM_THIRD_SEGMENT" xml:space="preserve">
+    <value>Du  troisième segment</value>
+  </data>
+  <data name="SF_INFANT" xml:space="preserve">
+    <value>Nourrisson</value>
+  </data>
+  <data name="SF_INFANTS" xml:space="preserve">
+    <value>Nourrissons</value>
+  </data>
+  <data name="SF_INFANTS_YEARS" xml:space="preserve">
+    <value>0-2 ans</value>
+  </data>
+  <data name="SF_MULTI_CITY" xml:space="preserve">
+    <value>VILLES MULTIPLES</value>
+  </data>
+  <data name="SF_NO_AIRPORTS_FOUND" xml:space="preserve">
+    <value>Aucun aéroport trouvé</value>
+  </data>
+  <data name="SF_ONE_WAY" xml:space="preserve">
+    <value>Aller simple</value>
+  </data>
+  <data name="SF_POPULAR_PLACES" xml:space="preserve">
+    <value>Lieux populaires</value>
+  </data>
+  <data name="SF_RETURN" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="SF_RETURN_DATE" xml:space="preserve">
+    <value>Date de retour</value>
+  </data>
+  <data name="SF_ROUND_TRIP" xml:space="preserve">
+    <value>Aller-retour</value>
+  </data>
+  <data name="SF_SEARCH_FLIGHTS" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="SF_VALIDATION_ERROR" xml:space="preserve">
+    <value>Champ obligatoire!</value>
+  </data>
+  <data name="SF_VALIDATION_ERROR_SINGLE" xml:space="preserve">
+    <value>Erreur d’une validation!</value>
+  </data>
+  <data name="SR_NO_FLIGHTS_FOUND" xml:space="preserve">
+    <value>Aucun vol trouvé.</value>
+  </data>
+  <data name="UA_LABEL_1" xml:space="preserve">
+    <value>1. Services proposés</value>
+  </data>
+  <data name="UA_LABEL_1.1" xml:space="preserve">
+    <value>1. Médiation dans les prestations de services touristiques</value>
+  </data>
+  <data name="UA_LABEL_1.1.1" xml:space="preserve">
+    <value>Lors des prestations de services de réservation de vols et d‘hôtels, d'assurance et de services de location de voitures proposés sur le Portail (collectivement dénommés «Services de voyage»), nous agissons exclusivement en tant qu'un intermédiaire.  C’est pour ça que notre rôle et nos obligations sont limités à la médiation dans le cadre des services de voyage qui seront fournis par des tiers, tels que les compagnies aériennes, les voyagistes, les hôtels, les compagnies d'assurance, les sociétés de location de voitures et d'autres prestataires de services (ci-après dénommé «Prestataire de services» dans chaque cas).</value>
+  </data>
+  <data name="UA_LABEL_1.1.2" xml:space="preserve">
+    <value>Par conséquent, un contrat des prestations réelles de services de voyage (par exemple, un contrat de transport, un contrat d'assurance, un contrat de location) entrera en vigueur directement entre vous et le Prestataire de services concernant.  Nous ne sommes pas le Prestataire conjoint de services de voyage et ne sommes pas la partie à une relation contractuelle entre vous et le Prestataire de services.</value>
+  </data>
+  <data name="UA_LABEL_1.1.3" xml:space="preserve">
+    <value>En utilisant le Portail pour l'acquisition de services de voyage, Vous nous autorisez à négocier avec le Prestataire de services approprié en votre nom, y compris le paiement de ces services de voyage, afin de garantir la réalisation d'un accord entre vous et le Prestataire de services.  Le prix des services de voyage réels peut inclure des frais pour les services rendus par nous en tant qu’un intermédiaire lors de la conclusion d'un accord entre vous et le Prestataire de services concerné.</value>
+  </data>
+  <data name="UA_LABEL_1.1.4" xml:space="preserve">
+    <value>La responsabilité des prestations effective de services de voyage achetés par notre médiation par le Portail incombe uniquement à un Prestataire de services correspondant.  Agissant en tant qu'un intermédiaire, nous ne portons aucune responsabilité pour les services de voyage fournis par les Prestataire de services et ne faisons aucune représentation et ne donnons aucune garantie (explicite ou implicite) concernant la pertinence ou la qualité des services de voyage achetés à l’intermédiaire du Portail.  Toute réclamation que vous pourriez avoir concernant la prestation ou la non-prestation de services de voyage doit être adressée au Prestataire de services.</value>
+  </data>
+  <data name="UA_LABEL_1.1.5" xml:space="preserve">
+    <value>Si Vous avez envie d'exprimer des demandes spéciales (par exemple, concernant l‘alimentation spéciale, les facilités pour les personnes handicapées ou les places pour les enfants) lors de la réservation de services de voyage, nous transférerons votre demande au Prestataire de services approprié.  Cependant, nous ne pouvons pas porter la responsabilité de la capacité du Prestataire de services à répondre réellement à ces souhaits.</value>
+  </data>
+  <data name="UA_LABEL_1.2" xml:space="preserve">
+    <value>2. Nos propres services</value>
+  </data>
+  <data name="UA_LABEL_1.2.1" xml:space="preserve">
+    <value>En addition à la médiation dans l'acquisition de services de voyage, comme décrit au point 1.1 ci-dessus, le Portail rend également des services supplémentaires (qui ne sont pas des services de voyage), pour lesquels nous assumons la responsabilité.  Pour jouir de ces services supplémentaires, vous concluez des relations contractuelles directement avec nous.  Dans chaque cas, nous Vous informons définitivement de la quantité de nos services et du fait que nous proposons nos propres services et nous ne fournissons pas seulement des services intermédiaires lors de l'acquisition de services tiers.  Le contenu de nos propres services peut être  changé avec le temps.  Lors de la fourniture de services supplémentaires non stipulés dans les Conditions présentes, une description détaillée de ces services supplémentaires, ainsi que des informations sur nos prix et des conditions supplémentaires de réservation et d'utilisation, vous sont fournies lors du processus de réservation.</value>
+  </data>
+  <data name="UA_LABEL_1.3" xml:space="preserve">
+    <value>3. Conditions contractuelles actuelles</value>
+  </data>
+  <data name="UA_LABEL_1.3.1" xml:space="preserve">
+    <value>Les présentes conditions règlent la médiation d'acquisition de services de voyage en vertu du point 1.1, ainsi que les prestations de nos propres services en vertu du point 1.2.</value>
+  </data>
+  <data name="UA_LABEL_1.3.2" xml:space="preserve">
+    <value>Le contrat entre Vous et le Prestataire de services concerné (point 1.1.2) est réglé par les conditions générales du Prestataire de services respectif (conditions de transport, de transfert, d'assurance, etc.) émises par le Prestataire de services.  Ces conditions générales du Prestataire de services concerné Vous seront communiquées lors du processus de réservation.  Étant donné que les conditions générales du Prestataire de services peuvent inclure des points de responsabilité, d'annulation, de modification de réservation et de remboursement (si possible) et d'autres restrictions, nous Vous recommandons de lire attentivement ces conditions.</value>
+  </data>
+  <data name="UA_LABEL_10" xml:space="preserve">
+    <value>10. Responsabilité</value>
+  </data>
+  <data name="UA_LABEL_10.1" xml:space="preserve">
+    <value>Vous reconnaissez que nous agissons en tant qu'un intermédiaire entre Vous et le Prestataire de services. Nous ne sommes en aucun cas responsables des services de voyage que Vous avez commandés à un ou plusieurs Prestataires de services, et ne sommes pas responsables des inexactitudes dans les informations publiées sur le Portail fournies par le Prestataire de services concerné.  Si la personne qui rend le service, pour quelque raison que ce soit, ne peut pas fournir le service de voyage, y compris si le Prestataire de services déclare faillite, nous pouvons agir en tant qu'un intermédiaire et rembourser les sommes versées uniquement si nous les avons déjà reçues du Prestataire de services concerné pour rembourser nos propres services, nous sommes responsables des dommages compte tenu des restrictions prévues dans les présentes conditions d'utilisation et dans les limites permises par la loi.  Nous ne sommes responsables que de vos dommages directs réellement encourus, payés ou résultant d'un manquement confirmé à nos obligations pour nos propres services dans la limite du coût total de votre réservation (à la fois pour un événement et pour un certain nombre d'événements interdépendants). La restriction de responsabilité spécifiée au point 10.3 s'applique également à l‘infraction aux obligations par</value>
+  </data>
+  <data name="UA_LABEL_11" xml:space="preserve">
+    <value>11. DROITS DES CONSOMMATEURS EN VERTU DU REGLEMENT DE L'UE</value>
+  </data>
+  <data name="UA_LABEL_11.1" xml:space="preserve">
+    <value>1. Annulation ou retard du vol</value>
+  </data>
+  <data name="UA_LABEL_11.1.1" xml:space="preserve">
+    <value>Si vous entrez ou sortez de l'UE ou si vous utilisez un transporteur de l'UE, vous pouvez avoir le droit de déposer une demande de remboursement directement à la compagnie aérienne si votre vol est annulé ou retardé, ou si votre embarquement est refusé.  Si vous souhaitez plus d'informations sur le règlement (CE) 261/2004,</value>
+  </data>
+  <data name="UA_LABEL_11.2" xml:space="preserve">
+    <value>2. Responsabilité du transporteur</value>
+  </data>
+  <data name="UA_LABEL_11.2.1" xml:space="preserve">
+    <value>Règlement (CE) 889/2002 sur la responsabilité des transporteurs aériens en cas d'accident</value>
+  </data>
+  <data name="UA_LABEL_12" xml:space="preserve">
+    <value>12. PROTECTION DES DONNÉES</value>
+  </data>
+  <data name="UA_LABEL_12.1" xml:space="preserve">
+    <value>Nous prenons au sérieux la protection de vos données personnelles.  Vous trouverez l‘information détaillée sur la collecte, le traitement et l'utilisation de vos données personnelles dans notre Politique de confidentialité.</value>
+  </data>
+  <data name="UA_LABEL_13" xml:space="preserve">
+    <value>13. Législation régissante et résolution des litiges</value>
+  </data>
+  <data name="UA_LABEL_13.1" xml:space="preserve">
+    <value>1. Législation régissante</value>
+  </data>
+  <data name="UA_LABEL_13.1.1" xml:space="preserve">
+    <value>La loi suédoise s'applique exclusivement à ces Conditions et au contrat entre Vous et nous.  En tant que consommateur, Vous jouissez de vos droits en vertu des points légaux impératifs de votre pays de résidence.  Rien dans ces Conditions, y compris le présent point 13.1, ne limite pas votre droit d'utiliser tels points de la législation locale en tant qu’un consommateur.</value>
+  </data>
+  <data name="UA_LABEL_13.2" xml:space="preserve">
+    <value>2. Résolution des litiges en ligne</value>
+  </data>
+  <data name="UA_LABEL_13.2.1" xml:space="preserve">
+    <value>La Commission européenne fournit une plateforme pour résoudre des litiges en ligne:</value>
+  </data>
+  <data name="UA_LABEL_2" xml:space="preserve">
+    <value>2. PROCESSUS DE RÉSERVATION ET COORDONNÉES</value>
+  </data>
+  <data name="UA_LABEL_2.1" xml:space="preserve">
+    <value>Lors du processus de réservation, Vous serez fourni des moyens techniques nécessaires pour détecter les erreurs dans les formulaires de l’entrée d’information et la possibilité de les corriger avant d'envoyer une demande de réservation.  Nous Vous recommandons de vérifier toutes les informations avant d’envoyer votre demande de réservation.  Les demandes de changement ultérieures peuvent entraîner des coûts supplémentaires importants.</value>
+  </data>
+  <data name="UA_LABEL_2.2" xml:space="preserve">
+    <value>Nous pouvons avoir besoin de Vous contacter, par exemple, en cas de modification ultérieure des services de voyage achetés.  Vous devez fournir des informations de contact précises - numéro de téléphone et adresse électronique.  Vous devez également être  régulièrement au contact avec nous.  Vous devez également vous assurer de recevoir nos messages.  Nous ne sommes pas responsables si vous ne recevez pas les communications de notre part pour des raisons qui ne sont pas liés avec notre activité, comprenant, mais sans se limitant des cas suivants:  (i) vous avez fourni une adresse électronique incorrecte; (ii) les paramètres de votre messagerie empêchent nos communications de vous parvenir; ou (iii) les paramètres de votre messagerie classifient nos messages comme un spam.</value>
+  </data>
+  <data name="UA_LABEL_3" xml:space="preserve">
+    <value>3. MÉDIATION POUR LES RÉSERVATIONS DE VOL</value>
+  </data>
+  <data name="UA_LABEL_3.1" xml:space="preserve">
+    <value>1. Signature  d'un contrat et révision des prix</value>
+  </data>
+  <data name="UA_LABEL_3.1.1" xml:space="preserve">
+    <value>Après avoir envoyé votre demande de réservation, nous Vous confirmerons la réception de votre demande par adresse électronique.  C'est à ce moment qu'un accord pour la prestation de services de médiation est conclu entre Vous et nous.  Si vous ne recevez pas une telle confirmation au cours d’une heure après avoir envoyé votre demande de réservation et si notre opérateur ne vous contacte pas par adresse électronique ou par téléphone pour signaler le problème, veuillez nous appeler pour clarifier la situation.</value>
+  </data>
+  <data name="UA_LABEL_3.1.2" xml:space="preserve">
+    <value>Dès que vos billets réservés seront régularisés, Vous recevrez une lettre de confirmation avec le numéro de billet par votre adresse électronique.  En ce moment, un contrat juridiquement obligatoire est conclu entre Vous et la ou les compagnies aériennes concernées.</value>
+  </data>
+  <data name="UA_LABEL_3.1.3" xml:space="preserve">
+    <value>Les prix et la disponibilité des billets sont indiqués directement par la compagnie aérienne concernée.  Si le prix du billet d'avion sera changé pour des raisons indépendantes de notre volonté, après avoir soumis une demande de réservation, mais avant la date d'entrée en vigueur du contrat avec la compagnie aérienne (comme prévu au point 3.1.2 ci-dessus), le contrat n'entre pas en vigueur et Votre paiement Vous sera retourné  intégralement.  Nous pouvons Vous contacter et Vous proposer d'accepter le prix modifié pendant les heures de travail, mais pas plus tard de 24 heures après avoir pris l’information du changement de prix, ou le premier jour de travail après ces 24 heures.</value>
+  </data>
+  <data name="UA_LABEL_3.2" xml:space="preserve">
+    <value>2. Informations sur la réservation et les conditions de transport</value>
+  </data>
+  <data name="UA_LABEL_3.2.1" xml:space="preserve">
+    <value>En ce qui concerne les vols proposés sur le Portail, nous agissons exclusivement en qualité de l'intermédiaire.  Le contrat de transport est conclu directement entre Vous et la compagnie aérienne concernée, et nous n'assumons aucune responsabilité contractuelle de la réalisation de votre vol.  La compagnie aérienne est le seul responsable de l'exécution / non-exécution de votre vol.</value>
+  </data>
+  <data name="UA_LABEL_3.2.2" xml:space="preserve">
+    <value>Avant de faire une réservation, les conditions de la ou des compagnies aériennes concernées Vous serez présentées.</value>
+  </data>
+  <data name="UA_LABEL_3.2.3" xml:space="preserve">
+    <value>En agissant en tant qu'un intermédiaire dans l'achat de services de voyage fournis par les compagnies aériennes, nous ne garantissons pas la fourniture d'un accès aux systèmes de réservation de ces compagnies aériennes.  Si nécessaire, nous pouvons agir en votre nom conformément à l'accord conclu entre Vous et la compagnie aérienne.  Nous pouvons également vous demander de contacter directement la compagnie aérienne concernée pour obtenir l'information sur la réservation et pour modifier ou annuler votre réservation.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4" xml:space="preserve">
+    <value>Ci-dessous, sous la forme d'un aperçu général, nous présentons l’ information sur les conditions de réservation et de transport généralement appliquées par les compagnies aériennes de cette manière ou du moins de la même manière.  Cependant, toutes dispositions différentes de la compagnie aérienne concernée prévaudront sur les informations générales du présent point 3.2.4.  Par conséquent, dans chaque cas, avant de réserver, Vous devez faire attention aux conditions actuelles de la compagnie aérienne concernée.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.1" xml:space="preserve">
+    <value>Heure de départ / de l’enregistrement.
+L’heure de départ est toujours indiquée en heure locale.  L'arrivée le lendemain est indiquée dans l'horaire.  Les heures de départ indiquées sont préalable et peuvent être modifiées avec préavis peu de temps après l'émission du billet, par exemple en raison des restrictions du contrôle du trafic aérien, des conditions météorologiques ou des restrictions fonctionnelles de la compagnie aérienne.  Vous devez savoir d'avance l'heure de départ courante de votre vol.
+Vous devez également vous enregistrer à l'heure pour le vol indiqué par la compagnie aérienne.  Les compagnies aériennes ont le droit de refuser l'embarquement en cas de retard à l'enregistrement.  Attention: certaines compagnies aériennes proposent l'enregistrement en ligne sur leurs sites Web et prélèvent le paiement pour l'enregistrement manuel à l'aéroport.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.10" xml:space="preserve">
+    <value>Double réservation
+Une double réservation signifie deux réservations ou plus au nom du même passager sur un vol de la même compagnie aérienne.  Pour les réservations doubles, la compagnie aérienne peut annuler le voyage.  Cela peut également se produire si la réservation a été effectuée via différentes agences de voyages.  Nous ne sommes pas responsables des annulations des compagnies aériennes ou des refus de remboursement des compagnies aériennes s'ils supposent des réservations doubles.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.2" xml:space="preserve">
+    <value>Combinaison de billets individuels
+La combinaison de deux billets aller simple au lieu d'acheter un aller-retour est clairement indiquée dans la procédure de réservation.  En cas d'annulation, de modification ou de perturbation du trafic aérien, par exemple à la suite de grèves, ainsi que de changements d'horaire, les billets sont considérés indépendamment.  Les règles de chaque compagnie aérienne s'appliquent.
+Les vols avec des numéros de réservation différents sont toujours considérés comme un voyage indépendant.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.3" xml:space="preserve">
+    <value>Billets d'avion avec plusieurs segments / règles d'utilisation
+Votre billet aller simple ou aller-retour peut avoir plusieurs segments.  Selon les termes de la plupart des compagnies aériennes, ces segments de vol sont utilisés dans un ordre spécifique.  Sinon, de nombreuses compagnies aériennes refusent d'exploiter les segments de vol suivants (c'est-à-dire que la non-utilisation d’un segment de vol peut invalider le reste du billet).  Dans le cas de l’achat de billet aller-retour, la non-utilisation du billet à une destination peut entraîner l'annulation du billet retour par la compagnie aérienne.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.4" xml:space="preserve">
+    <value>Grossesse
+Certaines compagnies aériennes refusent le transport aux femmes enceintes de plus de 28 semaines pendant un vol à une destination.  Si Vous êtes enceinte, Vous devez contacter la compagnie aérienne et votre médecin si vous pouvez voyager.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.5" xml:space="preserve">
+    <value>Billets d’enfants
+Prenez connaissance des conditions de voyage avec un enfant qui n'a pas de siège séparé de la compagnie aérienne. Généralement, les enfants âgés de 2 ans et plus ont besoin d'un siège séparé, tandis que les enfants âgés de 0 à 2 ans voyagent dans les bras d'un adulte sans siège séparé.  Si l'enfant a 2 ans jusqu’à la fin du voyage, il est nécessaire de réserver un billet d’enfant avec un siège séparé pour toute la durée du voyage.  Les billets pour les enfants de moins de deux ans ne peuvent être réservés qu'au moment de la naissance, car le nom et la date de naissance doivent correspondre exactement aux noms et dates indiqués dans le passeport.  Nous ne rembourserons pas les frais si le mauvais type de billet a été initialement réservé.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.6" xml:space="preserve">
+    <value>Mineurs non accompagnés
+Nous ne fournissons pas de services d'intermédiaire dans la réservation de billets pour les mineurs non accompagnés. Les enfants de moins de 18 ans doivent être réservés avec un adulte.  Certains pays et compagnies aériennes refusent d'accepter les enfants de moins de 18 ans qui ne sont pas accompagnés d'un tuteur.  Veuillez noter que certaines compagnies aériennes exigent que les enfants de moins de 18 ans soient munis d'un certificat de naissance.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.7" xml:space="preserve">
+    <value>Bagages perdus / endommagés
+En tant qu'un intermédiaire, nous n'assumons aucune responsabilité pour les bagages perdus ou endommagés.  Tout problème doit être signalé immédiatement au représentant de la compagnie aérienne à l'aéroport.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.8" xml:space="preserve">
+    <value>Transit et nuitée
+Le transport terrestre et / ou l'hébergement à l'hôtel pendant votre voyage ne sont généralement pas inclus dans le prix du billet.  Vous devez suivre vous-même l’horaire des transports par voie de terre et les prix.</value>
+  </data>
+  <data name="UA_LABEL_3.2.4.9" xml:space="preserve">
+    <value>Heures de correspondance des vols
+Les billets standard réservés sur le Portail ont une heure de connexion approuvée.  Le temps nécessaire pour passer d'un vol à un autre est calculé par les compagnies aériennes.  Si l'un des segments de vol est retardé, entraînant un retard à votre vol de correspondance, la compagnie aérienne doit vous aider à atteindre votre destination finale (voir 11.1).
+Lors de la réservation de billets individuels, la compagnie aérienne n'est pas responsable des retards qui entraînent des retards dans les vols de correspondance.  Par conséquent, vous devez vous assurer que le temps de correspondance est suffisant et répond aux exigences des compagnies aériennes et des aéroports.  Les frais supplémentaires associés aux vols de correspondance manqués ne sont pas remboursables.</value>
+  </data>
+  <data name="UA_LABEL_3.3" xml:space="preserve">
+    <value>3. Compagnies aériennes interdites d'exploitation dans le territoire de l'UE («liste noire»).  Veuillez noter que certaines compagnies aériennes ne sont pas autorisées à opérer dans le territoire de l'UE conformément à une résolution adoptée par la Commission européenne en consultation étroite avec les autorités nationales du transport aérien.  Ces compagnies aériennes ne sont pas autorisées à opérer car elles sont considérées comme dangereuses ou insuffisamment surveillées par les autorités de leur pays.
+Vous pouvez découvrir quelles compagnies aériennes sont interdites en suivant le lien ci-dessous:</value>
+  </data>
+  <data name="UA_LABEL_3.4" xml:space="preserve">
+    <value>4. Modification de l'horaire et annulation des vols des compagnies aériennes</value>
+  </data>
+  <data name="UA_LABEL_3.4.1" xml:space="preserve">
+    <value>Votre contrat avec la compagnie aérienne en question peut lui permettre d'annuler ou de modifier votre réservation.  Nous vous informerons de tout changement dès que nous en recevrons l’information de la compagnie aérienne.</value>
+  </data>
+  <data name="UA_LABEL_3.4.2" xml:space="preserve">
+    <value>L’heure de départ indiquées sur la confirmation de réservation peut être changée de la date de la réservation jusqu’à la date du voyage réel.   En cas de changement d'horaire de vol, nous vous en informerons dès que nous recevrons l'information pertinente de la compagnie aérienne.  Cependant, nous vous recommandons vivement de contacter votre compagnie aérienne au moins 72 heures avant le départ prévu de chaque vol pour vous assurer que le vol (et les vols de correspondance) se dérouleront comme prévu.  Nous ne contrôlons pas les changements d'horaire de la compagnie aérienne et ne sommes pas responsables des coûts pouvant survenir à la suite de tels changements.</value>
+  </data>
+  <data name="UA_LABEL_3.5" xml:space="preserve">
+    <value>5.Modifications et annulations à votre demande</value>
+  </data>
+  <data name="UA_LABEL_3.5.1" xml:space="preserve">
+    <value>Les conditions de modification de la réservation (y compris la modification du nom, de la destination et de la date de départ du passager) et les remboursements pour l'annulation de la réservation sont déterminés par la compagnie aérienne concernée, qui est votre partenaire dans le contrat de transport.  En tant qu'un intermédiaires, nous ne pouvons pas influencer ces conditions.</value>
+  </data>
+  <data name="UA_LABEL_3.5.2" xml:space="preserve">
+    <value>Si Vous souhaitez modifier votre réservation ou annuler votre réservation et vous faire rembourser, et si les conditions générales de la compagnie aérienne autorisent un tel changement ou remboursement après l'annulation de la réservation, nous pouvons soumettre une demande en votre nom comme un service supplémentaire.  Lors de la réservation de services supplémentaires, Vous serez informé des conditions et des frais associés à la prestation de ces services.  Vous pouvez également contacter directement la compagnie aérienne.</value>
+  </data>
+  <data name="UA_LABEL_3.5.3" xml:space="preserve">
+    <value>Afin que nous puissions réagir aux modifications de votre demande, nous devons recevoir votre demande au plus tard 24 heures avant le début du voyage (uniquement par téléphone ou par adresse électronique).
+Si Vous souhaitez modifier votre réservation dans un délai plus court avant le départ, nous Vous recommandons de contacter directement la compagnie aérienne concernée.</value>
+  </data>
+  <data name="UA_LABEL_3.6" xml:space="preserve">
+    <value>6. Non-utilisation de billet.  Vous nous autorisez par la présente à annuler Votre vol inutilisé en Votre nom en cas de Votre absence au vol et à faire une réclamation à la compagnie aérienne pour un remboursement éventuel en Votre nom. Nous avons le droit, mais pas l'obligation de le faire, et Vous vous réservez le droit de contacter directement la compagnie aérienne avec une réclamation de remboursement complet.</value>
+  </data>
+  <data name="UA_LABEL_4" xml:space="preserve">
+    <value>4. MÉDIATION DANS LA RÉSERVATION D'HÔTEL</value>
+  </data>
+  <data name="UA_LABEL_4.1" xml:space="preserve">
+    <value>La réservation de services hôteliers via le Portail est réalisée grâce à des partenariats avec des entreprises et des hôtels divers. Les clients doivent être âgés de 18 à 21 ans au moment de l'enregistrement (selon la politique individuelle de l'hôtel), s'ils ne sont pas accompagnés d'un parent ou d'un tuteur. Pour demander une modification ou une annulation d'une réservation d'hôtel, veuillez contacter le 1-888-5050-777 pour les États-Unis / Canada et envoyer un courriel à customerservice@farelovers.com pour les États-Unis / Canada et d’autres pays du monde.</value>
+  </data>
+  <data name="UA_LABEL_5" xml:space="preserve">
+    <value>5. MÉDIATION A LA RÉSERVATION DE LOCATION DE VOITURES</value>
+  </data>
+  <data name="UA_LABEL_5.1" xml:space="preserve">
+    <value>Le service de location de voitures est réservé via le Portail par l'intermédiaire de diverses sociétés de location.   Si l’age du chauffeur ne correspond pas aux conditions d'âge minimum d’une juridiction particulière, la location de voiture sera refusée.  Sachez également que vous aurez besoin d'un permis de conduire valide et d'une carte de crédit valide pour toute location de voiture.  Par conséquent, toutes les questions concernant les réservations et les demandes de modification ou d'annulation doivent être adressées directement à la société de location de voitures, ou veuillez contacter le numéro 1-888-5050-777 pour les États-Unis / Canada et envoyer un courriel à customerservice@farelovers.com pour les États-Unis. / Canada et autres pays du monde.</value>
+  </data>
+  <data name="UA_LABEL_6" xml:space="preserve">
+    <value>6. DISPOSITIONS PARTICULIÈRES À LA MÉDIATION POUR LES RÉSERVATIONS DE SERVICES MULTIPLES</value>
+  </data>
+  <data name="UA_LABEL_6.1" xml:space="preserve">
+    <value>Le Portail offre la possibilité d’unir et de combiner à Votre demande plusieurs services distincts (par exemple, vol + hôtel).  Dans ce cas, Vous nous charger d'agir en tant qu'un intermédiaire dans la réservation de divers services de voyage de différents prestataires.  Les prestataires concernés vous seront certainement présentés lors du processus de réservation avant l'achèvement.  Si Vous combinez certains services, Vous ne concluez pas le contrat de voyage avec nous, mais avec chaque prestataire individuellement.  Dans le même temps, nous agissons exclusivement en tant qu'un intermédiaire par rapport à chaque service de voyage individuel.</value>
+  </data>
+  <data name="UA_LABEL_7" xml:space="preserve">
+    <value>7. INFORMATION SUR LES DISPOSITIONS RELATIVES AUX PASSEPORTS, AUX VISAS ET À L'ÉTAT DE SANTÉ</value>
+  </data>
+  <data name="UA_LABEL_7.1" xml:space="preserve">
+    <value>Les exigences aux passeports, visas et conditions de santé peuvent changer, donc avant de voyager, Vous devez les vérifier d'avance auprès des autorités compétentes (ambassade, consulat, etc.).  Vous devez vous assurer d'avoir un passeport valide (pour les voyages à l'extérieur du Canada, la plupart des pays exigent un passeport valide au moins 6 mois après la date de retour et, si nécessaire, un visa. N'oubliez pas de prendre en compte tous les points de transit où Vous pourriez également avoir besoin de  visa.  Étant donné que l'obtention d'un visa prend souvent un certain temps, nous Vous recommandons d'en faire la demande en avance.  Vous confirmez que tous les noms de passagers ci-dessus sont correctement orthographiés comme dans leurs documents de voyage.  Vous comprenez que si après cette réservation il est nécessaire d’apporter des modifications aux noms, le prestataire demandera un paiement. Nous n’assumons pas la responsabilité des clients qui n'ont pas correctement enregistré les documents.</value>
+  </data>
+  <data name="UA_LABEL_7.2" xml:space="preserve">
+    <value>Chaque point de destination a ses propres exigences pour les formalités d'entrée, les vaccinations, etc., qui peuvent également dépendre de la nationalité du passager.  Vous devez obtenir vous-même l’information pertinente.  Les incidents résultant du non-respect de ces règles officielles ne sont pas considérés comme de notre faute.  C'est  pourquoi nous Vous recommandons de vérifier toujours  les différentes formalités en vigueur dans le pays de destination ou de transit choisi, ainsi que le temps nécessaire pour effectuer toutes les actions nécessaire.</value>
+  </data>
+  <data name="UA_LABEL_8" xml:space="preserve">
+    <value>8. TAXES ET PAIEMENT</value>
+  </data>
+  <data name="UA_LABEL_8.1" xml:space="preserve">
+    <value>Paiement. Le paiement des services de voyage est effectué soit par nous (en coopération avec notre prestataire de services de paiement qui offre la possibilité de traiter le paiement) soit par le Prestataire de services.  Veuillez noter que pour traiter un paiement, nous devons fournir l'information de votre paiement (telles que les détails de votre carte de crédit ou de débit) à notre Prestataire de services de paiement.  Toutes les informations de paiement de nos clients fournies à notre prestataire de services de paiement sont gardées en chiffres sur un serveur sécurisé.  En fonction des critères de réservation et des services supplémentaires, le paiement peut être fractionné en deux transactions distinctes: le paiement à nous et le paiement au Prestataire de services.   Les paiements qui vous sont facturés ne peuvent pas dépasser le prix total réel indiqué sur notre site Web. Dans ce cas les mêmes mesures de sécurité s'appliquent.  Afin que nous puissions traiter votre paiement, vous devez Vous assurer que nous disposons de fonds suffisants.  Si Vous rencontrez des problèmes lors du traitement de votre paiement, nous essaierons de traiter à nouveau votre paiement en coopération avec notre prestataire de services de paiement.  Si cela n'aboutit pas à un débit réussi de votre compte, nous vous contacterons dès que possible pour recevoir des instructions sur d'autres méthodes de paiement.   Si nous ne recevons pas votre paiement conformément à ces instructions supplémentaires, nous avons le droit d'annuler votre commande.  L'annulation entraînera une amende de 100%.  Les modifications de votre réservation peuvent entraîner une amende de 100% et / ou des frais administratifs.  Escroquerie au moment du paiement. Si nous avons des raisons de soupçonner une escroquerie, nous nous réservons le droit de refuser de traiter ce paiement.  En cas de soupçon à un crime éventuel, il Vous sera probablement demandé de fournir la preuve de la légalité du paiement.  L’information sur tous les types de fraude de paiement seront signalées à la police et au service d’encaissement.</value>
+  </data>
+  <data name="UA_LABEL_9" xml:space="preserve">
+    <value>9. PLAINTES</value>
+  </data>
+  <data name="UA_LABEL_9.1" xml:space="preserve">
+    <value>Les plaintes liées à la fourniture de services de voyage, toute plaintes concernant un problème, des remarques ou des réclamations liées aux prestations effectives de services de voyage doivent être adressées directement au Prestataire de services concerné (voyagiste, compagnie aérienne, compagnie d'assurance, société de location de voitures, hôtel) avec qui vous avez conclu un contrat pour le service de voyage concerné.
+
+Les plaintes concernant nos propres services doivent être faites par écrit et déposées dans les deux mois suivant la date de fin de votre voyage, veuillez nous envoyer un courriel pour recevoir un formulaire de plainte.
+
+Le formulaire de plainte dûment rempli doit être envoyé par la poste ou par courriel à l'adresse suivante:  Adresse postale:  Farelovers Travel Corporation 400, 906 12 Ave SW Calgary, AB T2R 1K7
+
+Adresse électronique: customer.relations@farelovers.com</value>
+  </data>
+  <data name="U_DONT_HAVE_ACC" xml:space="preserve">
+    <value>Vous n'avez pas de compte?</value>
+  </data>
+  <data name="U_EDIT_PROFILE" xml:space="preserve">
+    <value>Changer de profil</value>
+  </data>
+  <data name="U_NEW_PASSWORD" xml:space="preserve">
+    <value>Nouveau mot de passe</value>
+  </data>
+  <data name="U_PASSWORD" xml:space="preserve">
+    <value>Entrer le mot de passe</value>
+  </data>
+  <data name="U_PASSWORD_EMPTY_FIELD" xml:space="preserve">
+    <value>le champ du mot de passe est n’est pas rempli</value>
+  </data>
+  <data name="U_REGISTRATION" xml:space="preserve">
+    <value>S'enregistrer</value>
+  </data>
+  <data name="U_REPEAT_PASSWORD" xml:space="preserve">
+    <value>Répéter le mot de passe</value>
+  </data>
+  <data name="U_SIGN_IN_WITH_FACEBOOK" xml:space="preserve">
+    <value>Se connecter avec Facebook</value>
+  </data>
+  <data name="U_SIGN_IN_WITH_GOOGLE" xml:space="preserve">
+    <value>Se connecter avec Google</value>
+  </data>
+  <data name="U_SIGN_UP" xml:space="preserve">
+    <value>S'enregistrer</value>
+  </data>
+  <data name="U_SUBMIT" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="U_USERNAME" xml:space="preserve">
+    <value>nom d'utilisateur</value>
+  </data>
+  <data name="U_USERNAME_EMPTY_FIELD" xml:space="preserve">
+    <value>le champ du nom d'utilisateur n’est pas rempli!</value>
+  </data>
+  <data name="U_USERNAME_OR_EMAIL" xml:space="preserve">
+    <value>Nom d'utilisateur ou e-mail</value>
+  </data>
+  <data name="U_WITHOUT_LOGIN" xml:space="preserve">
+    <value>Continuer sans mot d’entrée</value>
+  </data>
+  <data name="VR_EMAIL_IS_NOT_IN_VALID_FORMAT" xml:space="preserve">
+    <value>Format d'email invalide!</value>
+  </data>
+  <data name="VR_IS_MANADTORY_FIELD" xml:space="preserve">
+    <value>Champ obligatoire!</value>
+  </data>
+  <data name="VR_PASSWORD_DOES_NOT_MATCH" xml:space="preserve">
+    <value>Mot de passe incorrect!</value>
+  </data>
+</root>

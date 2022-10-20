@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers" 
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" 
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"
+             x:Name="BookingDetails"
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             Shell.TabBarIsVisible="False"
+             Visual="Material"
+             mc:Ignorable="d"
+             x:Class="ResvoyageMobileApp.Views.Bookings.BookingDetailsPage">
+    <Grid>
+        <Grid x:Name="VisibilityResults">
+            <ScrollView>
+                <StackLayout BindableLayout.ItemsSource="{Binding Details}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <pv:PancakeView BackgroundColor="White" HasShadow="True" CornerRadius="15" Margin="10" Padding="10,15">
+                                <Grid>                                    
+                                    <StackLayout Orientation="Vertical" IsVisible="{Binding IsAir}">
+                                        <Grid ColumnDefinitions="Auto, *">
+                                            <Image Source="air" HeightRequest="30"/>
+                                            <Label Grid.Column="1" Style="{StaticResource labelNormalBlack}" Padding="10,0,0,0" VerticalOptions="Center">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{x:Static resources:AppResources.BD_REQUESTED}"/>
+                                                        <Span Text="{Binding DateRequestedString}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label Text="{Binding PNR}" Grid.Column="1" Style="{StaticResource labelNormalGray}" VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+                                        </Grid>
+                                        <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="0,10,0,0"/>
+                                        <StackLayout BindableLayout.ItemsSource="{Binding FlightInfo}">
+                                            <BindableLayout.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid ColumnDefinitions="*,*,*" Padding="0,10">
+                                                        <StackLayout Orientation="Vertical" Spacing="2">
+                                                            <Label Text="{Binding StartDateString}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                                            <Label Text="{Binding StartDateTimeString}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                                            <Label Text="{Binding Origin}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Center"/>
+                                                        </StackLayout>
+                                                        <StackLayout Orientation="Vertical" VerticalOptions="Center"  Grid.Column="1">
+                                                            <Label Text="{Binding AirlineName}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                                            <Label Text="{Binding FlightNumber}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                                        </StackLayout>
+                                                        <StackLayout Orientation="Vertical" Grid.Column="2" Spacing="2">
+                                                            <Label Text="{Binding EndDateString}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                                            <Label Text="{Binding EndDateTimeString}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                                            <Label Text="{Binding Destination}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Center"/>
+                                                        </StackLayout>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </BindableLayout.ItemTemplate>
+                                        </StackLayout>
+                                        <BoxView BackgroundColor="LightGray" HeightRequest="1"/>
+                                        <StackLayout Orientation="Horizontal" Padding="0,10">
+                                            <Label Text="{x:Static resources:AppResources.BD_AIR_PRICE}" Style="{StaticResource labelMediumBlack}"/>
+                                            <Label Style="{StaticResource labelMediumBlack}" FontAttributes="Bold" HorizontalOptions="EndAndExpand">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding BindingContext.Booking.CurrencySymbol, Source={x:Reference BookingDetails}}"/>
+                                                        <Span Text="{Binding BindingContext.Booking.AirCost, Source={x:Reference BookingDetails}}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" IsVisible="{Binding IsHotel}">
+                                        <Grid ColumnDefinitions="Auto, *">
+                                            <Image Source="hotel" HeightRequest="30"/>
+                                            <Label Grid.Column="1" Style="{StaticResource labelNormalBlack}" Padding="10,0,0,0" VerticalOptions="Center">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{x:Static resources:AppResources.BD_REQUESTED}"/>
+                                                        <Span Text="{Binding DateRequestedString}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label Text="{Binding PNR}" Grid.Column="1" Style="{StaticResource labelNormalGray}" VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+                                        </Grid>
+                                        <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="0,10,0,0"/>
+                                        <StackLayout Orientation="Vertical">
+                                            <Label Text="{Binding HotelName}" Style="{StaticResource labelMediumBlack}" HorizontalOptions="Center"/>
+                                            <Label Text="{Binding Origin,StringFormat='({0})'}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                            <Grid ColumnDefinitions="*,*" Margin="0,10">
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label Text="{x:Static resources:AppResources.BD_CHECK_IN}" Style="{StaticResource labelNormalBlack}"/>
+                                                    <Label Text="{Binding StartDateString}" Style="{StaticResource labelNormalGray}"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Grid.Column="1">
+                                                    <Label Text="{x:Static resources:AppResources.BD_CHECK_OUT}" Style="{StaticResource labelNormalBlack}"/>
+                                                    <Label Text="{Binding EndDateString}" Style="{StaticResource labelNormalGray}"/>
+                                                </StackLayout>
+                                            </Grid>
+                                            <StackLayout BindableLayout.ItemsSource="{Binding RoomAdditionalDetails.cancellationPolicy}">
+                                                <BindableLayout.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Label Style="{StaticResource labelNormalBlack}">
+                                                            <Label.FormattedText>
+                                                                <FormattedString>
+                                                                    <Span Text="{x:Static resources:AppResources.SC_CANCELLATION_POLICY}"/>
+                                                                    <Span Text=" "/>
+                                                                    <Span Text="{Binding .}" Style="{StaticResource labelNormalGray}"/>
+                                                                </FormattedString>
+                                                            </Label.FormattedText>
+                                                        </Label>
+                                                    </DataTemplate>
+                                                </BindableLayout.ItemTemplate>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <BoxView BackgroundColor="LightGray" HeightRequest="1" />
+                                        <StackLayout Orientation="Horizontal" Padding="0,10">
+                                            <Label Text="{x:Static resources:AppResources.BD_HOTEL_PRICE}" Style="{StaticResource labelMediumBlack}"/>
+                                            <Label Style="{StaticResource labelMediumBlack}" FontAttributes="Bold" HorizontalOptions="EndAndExpand">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding BindingContext.Booking.CurrencySymbol, Source={x:Reference BookingDetails}}"/>
+                                                        <Span Text="{Binding BindingContext.Booking.HotelCost, Source={x:Reference BookingDetails}}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" IsVisible="{Binding IsCar}">
+                                        <Grid ColumnDefinitions="Auto, *">
+                                            <Image Source="car" HeightRequest="30"/>
+                                            <Label Grid.Column="1" Style="{StaticResource labelNormalBlack}" Padding="10,0,0,0" VerticalOptions="Center">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{x:Static resources:AppResources.BD_REQUESTED}"/>
+                                                        <Span Text="{Binding DateRequestedString}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label Text="{Binding PNR}" Grid.Column="1" Style="{StaticResource labelNormalGray}" VerticalOptions="Center" HorizontalOptions="EndAndExpand"/>
+                                        </Grid>
+                                        <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="0,10,0,0"/>
+                                        <Label Style="{StaticResource labelMediumBlack}" HorizontalOptions="Center">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding CarVendorName}"/>
+                                                    <Span Text="{Binding CarVendorType, StringFormat=' ({0})'}"/>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label Text="{Binding VehicleClass, StringFormat='({0})'}" Style="{StaticResource labelSmallGray}" HorizontalOptions="Center"/>
+                                        <Grid ColumnDefinitions="*,*" Margin="0,10">
+                                            <StackLayout Orientation="Vertical">
+                                                <Label Text="{x:Static resources:AppResources.CD_PICK_UP}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Center"/>
+                                                <Label Text="{Binding Origin}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                                <Label Text="{Binding StartDateString}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Center"/>
+                                                <Label Text="{Binding StartDateTimeString}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Center"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Vertical" Grid.Column="1">
+                                                <Label Text="{x:Static resources:AppResources.CD_DROP_OFF}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Center"/>
+                                                <Label Text="{Binding Destination}" Style="{StaticResource labelNormalGray}" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                                <Label Text="{Binding EndDateString}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Center"/>
+                                                <Label Text="{Binding EndDateTimeString}" Style="{StaticResource labelNormalGray}" HorizontalOptions="Center"/>
+                                            </StackLayout>
+                                        </Grid>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                            <StackLayout Orientation="Horizontal" IsVisible="{Binding Aircondition}" Margin="5">
+                                                <Image Source="airConditioning.png" HeightRequest="15"/>
+                                                <Label Text="{x:Static resources:AppResources.HD_AIRCONDITIONING}" Style="{StaticResource labelSmallBlack}" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" IsVisible="{Binding Aircondition}" Margin="5">
+                                                <Image Source="transmission.png" HeightRequest="15"/>
+                                                <Label Text="{Binding TransmissionType}" Style="{StaticResource labelSmallBlack}" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal" IsVisible="{Binding Aircondition}" Margin="5">
+                                                <Image Source="carDoor.png" HeightRequest="15"/>
+                                                <Label Text="{Binding VehicleCategory}" Style="{StaticResource labelSmallBlack}" VerticalOptions="Center"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <BoxView BackgroundColor="LightGray" HeightRequest="1" />
+                                        <StackLayout Orientation="Horizontal" Padding="0,10">
+                                            <Label Text="{x:Static resources:AppResources.BD_CAR_RPICE}" Style="{StaticResource labelMediumBlack}"/>
+                                            <Label Style="{StaticResource labelMediumBlack}" FontAttributes="Bold" HorizontalOptions="EndAndExpand">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding BindingContext.Booking.CurrencySymbol, Source={x:Reference BookingDetails}}"/>
+                                                        <Span Text="{Binding BindingContext.Booking.CarCost, Source={x:Reference BookingDetails}}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                            </pv:PancakeView>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+        <MediaElement Source="ms-appx:///waitScreen.mp4" ShowsPlaybackControls="False"
+                      BackgroundColor="#101d23"
+                       x:Name="waitScreen"
+                      IsLooping="True" Aspect="AspectFit" AutoPlay="True"
+                      HorizontalOptions="FillAndExpand"/>
+        <!--<ff:CachedImage Source="waitScreen2.gif" HorizontalOptions="Center" VerticalOptions="Center"/>-->
+    </Grid>
+</ContentPage>

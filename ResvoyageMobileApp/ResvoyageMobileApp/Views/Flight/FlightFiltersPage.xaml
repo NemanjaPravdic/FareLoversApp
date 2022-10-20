@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:resources="clr-namespace:ResvoyageMobileApp.Resources"    
+             Visual="Material"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:pancakeview="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             x:Name="FlightFilters"
+             xmlns:Helpers="clr-namespace:ResvoyageMobileApp.Helpers" xmlns:range="clr-namespace:Xamarin.RangeSlider.Forms;assembly=Xamarin.RangeSlider.Forms"
+             x:Class="ResvoyageMobileApp.Views.Flight.FlightFiltersPage"
+             Shell.TabBarIsVisible="False">
+    <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" Spacing="0">
+        <Label Text="{x:Static resources:AppResources.FF_FILTERS}" Style="{StaticResource labelLargeGray}" Padding="0,10,0,0" HorizontalOptions="Center"/>
+        <ScrollView VerticalOptions="StartAndExpand" >
+            <StackLayout Orientation="Vertical" Padding="15,0,5,5">
+                <Grid Padding="0,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="{x:Static resources:AppResources.FF_STOPS}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal" BindableLayout.ItemsSource="{Binding ChoosenFilters.Stops}" Grid.Row="1" VerticalOptions="Start">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.ApplyCheckStops, Source={x:Reference FlightFilters}}" CommandParameter="{Binding .}"/>
+                                    </Grid.GestureRecognizers>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox IsChecked="{Binding IsSelected}" Color="#BEA7FF"/>
+                                    <Label Text="{Binding Title}" Style="{StaticResource labelNormalBlack}" Grid.Column="1" VerticalOptions="Center"/>
+                                </Grid>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </StackLayout>
+                </Grid>
+                <Grid Padding="0,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="{x:Static resources:AppResources.FF_AIRLINES}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Start"/>
+                    <Label Text="{x:Static resources:AppResources.FF_SELECT_AIRLINES}" Style="{StaticResource labelSmallGray}" Grid.Row="1" IsVisible="{Binding ChoosenFilters.SelectedAirlines,Converter={Helpers:NullValueBoolConverter}}"/>
+                    <Label Text="{Binding ChoosenFilters.SelectedAirlines}" Style="{StaticResource labelSmallGray}"  Grid.Row="1" IsVisible="{Binding ChoosenFilters.SelectedAirlines,Converter={Helpers:NotNullValueBoolConverter}}"/>
+                    <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,0,10,0" Grid.Row="2"/>
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BindingContext.ShowAirlines, Source={x:Reference FlightFilters}}"/>
+                    </Grid.GestureRecognizers>
+                </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="{x:Static resources:AppResources.FF_OUTBOUND_DEPARTURE}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal" Grid.Row="1">
+                        <Label Text="{x:Static resources:AppResources.FF_TIME_RANGE}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="{Binding ChoosenFilters.OutboundDepartureFrom, StringFormat='{0}:00H'}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="-" Style="{Binding labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="{Binding ChoosenFilters.OutboundDepartureTo, StringFormat='{0}:00H'}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <range:RangeSlider Grid.Row="2" x:Name="RangeSliderWithEffect1" BarHeight="15" MinimumValue="0" MaterialUI="True" MaximumValue="24" LowerValue="{Binding ChoosenFilters.OutboundDepartureFrom, Mode=TwoWay}" UpperValue="{Binding ChoosenFilters.OutboundDepartureTo, Mode=TwoWay}" StepValue="1" StepValueContinuously="True" ActiveColor="#BEA7FF">
+                        <range:RangeSlider.HorizontalOptions>
+                            <OnPlatform x:TypeArguments="LayoutOptions">
+                                <On Platform="iOS" Value="Fill"/>
+                                <On Platform="Android" Value="Center"/>
+                            </OnPlatform>
+                        </range:RangeSlider.HorizontalOptions>
+                    </range:RangeSlider>
+                </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="{x:Static resources:AppResources.FF_OUTBOUND_ARRIVAL}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal" Grid.Row="1">
+                        <Label Text="{x:Static resources:AppResources.FF_TIME_RANGE}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="{Binding ChoosenFilters.OutboundArrivalFrom, StringFormat='{0}:00H'}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="-" Style="{Binding labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="{Binding ChoosenFilters.OutboundArrivalTo, StringFormat='{0}:00H'}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <range:RangeSlider Grid.Row="2" x:Name="RangeSliderWithEffect2" BarHeight="15" MinimumValue="0" MaterialUI="True" MaximumValue="24" LowerValue="{Binding ChoosenFilters.OutboundArrivalFrom, Mode=TwoWay}" UpperValue="{Binding ChoosenFilters.OutboundArrivalTo, Mode=TwoWay}" StepValue="1" StepValueContinuously="True" ActiveColor="#BEA7FF">
+                        <range:RangeSlider.HorizontalOptions>
+                            <OnPlatform x:TypeArguments="LayoutOptions">
+                                <On Platform="iOS" Value="Fill"/>
+                                <On Platform="Android" Value="Center"/>
+                            </OnPlatform>
+                        </range:RangeSlider.HorizontalOptions>
+                    </range:RangeSlider>
+                </Grid>
+                <Grid IsVisible="{Binding Results.Request.SearchType,Converter={Helpers:IsRoundTripHelper}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="{x:Static resources:AppResources.FF_INBOUND_DEPARTURE}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal" Grid.Row="1">
+                        <Label Text="{x:Static resources:AppResources.FF_TIME_RANGE}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="{Binding ChoosenFilters.InboundDepartureFrom, StringFormat='{0}:00H'}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="-" Style="{Binding labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="{Binding ChoosenFilters.InboundDepartureTo, StringFormat='{0}:00H'}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <range:RangeSlider Grid.Row="2" x:Name="RangeSliderWithEffect3"  BarHeight="15" MinimumValue="0" MaterialUI="True" MaximumValue="24" LowerValue="{Binding ChoosenFilters.InboundDepartureFrom, Mode=TwoWay}" UpperValue="{Binding ChoosenFilters.InboundDepartureTo, Mode=TwoWay}" StepValue="1" StepValueContinuously="True" ActiveColor="#BEA7FF">
+                        <range:RangeSlider.HorizontalOptions>
+                            <OnPlatform x:TypeArguments="LayoutOptions">
+                                <On Platform="iOS" Value="Fill"/>
+                                <On Platform="Android" Value="Center"/>
+                            </OnPlatform>
+                        </range:RangeSlider.HorizontalOptions>
+                    </range:RangeSlider>
+                </Grid>
+                <Grid IsVisible="{Binding Results.Request.SearchType,Converter={Helpers:IsRoundTripHelper}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="{x:Static resources:AppResources.FF_INOUND_ARRIVAL}" Style="{StaticResource labelNormalBlack}" HorizontalOptions="Start"/>
+                    <StackLayout Orientation="Horizontal" Grid.Row="1">
+                        <Label Text="{x:Static resources:AppResources.FF_TIME_RANGE}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="{Binding ChoosenFilters.InboundArrivalFrom, StringFormat='{0}:00H'}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="-" Style="{Binding labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Label Text="{Binding ChoosenFilters.InboundArrivalTo, StringFormat='{0}:00H'}" Style="{StaticResource labelSmallGray}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    </StackLayout>
+                    <range:RangeSlider Grid.Row="2" x:Name="RangeSliderWithEffect4" BarHeight="15" MinimumValue="0" MaterialUI="True" MaximumValue="24" LowerValue="{Binding ChoosenFilters.InboundArrivalFrom, Mode=TwoWay}" UpperValue="{Binding ChoosenFilters.InboundArrivalTo, Mode=TwoWay}" StepValue="1" StepValueContinuously="True" ActiveColor="#BEA7FF">
+                        <range:RangeSlider.HorizontalOptions>
+                            <OnPlatform x:TypeArguments="LayoutOptions">
+                                <On Platform="iOS" Value="Fill"/>
+                                <On Platform="Android" Value="Center"/>
+                            </OnPlatform>
+                        </range:RangeSlider.HorizontalOptions>
+                    </range:RangeSlider>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        <Grid ColumnSpacing="0" RowSpacing="0" Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Frame BorderColor="White" BackgroundColor="#baded7" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  Padding="0" CornerRadius="0" HeightRequest="50">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ResetFilters}"/>
+                </Frame.GestureRecognizers>
+                <Label Text="{x:Static resources:AppResources.RESET}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource labelMediumWhite}" />
+            </Frame>
+            <Frame BorderColor="White" BackgroundColor="#2EDBB5" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Padding="0" HeightRequest="50" CornerRadius="0">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ApplyFilters}"/>
+                </Frame.GestureRecognizers>
+                <Label Text="{x:Static resources:AppResources.SF_APPLY}" HorizontalOptions="Center" VerticalOptions="Center" Style="{StaticResource labelMediumWhite}"/>
+            </Frame>
+        </Grid>
+    </StackLayout>
+</ContentPage>
